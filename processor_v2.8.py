@@ -18,6 +18,12 @@ from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 from logging.handlers import RotatingFileHandler
 
+from review_tools.review_generator import (
+    ReviewConfig,
+    generate_review,
+    load_review_config,
+)
+
 
 # --- Load expected nouns ----------------------------------------------
 NOUNS_FILE = Path(__file__).parent / "config" / "nouns_to_expect.txt"
@@ -90,6 +96,9 @@ try:
     LOG_MAX_BYTES = config.getint('Logging', 'LogMaxBytes', fallback=10 * 1024 * 1024)
     LOG_BACKUP_COUNT = config.getint('Logging', 'LogBackupCount', fallback=5)
 
+    # Review pipeline
+    REVIEW_CONFIG: ReviewConfig = load_review_config(config)
+
 except Exception as e:
     print(f"FATAL: Error loading configuration from '{CONFIG_FILE_PATH}': {e}. Exiting.")
     exit(1)
@@ -114,6 +123,12 @@ console_handler.setFormatter(console_formatter)
 logger.addHandler(console_handler)
 logger.info("=== CallPipeline Starting ===")
 logger.info(f"Configuration loaded from: {CONFIG_FILE_PATH}")
+logger.info(
+    "[Review] Review generation %s",
+    "enabled" if REVIEW_CONFIG.enabled else "disabled",
+)
+if REVIEW_CONFIG.enabled and REVIEW_CONFIG.output_directory:
+    logger.info("[Review] Output directory: %s", REVIEW_CONFIG.output_directory)
 
 # ----------------------------------------------------------------------
 # 3. Gemini API key configuration
@@ -571,6 +586,21 @@ def process_transcription_with_gemini(path):
             with open(transcript_path, "w", encoding="utf-8") as f:
                 f.write(transcript)
             logger.info(f"[STT] Transcription saved: {transcript_path}")
+            if REVIEW_CONFIG.enabled:
+                try:
+                    review_path = generate_review(
+                        audio_path=audio_path,
+                        transcript_path=transcript_path,
+                        review_config=REVIEW_CONFIG,
+                        expected_terms=EXPECTED_NOUNS_LIST or None,
+                    )
+                    if review_path:
+                        logger.info(f"[Review] Alignment review created: {review_path}")
+                except Exception as review_error:
+                    logger.error(
+                        f"[Review] Failed to generate review file for {audio_path.name}: {review_error}",
+                        exc_info=True,
+                    )
             # Also archive copy to central transcript folder without renaming
             try:
                 os.makedirs(CENTRAL_TRANSCRIPT_DIR, exist_ok=True)
