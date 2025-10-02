@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Transcript Review System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px 8px 0 0;
+        }
+        
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #dee2e6;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .stat-label {
+            font-size: 12px;
+            color: #6c757d;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .stat-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-top: 5px;
+        }
+        
+        .controls {
+            padding: 20px;
+            background: #fff;
+            border-bottom: 1px solid #dee2e6;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #5568d3;
+        }
+        
+        .btn-success {
+            background: #28a745;
+            color: white;
+        }
+        
+        .btn-success:hover {
+            background: #218838;
+        }
+        
+        .filter-select {
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+        
+        .word-list {
+            padding: 20px;
+        }
+        
+        .word-item {
+            background: white;
+            border: 1px solid #dee2e6;
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 15px;
+            transition: all 0.3s;
+        }
+        
+        .word-item.flagged {
+            border-left: 4px solid #ffc107;
+        }
+        
+        .word-item.high-priority {
+            border-left: 4px solid #dc3545;
+        }
+        
+        .word-item.corrected {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+        }
+        
+        .word-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .word-main {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .word-alternatives {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .alt-chip {
+            background: #e9ecef;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .alt-chip:hover {
+            background: #667eea;
+            color: white;
+        }
+        
+        .context {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 6px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            margin: 15px 0;
+            color: #495057;
+        }
+        
+        .context .highlight {
+            background: #fff3cd;
+            padding: 2px 4px;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .flags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+        
+        .flag {
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        
+        .flag.high {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        
+        .flag.medium {
+            background: #fff3cd;
+            color: #856404;
+        }
+        
+        .flag.low {
+            background: #d1ecf1;
+            color: #0c5460;
+        }
+        
+        .actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .correction-input {
+            flex: 1;
+            padding: 8px 12px;
+            border: 1px solid #ced4da;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+        
+        .btn-sm {
+            padding: 6px 12px;
+            font-size: 13px;
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        
+        .modal.show {
+            display: flex;
+        }
+        
+        .modal-content {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            max-width: 600px;
+            width: 90%;
+        }
+        
+        .progress-bar {
+            height: 4px;
+            background: #e9ecef;
+            border-radius: 2px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: #28a745;
+            transition: width 0.3s;
+        }
+        
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: #6c757d;
+        }
+        
+        .empty-state h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📞 Call Transcript Review</h1>
+            <p>Review and correct flagged words from call transcriptions</p>
+        </div>
+        
+        <div class="stats" id="stats">
+            <!-- Stats will be populated by JavaScript -->
+        </div>
+        
+        <div class="controls">
+            <input type="file" id="fileInput" accept=".json" style="display: none;">
+            <button class="btn btn-primary" onclick="document.getElementById('fileInput').click()">
+                📁 Load Review File
+            </button>
+            
+            <select class="filter-select" id="priorityFilter" onchange="filterWords()">
+                <option value="all">All Priorities</option>
+                <option value="high">High Priority</option>
+                <option value="medium">Medium Priority</option>
+                <option value="low">Low Priority</option>
+            </select>
+            
+            <select class="filter-select" id="typeFilter" onchange="filterWords()">
+                <option value="all">All Types</option>
+                <option value="phone_number">Phone Numbers</option>
+                <option value="case_number">Case Numbers</option>
+                <option value="proper_noun">Proper Nouns</option>
+                <option value="transcription_mismatch">Mismatches</option>
+                <option value="spelling">Spelling</option>
+            </select>
+            
+            <button class="btn btn-success" id="exportBtn" onclick="exportCorrections()" disabled>
+                💾 Export Corrected Transcript
+            </button>
+        </div>
+        
+        <div class="word-list" id="wordList">
+            <div class="empty-state">
+                <h2>No Review File Loaded</h2>
+                <p>Click "Load Review File" to begin reviewing a transcript</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal" id="exportModal">
+        <div class="modal-content">
+            <h2>Export Corrected Transcript</h2>
+            <p>Your corrected transcript has been generated!</p>
+            <div style="margin-top: 20px;">
+                <button class="btn btn-success" onclick="downloadTranscript()">Download Transcript</button>
+                <button class="btn" onclick="closeModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let reviewData = null;
+        let corrections = {};
+        let currentFile = null;
+        
+        document.getElementById('fileInput').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                currentFile = file.name;
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    try {
+                        reviewData = JSON.parse(event.target.result);
+                        displayReview();
+                    } catch (error) {
+                        alert('Error parsing JSON file: ' + error.message);
+                    }
+                };
+                reader.readAsText(file);
+            }
+        });
+        
+        function displayReview() {
+            if (!reviewData) return;
+            
+            // Update stats
+            const stats = reviewData.statistics || {};
+            
+            // Build stats HTML with conditional confidence display
+            let statsHTML = `
+                <div class="stat-card">
+                    <div class="stat-label">Total Words</div>
+                    <div class="stat-value">${stats.total_words || 0}</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Flagged Words</div>
+                    <div class="stat-value">${stats.flagged_words || 0}</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Flag Rate</div>
+                    <div class="stat-value">${stats.flag_percentage || 0}%</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">High Priority</div>
+                    <div class="stat-value" style="color: #dc3545;">${stats.priority_counts?.high || 0}</div>
+                </div>`;
+            
+            // Add overall confidence if available
+            if (reviewData.overall_confidence !== undefined && reviewData.overall_confidence !== null) {
+                const conf = reviewData.overall_confidence;
+                const confPercent = (conf * 100).toFixed(0);
+                const confColor = conf >= 0.85 ? '#28a745' : conf >= 0.70 ? '#ffc107' : '#dc3545';
+                const confSource = reviewData.confidence_source || 'unknown';
+                statsHTML += `
+                <div class="stat-card">
+                    <div class="stat-label">Overall Confidence (${confSource})</div>
+                    <div class="stat-value" style="color: ${confColor};">${confPercent}%</div>
+                </div>`;
+            }
+            
+            statsHTML += `
+                <div class="stat-card">
+                    <div class="stat-label">Corrections Made</div>
+                    <div class="stat-value" style="color: #28a745;">${Object.keys(corrections).length}</div>
+                </div>
+            `;
+            document.getElementById('stats').innerHTML = statsHTML;
+            
+            // Display words
+            filterWords();
+            
+            // Enable export button
+            document.getElementById('exportBtn').disabled = false;
+        }
+        
+        function filterWords() {
+            if (!reviewData || !reviewData.words) return;
+            
+            const priorityFilter = document.getElementById('priorityFilter').value;
+            const typeFilter = document.getElementById('typeFilter').value;
+            
+            const words = reviewData.words.filter(word => {
+                if (!word.flags || word.flags.length === 0) return false;
+                
+                const priorities = word.flags.map(f => f.priority);
+                const types = word.flags.map(f => f.type);
+                
+                const priorityMatch = priorityFilter === 'all' || priorities.includes(priorityFilter);
+                const typeMatch = typeFilter === 'all' || types.includes(typeFilter);
+                
+                return priorityMatch && typeMatch;
+            });
+            
+            displayWords(words);
+        }
+        
+        function displayWords(words) {
+            const wordList = document.getElementById('wordList');
+            
+            if (words.length === 0) {
+                wordList.innerHTML = `
+                    <div class="empty-state">
+                        <h2>No flagged words found</h2>
+                        <p>Try adjusting your filters</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            wordList.innerHTML = words.map((word, index) => {
+                const highestPriority = word.flags.reduce((max, flag) => {
+                    const priorities = {high: 3, medium: 2, low: 1};
+                    return priorities[flag.priority] > priorities[max.priority] ? flag : max;
+                }, word.flags[0]);
+                
+                const corrected = corrections[index];
+                const displayWord = corrected || word.word;
+                
+                return `
+                    <div class="word-item ${highestPriority.priority === 'high' ? 'high-priority' : 'flagged'} ${corrected ? 'corrected' : ''}" id="word-${index}">
+                        <div class="word-header">
+                            <div>
+                                <div class="word-main">${displayWord}</div>
+                                ${word.whisper_alternative ? `
+                                    <div class="word-alternatives">
+                                        <span style="font-size: 12px; color: #6c757d;">Whisper suggests:</span>
+                                        <div class="alt-chip" onclick="applyCorrection(${index}, '${word.whisper_alternative}')">${word.whisper_alternative}</div>
+                                    </div>
+                                ` : ''}
+                            </div>
+                            <div class="flags">
+                                ${word.flags.map(flag => `
+                                    <span class="flag ${flag.priority}" title="${flag.reason}">
+                                        ${flag.type.replace(/_/g, ' ')}
+                                    </span>
+                                `).join('')}
+                            </div>
+                        </div>
+                        
+                        <div class="context">
+                            ${word.context_before} <span class="highlight">${displayWord}</span> ${word.context_after}
+                        </div>
+                        
+                        <div style="margin-top: 10px; font-size: 13px; color: #6c757d;">
+                            ${word.flags.map(f => `• ${f.reason}`).join('<br>')}
+                        </div>
+                        
+                        <div class="actions">
+                            <input type="text" class="correction-input" id="input-${index}" placeholder="Enter correction..." value="${displayWord}">
+                            <button class="btn btn-sm btn-success" onclick="saveCorrection(${index})">✓ Apply</button>
+                            <button class="btn btn-sm" onclick="acceptOriginal(${index})">✓ Keep Original</button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+        
+        function applyCorrection(index, correction) {
+            document.getElementById(`input-${index}`).value = correction;
+            saveCorrection(index);
+        }
+        
+        function saveCorrection(index) {
+            const input = document.getElementById(`input-${index}`);
+            const correctedWord = input.value.trim();
+            
+            if (correctedWord) {
+                corrections[index] = correctedWord;
+                displayReview();
+            }
+        }
+        
+        function acceptOriginal(index) {
+            delete corrections[index];
+            displayReview();
+        }
+        
+        function exportCorrections() {
+            if (!reviewData) return;
+            
+            // Build corrected transcript
+            const correctedWords = reviewData.words.map((word, index) => {
+                return corrections[index] || word.word;
+            });
+            
+            const correctedTranscript = correctedWords.join(' ');
+            
+            // Store for download
+            window.correctedTranscript = correctedTranscript;
+            
+            // Show modal
+            document.getElementById('exportModal').classList.add('show');
+        }
+        
+        function downloadTranscript() {
+            const blob = new Blob([window.correctedTranscript], {type: 'text/plain'});
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = currentFile.replace('.review.json', '_corrected.txt');
+            a.click();
+            URL.revokeObjectURL(url);
+            closeModal();
+        }
+        
+        function closeModal() {
+            document.getElementById('exportModal').classList.remove('show');
+        }
+    </script>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,1087 @@
+{
+  "generated_at": "2025-10-02T19:20:55.250533+00:00",
+  "review_engine": "assemblyai_native",
+  "confidence_file": "test.confidence.json",
+  "transcript_file": "test.txt",
+  "config": {
+    "enabled": true,
+    "low_confidence_threshold": 0.7,
+    "critical_confidence_threshold": 0.5,
+    "flag_phone_numbers": true,
+    "flag_case_numbers": true,
+    "flag_money_amounts": true,
+    "flag_dates": true,
+    "flag_times": true,
+    "flag_names": true,
+    "flag_spelled_words": true,
+    "flag_numbers": true,
+    "context_words_before": 5,
+    "context_words_after": 5
+  },
+  "overall_confidence": 0.8002945,
+  "statistics": {
+    "total_words": 71,
+    "flagged_words": 23,
+    "flag_percentage": 32.4,
+    "priority_counts": {
+      "high": 12,
+      "medium": 18,
+      "low": 0
+    },
+    "average_confidence": 0.8002945247042254
+  },
+  "flag_summary": {
+    "critical_confidence": 12,
+    "low_confidence": 8,
+    "name": 10
+  },
+  "words": [
+    {
+      "word": "Thank",
+      "confidence": 0.43068948,
+      "start_time": 0.96,
+      "end_time": 1.2,
+      "speaker": "A",
+      "index": 0,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (43.07%)",
+          "priority": "high",
+          "confidence": 0.43068948
+        }
+      ],
+      "context_before": "",
+      "context_after": "you for calling the Crosley",
+      "suggested_correction": null
+    },
+    {
+      "word": "you",
+      "confidence": 0.9931552,
+      "start_time": 1.2,
+      "end_time": 1.28,
+      "speaker": "A",
+      "index": 1,
+      "flags": [],
+      "context_before": "Thank",
+      "context_after": "for calling the Crosley Law",
+      "suggested_correction": null
+    },
+    {
+      "word": "for",
+      "confidence": 0.9820234,
+      "start_time": 1.28,
+      "end_time": 1.36,
+      "speaker": "A",
+      "index": 2,
+      "flags": [],
+      "context_before": "Thank you",
+      "context_after": "calling the Crosley Law Firm.",
+      "suggested_correction": null
+    },
+    {
+      "word": "calling",
+      "confidence": 0.995946,
+      "start_time": 1.36,
+      "end_time": 1.52,
+      "speaker": "A",
+      "index": 3,
+      "flags": [],
+      "context_before": "Thank you for",
+      "context_after": "the Crosley Law Firm. This",
+      "suggested_correction": null
+    },
+    {
+      "word": "the",
+      "confidence": 0.5283035,
+      "start_time": 1.52,
+      "end_time": 1.6,
+      "speaker": "A",
+      "index": 4,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (52.83%)",
+          "priority": "medium",
+          "confidence": 0.5283035
+        }
+      ],
+      "context_before": "Thank you for calling",
+      "context_after": "Crosley Law Firm. This is",
+      "suggested_correction": null
+    },
+    {
+      "word": "Crosley",
+      "confidence": 0.97326064,
+      "start_time": 1.6,
+      "end_time": 2.0,
+      "speaker": "A",
+      "index": 5,
+      "flags": [],
+      "context_before": "Thank you for calling the",
+      "context_after": "Law Firm. This is Andrew.",
+      "suggested_correction": null
+    },
+    {
+      "word": "Law",
+      "confidence": 0.99154913,
+      "start_time": 2.0,
+      "end_time": 2.16,
+      "speaker": "A",
+      "index": 6,
+      "flags": [],
+      "context_before": "you for calling the Crosley",
+      "context_after": "Firm. This is Andrew. How",
+      "suggested_correction": null
+    },
+    {
+      "word": "Firm.",
+      "confidence": 0.6612123,
+      "start_time": 2.16,
+      "end_time": 2.4,
+      "speaker": "A",
+      "index": 7,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (66.12%)",
+          "priority": "medium",
+          "confidence": 0.6612123
+        }
+      ],
+      "context_before": "for calling the Crosley Law",
+      "context_after": "This is Andrew. How may",
+      "suggested_correction": null
+    },
+    {
+      "word": "This",
+      "confidence": 0.49627513,
+      "start_time": 2.48,
+      "end_time": 2.56,
+      "speaker": "A",
+      "index": 8,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (49.63%)",
+          "priority": "high",
+          "confidence": 0.49627513
+        }
+      ],
+      "context_before": "calling the Crosley Law Firm.",
+      "context_after": "is Andrew. How may I",
+      "suggested_correction": null
+    },
+    {
+      "word": "is",
+      "confidence": 0.9983553,
+      "start_time": 2.64,
+      "end_time": 2.72,
+      "speaker": "A",
+      "index": 9,
+      "flags": [],
+      "context_before": "the Crosley Law Firm. This",
+      "context_after": "Andrew. How may I help",
+      "suggested_correction": null
+    },
+    {
+      "word": "Andrew.",
+      "confidence": 0.66449887,
+      "start_time": 2.8,
+      "end_time": 3.2,
+      "speaker": "A",
+      "index": 10,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (66.45%)",
+          "priority": "medium",
+          "confidence": 0.66449887
+        },
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "Crosley Law Firm. This is",
+      "context_after": "How may I help you?",
+      "suggested_correction": null
+    },
+    {
+      "word": "How",
+      "confidence": 0.9922781,
+      "start_time": 3.36,
+      "end_time": 3.52,
+      "speaker": "A",
+      "index": 11,
+      "flags": [],
+      "context_before": "Law Firm. This is Andrew.",
+      "context_after": "may I help you? Hi",
+      "suggested_correction": null
+    },
+    {
+      "word": "may",
+      "confidence": 0.989856,
+      "start_time": 3.52,
+      "end_time": 3.6,
+      "speaker": "A",
+      "index": 12,
+      "flags": [],
+      "context_before": "Firm. This is Andrew. How",
+      "context_after": "I help you? Hi Andrew,",
+      "suggested_correction": null
+    },
+    {
+      "word": "I",
+      "confidence": 0.99437803,
+      "start_time": 3.6,
+      "end_time": 3.68,
+      "speaker": "A",
+      "index": 13,
+      "flags": [],
+      "context_before": "This is Andrew. How may",
+      "context_after": "help you? Hi Andrew, my",
+      "suggested_correction": null
+    },
+    {
+      "word": "help",
+      "confidence": 0.9955895,
+      "start_time": 3.68,
+      "end_time": 3.76,
+      "speaker": "A",
+      "index": 14,
+      "flags": [],
+      "context_before": "is Andrew. How may I",
+      "context_after": "you? Hi Andrew, my name",
+      "suggested_correction": null
+    },
+    {
+      "word": "you?",
+      "confidence": 0.97467685,
+      "start_time": 3.92,
+      "end_time": 4.0,
+      "speaker": "A",
+      "index": 15,
+      "flags": [],
+      "context_before": "Andrew. How may I help",
+      "context_after": "Hi Andrew, my name is",
+      "suggested_correction": null
+    },
+    {
+      "word": "Hi",
+      "confidence": 0.97419566,
+      "start_time": 5.76,
+      "end_time": 5.84,
+      "speaker": "B",
+      "index": 16,
+      "flags": [],
+      "context_before": "How may I help you?",
+      "context_after": "Andrew, my name is Christina.",
+      "suggested_correction": null
+    },
+    {
+      "word": "Andrew,",
+      "confidence": 0.41097915,
+      "start_time": 5.84,
+      "end_time": 6.08,
+      "speaker": "B",
+      "index": 17,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (41.10%)",
+          "priority": "high",
+          "confidence": 0.41097915
+        },
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "may I help you? Hi",
+      "context_after": "my name is Christina. I'm",
+      "suggested_correction": null
+    },
+    {
+      "word": "my",
+      "confidence": 0.9863961,
+      "start_time": 6.24,
+      "end_time": 6.32,
+      "speaker": "B",
+      "index": 18,
+      "flags": [],
+      "context_before": "I help you? Hi Andrew,",
+      "context_after": "name is Christina. I'm calling",
+      "suggested_correction": null
+    },
+    {
+      "word": "name",
+      "confidence": 0.99806756,
+      "start_time": 6.4,
+      "end_time": 6.48,
+      "speaker": "B",
+      "index": 19,
+      "flags": [],
+      "context_before": "help you? Hi Andrew, my",
+      "context_after": "is Christina. I'm calling with",
+      "suggested_correction": null
+    },
+    {
+      "word": "is",
+      "confidence": 0.994321,
+      "start_time": 6.64,
+      "end_time": 6.72,
+      "speaker": "B",
+      "index": 20,
+      "flags": [],
+      "context_before": "you? Hi Andrew, my name",
+      "context_after": "Christina. I'm calling with Frontera",
+      "suggested_correction": null
+    },
+    {
+      "word": "Christina.",
+      "confidence": 0.116227664,
+      "start_time": 6.72,
+      "end_time": 7.28,
+      "speaker": "B",
+      "index": 21,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (11.62%)",
+          "priority": "high",
+          "confidence": 0.116227664
+        },
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "Hi Andrew, my name is",
+      "context_after": "I'm calling with Frontera Concepts.",
+      "suggested_correction": null
+    },
+    {
+      "word": "I'm",
+      "confidence": 0.86475956,
+      "start_time": 7.36,
+      "end_time": 7.6,
+      "speaker": "B",
+      "index": 22,
+      "flags": [
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "Andrew, my name is Christina.",
+      "context_after": "calling with Frontera Concepts. I'm",
+      "suggested_correction": null
+    },
+    {
+      "word": "calling",
+      "confidence": 0.89204305,
+      "start_time": 7.68,
+      "end_time": 7.84,
+      "speaker": "B",
+      "index": 23,
+      "flags": [],
+      "context_before": "my name is Christina. I'm",
+      "context_after": "with Frontera Concepts. I'm calling",
+      "suggested_correction": null
+    },
+    {
+      "word": "with",
+      "confidence": 0.74394244,
+      "start_time": 7.84,
+      "end_time": 7.92,
+      "speaker": "B",
+      "index": 24,
+      "flags": [],
+      "context_before": "name is Christina. I'm calling",
+      "context_after": "Frontera Concepts. I'm calling in",
+      "suggested_correction": null
+    },
+    {
+      "word": "Frontera",
+      "confidence": 0.40556106,
+      "start_time": 7.92,
+      "end_time": 8.4,
+      "speaker": "B",
+      "index": 25,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (40.56%)",
+          "priority": "high",
+          "confidence": 0.40556106
+        }
+      ],
+      "context_before": "is Christina. I'm calling with",
+      "context_after": "Concepts. I'm calling in regards",
+      "suggested_correction": null
+    },
+    {
+      "word": "Concepts.",
+      "confidence": 0.8003442,
+      "start_time": 8.56,
+      "end_time": 8.88,
+      "speaker": "B",
+      "index": 26,
+      "flags": [],
+      "context_before": "Christina. I'm calling with Frontera",
+      "context_after": "I'm calling in regards to",
+      "suggested_correction": null
+    },
+    {
+      "word": "I'm",
+      "confidence": 0.9714087,
+      "start_time": 8.96,
+      "end_time": 9.2,
+      "speaker": "B",
+      "index": 27,
+      "flags": [
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "I'm calling with Frontera Concepts.",
+      "context_after": "calling in regards to Samir.",
+      "suggested_correction": null
+    },
+    {
+      "word": "calling",
+      "confidence": 0.9812723,
+      "start_time": 9.2,
+      "end_time": 9.44,
+      "speaker": "B",
+      "index": 28,
+      "flags": [],
+      "context_before": "calling with Frontera Concepts. I'm",
+      "context_after": "in regards to Samir. Last",
+      "suggested_correction": null
+    },
+    {
+      "word": "in",
+      "confidence": 0.977432,
+      "start_time": 9.6,
+      "end_time": 9.68,
+      "speaker": "B",
+      "index": 29,
+      "flags": [],
+      "context_before": "with Frontera Concepts. I'm calling",
+      "context_after": "regards to Samir. Last name",
+      "suggested_correction": null
+    },
+    {
+      "word": "regards",
+      "confidence": 0.99040765,
+      "start_time": 9.68,
+      "end_time": 9.84,
+      "speaker": "B",
+      "index": 30,
+      "flags": [],
+      "context_before": "Frontera Concepts. I'm calling in",
+      "context_after": "to Samir. Last name is",
+      "suggested_correction": null
+    },
+    {
+      "word": "to",
+      "confidence": 0.9973295,
+      "start_time": 9.84,
+      "end_time": 9.92,
+      "speaker": "B",
+      "index": 31,
+      "flags": [],
+      "context_before": "Concepts. I'm calling in regards",
+      "context_after": "Samir. Last name is O-U-A-I-S.",
+      "suggested_correction": null
+    },
+    {
+      "word": "Samir.",
+      "confidence": 0.3650845,
+      "start_time": 10.08,
+      "end_time": 10.56,
+      "speaker": "B",
+      "index": 32,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (36.51%)",
+          "priority": "high",
+          "confidence": 0.3650845
+        },
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "I'm calling in regards to",
+      "context_after": "Last name is O-U-A-I-S. Once",
+      "suggested_correction": null
+    },
+    {
+      "word": "Last",
+      "confidence": 0.51747096,
+      "start_time": 12.48,
+      "end_time": 12.88,
+      "speaker": "B",
+      "index": 33,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (51.75%)",
+          "priority": "medium",
+          "confidence": 0.51747096
+        },
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "calling in regards to Samir.",
+      "context_after": "name is O-U-A-I-S. Once a",
+      "suggested_correction": null
+    },
+    {
+      "word": "name",
+      "confidence": 0.9852651,
+      "start_time": 12.88,
+      "end_time": 12.96,
+      "speaker": "B",
+      "index": 34,
+      "flags": [],
+      "context_before": "in regards to Samir. Last",
+      "context_after": "is O-U-A-I-S. Once a year",
+      "suggested_correction": null
+    },
+    {
+      "word": "is",
+      "confidence": 0.98940665,
+      "start_time": 13.04,
+      "end_time": 13.12,
+      "speaker": "B",
+      "index": 35,
+      "flags": [],
+      "context_before": "regards to Samir. Last name",
+      "context_after": "O-U-A-I-S. Once a year or",
+      "suggested_correction": null
+    },
+    {
+      "word": "O-U-A-I-S.",
+      "confidence": 0.23664163,
+      "start_time": 13.36,
+      "end_time": 14.72,
+      "speaker": "B",
+      "index": 36,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (23.66%)",
+          "priority": "high",
+          "confidence": 0.23664163
+        },
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "to Samir. Last name is",
+      "context_after": "Once a year or every",
+      "suggested_correction": null
+    },
+    {
+      "word": "Once",
+      "confidence": 0.53116316,
+      "start_time": 19.12,
+      "end_time": 19.36,
+      "speaker": "B",
+      "index": 37,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (53.12%)",
+          "priority": "medium",
+          "confidence": 0.53116316
+        }
+      ],
+      "context_before": "Samir. Last name is O-U-A-I-S.",
+      "context_after": "a year or every six",
+      "suggested_correction": null
+    },
+    {
+      "word": "a",
+      "confidence": 0.98467064,
+      "start_time": 19.44,
+      "end_time": 19.52,
+      "speaker": "B",
+      "index": 38,
+      "flags": [],
+      "context_before": "Last name is O-U-A-I-S. Once",
+      "context_after": "year or every six months?",
+      "suggested_correction": null
+    },
+    {
+      "word": "year",
+      "confidence": 0.9827824,
+      "start_time": 19.6,
+      "end_time": 19.68,
+      "speaker": "B",
+      "index": 39,
+      "flags": [],
+      "context_before": "name is O-U-A-I-S. Once a",
+      "context_after": "or every six months? Once",
+      "suggested_correction": null
+    },
+    {
+      "word": "or",
+      "confidence": 0.28220615,
+      "start_time": 20.0,
+      "end_time": 20.08,
+      "speaker": "B",
+      "index": 40,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (28.22%)",
+          "priority": "high",
+          "confidence": 0.28220615
+        }
+      ],
+      "context_before": "is O-U-A-I-S. Once a year",
+      "context_after": "every six months? Once a",
+      "suggested_correction": null
+    },
+    {
+      "word": "every",
+      "confidence": 0.7000777,
+      "start_time": 20.32,
+      "end_time": 20.4,
+      "speaker": "B",
+      "index": 41,
+      "flags": [],
+      "context_before": "O-U-A-I-S. Once a year or",
+      "context_after": "six months? Once a year.",
+      "suggested_correction": null
+    },
+    {
+      "word": "six",
+      "confidence": 0.32140312,
+      "start_time": 20.4,
+      "end_time": 20.48,
+      "speaker": "B",
+      "index": 42,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (32.14%)",
+          "priority": "high",
+          "confidence": 0.32140312
+        }
+      ],
+      "context_before": "Once a year or every",
+      "context_after": "months? Once a year. Once",
+      "suggested_correction": null
+    },
+    {
+      "word": "months?",
+      "confidence": 0.7434136,
+      "start_time": 20.88,
+      "end_time": 21.2,
+      "speaker": "B",
+      "index": 43,
+      "flags": [],
+      "context_before": "a year or every six",
+      "context_after": "Once a year. Once a",
+      "suggested_correction": null
+    },
+    {
+      "word": "Once",
+      "confidence": 0.9007783,
+      "start_time": 21.52,
+      "end_time": 21.76,
+      "speaker": "B",
+      "index": 44,
+      "flags": [],
+      "context_before": "year or every six months?",
+      "context_after": "a year. Once a year.",
+      "suggested_correction": null
+    },
+    {
+      "word": "a",
+      "confidence": 0.98884434,
+      "start_time": 21.84,
+      "end_time": 21.92,
+      "speaker": "B",
+      "index": 45,
+      "flags": [],
+      "context_before": "or every six months? Once",
+      "context_after": "year. Once a year. Hello?",
+      "suggested_correction": null
+    },
+    {
+      "word": "year.",
+      "confidence": 0.8510896,
+      "start_time": 21.92,
+      "end_time": 22.0,
+      "speaker": "B",
+      "index": 46,
+      "flags": [],
+      "context_before": "every six months? Once a",
+      "context_after": "Once a year. Hello? Hello.",
+      "suggested_correction": null
+    },
+    {
+      "word": "Once",
+      "confidence": 0.59251755,
+      "start_time": 29.36,
+      "end_time": 29.76,
+      "speaker": "A",
+      "index": 47,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (59.25%)",
+          "priority": "medium",
+          "confidence": 0.59251755
+        }
+      ],
+      "context_before": "six months? Once a year.",
+      "context_after": "a year. Hello? Hello. Let",
+      "suggested_correction": null
+    },
+    {
+      "word": "a",
+      "confidence": 0.9824484,
+      "start_time": 29.92,
+      "end_time": 30.0,
+      "speaker": "A",
+      "index": 48,
+      "flags": [],
+      "context_before": "months? Once a year. Once",
+      "context_after": "year. Hello? Hello. Let me",
+      "suggested_correction": null
+    },
+    {
+      "word": "year.",
+      "confidence": 0.7325044,
+      "start_time": 30.16,
+      "end_time": 30.24,
+      "speaker": "A",
+      "index": 49,
+      "flags": [],
+      "context_before": "Once a year. Once a",
+      "context_after": "Hello? Hello. Let me transfer",
+      "suggested_correction": null
+    },
+    {
+      "word": "Hello?",
+      "confidence": 0.6453613,
+      "start_time": 30.64,
+      "end_time": 31.12,
+      "speaker": "B",
+      "index": 50,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (64.54%)",
+          "priority": "medium",
+          "confidence": 0.6453613
+        }
+      ],
+      "context_before": "a year. Once a year.",
+      "context_after": "Hello. Let me transfer you",
+      "suggested_correction": null
+    },
+    {
+      "word": "Hello.",
+      "confidence": 0.30232465,
+      "start_time": 34.79,
+      "end_time": 35.27,
+      "speaker": "B",
+      "index": 51,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (30.23%)",
+          "priority": "high",
+          "confidence": 0.30232465
+        }
+      ],
+      "context_before": "year. Once a year. Hello?",
+      "context_after": "Let me transfer you to",
+      "suggested_correction": null
+    },
+    {
+      "word": "Let",
+      "confidence": 0.3842608,
+      "start_time": 43.03,
+      "end_time": 43.27,
+      "speaker": "A",
+      "index": 52,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (38.43%)",
+          "priority": "high",
+          "confidence": 0.3842608
+        },
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "Once a year. Hello? Hello.",
+      "context_after": "me transfer you to the",
+      "suggested_correction": null
+    },
+    {
+      "word": "me",
+      "confidence": 0.9951852,
+      "start_time": 43.27,
+      "end_time": 43.35,
+      "speaker": "A",
+      "index": 53,
+      "flags": [],
+      "context_before": "a year. Hello? Hello. Let",
+      "context_after": "transfer you to the case",
+      "suggested_correction": null
+    },
+    {
+      "word": "transfer",
+      "confidence": 0.9811654,
+      "start_time": 43.43,
+      "end_time": 43.83,
+      "speaker": "A",
+      "index": 54,
+      "flags": [],
+      "context_before": "year. Hello? Hello. Let me",
+      "context_after": "you to the case manager's",
+      "suggested_correction": null
+    },
+    {
+      "word": "you",
+      "confidence": 0.98948914,
+      "start_time": 43.91,
+      "end_time": 43.99,
+      "speaker": "A",
+      "index": 55,
+      "flags": [],
+      "context_before": "Hello? Hello. Let me transfer",
+      "context_after": "to the case manager's voicemail.",
+      "suggested_correction": null
+    },
+    {
+      "word": "to",
+      "confidence": 0.9305372,
+      "start_time": 44.07,
+      "end_time": 44.15,
+      "speaker": "A",
+      "index": 56,
+      "flags": [],
+      "context_before": "Hello. Let me transfer you",
+      "context_after": "the case manager's voicemail. She",
+      "suggested_correction": null
+    },
+    {
+      "word": "the",
+      "confidence": 0.98718643,
+      "start_time": 44.15,
+      "end_time": 44.23,
+      "speaker": "A",
+      "index": 57,
+      "flags": [],
+      "context_before": "Let me transfer you to",
+      "context_after": "case manager's voicemail. She just",
+      "suggested_correction": null
+    },
+    {
+      "word": "case",
+      "confidence": 0.8317776,
+      "start_time": 44.31,
+      "end_time": 44.39,
+      "speaker": "A",
+      "index": 58,
+      "flags": [],
+      "context_before": "me transfer you to the",
+      "context_after": "manager's voicemail. She just went",
+      "suggested_correction": null
+    },
+    {
+      "word": "manager's",
+      "confidence": 0.8776347,
+      "start_time": 44.55,
+      "end_time": 45.03,
+      "speaker": "A",
+      "index": 59,
+      "flags": [],
+      "context_before": "transfer you to the case",
+      "context_after": "voicemail. She just went on",
+      "suggested_correction": null
+    },
+    {
+      "word": "voicemail.",
+      "confidence": 0.84371406,
+      "start_time": 45.03,
+      "end_time": 45.51,
+      "speaker": "A",
+      "index": 60,
+      "flags": [],
+      "context_before": "you to the case manager's",
+      "context_after": "She just went on lunch.",
+      "suggested_correction": null
+    },
+    {
+      "word": "She",
+      "confidence": 0.9882677,
+      "start_time": 45.67,
+      "end_time": 45.75,
+      "speaker": "A",
+      "index": 61,
+      "flags": [
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "to the case manager's voicemail.",
+      "context_after": "just went on lunch. Okay,",
+      "suggested_correction": null
+    },
+    {
+      "word": "just",
+      "confidence": 0.9260798,
+      "start_time": 45.75,
+      "end_time": 45.91,
+      "speaker": "A",
+      "index": 62,
+      "flags": [],
+      "context_before": "the case manager's voicemail. She",
+      "context_after": "went on lunch. Okay, thank",
+      "suggested_correction": null
+    },
+    {
+      "word": "went",
+      "confidence": 0.99457353,
+      "start_time": 45.91,
+      "end_time": 45.99,
+      "speaker": "A",
+      "index": 63,
+      "flags": [],
+      "context_before": "case manager's voicemail. She just",
+      "context_after": "on lunch. Okay, thank you.",
+      "suggested_correction": null
+    },
+    {
+      "word": "on",
+      "confidence": 0.9732564,
+      "start_time": 46.15,
+      "end_time": 46.23,
+      "speaker": "A",
+      "index": 64,
+      "flags": [],
+      "context_before": "manager's voicemail. She just went",
+      "context_after": "lunch. Okay, thank you. Yes,",
+      "suggested_correction": null
+    },
+    {
+      "word": "lunch.",
+      "confidence": 0.974467,
+      "start_time": 46.31,
+      "end_time": 46.71,
+      "speaker": "A",
+      "index": 65,
+      "flags": [],
+      "context_before": "voicemail. She just went on",
+      "context_after": "Okay, thank you. Yes, ma'am.",
+      "suggested_correction": null
+    },
+    {
+      "word": "Okay,",
+      "confidence": 0.5058939,
+      "start_time": 48.31,
+      "end_time": 48.79,
+      "speaker": "B",
+      "index": 66,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.59%)",
+          "priority": "medium",
+          "confidence": 0.5058939
+        }
+      ],
+      "context_before": "She just went on lunch.",
+      "context_after": "thank you. Yes, ma'am.",
+      "suggested_correction": null
+    },
+    {
+      "word": "thank",
+      "confidence": 0.9833667,
+      "start_time": 48.95,
+      "end_time": 49.19,
+      "speaker": "B",
+      "index": 67,
+      "flags": [],
+      "context_before": "just went on lunch. Okay,",
+      "context_after": "you. Yes, ma'am.",
+      "suggested_correction": null
+    },
+    {
+      "word": "you.",
+      "confidence": 0.9851674,
+      "start_time": 49.27,
+      "end_time": 49.35,
+      "speaker": "B",
+      "index": 68,
+      "flags": [],
+      "context_before": "went on lunch. Okay, thank",
+      "context_after": "Yes, ma'am.",
+      "suggested_correction": null
+    },
+    {
+      "word": "Yes,",
+      "confidence": 0.31224832,
+      "start_time": 49.59,
+      "end_time": 49.83,
+      "speaker": "A",
+      "index": 69,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (31.22%)",
+          "priority": "high",
+          "confidence": 0.31224832
+        }
+      ],
+      "context_before": "on lunch. Okay, thank you.",
+      "context_after": "ma'am.",
+      "suggested_correction": null
+    },
+    {
+      "word": "ma'am.",
+      "confidence": 0.9544508,
+      "start_time": 49.91,
+      "end_time": 50.15,
+      "speaker": "A",
+      "index": 70,
+      "flags": [],
+      "context_before": "lunch. Okay, thank you. Yes,",
+      "context_after": "",
+      "suggested_correction": null
+    }
+  ],
+  "corrections": [],
+  "audit": []
+}

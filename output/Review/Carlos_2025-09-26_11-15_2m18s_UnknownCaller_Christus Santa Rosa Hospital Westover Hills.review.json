@@ -1,0 +1,3808 @@
+{
+  "generated_at": "2025-10-02T21:41:50.211214+00:00",
+  "review_engine": "assemblyai_native",
+  "confidence_file": "Carlos_2025-09-26_11-15_2m18s_UnknownCaller_Christus Santa Rosa Hospital Westover Hills.confidence.json",
+  "transcript_file": "Carlos_2025-09-26_11-15_2m18s_UnknownCaller_Christus Santa Rosa Hospital Westover Hills.txt",
+  "config": {
+    "enabled": true,
+    "low_confidence_threshold": 0.7,
+    "critical_confidence_threshold": 0.5,
+    "common_words_confidence_threshold": 0.3,
+    "flag_phone_numbers": true,
+    "flag_case_numbers": true,
+    "flag_money_amounts": true,
+    "flag_dates": true,
+    "flag_times": true,
+    "flag_names": true,
+    "flag_spelled_words": true,
+    "flag_numbers": true,
+    "context_words_before": 5,
+    "context_words_after": 5
+  },
+  "overall_confidence": 0.8111132,
+  "statistics": {
+    "total_words": 259,
+    "flagged_words": 85,
+    "flag_percentage": 32.8,
+    "priority_counts": {
+      "high": 7,
+      "medium": 86,
+      "low": 10
+    },
+    "average_confidence": 0.8111131576061775
+  },
+  "flag_summary": {
+    "low_confidence": 49,
+    "name": 34,
+    "number": 10,
+    "critical_confidence": 5,
+    "time": 3,
+    "phone_number": 2
+  },
+  "words": [
+    {
+      "word": "Thank",
+      "confidence": 0.5,
+      "start_time": 1.12,
+      "end_time": 1.44,
+      "speaker": "A",
+      "index": 0,
+      "flags": [],
+      "context_before": "",
+      "context_after": "you for calling the medical",
+      "suggested_correction": null
+    },
+    {
+      "word": "you",
+      "confidence": 0.5,
+      "start_time": 1.44,
+      "end_time": 1.6,
+      "speaker": "A",
+      "index": 1,
+      "flags": [],
+      "context_before": "Thank",
+      "context_after": "for calling the medical records",
+      "suggested_correction": null
+    },
+    {
+      "word": "for",
+      "confidence": 0.5,
+      "start_time": 1.68,
+      "end_time": 1.76,
+      "speaker": "A",
+      "index": 2,
+      "flags": [],
+      "context_before": "Thank you",
+      "context_after": "calling the medical records Department",
+      "suggested_correction": null
+    },
+    {
+      "word": "calling",
+      "confidence": 0.5,
+      "start_time": 1.84,
+      "end_time": 2.16,
+      "speaker": "A",
+      "index": 3,
+      "flags": [],
+      "context_before": "Thank you for",
+      "context_after": "the medical records Department at",
+      "suggested_correction": null
+    },
+    {
+      "word": "the",
+      "confidence": 0.5,
+      "start_time": 2.24,
+      "end_time": 2.32,
+      "speaker": "A",
+      "index": 4,
+      "flags": [],
+      "context_before": "Thank you for calling",
+      "context_after": "medical records Department at Christas",
+      "suggested_correction": null
+    },
+    {
+      "word": "medical",
+      "confidence": 0.5,
+      "start_time": 2.32,
+      "end_time": 2.72,
+      "speaker": "A",
+      "index": 5,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.00%)",
+          "priority": "medium",
+          "confidence": 0.5
+        }
+      ],
+      "context_before": "Thank you for calling the",
+      "context_after": "records Department at Christas Santa",
+      "suggested_correction": null
+    },
+    {
+      "word": "records",
+      "confidence": 0.5,
+      "start_time": 2.72,
+      "end_time": 2.96,
+      "speaker": "A",
+      "index": 6,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.00%)",
+          "priority": "medium",
+          "confidence": 0.5
+        }
+      ],
+      "context_before": "you for calling the medical",
+      "context_after": "Department at Christas Santa Rosa",
+      "suggested_correction": null
+    },
+    {
+      "word": "Department",
+      "confidence": 0.5,
+      "start_time": 3.2,
+      "end_time": 3.68,
+      "speaker": "A",
+      "index": 7,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.00%)",
+          "priority": "medium",
+          "confidence": 0.5
+        },
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "for calling the medical records",
+      "context_after": "at Christas Santa Rosa Hospital,",
+      "suggested_correction": null
+    },
+    {
+      "word": "at",
+      "confidence": 0.5,
+      "start_time": 3.76,
+      "end_time": 3.84,
+      "speaker": "A",
+      "index": 8,
+      "flags": [],
+      "context_before": "calling the medical records Department",
+      "context_after": "Christas Santa Rosa Hospital, Westover",
+      "suggested_correction": null
+    },
+    {
+      "word": "Christas",
+      "confidence": 0.5,
+      "start_time": 3.84,
+      "end_time": 4.4,
+      "speaker": "A",
+      "index": 9,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.00%)",
+          "priority": "medium",
+          "confidence": 0.5
+        },
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "the medical records Department at",
+      "context_after": "Santa Rosa Hospital, Westover Hills.",
+      "suggested_correction": null
+    },
+    {
+      "word": "Santa",
+      "confidence": 0.5,
+      "start_time": 4.48,
+      "end_time": 4.88,
+      "speaker": "A",
+      "index": 10,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.00%)",
+          "priority": "medium",
+          "confidence": 0.5
+        },
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "medical records Department at Christas",
+      "context_after": "Rosa Hospital, Westover Hills. Our",
+      "suggested_correction": null
+    },
+    {
+      "word": "Rosa",
+      "confidence": 0.5,
+      "start_time": 4.88,
+      "end_time": 5.28,
+      "speaker": "A",
+      "index": 11,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.00%)",
+          "priority": "medium",
+          "confidence": 0.5
+        },
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "records Department at Christas Santa",
+      "context_after": "Hospital, Westover Hills. Our normal",
+      "suggested_correction": null
+    },
+    {
+      "word": "Hospital,",
+      "confidence": 0.5,
+      "start_time": 5.36,
+      "end_time": 5.84,
+      "speaker": "A",
+      "index": 12,
+      "flags": [],
+      "context_before": "Department at Christas Santa Rosa",
+      "context_after": "Westover Hills. Our normal business",
+      "suggested_correction": null
+    },
+    {
+      "word": "Westover",
+      "confidence": 0.5,
+      "start_time": 6.0,
+      "end_time": 6.64,
+      "speaker": "A",
+      "index": 13,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.00%)",
+          "priority": "medium",
+          "confidence": 0.5
+        },
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "at Christas Santa Rosa Hospital,",
+      "context_after": "Hills. Our normal business hours",
+      "suggested_correction": null
+    },
+    {
+      "word": "Hills.",
+      "confidence": 0.5,
+      "start_time": 6.72,
+      "end_time": 7.12,
+      "speaker": "A",
+      "index": 14,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.00%)",
+          "priority": "medium",
+          "confidence": 0.5
+        },
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "Christas Santa Rosa Hospital, Westover",
+      "context_after": "Our normal business hours are",
+      "suggested_correction": null
+    },
+    {
+      "word": "Our",
+      "confidence": 0.5,
+      "start_time": 7.36,
+      "end_time": 7.6,
+      "speaker": "A",
+      "index": 15,
+      "flags": [],
+      "context_before": "Santa Rosa Hospital, Westover Hills.",
+      "context_after": "normal business hours are Monday",
+      "suggested_correction": null
+    },
+    {
+      "word": "normal",
+      "confidence": 0.5,
+      "start_time": 7.68,
+      "end_time": 8.08,
+      "speaker": "A",
+      "index": 16,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.00%)",
+          "priority": "medium",
+          "confidence": 0.5
+        }
+      ],
+      "context_before": "Rosa Hospital, Westover Hills. Our",
+      "context_after": "business hours are Monday through",
+      "suggested_correction": null
+    },
+    {
+      "word": "business",
+      "confidence": 0.5,
+      "start_time": 8.16,
+      "end_time": 8.24,
+      "speaker": "A",
+      "index": 17,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.00%)",
+          "priority": "medium",
+          "confidence": 0.5
+        }
+      ],
+      "context_before": "Hospital, Westover Hills. Our normal",
+      "context_after": "hours are Monday through Friday,",
+      "suggested_correction": null
+    },
+    {
+      "word": "hours",
+      "confidence": 0.5,
+      "start_time": 8.56,
+      "end_time": 8.96,
+      "speaker": "A",
+      "index": 18,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.00%)",
+          "priority": "medium",
+          "confidence": 0.5
+        }
+      ],
+      "context_before": "Westover Hills. Our normal business",
+      "context_after": "are Monday through Friday, eight",
+      "suggested_correction": null
+    },
+    {
+      "word": "are",
+      "confidence": 0.5,
+      "start_time": 9.04,
+      "end_time": 9.12,
+      "speaker": "A",
+      "index": 19,
+      "flags": [],
+      "context_before": "Hills. Our normal business hours",
+      "context_after": "Monday through Friday, eight AM",
+      "suggested_correction": null
+    },
+    {
+      "word": "Monday",
+      "confidence": 0.5,
+      "start_time": 9.2,
+      "end_time": 9.68,
+      "speaker": "A",
+      "index": 20,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.00%)",
+          "priority": "medium",
+          "confidence": 0.5
+        }
+      ],
+      "context_before": "Our normal business hours are",
+      "context_after": "through Friday, eight AM to",
+      "suggested_correction": null
+    },
+    {
+      "word": "through",
+      "confidence": 0.5,
+      "start_time": 9.68,
+      "end_time": 9.76,
+      "speaker": "A",
+      "index": 21,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.00%)",
+          "priority": "medium",
+          "confidence": 0.5
+        }
+      ],
+      "context_before": "normal business hours are Monday",
+      "context_after": "Friday, eight AM to four",
+      "suggested_correction": null
+    },
+    {
+      "word": "Friday,",
+      "confidence": 0.5,
+      "start_time": 9.84,
+      "end_time": 10.4,
+      "speaker": "A",
+      "index": 22,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.00%)",
+          "priority": "medium",
+          "confidence": 0.5
+        }
+      ],
+      "context_before": "business hours are Monday through",
+      "context_after": "eight AM to four thirty",
+      "suggested_correction": null
+    },
+    {
+      "word": "eight",
+      "confidence": 0.5,
+      "start_time": 10.48,
+      "end_time": 10.72,
+      "speaker": "A",
+      "index": 23,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.00%)",
+          "priority": "medium",
+          "confidence": 0.5
+        }
+      ],
+      "context_before": "hours are Monday through Friday,",
+      "context_after": "AM to four thirty PM.",
+      "suggested_correction": null
+    },
+    {
+      "word": "AM",
+      "confidence": 0.5,
+      "start_time": 10.8,
+      "end_time": 11.04,
+      "speaker": "A",
+      "index": 24,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.00%)",
+          "priority": "medium",
+          "confidence": 0.5
+        },
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "are Monday through Friday, eight",
+      "context_after": "to four thirty PM. Please",
+      "suggested_correction": null
+    },
+    {
+      "word": "to",
+      "confidence": 0.5,
+      "start_time": 11.36,
+      "end_time": 11.44,
+      "speaker": "A",
+      "index": 25,
+      "flags": [],
+      "context_before": "Monday through Friday, eight AM",
+      "context_after": "four thirty PM. Please listen",
+      "suggested_correction": null
+    },
+    {
+      "word": "four",
+      "confidence": 0.5,
+      "start_time": 11.52,
+      "end_time": 11.6,
+      "speaker": "A",
+      "index": 26,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.00%)",
+          "priority": "medium",
+          "confidence": 0.5
+        }
+      ],
+      "context_before": "through Friday, eight AM to",
+      "context_after": "thirty PM. Please listen carefully",
+      "suggested_correction": null
+    },
+    {
+      "word": "thirty",
+      "confidence": 0.5,
+      "start_time": 11.76,
+      "end_time": 12.16,
+      "speaker": "A",
+      "index": 27,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.00%)",
+          "priority": "medium",
+          "confidence": 0.5
+        }
+      ],
+      "context_before": "Friday, eight AM to four",
+      "context_after": "PM. Please listen carefully to",
+      "suggested_correction": null
+    },
+    {
+      "word": "PM.",
+      "confidence": 0.5,
+      "start_time": 12.16,
+      "end_time": 12.56,
+      "speaker": "A",
+      "index": 28,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.00%)",
+          "priority": "medium",
+          "confidence": 0.5
+        },
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "eight AM to four thirty",
+      "context_after": "Please listen carefully to the",
+      "suggested_correction": null
+    },
+    {
+      "word": "Please",
+      "confidence": 0.5,
+      "start_time": 12.96,
+      "end_time": 13.44,
+      "speaker": "A",
+      "index": 29,
+      "flags": [],
+      "context_before": "AM to four thirty PM.",
+      "context_after": "listen carefully to the following",
+      "suggested_correction": null
+    },
+    {
+      "word": "listen",
+      "confidence": 0.5,
+      "start_time": 13.44,
+      "end_time": 13.84,
+      "speaker": "A",
+      "index": 30,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.00%)",
+          "priority": "medium",
+          "confidence": 0.5
+        }
+      ],
+      "context_before": "to four thirty PM. Please",
+      "context_after": "carefully to the following options.",
+      "suggested_correction": null
+    },
+    {
+      "word": "carefully",
+      "confidence": 0.5,
+      "start_time": 13.92,
+      "end_time": 14.4,
+      "speaker": "A",
+      "index": 31,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.00%)",
+          "priority": "medium",
+          "confidence": 0.5
+        }
+      ],
+      "context_before": "four thirty PM. Please listen",
+      "context_after": "to the following options. If",
+      "suggested_correction": null
+    },
+    {
+      "word": "to",
+      "confidence": 0.5,
+      "start_time": 14.48,
+      "end_time": 14.56,
+      "speaker": "A",
+      "index": 32,
+      "flags": [],
+      "context_before": "thirty PM. Please listen carefully",
+      "context_after": "the following options. If you",
+      "suggested_correction": null
+    },
+    {
+      "word": "the",
+      "confidence": 0.5,
+      "start_time": 14.64,
+      "end_time": 14.72,
+      "speaker": "A",
+      "index": 33,
+      "flags": [],
+      "context_before": "PM. Please listen carefully to",
+      "context_after": "following options. If you are",
+      "suggested_correction": null
+    },
+    {
+      "word": "following",
+      "confidence": 0.5,
+      "start_time": 14.72,
+      "end_time": 14.96,
+      "speaker": "A",
+      "index": 34,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.00%)",
+          "priority": "medium",
+          "confidence": 0.5
+        }
+      ],
+      "context_before": "Please listen carefully to the",
+      "context_after": "options. If you are requesting",
+      "suggested_correction": null
+    },
+    {
+      "word": "options.",
+      "confidence": 0.5,
+      "start_time": 15.2,
+      "end_time": 15.76,
+      "speaker": "A",
+      "index": 35,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.00%)",
+          "priority": "medium",
+          "confidence": 0.5
+        }
+      ],
+      "context_before": "listen carefully to the following",
+      "context_after": "If you are requesting a",
+      "suggested_correction": null
+    },
+    {
+      "word": "If",
+      "confidence": 0.5,
+      "start_time": 16.08,
+      "end_time": 16.16,
+      "speaker": "A",
+      "index": 36,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.00%)",
+          "priority": "medium",
+          "confidence": 0.5
+        },
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "carefully to the following options.",
+      "context_after": "you are requesting a release",
+      "suggested_correction": null
+    },
+    {
+      "word": "you",
+      "confidence": 0.5,
+      "start_time": 16.32,
+      "end_time": 16.4,
+      "speaker": "A",
+      "index": 37,
+      "flags": [],
+      "context_before": "to the following options. If",
+      "context_after": "are requesting a release of",
+      "suggested_correction": null
+    },
+    {
+      "word": "are",
+      "confidence": 0.5,
+      "start_time": 16.48,
+      "end_time": 16.56,
+      "speaker": "A",
+      "index": 38,
+      "flags": [],
+      "context_before": "the following options. If you",
+      "context_after": "requesting a release of information,",
+      "suggested_correction": null
+    },
+    {
+      "word": "requesting",
+      "confidence": 0.5,
+      "start_time": 16.64,
+      "end_time": 17.12,
+      "speaker": "A",
+      "index": 39,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.00%)",
+          "priority": "medium",
+          "confidence": 0.5
+        }
+      ],
+      "context_before": "following options. If you are",
+      "context_after": "a release of information, please",
+      "suggested_correction": null
+    },
+    {
+      "word": "a",
+      "confidence": 0.5,
+      "start_time": 17.2,
+      "end_time": 17.28,
+      "speaker": "A",
+      "index": 40,
+      "flags": [],
+      "context_before": "options. If you are requesting",
+      "context_after": "release of information, please press",
+      "suggested_correction": null
+    },
+    {
+      "word": "release",
+      "confidence": 0.5,
+      "start_time": 17.36,
+      "end_time": 17.44,
+      "speaker": "A",
+      "index": 41,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.00%)",
+          "priority": "medium",
+          "confidence": 0.5
+        }
+      ],
+      "context_before": "If you are requesting a",
+      "context_after": "of information, please press one.",
+      "suggested_correction": null
+    },
+    {
+      "word": "of",
+      "confidence": 0.5,
+      "start_time": 17.68,
+      "end_time": 17.76,
+      "speaker": "A",
+      "index": 42,
+      "flags": [],
+      "context_before": "you are requesting a release",
+      "context_after": "information, please press one. If",
+      "suggested_correction": null
+    },
+    {
+      "word": "information,",
+      "confidence": 0.5,
+      "start_time": 17.84,
+      "end_time": 18.0,
+      "speaker": "A",
+      "index": 43,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.00%)",
+          "priority": "medium",
+          "confidence": 0.5
+        }
+      ],
+      "context_before": "are requesting a release of",
+      "context_after": "please press one. If you",
+      "suggested_correction": null
+    },
+    {
+      "word": "please",
+      "confidence": 0.5,
+      "start_time": 18.56,
+      "end_time": 18.64,
+      "speaker": "A",
+      "index": 44,
+      "flags": [],
+      "context_before": "requesting a release of information,",
+      "context_after": "press one. If you are",
+      "suggested_correction": null
+    },
+    {
+      "word": "press",
+      "confidence": 0.5,
+      "start_time": 18.96,
+      "end_time": 19.44,
+      "speaker": "A",
+      "index": 45,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.00%)",
+          "priority": "medium",
+          "confidence": 0.5
+        }
+      ],
+      "context_before": "a release of information, please",
+      "context_after": "one. If you are a",
+      "suggested_correction": null
+    },
+    {
+      "word": "one.",
+      "confidence": 0.5,
+      "start_time": 19.52,
+      "end_time": 19.6,
+      "speaker": "A",
+      "index": 46,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.00%)",
+          "priority": "medium",
+          "confidence": 0.5
+        }
+      ],
+      "context_before": "release of information, please press",
+      "context_after": "If you are a physician",
+      "suggested_correction": null
+    },
+    {
+      "word": "If",
+      "confidence": 0.5,
+      "start_time": 20.16,
+      "end_time": 20.24,
+      "speaker": "A",
+      "index": 47,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.00%)",
+          "priority": "medium",
+          "confidence": 0.5
+        },
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "of information, please press one.",
+      "context_after": "you are a physician and",
+      "suggested_correction": null
+    },
+    {
+      "word": "you",
+      "confidence": 0.5,
+      "start_time": 20.4,
+      "end_time": 20.48,
+      "speaker": "A",
+      "index": 48,
+      "flags": [],
+      "context_before": "information, please press one. If",
+      "context_after": "are a physician and need",
+      "suggested_correction": null
+    },
+    {
+      "word": "are",
+      "confidence": 0.5,
+      "start_time": 20.56,
+      "end_time": 20.64,
+      "speaker": "A",
+      "index": 49,
+      "flags": [],
+      "context_before": "please press one. If you",
+      "context_after": "a physician and need assistance",
+      "suggested_correction": null
+    },
+    {
+      "word": "a",
+      "confidence": 0.5,
+      "start_time": 20.64,
+      "end_time": 20.8,
+      "speaker": "A",
+      "index": 50,
+      "flags": [],
+      "context_before": "press one. If you are",
+      "context_after": "physician and need assistance with",
+      "suggested_correction": null
+    },
+    {
+      "word": "physician",
+      "confidence": 0.5,
+      "start_time": 20.8,
+      "end_time": 21.28,
+      "speaker": "A",
+      "index": 51,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.00%)",
+          "priority": "medium",
+          "confidence": 0.5
+        }
+      ],
+      "context_before": "one. If you are a",
+      "context_after": "and need assistance with an",
+      "suggested_correction": null
+    },
+    {
+      "word": "and",
+      "confidence": 0.5,
+      "start_time": 21.36,
+      "end_time": 21.44,
+      "speaker": "A",
+      "index": 52,
+      "flags": [],
+      "context_before": "If you are a physician",
+      "context_after": "need assistance with an incomplete",
+      "suggested_correction": null
+    },
+    {
+      "word": "need",
+      "confidence": 0.5,
+      "start_time": 21.52,
+      "end_time": 21.6,
+      "speaker": "A",
+      "index": 53,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.00%)",
+          "priority": "medium",
+          "confidence": 0.5
+        }
+      ],
+      "context_before": "you are a physician and",
+      "context_after": "assistance with an incomplete medical",
+      "suggested_correction": null
+    },
+    {
+      "word": "assistance",
+      "confidence": 0.5,
+      "start_time": 21.76,
+      "end_time": 22.24,
+      "speaker": "A",
+      "index": 54,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.00%)",
+          "priority": "medium",
+          "confidence": 0.5
+        }
+      ],
+      "context_before": "are a physician and need",
+      "context_after": "with an incomplete medical record,",
+      "suggested_correction": null
+    },
+    {
+      "word": "with",
+      "confidence": 0.5,
+      "start_time": 22.32,
+      "end_time": 22.4,
+      "speaker": "A",
+      "index": 55,
+      "flags": [],
+      "context_before": "a physician and need assistance",
+      "context_after": "an incomplete medical record, please",
+      "suggested_correction": null
+    },
+    {
+      "word": "an",
+      "confidence": 0.5,
+      "start_time": 22.48,
+      "end_time": 22.56,
+      "speaker": "A",
+      "index": 56,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.00%)",
+          "priority": "medium",
+          "confidence": 0.5
+        }
+      ],
+      "context_before": "physician and need assistance with",
+      "context_after": "incomplete medical record, please press",
+      "suggested_correction": null
+    },
+    {
+      "word": "incomplete",
+      "confidence": 0.5,
+      "start_time": 22.56,
+      "end_time": 23.12,
+      "speaker": "A",
+      "index": 57,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.00%)",
+          "priority": "medium",
+          "confidence": 0.5
+        }
+      ],
+      "context_before": "and need assistance with an",
+      "context_after": "medical record, please press to.",
+      "suggested_correction": null
+    },
+    {
+      "word": "medical",
+      "confidence": 0.5,
+      "start_time": 23.2,
+      "end_time": 23.52,
+      "speaker": "A",
+      "index": 58,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.00%)",
+          "priority": "medium",
+          "confidence": 0.5
+        }
+      ],
+      "context_before": "need assistance with an incomplete",
+      "context_after": "record, please press to. For",
+      "suggested_correction": null
+    },
+    {
+      "word": "record,",
+      "confidence": 0.5,
+      "start_time": 23.6,
+      "end_time": 23.68,
+      "speaker": "A",
+      "index": 59,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.00%)",
+          "priority": "medium",
+          "confidence": 0.5
+        }
+      ],
+      "context_before": "assistance with an incomplete medical",
+      "context_after": "please press to. For birth",
+      "suggested_correction": null
+    },
+    {
+      "word": "please",
+      "confidence": 0.5,
+      "start_time": 24.16,
+      "end_time": 24.24,
+      "speaker": "A",
+      "index": 60,
+      "flags": [],
+      "context_before": "with an incomplete medical record,",
+      "context_after": "press to. For birth certificate,",
+      "suggested_correction": null
+    },
+    {
+      "word": "press",
+      "confidence": 0.5,
+      "start_time": 24.56,
+      "end_time": 25.04,
+      "speaker": "A",
+      "index": 61,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.00%)",
+          "priority": "medium",
+          "confidence": 0.5
+        }
+      ],
+      "context_before": "an incomplete medical record, please",
+      "context_after": "to. For birth certificate, please",
+      "suggested_correction": null
+    },
+    {
+      "word": "to.",
+      "confidence": 0.5,
+      "start_time": 25.12,
+      "end_time": 25.2,
+      "speaker": "A",
+      "index": 62,
+      "flags": [],
+      "context_before": "incomplete medical record, please press",
+      "context_after": "For birth certificate, please press",
+      "suggested_correction": null
+    },
+    {
+      "word": "For",
+      "confidence": 0.93734825,
+      "start_time": 26.0,
+      "end_time": 26.08,
+      "speaker": "A",
+      "index": 63,
+      "flags": [],
+      "context_before": "medical record, please press to.",
+      "context_after": "birth certificate, please press 3.",
+      "suggested_correction": null
+    },
+    {
+      "word": "birth",
+      "confidence": 0.8942389,
+      "start_time": 26.24,
+      "end_time": 26.56,
+      "speaker": "A",
+      "index": 64,
+      "flags": [],
+      "context_before": "record, please press to. For",
+      "context_after": "certificate, please press 3. For",
+      "suggested_correction": null
+    },
+    {
+      "word": "certificate,",
+      "confidence": 0.8129149,
+      "start_time": 26.64,
+      "end_time": 27.28,
+      "speaker": "A",
+      "index": 65,
+      "flags": [],
+      "context_before": "please press to. For birth",
+      "context_after": "please press 3. For patient",
+      "suggested_correction": null
+    },
+    {
+      "word": "please",
+      "confidence": 0.9871181,
+      "start_time": 27.68,
+      "end_time": 27.76,
+      "speaker": "A",
+      "index": 66,
+      "flags": [],
+      "context_before": "press to. For birth certificate,",
+      "context_after": "press 3. For patient portal,",
+      "suggested_correction": null
+    },
+    {
+      "word": "press",
+      "confidence": 0.98863065,
+      "start_time": 28.08,
+      "end_time": 28.56,
+      "speaker": "A",
+      "index": 67,
+      "flags": [],
+      "context_before": "to. For birth certificate, please",
+      "context_after": "3. For patient portal, please",
+      "suggested_correction": null
+    },
+    {
+      "word": "3.",
+      "confidence": 0.9602548,
+      "start_time": 28.56,
+      "end_time": 28.72,
+      "speaker": "A",
+      "index": 68,
+      "flags": [
+        {
+          "type": "number",
+          "reason": "Number detected - verify accuracy",
+          "priority": "low"
+        }
+      ],
+      "context_before": "For birth certificate, please press",
+      "context_after": "For patient portal, please press.",
+      "suggested_correction": null
+    },
+    {
+      "word": "For",
+      "confidence": 0.9911423,
+      "start_time": 29.52,
+      "end_time": 29.6,
+      "speaker": "A",
+      "index": 69,
+      "flags": [],
+      "context_before": "birth certificate, please press 3.",
+      "context_after": "patient portal, please press. 4.",
+      "suggested_correction": null
+    },
+    {
+      "word": "patient",
+      "confidence": 0.7891205,
+      "start_time": 29.84,
+      "end_time": 30.24,
+      "speaker": "A",
+      "index": 70,
+      "flags": [],
+      "context_before": "certificate, please press 3. For",
+      "context_after": "portal, please press. 4. Thank",
+      "suggested_correction": null
+    },
+    {
+      "word": "portal,",
+      "confidence": 0.9674072,
+      "start_time": 30.32,
+      "end_time": 30.72,
+      "speaker": "A",
+      "index": 71,
+      "flags": [],
+      "context_before": "please press 3. For patient",
+      "context_after": "please press. 4. Thank you",
+      "suggested_correction": null
+    },
+    {
+      "word": "please",
+      "confidence": 0.9950659,
+      "start_time": 31.12,
+      "end_time": 31.2,
+      "speaker": "A",
+      "index": 72,
+      "flags": [],
+      "context_before": "press 3. For patient portal,",
+      "context_after": "press. 4. Thank you for",
+      "suggested_correction": null
+    },
+    {
+      "word": "press.",
+      "confidence": 0.99559927,
+      "start_time": 31.52,
+      "end_time": 32.0,
+      "speaker": "A",
+      "index": 73,
+      "flags": [],
+      "context_before": "3. For patient portal, please",
+      "context_after": "4. Thank you for calling",
+      "suggested_correction": null
+    },
+    {
+      "word": "4.",
+      "confidence": 0.9854145,
+      "start_time": 39.28,
+      "end_time": 39.52,
+      "speaker": "B",
+      "index": 74,
+      "flags": [
+        {
+          "type": "number",
+          "reason": "Number detected - verify accuracy",
+          "priority": "low"
+        }
+      ],
+      "context_before": "For patient portal, please press.",
+      "context_after": "Thank you for calling the",
+      "suggested_correction": null
+    },
+    {
+      "word": "Thank",
+      "confidence": 0.97704566,
+      "start_time": 42.48,
+      "end_time": 42.8,
+      "speaker": "A",
+      "index": 75,
+      "flags": [],
+      "context_before": "patient portal, please press. 4.",
+      "context_after": "you for calling the Medical",
+      "suggested_correction": null
+    },
+    {
+      "word": "you",
+      "confidence": 0.9977633,
+      "start_time": 42.8,
+      "end_time": 42.96,
+      "speaker": "A",
+      "index": 76,
+      "flags": [],
+      "context_before": "portal, please press. 4. Thank",
+      "context_after": "for calling the Medical Records",
+      "suggested_correction": null
+    },
+    {
+      "word": "for",
+      "confidence": 0.9922801,
+      "start_time": 43.04,
+      "end_time": 43.12,
+      "speaker": "A",
+      "index": 77,
+      "flags": [],
+      "context_before": "please press. 4. Thank you",
+      "context_after": "calling the Medical Records Department",
+      "suggested_correction": null
+    },
+    {
+      "word": "calling",
+      "confidence": 0.9992132,
+      "start_time": 43.2,
+      "end_time": 43.52,
+      "speaker": "A",
+      "index": 78,
+      "flags": [],
+      "context_before": "press. 4. Thank you for",
+      "context_after": "the Medical Records Department at",
+      "suggested_correction": null
+    },
+    {
+      "word": "the",
+      "confidence": 0.99217695,
+      "start_time": 43.6,
+      "end_time": 43.68,
+      "speaker": "A",
+      "index": 79,
+      "flags": [],
+      "context_before": "4. Thank you for calling",
+      "context_after": "Medical Records Department at Christus",
+      "suggested_correction": null
+    },
+    {
+      "word": "Medical",
+      "confidence": 0.76200193,
+      "start_time": 43.68,
+      "end_time": 44.08,
+      "speaker": "A",
+      "index": 80,
+      "flags": [
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "Thank you for calling the",
+      "context_after": "Records Department at Christus Santa",
+      "suggested_correction": null
+    },
+    {
+      "word": "Records",
+      "confidence": 0.9862091,
+      "start_time": 44.08,
+      "end_time": 44.56,
+      "speaker": "A",
+      "index": 81,
+      "flags": [
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "you for calling the Medical",
+      "context_after": "Department at Christus Santa Rosa",
+      "suggested_correction": null
+    },
+    {
+      "word": "Department",
+      "confidence": 0.8084139,
+      "start_time": 44.64,
+      "end_time": 45.12,
+      "speaker": "A",
+      "index": 82,
+      "flags": [
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "for calling the Medical Records",
+      "context_after": "at Christus Santa Rosa Hospital,",
+      "suggested_correction": null
+    },
+    {
+      "word": "at",
+      "confidence": 0.9552091,
+      "start_time": 45.12,
+      "end_time": 45.2,
+      "speaker": "A",
+      "index": 83,
+      "flags": [],
+      "context_before": "calling the Medical Records Department",
+      "context_after": "Christus Santa Rosa Hospital, Westover",
+      "suggested_correction": null
+    },
+    {
+      "word": "Christus",
+      "confidence": 0.9172671,
+      "start_time": 45.28,
+      "end_time": 45.84,
+      "speaker": "A",
+      "index": 84,
+      "flags": [
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "the Medical Records Department at",
+      "context_after": "Santa Rosa Hospital, Westover Hills.",
+      "suggested_correction": null
+    },
+    {
+      "word": "Santa",
+      "confidence": 0.98603237,
+      "start_time": 45.92,
+      "end_time": 46.24,
+      "speaker": "A",
+      "index": 85,
+      "flags": [
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "Medical Records Department at Christus",
+      "context_after": "Rosa Hospital, Westover Hills. Our",
+      "suggested_correction": null
+    },
+    {
+      "word": "Rosa",
+      "confidence": 0.9976545,
+      "start_time": 46.32,
+      "end_time": 46.72,
+      "speaker": "A",
+      "index": 86,
+      "flags": [
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "Records Department at Christus Santa",
+      "context_after": "Hospital, Westover Hills. Our normal",
+      "suggested_correction": null
+    },
+    {
+      "word": "Hospital,",
+      "confidence": 0.5609375,
+      "start_time": 46.72,
+      "end_time": 47.28,
+      "speaker": "A",
+      "index": 87,
+      "flags": [],
+      "context_before": "Department at Christus Santa Rosa",
+      "context_after": "Westover Hills. Our normal business",
+      "suggested_correction": null
+    },
+    {
+      "word": "Westover",
+      "confidence": 0.9448901,
+      "start_time": 47.44,
+      "end_time": 48.08,
+      "speaker": "A",
+      "index": 88,
+      "flags": [
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "at Christus Santa Rosa Hospital,",
+      "context_after": "Hills. Our normal business hours",
+      "suggested_correction": null
+    },
+    {
+      "word": "Hills.",
+      "confidence": 0.98951024,
+      "start_time": 48.16,
+      "end_time": 48.56,
+      "speaker": "A",
+      "index": 89,
+      "flags": [
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "Christus Santa Rosa Hospital, Westover",
+      "context_after": "Our normal business hours are",
+      "suggested_correction": null
+    },
+    {
+      "word": "Our",
+      "confidence": 0.99773467,
+      "start_time": 48.88,
+      "end_time": 49.04,
+      "speaker": "A",
+      "index": 90,
+      "flags": [],
+      "context_before": "Santa Rosa Hospital, Westover Hills.",
+      "context_after": "normal business hours are Monday",
+      "suggested_correction": null
+    },
+    {
+      "word": "normal",
+      "confidence": 0.9849029,
+      "start_time": 49.12,
+      "end_time": 49.52,
+      "speaker": "A",
+      "index": 91,
+      "flags": [],
+      "context_before": "Rosa Hospital, Westover Hills. Our",
+      "context_after": "business hours are Monday through",
+      "suggested_correction": null
+    },
+    {
+      "word": "business",
+      "confidence": 0.99393255,
+      "start_time": 49.6,
+      "end_time": 49.68,
+      "speaker": "A",
+      "index": 92,
+      "flags": [],
+      "context_before": "Hospital, Westover Hills. Our normal",
+      "context_after": "hours are Monday through Friday,",
+      "suggested_correction": null
+    },
+    {
+      "word": "hours",
+      "confidence": 0.99630475,
+      "start_time": 50.0,
+      "end_time": 50.4,
+      "speaker": "A",
+      "index": 93,
+      "flags": [],
+      "context_before": "Westover Hills. Our normal business",
+      "context_after": "are Monday through Friday, 8",
+      "suggested_correction": null
+    },
+    {
+      "word": "are",
+      "confidence": 0.9964141,
+      "start_time": 50.48,
+      "end_time": 50.56,
+      "speaker": "A",
+      "index": 94,
+      "flags": [],
+      "context_before": "Hills. Our normal business hours",
+      "context_after": "Monday through Friday, 8 a.m.",
+      "suggested_correction": null
+    },
+    {
+      "word": "Monday",
+      "confidence": 0.9922655,
+      "start_time": 50.64,
+      "end_time": 51.12,
+      "speaker": "A",
+      "index": 95,
+      "flags": [],
+      "context_before": "Our normal business hours are",
+      "context_after": "through Friday, 8 a.m. to",
+      "suggested_correction": null
+    },
+    {
+      "word": "through",
+      "confidence": 0.9194127,
+      "start_time": 51.12,
+      "end_time": 51.2,
+      "speaker": "A",
+      "index": 96,
+      "flags": [],
+      "context_before": "normal business hours are Monday",
+      "context_after": "Friday, 8 a.m. to 4:30",
+      "suggested_correction": null
+    },
+    {
+      "word": "Friday,",
+      "confidence": 0.8124463,
+      "start_time": 51.28,
+      "end_time": 51.84,
+      "speaker": "A",
+      "index": 97,
+      "flags": [],
+      "context_before": "business hours are Monday through",
+      "context_after": "8 a.m. to 4:30 p.m.",
+      "suggested_correction": null
+    },
+    {
+      "word": "8",
+      "confidence": 0.9382245,
+      "start_time": 51.92,
+      "end_time": 52.16,
+      "speaker": "A",
+      "index": 98,
+      "flags": [
+        {
+          "type": "number",
+          "reason": "Number detected - verify accuracy",
+          "priority": "low"
+        }
+      ],
+      "context_before": "hours are Monday through Friday,",
+      "context_after": "a.m. to 4:30 p.m. Please",
+      "suggested_correction": null
+    },
+    {
+      "word": "a.m.",
+      "confidence": 0.4094382,
+      "start_time": 52.24,
+      "end_time": 52.56,
+      "speaker": "A",
+      "index": 99,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (40.94%)",
+          "priority": "high",
+          "confidence": 0.4094382
+        }
+      ],
+      "context_before": "are Monday through Friday, 8",
+      "context_after": "to 4:30 p.m. Please listen",
+      "suggested_correction": null
+    },
+    {
+      "word": "to",
+      "confidence": 0.7777916,
+      "start_time": 52.72,
+      "end_time": 52.88,
+      "speaker": "A",
+      "index": 100,
+      "flags": [],
+      "context_before": "Monday through Friday, 8 a.m.",
+      "context_after": "4:30 p.m. Please listen carefully",
+      "suggested_correction": null
+    },
+    {
+      "word": "4:30",
+      "confidence": 0.92578685,
+      "start_time": 52.96,
+      "end_time": 53.28,
+      "speaker": "A",
+      "index": 101,
+      "flags": [
+        {
+          "type": "time",
+          "reason": "Time detected - verify accuracy",
+          "priority": "medium"
+        },
+        {
+          "type": "number",
+          "reason": "Number detected - verify accuracy",
+          "priority": "low"
+        }
+      ],
+      "context_before": "through Friday, 8 a.m. to",
+      "context_after": "p.m. Please listen carefully to",
+      "suggested_correction": null
+    },
+    {
+      "word": "p.m.",
+      "confidence": 0.9685982,
+      "start_time": 53.6,
+      "end_time": 54.0,
+      "speaker": "A",
+      "index": 102,
+      "flags": [],
+      "context_before": "Friday, 8 a.m. to 4:30",
+      "context_after": "Please listen carefully to the",
+      "suggested_correction": null
+    },
+    {
+      "word": "Please",
+      "confidence": 0.9902941,
+      "start_time": 54.4,
+      "end_time": 54.88,
+      "speaker": "A",
+      "index": 103,
+      "flags": [],
+      "context_before": "8 a.m. to 4:30 p.m.",
+      "context_after": "listen carefully to the following",
+      "suggested_correction": null
+    },
+    {
+      "word": "listen",
+      "confidence": 0.989388,
+      "start_time": 54.88,
+      "end_time": 55.28,
+      "speaker": "A",
+      "index": 104,
+      "flags": [],
+      "context_before": "a.m. to 4:30 p.m. Please",
+      "context_after": "carefully to the following options.",
+      "suggested_correction": null
+    },
+    {
+      "word": "carefully",
+      "confidence": 0.99805295,
+      "start_time": 55.36,
+      "end_time": 55.84,
+      "speaker": "A",
+      "index": 105,
+      "flags": [],
+      "context_before": "to 4:30 p.m. Please listen",
+      "context_after": "to the following options. If",
+      "suggested_correction": null
+    },
+    {
+      "word": "to",
+      "confidence": 0.9972025,
+      "start_time": 55.92,
+      "end_time": 56.0,
+      "speaker": "A",
+      "index": 106,
+      "flags": [],
+      "context_before": "4:30 p.m. Please listen carefully",
+      "context_after": "the following options. If you",
+      "suggested_correction": null
+    },
+    {
+      "word": "the",
+      "confidence": 0.9968855,
+      "start_time": 56.08,
+      "end_time": 56.16,
+      "speaker": "A",
+      "index": 107,
+      "flags": [],
+      "context_before": "p.m. Please listen carefully to",
+      "context_after": "following options. If you are",
+      "suggested_correction": null
+    },
+    {
+      "word": "following",
+      "confidence": 0.99646026,
+      "start_time": 56.16,
+      "end_time": 56.399,
+      "speaker": "A",
+      "index": 108,
+      "flags": [],
+      "context_before": "Please listen carefully to the",
+      "context_after": "options. If you are requesting",
+      "suggested_correction": null
+    },
+    {
+      "word": "options.",
+      "confidence": 0.8203075,
+      "start_time": 56.64,
+      "end_time": 57.12,
+      "speaker": "A",
+      "index": 109,
+      "flags": [],
+      "context_before": "listen carefully to the following",
+      "context_after": "If you are requesting a",
+      "suggested_correction": null
+    },
+    {
+      "word": "If",
+      "confidence": 0.91856045,
+      "start_time": 57.61,
+      "end_time": 57.69,
+      "speaker": "A",
+      "index": 110,
+      "flags": [
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "carefully to the following options.",
+      "context_after": "you are requesting a release",
+      "suggested_correction": null
+    },
+    {
+      "word": "you",
+      "confidence": 0.9958086,
+      "start_time": 57.85,
+      "end_time": 57.93,
+      "speaker": "A",
+      "index": 111,
+      "flags": [],
+      "context_before": "to the following options. If",
+      "context_after": "are requesting a release of",
+      "suggested_correction": null
+    },
+    {
+      "word": "are",
+      "confidence": 0.9850911,
+      "start_time": 57.93,
+      "end_time": 58.01,
+      "speaker": "A",
+      "index": 112,
+      "flags": [],
+      "context_before": "the following options. If you",
+      "context_after": "requesting a release of information,",
+      "suggested_correction": null
+    },
+    {
+      "word": "requesting",
+      "confidence": 0.9923409,
+      "start_time": 58.09,
+      "end_time": 58.57,
+      "speaker": "A",
+      "index": 113,
+      "flags": [],
+      "context_before": "following options. If you are",
+      "context_after": "a release of information, please",
+      "suggested_correction": null
+    },
+    {
+      "word": "a",
+      "confidence": 0.79937685,
+      "start_time": 58.65,
+      "end_time": 58.73,
+      "speaker": "A",
+      "index": 114,
+      "flags": [],
+      "context_before": "options. If you are requesting",
+      "context_after": "release of information, please press",
+      "suggested_correction": null
+    },
+    {
+      "word": "release",
+      "confidence": 0.99429965,
+      "start_time": 58.73,
+      "end_time": 58.89,
+      "speaker": "A",
+      "index": 115,
+      "flags": [],
+      "context_before": "If you are requesting a",
+      "context_after": "of information, please press 1.",
+      "suggested_correction": null
+    },
+    {
+      "word": "of",
+      "confidence": 0.99863774,
+      "start_time": 59.13,
+      "end_time": 59.21,
+      "speaker": "A",
+      "index": 116,
+      "flags": [],
+      "context_before": "you are requesting a release",
+      "context_after": "information, please press 1. If",
+      "suggested_correction": null
+    },
+    {
+      "word": "information,",
+      "confidence": 0.8526735,
+      "start_time": 59.37,
+      "end_time": 59.45,
+      "speaker": "A",
+      "index": 117,
+      "flags": [],
+      "context_before": "are requesting a release of",
+      "context_after": "please press 1. If you",
+      "suggested_correction": null
+    },
+    {
+      "word": "please",
+      "confidence": 0.9889586,
+      "start_time": 60.01,
+      "end_time": 60.09,
+      "speaker": "A",
+      "index": 118,
+      "flags": [],
+      "context_before": "requesting a release of information,",
+      "context_after": "press 1. If you are",
+      "suggested_correction": null
+    },
+    {
+      "word": "press",
+      "confidence": 0.9832697,
+      "start_time": 60.41,
+      "end_time": 60.81,
+      "speaker": "A",
+      "index": 119,
+      "flags": [],
+      "context_before": "a release of information, please",
+      "context_after": "1. If you are a",
+      "suggested_correction": null
+    },
+    {
+      "word": "1.",
+      "confidence": 0.981935,
+      "start_time": 60.81,
+      "end_time": 61.05,
+      "speaker": "A",
+      "index": 120,
+      "flags": [
+        {
+          "type": "number",
+          "reason": "Number detected - verify accuracy",
+          "priority": "low"
+        }
+      ],
+      "context_before": "release of information, please press",
+      "context_after": "If you are a physician",
+      "suggested_correction": null
+    },
+    {
+      "word": "If",
+      "confidence": 0.99396837,
+      "start_time": 61.61,
+      "end_time": 61.69,
+      "speaker": "A",
+      "index": 121,
+      "flags": [
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "of information, please press 1.",
+      "context_after": "you are a physician and",
+      "suggested_correction": null
+    },
+    {
+      "word": "you",
+      "confidence": 0.99644643,
+      "start_time": 61.85,
+      "end_time": 61.93,
+      "speaker": "A",
+      "index": 122,
+      "flags": [],
+      "context_before": "information, please press 1. If",
+      "context_after": "are a physician and need",
+      "suggested_correction": null
+    },
+    {
+      "word": "are",
+      "confidence": 0.9894516,
+      "start_time": 61.93,
+      "end_time": 62.09,
+      "speaker": "A",
+      "index": 123,
+      "flags": [],
+      "context_before": "please press 1. If you",
+      "context_after": "a physician and need assistance,",
+      "suggested_correction": null
+    },
+    {
+      "word": "a",
+      "confidence": 0.95043296,
+      "start_time": 62.09,
+      "end_time": 62.17,
+      "speaker": "A",
+      "index": 124,
+      "flags": [],
+      "context_before": "press 1. If you are",
+      "context_after": "physician and need assistance, if",
+      "suggested_correction": null
+    },
+    {
+      "word": "physician",
+      "confidence": 0.9716195,
+      "start_time": 62.17,
+      "end_time": 62.73,
+      "speaker": "A",
+      "index": 125,
+      "flags": [],
+      "context_before": "1. If you are a",
+      "context_after": "and need assistance, if you",
+      "suggested_correction": null
+    },
+    {
+      "word": "and",
+      "confidence": 0.9460873,
+      "start_time": 62.81,
+      "end_time": 62.89,
+      "speaker": "A",
+      "index": 126,
+      "flags": [],
+      "context_before": "If you are a physician",
+      "context_after": "need assistance, if you are",
+      "suggested_correction": null
+    },
+    {
+      "word": "need",
+      "confidence": 0.98957986,
+      "start_time": 62.97,
+      "end_time": 63.05,
+      "speaker": "A",
+      "index": 127,
+      "flags": [],
+      "context_before": "you are a physician and",
+      "context_after": "assistance, if you are a",
+      "suggested_correction": null
+    },
+    {
+      "word": "assistance,",
+      "confidence": 0.43810666,
+      "start_time": 63.21,
+      "end_time": 63.61,
+      "speaker": "A",
+      "index": 128,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (43.81%)",
+          "priority": "high",
+          "confidence": 0.43810666
+        }
+      ],
+      "context_before": "are a physician and need",
+      "context_after": "if you are a patient",
+      "suggested_correction": null
+    },
+    {
+      "word": "if",
+      "confidence": 0.64522153,
+      "start_time": 65.13,
+      "end_time": 65.21,
+      "speaker": "A",
+      "index": 129,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (64.52%)",
+          "priority": "medium",
+          "confidence": 0.64522153
+        }
+      ],
+      "context_before": "a physician and need assistance,",
+      "context_after": "you are a patient or",
+      "suggested_correction": null
+    },
+    {
+      "word": "you",
+      "confidence": 0.9980544,
+      "start_time": 65.37,
+      "end_time": 65.45,
+      "speaker": "A",
+      "index": 130,
+      "flags": [],
+      "context_before": "physician and need assistance, if",
+      "context_after": "are a patient or calling",
+      "suggested_correction": null
+    },
+    {
+      "word": "are",
+      "confidence": 0.9943457,
+      "start_time": 65.61,
+      "end_time": 65.69,
+      "speaker": "A",
+      "index": 131,
+      "flags": [],
+      "context_before": "and need assistance, if you",
+      "context_after": "a patient or calling from",
+      "suggested_correction": null
+    },
+    {
+      "word": "a",
+      "confidence": 0.9830647,
+      "start_time": 65.77,
+      "end_time": 65.85,
+      "speaker": "A",
+      "index": 132,
+      "flags": [],
+      "context_before": "need assistance, if you are",
+      "context_after": "patient or calling from a",
+      "suggested_correction": null
+    },
+    {
+      "word": "patient",
+      "confidence": 0.9971551,
+      "start_time": 65.93,
+      "end_time": 66.33,
+      "speaker": "A",
+      "index": 133,
+      "flags": [],
+      "context_before": "assistance, if you are a",
+      "context_after": "or calling from a physician's",
+      "suggested_correction": null
+    },
+    {
+      "word": "or",
+      "confidence": 0.86942625,
+      "start_time": 66.41,
+      "end_time": 66.57,
+      "speaker": "A",
+      "index": 134,
+      "flags": [],
+      "context_before": "if you are a patient",
+      "context_after": "calling from a physician's office,",
+      "suggested_correction": null
+    },
+    {
+      "word": "calling",
+      "confidence": 0.9331007,
+      "start_time": 66.73,
+      "end_time": 66.97,
+      "speaker": "A",
+      "index": 135,
+      "flags": [],
+      "context_before": "you are a patient or",
+      "context_after": "from a physician's office, please",
+      "suggested_correction": null
+    },
+    {
+      "word": "from",
+      "confidence": 0.9869309,
+      "start_time": 67.13,
+      "end_time": 67.21,
+      "speaker": "A",
+      "index": 136,
+      "flags": [],
+      "context_before": "are a patient or calling",
+      "context_after": "a physician's office, please press",
+      "suggested_correction": null
+    },
+    {
+      "word": "a",
+      "confidence": 0.989144,
+      "start_time": 67.29,
+      "end_time": 67.37,
+      "speaker": "A",
+      "index": 137,
+      "flags": [],
+      "context_before": "a patient or calling from",
+      "context_after": "physician's office, please press 1.",
+      "suggested_correction": null
+    },
+    {
+      "word": "physician's",
+      "confidence": 0.7916786,
+      "start_time": 67.37,
+      "end_time": 68.09,
+      "speaker": "A",
+      "index": 138,
+      "flags": [],
+      "context_before": "patient or calling from a",
+      "context_after": "office, please press 1. If",
+      "suggested_correction": null
+    },
+    {
+      "word": "office,",
+      "confidence": 0.9319027,
+      "start_time": 68.09,
+      "end_time": 68.17,
+      "speaker": "A",
+      "index": 139,
+      "flags": [],
+      "context_before": "or calling from a physician's",
+      "context_after": "please press 1. If you",
+      "suggested_correction": null
+    },
+    {
+      "word": "please",
+      "confidence": 0.9932499,
+      "start_time": 68.49,
+      "end_time": 68.57,
+      "speaker": "A",
+      "index": 140,
+      "flags": [],
+      "context_before": "calling from a physician's office,",
+      "context_after": "press 1. If you are",
+      "suggested_correction": null
+    },
+    {
+      "word": "press",
+      "confidence": 0.99486005,
+      "start_time": 68.81,
+      "end_time": 69.29,
+      "speaker": "A",
+      "index": 141,
+      "flags": [],
+      "context_before": "from a physician's office, please",
+      "context_after": "1. If you are calling.",
+      "suggested_correction": null
+    },
+    {
+      "word": "1.",
+      "confidence": 0.98500776,
+      "start_time": 69.29,
+      "end_time": 69.45,
+      "speaker": "A",
+      "index": 142,
+      "flags": [
+        {
+          "type": "number",
+          "reason": "Number detected - verify accuracy",
+          "priority": "low"
+        }
+      ],
+      "context_before": "a physician's office, please press",
+      "context_after": "If you are calling. Thank",
+      "suggested_correction": null
+    },
+    {
+      "word": "If",
+      "confidence": 0.57741976,
+      "start_time": 70.01,
+      "end_time": 70.09,
+      "speaker": "A",
+      "index": 143,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (57.74%)",
+          "priority": "medium",
+          "confidence": 0.57741976
+        },
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "physician's office, please press 1.",
+      "context_after": "you are calling. Thank you",
+      "suggested_correction": null
+    },
+    {
+      "word": "you",
+      "confidence": 0.98602146,
+      "start_time": 70.25,
+      "end_time": 70.33,
+      "speaker": "A",
+      "index": 144,
+      "flags": [],
+      "context_before": "office, please press 1. If",
+      "context_after": "are calling. Thank you for",
+      "suggested_correction": null
+    },
+    {
+      "word": "are",
+      "confidence": 0.7150973,
+      "start_time": 70.49,
+      "end_time": 70.57,
+      "speaker": "A",
+      "index": 145,
+      "flags": [],
+      "context_before": "please press 1. If you",
+      "context_after": "calling. Thank you for calling",
+      "suggested_correction": null
+    },
+    {
+      "word": "calling.",
+      "confidence": 0.9616929,
+      "start_time": 70.65,
+      "end_time": 70.97,
+      "speaker": "A",
+      "index": 146,
+      "flags": [],
+      "context_before": "press 1. If you are",
+      "context_after": "Thank you for calling Crosley",
+      "suggested_correction": null
+    },
+    {
+      "word": "Thank",
+      "confidence": 0.7951862,
+      "start_time": 87.26,
+      "end_time": 87.58,
+      "speaker": "B",
+      "index": 147,
+      "flags": [],
+      "context_before": "1. If you are calling.",
+      "context_after": "you for calling Crosley Law",
+      "suggested_correction": null
+    },
+    {
+      "word": "you",
+      "confidence": 0.9966363,
+      "start_time": 87.58,
+      "end_time": 87.66,
+      "speaker": "B",
+      "index": 148,
+      "flags": [],
+      "context_before": "If you are calling. Thank",
+      "context_after": "for calling Crosley Law Firm,",
+      "suggested_correction": null
+    },
+    {
+      "word": "for",
+      "confidence": 0.9937295,
+      "start_time": 87.74,
+      "end_time": 87.82,
+      "speaker": "B",
+      "index": 149,
+      "flags": [],
+      "context_before": "you are calling. Thank you",
+      "context_after": "calling Crosley Law Firm, Westover",
+      "suggested_correction": null
+    },
+    {
+      "word": "calling",
+      "confidence": 0.9989831,
+      "start_time": 87.82,
+      "end_time": 88.06,
+      "speaker": "B",
+      "index": 150,
+      "flags": [],
+      "context_before": "are calling. Thank you for",
+      "context_after": "Crosley Law Firm, Westover Hills,",
+      "suggested_correction": null
+    },
+    {
+      "word": "Crosley",
+      "confidence": 0.5487158,
+      "start_time": 88.14,
+      "end_time": 88.54,
+      "speaker": "B",
+      "index": 151,
+      "flags": [],
+      "context_before": "calling. Thank you for calling",
+      "context_after": "Law Firm, Westover Hills, release",
+      "suggested_correction": null
+    },
+    {
+      "word": "Law",
+      "confidence": 0.6552499,
+      "start_time": 88.62,
+      "end_time": 88.78,
+      "speaker": "B",
+      "index": 152,
+      "flags": [],
+      "context_before": "Thank you for calling Crosley",
+      "context_after": "Firm, Westover Hills, release of",
+      "suggested_correction": null
+    },
+    {
+      "word": "Firm,",
+      "confidence": 0.38287932,
+      "start_time": 88.78,
+      "end_time": 89.02,
+      "speaker": "B",
+      "index": 153,
+      "flags": [],
+      "context_before": "you for calling Crosley Law",
+      "context_after": "Westover Hills, release of information.",
+      "suggested_correction": null
+    },
+    {
+      "word": "Westover",
+      "confidence": 0.9107876,
+      "start_time": 89.26,
+      "end_time": 89.74,
+      "speaker": "B",
+      "index": 154,
+      "flags": [
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "for calling Crosley Law Firm,",
+      "context_after": "Hills, release of information. Our",
+      "suggested_correction": null
+    },
+    {
+      "word": "Hills,",
+      "confidence": 0.3550372,
+      "start_time": 89.74,
+      "end_time": 90.06,
+      "speaker": "B",
+      "index": 155,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (35.50%)",
+          "priority": "high",
+          "confidence": 0.3550372
+        },
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "calling Crosley Law Firm, Westover",
+      "context_after": "release of information. Our office",
+      "suggested_correction": null
+    },
+    {
+      "word": "release",
+      "confidence": 0.6428872,
+      "start_time": 90.22,
+      "end_time": 90.3,
+      "speaker": "B",
+      "index": 156,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (64.29%)",
+          "priority": "medium",
+          "confidence": 0.6428872
+        }
+      ],
+      "context_before": "Crosley Law Firm, Westover Hills,",
+      "context_after": "of information. Our office is",
+      "suggested_correction": null
+    },
+    {
+      "word": "of",
+      "confidence": 0.9946312,
+      "start_time": 90.54,
+      "end_time": 90.62,
+      "speaker": "B",
+      "index": 157,
+      "flags": [],
+      "context_before": "Law Firm, Westover Hills, release",
+      "context_after": "information. Our office is closed",
+      "suggested_correction": null
+    },
+    {
+      "word": "information.",
+      "confidence": 0.94648623,
+      "start_time": 90.7,
+      "end_time": 90.78,
+      "speaker": "B",
+      "index": 158,
+      "flags": [],
+      "context_before": "Firm, Westover Hills, release of",
+      "context_after": "Our office is closed to",
+      "suggested_correction": null
+    },
+    {
+      "word": "Our",
+      "confidence": 0.9961055,
+      "start_time": 91.26,
+      "end_time": 91.5,
+      "speaker": "B",
+      "index": 159,
+      "flags": [],
+      "context_before": "Westover Hills, release of information.",
+      "context_after": "office is closed to the",
+      "suggested_correction": null
+    },
+    {
+      "word": "office",
+      "confidence": 0.96842647,
+      "start_time": 91.58,
+      "end_time": 91.66,
+      "speaker": "B",
+      "index": 160,
+      "flags": [],
+      "context_before": "Hills, release of information. Our",
+      "context_after": "is closed to the public.",
+      "suggested_correction": null
+    },
+    {
+      "word": "is",
+      "confidence": 0.9971354,
+      "start_time": 91.9,
+      "end_time": 91.98,
+      "speaker": "B",
+      "index": 161,
+      "flags": [],
+      "context_before": "release of information. Our office",
+      "context_after": "closed to the public. If",
+      "suggested_correction": null
+    },
+    {
+      "word": "closed",
+      "confidence": 0.80620384,
+      "start_time": 92.06,
+      "end_time": 92.38,
+      "speaker": "B",
+      "index": 162,
+      "flags": [],
+      "context_before": "of information. Our office is",
+      "context_after": "to the public. If you",
+      "suggested_correction": null
+    },
+    {
+      "word": "to",
+      "confidence": 0.9978356,
+      "start_time": 92.38,
+      "end_time": 92.46,
+      "speaker": "B",
+      "index": 163,
+      "flags": [],
+      "context_before": "information. Our office is closed",
+      "context_after": "the public. If you are",
+      "suggested_correction": null
+    },
+    {
+      "word": "the",
+      "confidence": 0.9964623,
+      "start_time": 92.54,
+      "end_time": 92.62,
+      "speaker": "B",
+      "index": 164,
+      "flags": [],
+      "context_before": "Our office is closed to",
+      "context_after": "public. If you are a",
+      "suggested_correction": null
+    },
+    {
+      "word": "public.",
+      "confidence": 0.96460456,
+      "start_time": 92.62,
+      "end_time": 92.7,
+      "speaker": "B",
+      "index": 165,
+      "flags": [],
+      "context_before": "office is closed to the",
+      "context_after": "If you are a patient",
+      "suggested_correction": null
+    },
+    {
+      "word": "If",
+      "confidence": 0.9966749,
+      "start_time": 93.26,
+      "end_time": 93.34,
+      "speaker": "B",
+      "index": 166,
+      "flags": [
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "is closed to the public.",
+      "context_after": "you are a patient needing",
+      "suggested_correction": null
+    },
+    {
+      "word": "you",
+      "confidence": 0.99693704,
+      "start_time": 93.42,
+      "end_time": 93.5,
+      "speaker": "B",
+      "index": 167,
+      "flags": [],
+      "context_before": "closed to the public. If",
+      "context_after": "are a patient needing medical",
+      "suggested_correction": null
+    },
+    {
+      "word": "are",
+      "confidence": 0.89169383,
+      "start_time": 93.58,
+      "end_time": 93.66,
+      "speaker": "B",
+      "index": 168,
+      "flags": [],
+      "context_before": "to the public. If you",
+      "context_after": "a patient needing medical records,",
+      "suggested_correction": null
+    },
+    {
+      "word": "a",
+      "confidence": 0.98673266,
+      "start_time": 93.74,
+      "end_time": 93.82,
+      "speaker": "B",
+      "index": 169,
+      "flags": [],
+      "context_before": "the public. If you are",
+      "context_after": "patient needing medical records, you",
+      "suggested_correction": null
+    },
+    {
+      "word": "patient",
+      "confidence": 0.9962261,
+      "start_time": 93.9,
+      "end_time": 94.22,
+      "speaker": "B",
+      "index": 170,
+      "flags": [],
+      "context_before": "public. If you are a",
+      "context_after": "needing medical records, you can",
+      "suggested_correction": null
+    },
+    {
+      "word": "needing",
+      "confidence": 0.95204914,
+      "start_time": 94.38,
+      "end_time": 94.7,
+      "speaker": "B",
+      "index": 171,
+      "flags": [],
+      "context_before": "If you are a patient",
+      "context_after": "medical records, you can request",
+      "suggested_correction": null
+    },
+    {
+      "word": "medical",
+      "confidence": 0.9880334,
+      "start_time": 94.78,
+      "end_time": 95.1,
+      "speaker": "B",
+      "index": 172,
+      "flags": [],
+      "context_before": "you are a patient needing",
+      "context_after": "records, you can request them",
+      "suggested_correction": null
+    },
+    {
+      "word": "records,",
+      "confidence": 0.75957066,
+      "start_time": 95.26,
+      "end_time": 95.5,
+      "speaker": "B",
+      "index": 173,
+      "flags": [],
+      "context_before": "are a patient needing medical",
+      "context_after": "you can request them online",
+      "suggested_correction": null
+    },
+    {
+      "word": "you",
+      "confidence": 0.99764675,
+      "start_time": 95.58,
+      "end_time": 95.66,
+      "speaker": "B",
+      "index": 174,
+      "flags": [],
+      "context_before": "a patient needing medical records,",
+      "context_after": "can request them online at",
+      "suggested_correction": null
+    },
+    {
+      "word": "can",
+      "confidence": 0.9947547,
+      "start_time": 95.74,
+      "end_time": 95.82,
+      "speaker": "B",
+      "index": 175,
+      "flags": [],
+      "context_before": "patient needing medical records, you",
+      "context_after": "request them online at CrosleyHealth.org,",
+      "suggested_correction": null
+    },
+    {
+      "word": "request",
+      "confidence": 0.99248946,
+      "start_time": 95.9,
+      "end_time": 96.3,
+      "speaker": "B",
+      "index": 176,
+      "flags": [],
+      "context_before": "needing medical records, you can",
+      "context_after": "them online at CrosleyHealth.org, going",
+      "suggested_correction": null
+    },
+    {
+      "word": "them",
+      "confidence": 0.99390924,
+      "start_time": 96.3,
+      "end_time": 96.38,
+      "speaker": "B",
+      "index": 177,
+      "flags": [],
+      "context_before": "medical records, you can request",
+      "context_after": "online at CrosleyHealth.org, going to",
+      "suggested_correction": null
+    },
+    {
+      "word": "online",
+      "confidence": 0.9852975,
+      "start_time": 96.54,
+      "end_time": 96.78,
+      "speaker": "B",
+      "index": 178,
+      "flags": [],
+      "context_before": "records, you can request them",
+      "context_after": "at CrosleyHealth.org, going to the",
+      "suggested_correction": null
+    },
+    {
+      "word": "at",
+      "confidence": 0.8920575,
+      "start_time": 97.1,
+      "end_time": 97.18,
+      "speaker": "B",
+      "index": 179,
+      "flags": [],
+      "context_before": "you can request them online",
+      "context_after": "CrosleyHealth.org, going to the bottom",
+      "suggested_correction": null
+    },
+    {
+      "word": "CrosleyHealth.org,",
+      "confidence": 0.15016942,
+      "start_time": 97.34,
+      "end_time": 98.86,
+      "speaker": "B",
+      "index": 180,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (15.02%)",
+          "priority": "high",
+          "confidence": 0.15016942
+        },
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "can request them online at",
+      "context_after": "going to the bottom of",
+      "suggested_correction": null
+    },
+    {
+      "word": "going",
+      "confidence": 0.96636546,
+      "start_time": 99.1,
+      "end_time": 99.18,
+      "speaker": "B",
+      "index": 181,
+      "flags": [],
+      "context_before": "request them online at CrosleyHealth.org,",
+      "context_after": "to the bottom of the",
+      "suggested_correction": null
+    },
+    {
+      "word": "to",
+      "confidence": 0.99477875,
+      "start_time": 99.34,
+      "end_time": 99.42,
+      "speaker": "B",
+      "index": 182,
+      "flags": [],
+      "context_before": "them online at CrosleyHealth.org, going",
+      "context_after": "the bottom of the page",
+      "suggested_correction": null
+    },
+    {
+      "word": "the",
+      "confidence": 0.9968104,
+      "start_time": 99.5,
+      "end_time": 99.58,
+      "speaker": "B",
+      "index": 183,
+      "flags": [],
+      "context_before": "online at CrosleyHealth.org, going to",
+      "context_after": "bottom of the page and",
+      "suggested_correction": null
+    },
+    {
+      "word": "bottom",
+      "confidence": 0.9969657,
+      "start_time": 99.58,
+      "end_time": 100.06,
+      "speaker": "B",
+      "index": 184,
+      "flags": [],
+      "context_before": "at CrosleyHealth.org, going to the",
+      "context_after": "of the page and clicking",
+      "suggested_correction": null
+    },
+    {
+      "word": "of",
+      "confidence": 0.9965479,
+      "start_time": 100.06,
+      "end_time": 100.14,
+      "speaker": "B",
+      "index": 185,
+      "flags": [],
+      "context_before": "CrosleyHealth.org, going to the bottom",
+      "context_after": "the page and clicking on",
+      "suggested_correction": null
+    },
+    {
+      "word": "the",
+      "confidence": 0.9940895,
+      "start_time": 100.14,
+      "end_time": 100.22,
+      "speaker": "B",
+      "index": 186,
+      "flags": [],
+      "context_before": "going to the bottom of",
+      "context_after": "page and clicking on request",
+      "suggested_correction": null
+    },
+    {
+      "word": "page",
+      "confidence": 0.9972868,
+      "start_time": 100.22,
+      "end_time": 100.46,
+      "speaker": "B",
+      "index": 187,
+      "flags": [],
+      "context_before": "to the bottom of the",
+      "context_after": "and clicking on request medical",
+      "suggested_correction": null
+    },
+    {
+      "word": "and",
+      "confidence": 0.8463744,
+      "start_time": 100.54,
+      "end_time": 100.62,
+      "speaker": "B",
+      "index": 188,
+      "flags": [],
+      "context_before": "the bottom of the page",
+      "context_after": "clicking on request medical records.",
+      "suggested_correction": null
+    },
+    {
+      "word": "clicking",
+      "confidence": 0.9444876,
+      "start_time": 100.7,
+      "end_time": 101.1,
+      "speaker": "B",
+      "index": 189,
+      "flags": [],
+      "context_before": "bottom of the page and",
+      "context_after": "on request medical records. If",
+      "suggested_correction": null
+    },
+    {
+      "word": "on",
+      "confidence": 0.9944431,
+      "start_time": 101.1,
+      "end_time": 101.18,
+      "speaker": "B",
+      "index": 190,
+      "flags": [],
+      "context_before": "of the page and clicking",
+      "context_after": "request medical records. If you",
+      "suggested_correction": null
+    },
+    {
+      "word": "request",
+      "confidence": 0.5178274,
+      "start_time": 101.26,
+      "end_time": 101.74,
+      "speaker": "B",
+      "index": 191,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (51.78%)",
+          "priority": "medium",
+          "confidence": 0.5178274
+        }
+      ],
+      "context_before": "the page and clicking on",
+      "context_after": "medical records. If you are",
+      "suggested_correction": null
+    },
+    {
+      "word": "medical",
+      "confidence": 0.99002445,
+      "start_time": 101.74,
+      "end_time": 102.14,
+      "speaker": "B",
+      "index": 192,
+      "flags": [],
+      "context_before": "page and clicking on request",
+      "context_after": "records. If you are needing",
+      "suggested_correction": null
+    },
+    {
+      "word": "records.",
+      "confidence": 0.9558288,
+      "start_time": 102.38,
+      "end_time": 102.62,
+      "speaker": "B",
+      "index": 193,
+      "flags": [],
+      "context_before": "and clicking on request medical",
+      "context_after": "If you are needing to",
+      "suggested_correction": null
+    },
+    {
+      "word": "If",
+      "confidence": 0.9958438,
+      "start_time": 102.94,
+      "end_time": 103.02,
+      "speaker": "B",
+      "index": 194,
+      "flags": [
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "clicking on request medical records.",
+      "context_after": "you are needing to request",
+      "suggested_correction": null
+    },
+    {
+      "word": "you",
+      "confidence": 0.99819213,
+      "start_time": 103.26,
+      "end_time": 103.34,
+      "speaker": "B",
+      "index": 195,
+      "flags": [],
+      "context_before": "on request medical records. If",
+      "context_after": "are needing to request in",
+      "suggested_correction": null
+    },
+    {
+      "word": "are",
+      "confidence": 0.977209,
+      "start_time": 103.42,
+      "end_time": 103.5,
+      "speaker": "B",
+      "index": 196,
+      "flags": [],
+      "context_before": "request medical records. If you",
+      "context_after": "needing to request in person,",
+      "suggested_correction": null
+    },
+    {
+      "word": "needing",
+      "confidence": 0.97486544,
+      "start_time": 103.66,
+      "end_time": 104.06,
+      "speaker": "B",
+      "index": 197,
+      "flags": [],
+      "context_before": "medical records. If you are",
+      "context_after": "to request in person, you",
+      "suggested_correction": null
+    },
+    {
+      "word": "to",
+      "confidence": 0.9954782,
+      "start_time": 104.14,
+      "end_time": 104.22,
+      "speaker": "B",
+      "index": 198,
+      "flags": [],
+      "context_before": "records. If you are needing",
+      "context_after": "request in person, you may",
+      "suggested_correction": null
+    },
+    {
+      "word": "request",
+      "confidence": 0.99624676,
+      "start_time": 104.3,
+      "end_time": 104.78,
+      "speaker": "B",
+      "index": 199,
+      "flags": [],
+      "context_before": "If you are needing to",
+      "context_after": "in person, you may go",
+      "suggested_correction": null
+    },
+    {
+      "word": "in",
+      "confidence": 0.99380046,
+      "start_time": 104.86,
+      "end_time": 104.94,
+      "speaker": "B",
+      "index": 200,
+      "flags": [],
+      "context_before": "you are needing to request",
+      "context_after": "person, you may go to",
+      "suggested_correction": null
+    },
+    {
+      "word": "person,",
+      "confidence": 0.84209543,
+      "start_time": 105.1,
+      "end_time": 105.18,
+      "speaker": "B",
+      "index": 201,
+      "flags": [],
+      "context_before": "are needing to request in",
+      "context_after": "you may go to Crosley",
+      "suggested_correction": null
+    },
+    {
+      "word": "you",
+      "confidence": 0.99578816,
+      "start_time": 105.82,
+      "end_time": 105.9,
+      "speaker": "B",
+      "index": 202,
+      "flags": [],
+      "context_before": "needing to request in person,",
+      "context_after": "may go to Crosley Children's",
+      "suggested_correction": null
+    },
+    {
+      "word": "may",
+      "confidence": 0.98887616,
+      "start_time": 105.98,
+      "end_time": 106.06,
+      "speaker": "B",
+      "index": 203,
+      "flags": [],
+      "context_before": "to request in person, you",
+      "context_after": "go to Crosley Children's located",
+      "suggested_correction": null
+    },
+    {
+      "word": "go",
+      "confidence": 0.99703014,
+      "start_time": 106.14,
+      "end_time": 106.22,
+      "speaker": "B",
+      "index": 204,
+      "flags": [],
+      "context_before": "request in person, you may",
+      "context_after": "to Crosley Children's located at",
+      "suggested_correction": null
+    },
+    {
+      "word": "to",
+      "confidence": 0.9955082,
+      "start_time": 106.38,
+      "end_time": 106.46,
+      "speaker": "B",
+      "index": 205,
+      "flags": [],
+      "context_before": "in person, you may go",
+      "context_after": "Crosley Children's located at 333",
+      "suggested_correction": null
+    },
+    {
+      "word": "Crosley",
+      "confidence": 0.9342731,
+      "start_time": 106.54,
+      "end_time": 107.02,
+      "speaker": "B",
+      "index": 206,
+      "flags": [],
+      "context_before": "person, you may go to",
+      "context_after": "Children's located at 333 North",
+      "suggested_correction": null
+    },
+    {
+      "word": "Children's",
+      "confidence": 0.43224904,
+      "start_time": 107.1,
+      "end_time": 107.74,
+      "speaker": "B",
+      "index": 207,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (43.22%)",
+          "priority": "high",
+          "confidence": 0.43224904
+        },
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "you may go to Crosley",
+      "context_after": "located at 333 North Santa",
+      "suggested_correction": null
+    },
+    {
+      "word": "located",
+      "confidence": 0.6585908,
+      "start_time": 107.9,
+      "end_time": 108.22,
+      "speaker": "B",
+      "index": 208,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (65.86%)",
+          "priority": "medium",
+          "confidence": 0.6585908
+        }
+      ],
+      "context_before": "may go to Crosley Children's",
+      "context_after": "at 333 North Santa Rosa,",
+      "suggested_correction": null
+    },
+    {
+      "word": "at",
+      "confidence": 0.99412835,
+      "start_time": 108.3,
+      "end_time": 108.38,
+      "speaker": "B",
+      "index": 209,
+      "flags": [],
+      "context_before": "go to Crosley Children's located",
+      "context_after": "333 North Santa Rosa, San",
+      "suggested_correction": null
+    },
+    {
+      "word": "333",
+      "confidence": 0.9875995,
+      "start_time": 108.54,
+      "end_time": 108.779,
+      "speaker": "B",
+      "index": 210,
+      "flags": [
+        {
+          "type": "number",
+          "reason": "Number detected - verify accuracy",
+          "priority": "low"
+        }
+      ],
+      "context_before": "to Crosley Children's located at",
+      "context_after": "North Santa Rosa, San Antonio,",
+      "suggested_correction": null
+    },
+    {
+      "word": "North",
+      "confidence": 0.9259367,
+      "start_time": 109.58,
+      "end_time": 109.82,
+      "speaker": "B",
+      "index": 211,
+      "flags": [
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "Crosley Children's located at 333",
+      "context_after": "Santa Rosa, San Antonio, Texas",
+      "suggested_correction": null
+    },
+    {
+      "word": "Santa",
+      "confidence": 0.9683034,
+      "start_time": 109.82,
+      "end_time": 110.22,
+      "speaker": "B",
+      "index": 212,
+      "flags": [
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "Children's located at 333 North",
+      "context_after": "Rosa, San Antonio, Texas 78207,",
+      "suggested_correction": null
+    },
+    {
+      "word": "Rosa,",
+      "confidence": 0.81986296,
+      "start_time": 110.3,
+      "end_time": 110.62,
+      "speaker": "B",
+      "index": 213,
+      "flags": [
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "located at 333 North Santa",
+      "context_after": "San Antonio, Texas 78207, Monday",
+      "suggested_correction": null
+    },
+    {
+      "word": "San",
+      "confidence": 0.9979797,
+      "start_time": 110.86,
+      "end_time": 111.02,
+      "speaker": "B",
+      "index": 214,
+      "flags": [],
+      "context_before": "at 333 North Santa Rosa,",
+      "context_after": "Antonio, Texas 78207, Monday through",
+      "suggested_correction": null
+    },
+    {
+      "word": "Antonio,",
+      "confidence": 0.9586944,
+      "start_time": 111.02,
+      "end_time": 111.66,
+      "speaker": "B",
+      "index": 215,
+      "flags": [],
+      "context_before": "333 North Santa Rosa, San",
+      "context_after": "Texas 78207, Monday through Friday,",
+      "suggested_correction": null
+    },
+    {
+      "word": "Texas",
+      "confidence": 0.93323535,
+      "start_time": 111.74,
+      "end_time": 112.14,
+      "speaker": "B",
+      "index": 216,
+      "flags": [
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "North Santa Rosa, San Antonio,",
+      "context_after": "78207, Monday through Friday, from",
+      "suggested_correction": null
+    },
+    {
+      "word": "78207,",
+      "confidence": 0.7034838,
+      "start_time": 113.34,
+      "end_time": 113.58,
+      "speaker": "B",
+      "index": 217,
+      "flags": [
+        {
+          "type": "number",
+          "reason": "Number detected - verify accuracy",
+          "priority": "low"
+        }
+      ],
+      "context_before": "Santa Rosa, San Antonio, Texas",
+      "context_after": "Monday through Friday, from 8:00",
+      "suggested_correction": null
+    },
+    {
+      "word": "Monday",
+      "confidence": 0.9897205,
+      "start_time": 113.9,
+      "end_time": 114.38,
+      "speaker": "B",
+      "index": 218,
+      "flags": [],
+      "context_before": "Rosa, San Antonio, Texas 78207,",
+      "context_after": "through Friday, from 8:00 a.m.",
+      "suggested_correction": null
+    },
+    {
+      "word": "through",
+      "confidence": 0.97518116,
+      "start_time": 114.38,
+      "end_time": 114.46,
+      "speaker": "B",
+      "index": 219,
+      "flags": [],
+      "context_before": "San Antonio, Texas 78207, Monday",
+      "context_after": "Friday, from 8:00 a.m. to",
+      "suggested_correction": null
+    },
+    {
+      "word": "Friday,",
+      "confidence": 0.69666207,
+      "start_time": 114.54,
+      "end_time": 115.02,
+      "speaker": "B",
+      "index": 220,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (69.67%)",
+          "priority": "medium",
+          "confidence": 0.69666207
+        }
+      ],
+      "context_before": "Antonio, Texas 78207, Monday through",
+      "context_after": "from 8:00 a.m. to 4:00",
+      "suggested_correction": null
+    },
+    {
+      "word": "from",
+      "confidence": 0.7621183,
+      "start_time": 115.17,
+      "end_time": 115.25,
+      "speaker": "B",
+      "index": 221,
+      "flags": [],
+      "context_before": "Texas 78207, Monday through Friday,",
+      "context_after": "8:00 a.m. to 4:00 p.m.",
+      "suggested_correction": null
+    },
+    {
+      "word": "8:00",
+      "confidence": 0.5340039,
+      "start_time": 115.33,
+      "end_time": 115.57,
+      "speaker": "B",
+      "index": 222,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (53.40%)",
+          "priority": "medium",
+          "confidence": 0.5340039
+        },
+        {
+          "type": "time",
+          "reason": "Time detected - verify accuracy",
+          "priority": "medium"
+        },
+        {
+          "type": "number",
+          "reason": "Number detected - verify accuracy",
+          "priority": "low"
+        }
+      ],
+      "context_before": "78207, Monday through Friday, from",
+      "context_after": "a.m. to 4:00 p.m. If",
+      "suggested_correction": null
+    },
+    {
+      "word": "a.m.",
+      "confidence": 0.5860126,
+      "start_time": 115.57,
+      "end_time": 115.89,
+      "speaker": "B",
+      "index": 223,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (58.60%)",
+          "priority": "medium",
+          "confidence": 0.5860126
+        }
+      ],
+      "context_before": "Monday through Friday, from 8:00",
+      "context_after": "to 4:00 p.m. If you",
+      "suggested_correction": null
+    },
+    {
+      "word": "to",
+      "confidence": 0.87566555,
+      "start_time": 116.05,
+      "end_time": 116.13,
+      "speaker": "B",
+      "index": 224,
+      "flags": [],
+      "context_before": "through Friday, from 8:00 a.m.",
+      "context_after": "4:00 p.m. If you are",
+      "suggested_correction": null
+    },
+    {
+      "word": "4:00",
+      "confidence": 0.9567798,
+      "start_time": 116.13,
+      "end_time": 116.45,
+      "speaker": "B",
+      "index": 225,
+      "flags": [
+        {
+          "type": "time",
+          "reason": "Time detected - verify accuracy",
+          "priority": "medium"
+        },
+        {
+          "type": "number",
+          "reason": "Number detected - verify accuracy",
+          "priority": "low"
+        }
+      ],
+      "context_before": "Friday, from 8:00 a.m. to",
+      "context_after": "p.m. If you are a",
+      "suggested_correction": null
+    },
+    {
+      "word": "p.m.",
+      "confidence": 0.9426847,
+      "start_time": 116.45,
+      "end_time": 116.69,
+      "speaker": "B",
+      "index": 226,
+      "flags": [],
+      "context_before": "from 8:00 a.m. to 4:00",
+      "context_after": "If you are a provider",
+      "suggested_correction": null
+    },
+    {
+      "word": "If",
+      "confidence": 0.96220344,
+      "start_time": 116.93,
+      "end_time": 117.01,
+      "speaker": "B",
+      "index": 227,
+      "flags": [
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "8:00 a.m. to 4:00 p.m.",
+      "context_after": "you are a provider needing",
+      "suggested_correction": null
+    },
+    {
+      "word": "you",
+      "confidence": 0.99639857,
+      "start_time": 117.09,
+      "end_time": 117.17,
+      "speaker": "B",
+      "index": 228,
+      "flags": [],
+      "context_before": "a.m. to 4:00 p.m. If",
+      "context_after": "are a provider needing records,",
+      "suggested_correction": null
+    },
+    {
+      "word": "are",
+      "confidence": 0.98186535,
+      "start_time": 117.25,
+      "end_time": 117.33,
+      "speaker": "B",
+      "index": 229,
+      "flags": [],
+      "context_before": "to 4:00 p.m. If you",
+      "context_after": "a provider needing records, you",
+      "suggested_correction": null
+    },
+    {
+      "word": "a",
+      "confidence": 0.9867165,
+      "start_time": 117.41,
+      "end_time": 117.49,
+      "speaker": "B",
+      "index": 230,
+      "flags": [],
+      "context_before": "4:00 p.m. If you are",
+      "context_after": "provider needing records, you may",
+      "suggested_correction": null
+    },
+    {
+      "word": "provider",
+      "confidence": 0.9874342,
+      "start_time": 117.57,
+      "end_time": 117.89,
+      "speaker": "B",
+      "index": 231,
+      "flags": [],
+      "context_before": "p.m. If you are a",
+      "context_after": "needing records, you may send",
+      "suggested_correction": null
+    },
+    {
+      "word": "needing",
+      "confidence": 0.6957484,
+      "start_time": 118.29,
+      "end_time": 118.69,
+      "speaker": "B",
+      "index": 232,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (69.57%)",
+          "priority": "medium",
+          "confidence": 0.6957484
+        }
+      ],
+      "context_before": "If you are a provider",
+      "context_after": "records, you may send a",
+      "suggested_correction": null
+    },
+    {
+      "word": "records,",
+      "confidence": 0.77351177,
+      "start_time": 119.17,
+      "end_time": 119.41,
+      "speaker": "B",
+      "index": 233,
+      "flags": [],
+      "context_before": "you are a provider needing",
+      "context_after": "you may send a fax",
+      "suggested_correction": null
+    },
+    {
+      "word": "you",
+      "confidence": 0.9885854,
+      "start_time": 119.65,
+      "end_time": 119.73,
+      "speaker": "B",
+      "index": 234,
+      "flags": [],
+      "context_before": "are a provider needing records,",
+      "context_after": "may send a fax to",
+      "suggested_correction": null
+    },
+    {
+      "word": "may",
+      "confidence": 0.9949062,
+      "start_time": 119.81,
+      "end_time": 119.89,
+      "speaker": "B",
+      "index": 235,
+      "flags": [],
+      "context_before": "a provider needing records, you",
+      "context_after": "send a fax to 210-703-8218.",
+      "suggested_correction": null
+    },
+    {
+      "word": "send",
+      "confidence": 0.99511445,
+      "start_time": 119.97,
+      "end_time": 120.13,
+      "speaker": "B",
+      "index": 236,
+      "flags": [],
+      "context_before": "provider needing records, you may",
+      "context_after": "a fax to 210-703-8218. If",
+      "suggested_correction": null
+    },
+    {
+      "word": "a",
+      "confidence": 0.99310356,
+      "start_time": 120.21,
+      "end_time": 120.29,
+      "speaker": "B",
+      "index": 237,
+      "flags": [],
+      "context_before": "needing records, you may send",
+      "context_after": "fax to 210-703-8218. If you",
+      "suggested_correction": null
+    },
+    {
+      "word": "fax",
+      "confidence": 0.94465,
+      "start_time": 120.37,
+      "end_time": 120.61,
+      "speaker": "B",
+      "index": 238,
+      "flags": [],
+      "context_before": "records, you may send a",
+      "context_after": "to 210-703-8218. If you are",
+      "suggested_correction": null
+    },
+    {
+      "word": "to",
+      "confidence": 0.98965746,
+      "start_time": 120.69,
+      "end_time": 120.85,
+      "speaker": "B",
+      "index": 239,
+      "flags": [],
+      "context_before": "you may send a fax",
+      "context_after": "210-703-8218. If you are a",
+      "suggested_correction": null
+    },
+    {
+      "word": "210-703-8218.",
+      "confidence": 0.8982266,
+      "start_time": 123.81,
+      "end_time": 124.05,
+      "speaker": "B",
+      "index": 240,
+      "flags": [
+        {
+          "type": "phone_number",
+          "reason": "Phone number detected - verify accuracy",
+          "priority": "high"
+        }
+      ],
+      "context_before": "may send a fax to",
+      "context_after": "If you are a third",
+      "suggested_correction": null
+    },
+    {
+      "word": "If",
+      "confidence": 0.99786645,
+      "start_time": 125.57,
+      "end_time": 125.65,
+      "speaker": "B",
+      "index": 241,
+      "flags": [
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "send a fax to 210-703-8218.",
+      "context_after": "you are a third party",
+      "suggested_correction": null
+    },
+    {
+      "word": "you",
+      "confidence": 0.9981483,
+      "start_time": 125.73,
+      "end_time": 125.81,
+      "speaker": "B",
+      "index": 242,
+      "flags": [],
+      "context_before": "a fax to 210-703-8218. If",
+      "context_after": "are a third party checking",
+      "suggested_correction": null
+    },
+    {
+      "word": "are",
+      "confidence": 0.9778022,
+      "start_time": 125.89,
+      "end_time": 125.97,
+      "speaker": "B",
+      "index": 243,
+      "flags": [],
+      "context_before": "fax to 210-703-8218. If you",
+      "context_after": "a third party checking status",
+      "suggested_correction": null
+    },
+    {
+      "word": "a",
+      "confidence": 0.9733508,
+      "start_time": 126.05,
+      "end_time": 126.13,
+      "speaker": "B",
+      "index": 244,
+      "flags": [],
+      "context_before": "to 210-703-8218. If you are",
+      "context_after": "third party checking status on",
+      "suggested_correction": null
+    },
+    {
+      "word": "third",
+      "confidence": 0.98588794,
+      "start_time": 126.21,
+      "end_time": 126.29,
+      "speaker": "B",
+      "index": 245,
+      "flags": [],
+      "context_before": "210-703-8218. If you are a",
+      "context_after": "party checking status on a",
+      "suggested_correction": null
+    },
+    {
+      "word": "party",
+      "confidence": 0.51132625,
+      "start_time": 126.45,
+      "end_time": 126.77,
+      "speaker": "B",
+      "index": 246,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (51.13%)",
+          "priority": "medium",
+          "confidence": 0.51132625
+        }
+      ],
+      "context_before": "If you are a third",
+      "context_after": "checking status on a request,",
+      "suggested_correction": null
+    },
+    {
+      "word": "checking",
+      "confidence": 0.5701005,
+      "start_time": 126.85,
+      "end_time": 127.25,
+      "speaker": "B",
+      "index": 247,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (57.01%)",
+          "priority": "medium",
+          "confidence": 0.5701005
+        }
+      ],
+      "context_before": "you are a third party",
+      "context_after": "status on a request, please",
+      "suggested_correction": null
+    },
+    {
+      "word": "status",
+      "confidence": 0.9841061,
+      "start_time": 127.33,
+      "end_time": 127.73,
+      "speaker": "B",
+      "index": 248,
+      "flags": [],
+      "context_before": "are a third party checking",
+      "context_after": "on a request, please call",
+      "suggested_correction": null
+    },
+    {
+      "word": "on",
+      "confidence": 0.98346287,
+      "start_time": 127.89,
+      "end_time": 127.97,
+      "speaker": "B",
+      "index": 249,
+      "flags": [],
+      "context_before": "a third party checking status",
+      "context_after": "a request, please call MRO",
+      "suggested_correction": null
+    },
+    {
+      "word": "a",
+      "confidence": 0.93691224,
+      "start_time": 128.05,
+      "end_time": 128.13,
+      "speaker": "B",
+      "index": 250,
+      "flags": [],
+      "context_before": "third party checking status on",
+      "context_after": "request, please call MRO at",
+      "suggested_correction": null
+    },
+    {
+      "word": "request,",
+      "confidence": 0.8917181,
+      "start_time": 128.21,
+      "end_time": 128.69,
+      "speaker": "B",
+      "index": 251,
+      "flags": [],
+      "context_before": "party checking status on a",
+      "context_after": "please call MRO at 610-994-7500.",
+      "suggested_correction": null
+    },
+    {
+      "word": "please",
+      "confidence": 0.99437165,
+      "start_time": 129.01,
+      "end_time": 129.09,
+      "speaker": "B",
+      "index": 252,
+      "flags": [],
+      "context_before": "checking status on a request,",
+      "context_after": "call MRO at 610-994-7500. Thank",
+      "suggested_correction": null
+    },
+    {
+      "word": "call",
+      "confidence": 0.99523723,
+      "start_time": 129.49,
+      "end_time": 129.57,
+      "speaker": "B",
+      "index": 253,
+      "flags": [],
+      "context_before": "status on a request, please",
+      "context_after": "MRO at 610-994-7500. Thank you.",
+      "suggested_correction": null
+    },
+    {
+      "word": "MRO",
+      "confidence": 0.98609436,
+      "start_time": 129.89,
+      "end_time": 130.37,
+      "speaker": "B",
+      "index": 254,
+      "flags": [
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "on a request, please call",
+      "context_after": "at 610-994-7500. Thank you.",
+      "suggested_correction": null
+    },
+    {
+      "word": "at",
+      "confidence": 0.97739846,
+      "start_time": 130.53,
+      "end_time": 130.61,
+      "speaker": "B",
+      "index": 255,
+      "flags": [],
+      "context_before": "a request, please call MRO",
+      "context_after": "610-994-7500. Thank you.",
+      "suggested_correction": null
+    },
+    {
+      "word": "610-994-7500.",
+      "confidence": 0.88720286,
+      "start_time": 133.81,
+      "end_time": 134.05,
+      "speaker": "B",
+      "index": 256,
+      "flags": [
+        {
+          "type": "phone_number",
+          "reason": "Phone number detected - verify accuracy",
+          "priority": "high"
+        }
+      ],
+      "context_before": "request, please call MRO at",
+      "context_after": "Thank you.",
+      "suggested_correction": null
+    },
+    {
+      "word": "Thank",
+      "confidence": 0.8870945,
+      "start_time": 136.05,
+      "end_time": 136.29,
+      "speaker": "B",
+      "index": 257,
+      "flags": [],
+      "context_before": "please call MRO at 610-994-7500.",
+      "context_after": "you.",
+      "suggested_correction": null
+    },
+    {
+      "word": "you.",
+      "confidence": 0.98122734,
+      "start_time": 136.37,
+      "end_time": 136.53,
+      "speaker": "B",
+      "index": 258,
+      "flags": [],
+      "context_before": "call MRO at 610-994-7500. Thank",
+      "context_after": "",
+      "suggested_correction": null
+    }
+  ],
+  "corrections": [],
+  "audit": []
+}

@@ -1,0 +1,551 @@
+{
+  "transcript": "Thanks for calling the Crossview Boston. This is Andrew. How may I help you? Hi, Andrew. My name is Katrina. I'm calling with State Farm. I'm calling in regards to Samir. Last name is O U A I S. Y' all get going once a year or every six months? Once a year. Yeah. Hello? Hello? All right. Friends? Okay, let me. Transfer you to the case manager's voicemail. She just went on lunch. Okay, thank you.",
+  "overall_confidence": 0.92646813,
+  "word_data": [
+    {
+      "word": "Thanks",
+      "confidence": 0.7858887,
+      "start_time": 1.12,
+      "end_time": 1.28,
+      "speaker": "A"
+    },
+    {
+      "word": "for",
+      "confidence": 0.9824219,
+      "start_time": 1.28,
+      "end_time": 1.4,
+      "speaker": "A"
+    },
+    {
+      "word": "calling",
+      "confidence": 0.9868164,
+      "start_time": 1.4,
+      "end_time": 1.6,
+      "speaker": "A"
+    },
+    {
+      "word": "the",
+      "confidence": 0.90478516,
+      "start_time": 1.6,
+      "end_time": 1.68,
+      "speaker": "A"
+    },
+    {
+      "word": "Crossview",
+      "confidence": 0.6039632,
+      "start_time": 1.68,
+      "end_time": 2.04,
+      "speaker": "A"
+    },
+    {
+      "word": "Boston.",
+      "confidence": 0.6703288,
+      "start_time": 2.04,
+      "end_time": 2.48,
+      "speaker": "A"
+    },
+    {
+      "word": "This",
+      "confidence": 0.9995117,
+      "start_time": 2.48,
+      "end_time": 2.64,
+      "speaker": "A"
+    },
+    {
+      "word": "is",
+      "confidence": 0.9995117,
+      "start_time": 2.64,
+      "end_time": 2.8,
+      "speaker": "A"
+    },
+    {
+      "word": "Andrew.",
+      "confidence": 0.98535156,
+      "start_time": 2.8,
+      "end_time": 3.28,
+      "speaker": "A"
+    },
+    {
+      "word": "How",
+      "confidence": 0.9995117,
+      "start_time": 3.28,
+      "end_time": 3.48,
+      "speaker": "A"
+    },
+    {
+      "word": "may",
+      "confidence": 0.9916992,
+      "start_time": 3.48,
+      "end_time": 3.6,
+      "speaker": "A"
+    },
+    {
+      "word": "I",
+      "confidence": 0.98876953,
+      "start_time": 3.6,
+      "end_time": 3.68,
+      "speaker": "A"
+    },
+    {
+      "word": "help",
+      "confidence": 0.9995117,
+      "start_time": 3.68,
+      "end_time": 3.84,
+      "speaker": "A"
+    },
+    {
+      "word": "you?",
+      "confidence": 1.0,
+      "start_time": 3.84,
+      "end_time": 4.16,
+      "speaker": "A"
+    },
+    {
+      "word": "Hi,",
+      "confidence": 0.9941406,
+      "start_time": 5.44,
+      "end_time": 5.84,
+      "speaker": "B"
+    },
+    {
+      "word": "Andrew.",
+      "confidence": 0.9967448,
+      "start_time": 5.84,
+      "end_time": 6.28,
+      "speaker": "B"
+    },
+    {
+      "word": "My",
+      "confidence": 0.99902344,
+      "start_time": 6.28,
+      "end_time": 6.4,
+      "speaker": "B"
+    },
+    {
+      "word": "name",
+      "confidence": 0.9995117,
+      "start_time": 6.4,
+      "end_time": 6.52,
+      "speaker": "B"
+    },
+    {
+      "word": "is",
+      "confidence": 0.98876953,
+      "start_time": 6.52,
+      "end_time": 6.68,
+      "speaker": "B"
+    },
+    {
+      "word": "Katrina.",
+      "confidence": 0.67890626,
+      "start_time": 6.68,
+      "end_time": 7.12,
+      "speaker": "B"
+    },
+    {
+      "word": "I'm",
+      "confidence": 0.9547526,
+      "start_time": 7.12,
+      "end_time": 7.28,
+      "speaker": "B"
+    },
+    {
+      "word": "calling",
+      "confidence": 0.97558594,
+      "start_time": 7.28,
+      "end_time": 7.52,
+      "speaker": "B"
+    },
+    {
+      "word": "with",
+      "confidence": 0.9667969,
+      "start_time": 7.52,
+      "end_time": 7.68,
+      "speaker": "B"
+    },
+    {
+      "word": "State",
+      "confidence": 0.98291016,
+      "start_time": 7.68,
+      "end_time": 7.92,
+      "speaker": "B"
+    },
+    {
+      "word": "Farm.",
+      "confidence": 0.9394531,
+      "start_time": 7.92,
+      "end_time": 8.24,
+      "speaker": "B"
+    },
+    {
+      "word": "I'm",
+      "confidence": 0.9998372,
+      "start_time": 8.24,
+      "end_time": 8.56,
+      "speaker": "B"
+    },
+    {
+      "word": "calling",
+      "confidence": 0.9968262,
+      "start_time": 8.56,
+      "end_time": 8.92,
+      "speaker": "B"
+    },
+    {
+      "word": "in",
+      "confidence": 0.99609375,
+      "start_time": 8.92,
+      "end_time": 9.08,
+      "speaker": "B"
+    },
+    {
+      "word": "regards",
+      "confidence": 0.9980469,
+      "start_time": 9.08,
+      "end_time": 9.44,
+      "speaker": "B"
+    },
+    {
+      "word": "to",
+      "confidence": 0.99853516,
+      "start_time": 9.44,
+      "end_time": 9.76,
+      "speaker": "B"
+    },
+    {
+      "word": "Samir.",
+      "confidence": 0.9453125,
+      "start_time": 9.76,
+      "end_time": 10.48,
+      "speaker": "B"
+    },
+    {
+      "word": "Last",
+      "confidence": 0.9970703,
+      "start_time": 12.48,
+      "end_time": 12.8,
+      "speaker": "B"
+    },
+    {
+      "word": "name",
+      "confidence": 0.9951172,
+      "start_time": 12.8,
+      "end_time": 13.0,
+      "speaker": "B"
+    },
+    {
+      "word": "is",
+      "confidence": 0.9902344,
+      "start_time": 13.0,
+      "end_time": 13.24,
+      "speaker": "B"
+    },
+    {
+      "word": "O",
+      "confidence": 0.95996094,
+      "start_time": 13.24,
+      "end_time": 13.6,
+      "speaker": "B"
+    },
+    {
+      "word": "U",
+      "confidence": 0.9399414,
+      "start_time": 14.0,
+      "end_time": 14.4,
+      "speaker": "B"
+    },
+    {
+      "word": "A",
+      "confidence": 0.5888672,
+      "start_time": 14.48,
+      "end_time": 14.84,
+      "speaker": "B"
+    },
+    {
+      "word": "I",
+      "confidence": 0.93652344,
+      "start_time": 14.84,
+      "end_time": 15.12,
+      "speaker": "B"
+    },
+    {
+      "word": "S.",
+      "confidence": 0.99560547,
+      "start_time": 15.12,
+      "end_time": 15.44,
+      "speaker": "B"
+    },
+    {
+      "word": "Y'",
+      "confidence": 0.8029785,
+      "start_time": 18.08,
+      "end_time": 18.36,
+      "speaker": "B"
+    },
+    {
+      "word": "all",
+      "confidence": 0.99853516,
+      "start_time": 18.36,
+      "end_time": 18.48,
+      "speaker": "B"
+    },
+    {
+      "word": "get",
+      "confidence": 0.9736328,
+      "start_time": 18.48,
+      "end_time": 18.68,
+      "speaker": "B"
+    },
+    {
+      "word": "going",
+      "confidence": 0.5991211,
+      "start_time": 18.68,
+      "end_time": 18.96,
+      "speaker": "B"
+    },
+    {
+      "word": "once",
+      "confidence": 0.98583984,
+      "start_time": 19.04,
+      "end_time": 19.4,
+      "speaker": "B"
+    },
+    {
+      "word": "a",
+      "confidence": 0.9921875,
+      "start_time": 19.4,
+      "end_time": 19.64,
+      "speaker": "B"
+    },
+    {
+      "word": "year",
+      "confidence": 0.99902344,
+      "start_time": 19.64,
+      "end_time": 19.88,
+      "speaker": "B"
+    },
+    {
+      "word": "or",
+      "confidence": 0.9550781,
+      "start_time": 19.88,
+      "end_time": 20.24,
+      "speaker": "B"
+    },
+    {
+      "word": "every",
+      "confidence": 0.9399414,
+      "start_time": 20.24,
+      "end_time": 20.56,
+      "speaker": "B"
+    },
+    {
+      "word": "six",
+      "confidence": 0.57470703,
+      "start_time": 20.56,
+      "end_time": 20.84,
+      "speaker": "B"
+    },
+    {
+      "word": "months?",
+      "confidence": 0.9746094,
+      "start_time": 20.84,
+      "end_time": 21.2,
+      "speaker": "B"
+    },
+    {
+      "word": "Once",
+      "confidence": 0.64746094,
+      "start_time": 21.52,
+      "end_time": 21.84,
+      "speaker": "B"
+    },
+    {
+      "word": "a",
+      "confidence": 0.9951172,
+      "start_time": 21.84,
+      "end_time": 22.04,
+      "speaker": "B"
+    },
+    {
+      "word": "year.",
+      "confidence": 0.99853516,
+      "start_time": 22.04,
+      "end_time": 22.32,
+      "speaker": "B"
+    },
+    {
+      "word": "Yeah.",
+      "confidence": 0.8741862,
+      "start_time": 24.0,
+      "end_time": 24.48,
+      "speaker": "B"
+    },
+    {
+      "word": "Hello?",
+      "confidence": 0.96362305,
+      "start_time": 30.88,
+      "end_time": 31.2,
+      "speaker": "B"
+    },
+    {
+      "word": "Hello?",
+      "confidence": 0.9399414,
+      "start_time": 34.8,
+      "end_time": 35.36,
+      "speaker": "B"
+    },
+    {
+      "word": "All",
+      "confidence": 0.88134766,
+      "start_time": 40.88,
+      "end_time": 41.12,
+      "speaker": "B"
+    },
+    {
+      "word": "right.",
+      "confidence": 0.8354492,
+      "start_time": 41.12,
+      "end_time": 41.28,
+      "speaker": "B"
+    },
+    {
+      "word": "Friends?",
+      "confidence": 0.41918945,
+      "start_time": 41.28,
+      "end_time": 41.6,
+      "speaker": "B"
+    },
+    {
+      "word": "Okay,",
+      "confidence": 0.91715497,
+      "start_time": 42.72,
+      "end_time": 43.16,
+      "speaker": "B"
+    },
+    {
+      "word": "let",
+      "confidence": 0.9116211,
+      "start_time": 43.16,
+      "end_time": 43.32,
+      "speaker": "B"
+    },
+    {
+      "word": "me.",
+      "confidence": 0.9995117,
+      "start_time": 43.32,
+      "end_time": 43.52,
+      "speaker": "B"
+    },
+    {
+      "word": "Transfer",
+      "confidence": 0.99902344,
+      "start_time": 43.52,
+      "end_time": 43.88,
+      "speaker": "A"
+    },
+    {
+      "word": "you",
+      "confidence": 0.95996094,
+      "start_time": 43.88,
+      "end_time": 44.08,
+      "speaker": "A"
+    },
+    {
+      "word": "to",
+      "confidence": 0.609375,
+      "start_time": 44.08,
+      "end_time": 44.28,
+      "speaker": "A"
+    },
+    {
+      "word": "the",
+      "confidence": 0.9975586,
+      "start_time": 44.28,
+      "end_time": 44.4,
+      "speaker": "A"
+    },
+    {
+      "word": "case",
+      "confidence": 0.9975586,
+      "start_time": 44.4,
+      "end_time": 44.56,
+      "speaker": "A"
+    },
+    {
+      "word": "manager's",
+      "confidence": 0.98913574,
+      "start_time": 44.56,
+      "end_time": 45.04,
+      "speaker": "A"
+    },
+    {
+      "word": "voicemail.",
+      "confidence": 0.9979248,
+      "start_time": 45.04,
+      "end_time": 45.48,
+      "speaker": "A"
+    },
+    {
+      "word": "She",
+      "confidence": 0.97802734,
+      "start_time": 45.48,
+      "end_time": 45.64,
+      "speaker": "A"
+    },
+    {
+      "word": "just",
+      "confidence": 1.0,
+      "start_time": 45.64,
+      "end_time": 45.8,
+      "speaker": "A"
+    },
+    {
+      "word": "went",
+      "confidence": 0.9746094,
+      "start_time": 45.8,
+      "end_time": 45.96,
+      "speaker": "A"
+    },
+    {
+      "word": "on",
+      "confidence": 0.9980469,
+      "start_time": 45.96,
+      "end_time": 46.12,
+      "speaker": "A"
+    },
+    {
+      "word": "lunch.",
+      "confidence": 0.99316406,
+      "start_time": 46.12,
+      "end_time": 46.48,
+      "speaker": "A"
+    },
+    {
+      "word": "Okay,",
+      "confidence": 0.9588216,
+      "start_time": 48.4,
+      "end_time": 48.96,
+      "speaker": "B"
+    },
+    {
+      "word": "thank",
+      "confidence": 0.99975586,
+      "start_time": 48.96,
+      "end_time": 49.24,
+      "speaker": "B"
+    },
+    {
+      "word": "you.",
+      "confidence": 0.99365234,
+      "start_time": 49.24,
+      "end_time": 49.52,
+      "speaker": "B"
+    }
+  ],
+  "metadata": {
+    "service": "assemblyai",
+    "language_code": "en_us",
+    "audio_duration": 0.051,
+    "num_words": 77
+  }
+}

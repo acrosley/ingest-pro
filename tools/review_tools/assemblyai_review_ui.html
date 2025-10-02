@@ -1,0 +1,1732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AssemblyAI Transcript Review</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #f5f7fa;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            opacity: 0.9;
+            font-size: 14px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-left: 4px solid #667eea;
+        }
+
+        .stat-card h3 {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .stat-card .value {
+            font-size: 32px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .controls {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .controls-row {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+
+        .control-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .control-group label {
+            font-size: 14px;
+            font-weight: 500;
+            color: #555;
+        }
+
+        select, input, button {
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+
+        select, input {
+            background: white;
+        }
+
+        select:focus, input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        button {
+            background: #667eea;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        button:hover {
+            background: #5568d3;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        button.secondary {
+            background: #95a5a6;
+        }
+
+        button.secondary:hover {
+            background: #7f8c8d;
+        }
+
+        .review-content {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .word-list {
+            padding: 20px;
+        }
+
+        .word-item {
+            padding: 15px;
+            border-left: 4px solid transparent;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            background: #f8f9fa;
+            transition: all 0.2s;
+        }
+
+        .word-item:hover {
+            background: #e9ecef;
+            transform: translateX(4px);
+        }
+
+        .word-item.flagged {
+            background: #fff5f5;
+            border-left-color: #e74c3c;
+        }
+
+        .word-item.flagged.priority-high {
+            border-left-color: #e74c3c;
+            border-left-width: 6px;
+        }
+
+        .word-item.flagged.priority-medium {
+            border-left-color: #f39c12;
+            border-left-width: 5px;
+        }
+
+        .word-item.flagged.priority-low {
+            border-left-color: #3498db;
+            border-left-width: 4px;
+        }
+
+        .word-item.selected {
+            background: #e3f2fd;
+            border-left-color: #2196f3;
+            box-shadow: 0 4px 12px rgba(33, 150, 243, 0.2);
+        }
+
+        .word-item.approved {
+            background: #f1f8f4;
+            border-left-color: #27ae60;
+            border-left-width: 6px;
+            opacity: 0.8;
+        }
+
+        .word-item.approved:hover {
+            opacity: 1;
+        }
+
+        .word-item.approved .word-text {
+            color: #27ae60;
+        }
+
+        .approved-badge {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 12px;
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .word-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .word-main {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .word-text {
+            font-size: 18px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .word-meta {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            font-size: 13px;
+            color: #7f8c8d;
+        }
+
+        .confidence-badge {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 12px;
+        }
+
+        .confidence-high {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .confidence-medium {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .confidence-low {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .speaker-badge {
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-weight: 500;
+            font-size: 12px;
+            background: #e3f2fd;
+            color: #1976d2;
+        }
+
+        .timestamp {
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+        }
+
+        .word-context {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .context-word {
+            color: #7f8c8d;
+        }
+
+        .context-current {
+            background: #fff59d;
+            padding: 2px 4px;
+            border-radius: 2px;
+            font-weight: 600;
+            color: #000;
+        }
+
+        .flags {
+            margin-top: 10px;
+        }
+
+        .flag {
+            display: inline-block;
+            padding: 6px 12px;
+            margin: 4px 4px 4px 0;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .flag.priority-high {
+            background: #fee;
+            color: #c00;
+            border: 1px solid #fcc;
+        }
+
+        .flag.priority-medium {
+            background: #fff4e5;
+            color: #e67e22;
+            border: 1px solid #ffe0b2;
+        }
+
+        .flag.priority-low {
+            background: #e3f2fd;
+            color: #1976d2;
+            border: 1px solid #bbdefb;
+        }
+
+        .correction-form {
+            margin-top: 15px;
+            padding: 15px;
+            background: #f0f4f8;
+            border-radius: 4px;
+            border-left: 3px solid #667eea;
+        }
+
+        .correction-form h4 {
+            margin-bottom: 10px;
+            color: #2c3e50;
+            font-size: 14px;
+        }
+
+        .correction-inputs {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .correction-inputs input {
+            flex: 1;
+        }
+
+        .correction-inputs button {
+            flex-shrink: 0;
+        }
+
+        .no-flags {
+            text-align: center;
+            padding: 60px 20px;
+            color: #95a5a6;
+        }
+
+        .no-flags h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .progress-bar {
+            background: #ecf0f1;
+            height: 8px;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 15px;
+        }
+
+        .progress-fill {
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            height: 100%;
+            transition: width 0.3s;
+        }
+
+        .audio-player {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            min-width: 300px;
+            z-index: 1000;
+        }
+
+        .audio-player.hidden {
+            display: none;
+        }
+
+        .audio-player h4 {
+            margin-bottom: 10px;
+            color: #2c3e50;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .controls-row {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .audio-player {
+                position: static;
+                margin-top: 20px;
+            }
+        }
+
+        .export-section {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 2px solid #ecf0f1;
+        }
+
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #2c3e50;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            z-index: 2000;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .toast.show {
+            opacity: 1;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateX(-50%) translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(-50%) translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎯 AssemblyAI Transcript Review</h1>
+            <p>Manual review and correction tool for AssemblyAI transcriptions</p>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+            </div>
+        </header>
+
+        <div class="stats-grid" id="statsGrid">
+            <!-- Stats will be populated by JavaScript -->
+        </div>
+
+        <div class="controls">
+            <div class="controls-row">
+                 <div class="control-group">
+                     <label for="fileInput">Load Review File:</label>
+                     <input type="file" id="fileInput" accept=".json" title="Load .review.json or .confidence.json file">
+                 </div>
+                 <div class="control-group" style="font-size: 12px; color: #7f8c8d;">
+                     (Accepts .review.json or .confidence.json files)
+                 </div>
+                
+                <div class="control-group">
+                    <label for="filterPriority">Filter by Priority:</label>
+                    <select id="filterPriority">
+                        <option value="all">All Flags</option>
+                        <option value="high">High Priority</option>
+                        <option value="medium">Medium Priority</option>
+                        <option value="low">Low Priority</option>
+                    </select>
+                </div>
+
+                <div class="control-group">
+                    <label for="filterType">Filter by Type:</label>
+                    <select id="filterType">
+                        <option value="all">All Types</option>
+                    </select>
+                </div>
+
+                <div class="control-group">
+                    <label>
+                        <input type="checkbox" id="showOnlyFlagged" checked>
+                        Show Only Flagged Words
+                    </label>
+                </div>
+            </div>
+
+             <div class="export-section">
+                 <button onclick="exportCorrections()">💾 Export Corrections</button>
+                 <button onclick="exportCorrectedTranscript()" class="secondary">📄 Export Corrected Transcript</button>
+                 <button onclick="saveReview()" class="secondary">💿 Save Review File</button>
+                 <button onclick="exportDictionaryTerms()" class="secondary" style="background: #3498db;" id="dictBtn">📖 Export Dictionary (<span id="dictCount">0</span>)</button>
+             </div>
+        </div>
+
+        <div class="review-content">
+            <div class="word-list" id="wordList">
+                <div class="no-flags">
+                    <h2>No Review File Loaded</h2>
+                    <p>Please select a review JSON file to begin</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="audio-player hidden" id="audioPlayer">
+        <h4>🔊 Audio Playback</h4>
+        <audio controls id="audioElement">
+            Your browser does not support audio playback.
+        </audio>
+    </div>
+
+    <div class="toast" id="toast"></div>
+
+    <script>
+        // ============================================================================
+        // REVIEW CONFIGURATION - Edit these settings to customize flagging behavior
+        // ============================================================================
+        const REVIEW_CONFIG = {
+            // Confidence thresholds
+            confidence: {
+                critical: 0.50,           // Below this = critical flag (red)
+                low: 0.60,                // Below this = low confidence flag (yellow) - lowered from 0.70
+                commonWords: 0.25,        // Common words get even lower threshold
+            },
+            
+            // Context window size
+            context: {
+                wordsBefore: 5,
+                wordsAfter: 5,
+            },
+            
+            // Flag types enabled
+            flags: {
+                phoneNumbers: true,
+                caseNumbers: true,
+                moneyAmounts: true,
+                dates: true,
+                times: true,
+                names: true,
+                numbers: true,
+            },
+            
+            // Common words list (capitalized but not names)
+            commonWords: [
+                // Articles, pronouns, basic words
+                'I', 'A', 'The', 'An', 'Hello', 'Hi', 'Yes', 'No', 'Okay', 'Ok', 'Thank', 'Thanks', 
+                'Please', 'Sorry', 'And', 'But', 'Or', 'This', 'That', 'These', 'Those', 'What', 
+                'When', 'Where', 'Why', 'How', 'Who', 'Which', 'Of', 'So', 'To', 'From',
+                'For', 'With', 'Can', 'Will', 'Was', 'Were', 'Are', 'Is', 'Be', 'Been',
+                'Have', 'Has', 'Do', 'Does', 'Did', 'Would', 'Could', 'Should',
+                'My', 'Your', 'Their', 'Our', 'His', 'Her', 'Its',
+                'On', 'In', 'It', 'At', 'By', 'Up', 'Out', 'Off', 'About', 'As',
+                'Yeah', 'Yep', 'Nope', 'Let', 'Correct', 'Right', 'Wrong',
+                'Maybe', 'Exactly', 'Actually', 'Well', 'Sure', 'Fine',
+                // Common action words
+                'Get', 'Got', 'Give', 'Go', 'Going', 'Come', 'Want', 'Need', 'See', 'Saw',
+                'Make', 'Made', 'Take', 'Took', 'Know', 'Think', 'Say', 'Said', 'Tell',
+                'Ask', 'Asked', 'Call', 'Called', 'Try', 'Trying',
+                // Common call center / medical words
+                'Please', 'Press', 'If', 'Then', 'Just', 'Now', 'Here', 'There',
+                'Through', 'Request', 'Medical', 'Department', 'Release', 'Information',
+                'Number', 'Office', 'Record', 'Records', 'Patient',
+                // Days of week (not names)
+                'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday',
+                // Contractions
+                "I'm", "I've", "I'll", "I'd", "You're", "You've", "You'll", "You'd",
+                "He's", "She's", "It's", "We're", "We've", "We'll", "We'd",
+                "They're", "They've", "They'll", "They'd",
+                "Don't", "Doesn't", "Didn't", "Won't", "Wouldn't", "Can't", "Couldn't",
+                "Shouldn't", "Haven't", "Hasn't", "Hadn't", "Isn't", "Aren't", "Wasn't", "Weren't"
+            ],
+            
+            // Months (not names)
+            months: [
+                'January', 'February', 'March', 'April', 'May', 'June',
+                'July', 'August', 'September', 'October', 'November', 'December',
+                'Jan', 'Feb', 'Mar', 'Apr', 'Jun', 'Jul', 'Aug', 'Sep', 'Sept', 'Oct', 'Nov', 'Dec'
+            ],
+            
+            // Days of week (not names)
+            days: [
+                'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday',
+                'Mon', 'Tue', 'Tues', 'Wed', 'Thu', 'Thur', 'Thurs', 'Fri', 'Sat', 'Sun'
+            ],
+        };
+        // ============================================================================
+        
+        let reviewData = null;
+        let corrections = {};
+        let approvedWords = new Set();
+        let dictionaryTerms = new Set();
+        let selectedWordIndex = null;
+        let currentFileName = 'unknown'; // Track current file for logging
+        
+        // Corrections API configuration
+        const API_URL = 'http://localhost:5555/log';
+        let apiAvailable = false;
+        
+        // Check if API is available
+        async function checkAPI() {
+            try {
+                const response = await fetch('http://localhost:5555/health', {
+                    method: 'GET',
+                    mode: 'cors'
+                });
+                if (response.ok) {
+                    apiAvailable = true;
+                    console.log('[API] Corrections logging API connected');
+                }
+            } catch (error) {
+                apiAvailable = false;
+                console.log('[API] Corrections logging API not available (running offline mode)');
+            }
+        }
+        
+        // Log action to API
+        async function logToAPI(actionData) {
+            if (!apiAvailable) {
+                return; // Silent fail if API not available
+            }
+            
+            try {
+                const response = await fetch(API_URL, {
+                    method: 'POST',
+                    mode: 'cors',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        ...actionData,
+                        file_name: currentFileName
+                    })
+                });
+                
+                if (response.ok) {
+                    console.log(`[API] Logged ${actionData.type}:`, actionData);
+                } else {
+                    console.warn(`[API] Failed to log ${actionData.type}`);
+                }
+            } catch (error) {
+                // Silent fail - don't interrupt user workflow
+                console.warn('[API] Error logging action:', error.message);
+            }
+        }
+        
+        // Check API availability on load
+        checkAPI();
+
+        // Convert confidence.json to review format
+        function convertConfidenceToReview(confidenceData) {
+            console.log('Starting conversion from confidence.json format...');
+            
+            const wordData = confidenceData.word_data || [];
+            const overallConfidence = confidenceData.overall_confidence || null;
+            const transcript = confidenceData.transcript || '';
+            
+            // Convert each word
+            const words = wordData.map((wd, idx) => {
+                const word = wd.word || '';
+                const confidence = wd.confidence !== undefined ? wd.confidence : null;
+                
+                // Generate flags based on confidence and patterns
+                const flags = [];
+                
+                // Check if word is in expected terms (to skip flagging)
+                const cleanWord = word.replace(/[.,!?;:'"]/g, '').trim();
+                let isExpected = false;
+                if (confidenceData.expected_terms && Array.isArray(confidenceData.expected_terms)) {
+                    const cleanWordLower = cleanWord.toLowerCase();
+                    for (const term of confidenceData.expected_terms) {
+                        if (!term) continue;
+                        const termLower = term.toLowerCase();
+                        // Check exact match or if word is part of the term phrase
+                        if (termLower === cleanWordLower || termLower.split(/\s+/).includes(cleanWordLower)) {
+                            isExpected = true;
+                            break;
+                        }
+                    }
+                }
+                
+                // Check if it's a common word (they get lower threshold)
+                const isCommonWord = REVIEW_CONFIG.commonWords.includes(cleanWord);
+                
+                // Confidence flags (skip for expected terms)
+                if (confidence !== null && !isExpected) {
+                    // Use lower threshold for common words
+                    const criticalThreshold = isCommonWord ? REVIEW_CONFIG.confidence.commonWords : REVIEW_CONFIG.confidence.critical;
+                    const lowThreshold = REVIEW_CONFIG.confidence.low;
+                    
+                    if (confidence < criticalThreshold) {
+                        flags.push({
+                            type: 'critical_confidence',
+                            reason: `Critical: Very low confidence (${(confidence * 100).toFixed(2)}%)`,
+                            priority: 'high',
+                            confidence: confidence
+                        });
+                    } else if (!isCommonWord && confidence < lowThreshold) {
+                        // Only flag low confidence for non-common words
+                        flags.push({
+                            type: 'low_confidence',
+                            reason: `Low confidence (${(confidence * 100).toFixed(2)}%)`,
+                            priority: 'medium',
+                            confidence: confidence
+                        });
+                    }
+                }
+                
+                // Pattern-based flags
+                // Phone numbers
+                if (/\b\d{3}[-.\s]?\d{3}[-.\s]?\d{4}\b/.test(cleanWord) || /^[\d-]+$/.test(cleanWord)) {
+                    flags.push({
+                        type: 'phone_number',
+                        reason: 'Phone number detected - verify accuracy',
+                        priority: 'high'
+                    });
+                }
+                
+                // Case numbers (6+ digits)
+                if (/\b\d{6,}\b/.test(cleanWord)) {
+                    flags.push({
+                        type: 'case_number',
+                        reason: 'Possible case number - verify accuracy',
+                        priority: 'high'
+                    });
+                }
+                
+                // Money amounts
+                if (/\$[\d,]+(?:\.\d{2})?|\b\d+\s*(?:dollars?|cents?)\b/i.test(word)) {
+                    flags.push({
+                        type: 'money_amount',
+                        reason: 'Dollar amount detected - verify accuracy',
+                        priority: 'high'
+                    });
+                }
+                
+                // Dates
+                if (/\b(?:\d{1,2}[/-]\d{1,2}[/-]\d{2,4}|(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+\d{1,2})/i.test(word)) {
+                    flags.push({
+                        type: 'date',
+                        reason: 'Date detected - verify accuracy',
+                        priority: 'medium'
+                    });
+                }
+                
+                // Times
+                if (/\b\d{1,2}:\d{2}\s*(?:AM|PM)?\b/i.test(word)) {
+                    flags.push({
+                        type: 'time',
+                        reason: 'Time detected - verify accuracy',
+                        priority: 'medium'
+                    });
+                }
+                
+                // Names (capitalized words) - but skip numbers, dates, and common words
+                if (REVIEW_CONFIG.flags.names && cleanWord && cleanWord[0] === cleanWord[0].toUpperCase() && cleanWord.length > 1) {
+                    // NOT a name if it's a pure number
+                    if (/^\d+$/.test(cleanWord)) {
+                        // Skip - it's just a number
+                    }
+                    // NOT a name if it's a hyphenated/dashed number (like "0-2-2-7" or "2-2-7")
+                    else if (/^[\d-]+$/.test(cleanWord)) {
+                        // Skip - it's a hyphenated number
+                    }
+                    // NOT a name if it's an ordinal number (1st, 2nd, 3rd, 23rd, etc.)
+                    else if (/^\d+(st|nd|rd|th)$/i.test(cleanWord)) {
+                        // Skip - it's an ordinal number
+                    }
+                    // NOT a name if it's a month
+                    else if (REVIEW_CONFIG.months.includes(cleanWord)) {
+                        // Skip - it's a month name
+                    }
+                    // NOT a name if it's a day of the week
+                    else if (REVIEW_CONFIG.days.includes(cleanWord)) {
+                        // Skip - it's a day name
+                    }
+                    // NOT a name if it's a common word
+                    else if (REVIEW_CONFIG.commonWords.includes(cleanWord)) {
+                        // Skip - it's a common word
+                    }
+                    else {
+                        // Only flag if NOT in expected terms (loaded from review data if available)
+                        if (!isExpected) {
+                            flags.push({
+                                type: 'name',
+                                reason: 'Possible name/proper noun - verify spelling',
+                                priority: 'medium'
+                            });
+                        }
+                    }
+                }
+                
+                // Numbers
+                if (/\b\d+\b/.test(cleanWord) && !flags.some(f => ['phone_number', 'case_number'].includes(f.type))) {
+                    flags.push({
+                        type: 'number',
+                        reason: 'Number detected - verify accuracy',
+                        priority: 'low'
+                    });
+                }
+                
+                return {
+                    word: word,
+                    confidence: confidence,
+                    start_time: wd.start_time !== undefined ? wd.start_time : null,
+                    end_time: wd.end_time !== undefined ? wd.end_time : null,
+                    speaker: wd.speaker_tag || null,
+                    index: idx,
+                    flags: flags,
+                    context_before: '',
+                    context_after: ''
+                };
+            });
+            
+            // Build context for each word
+            console.log('Building context for', words.length, 'words...');
+            words.forEach((word, idx) => {
+                const startIdx = Math.max(0, idx - 5);
+                const endIdx = Math.min(words.length, idx + 6);
+                
+                word.context_before = words
+                    .slice(startIdx, idx)
+                    .map(w => w.word)
+                    .join(' ');
+                    
+                word.context_after = words
+                    .slice(idx + 1, endIdx)
+                    .map(w => w.word)
+                    .join(' ');
+            });
+            
+            // Calculate statistics
+            const flaggedWords = words.filter(w => w.flags && w.flags.length > 0).length;
+            const flagCounts = {};
+            const priorityCounts = { high: 0, medium: 0, low: 0 };
+            
+            words.forEach(word => {
+                word.flags.forEach(flag => {
+                    flagCounts[flag.type] = (flagCounts[flag.type] || 0) + 1;
+                    priorityCounts[flag.priority] = (priorityCounts[flag.priority] || 0) + 1;
+                });
+            });
+            
+            const avgConfidence = words.filter(w => w.confidence !== null).length > 0
+                ? words.filter(w => w.confidence !== null).reduce((sum, w) => sum + w.confidence, 0) / 
+                  words.filter(w => w.confidence !== null).length
+                : overallConfidence;
+            
+            // Create review structure
+            const reviewData = {
+                generated_at: new Date().toISOString(),
+                review_engine: 'assemblyai_native_converted',
+                confidence_file: confidenceData.confidence_file || 'unknown',
+                transcript_file: confidenceData.transcript_file || 'unknown',
+                config: {
+                    enabled: true,
+                    low_confidence_threshold: REVIEW_CONFIG.confidence.low,
+                    critical_confidence_threshold: REVIEW_CONFIG.confidence.critical,
+                    flag_phone_numbers: REVIEW_CONFIG.flags.phoneNumbers,
+                    flag_case_numbers: REVIEW_CONFIG.flags.caseNumbers,
+                    flag_money_amounts: REVIEW_CONFIG.flags.moneyAmounts,
+                    flag_dates: REVIEW_CONFIG.flags.dates,
+                    flag_times: REVIEW_CONFIG.flags.times,
+                    flag_names: REVIEW_CONFIG.flags.names,
+                    flag_numbers: REVIEW_CONFIG.flags.numbers,
+                    context_words_before: REVIEW_CONFIG.context.wordsBefore,
+                    context_words_after: REVIEW_CONFIG.context.wordsAfter
+                },
+                overall_confidence: overallConfidence,
+                statistics: {
+                    total_words: words.length,
+                    flagged_words: flaggedWords,
+                    flag_percentage: words.length > 0 ? Math.round((flaggedWords / words.length) * 1000) / 10 : 0,
+                    priority_counts: priorityCounts,
+                    average_confidence: avgConfidence
+                },
+                flag_summary: flagCounts,
+                words: words,
+                corrections: [],
+                audit: [{
+                    action: 'auto_converted_from_confidence',
+                    timestamp: new Date().toISOString(),
+                    source: 'confidence.json'
+                }],
+                approved_words: [],
+                dictionary_terms: []
+            };
+            
+            console.log('Review data created:', {
+                total_words: reviewData.statistics.total_words,
+                flagged_words: reviewData.statistics.flagged_words,
+                avg_confidence: reviewData.statistics.average_confidence
+            });
+            
+            return reviewData;
+        }
+
+         // Load review file
+        document.getElementById('fileInput').addEventListener('change', async (e) => {
+            const file = e.target.files[0];
+            if (!file) return;
+
+            console.log('Loading file:', file.name);
+            
+            // Extract filename without extension for logging
+            currentFileName = file.name.replace(/\.(review\.json|confidence\.json|json)$/i, '');
+
+            try {
+                const text = await file.text();
+                console.log('File size:', text.length, 'bytes');
+                
+                reviewData = JSON.parse(text);
+                console.log('Parsed JSON successfully');
+                console.log('Review data keys:', Object.keys(reviewData));
+                console.log('Has words array:', !!reviewData.words);
+                console.log('Words is array:', Array.isArray(reviewData.words));
+                console.log('Words length:', reviewData.words ? reviewData.words.length : 'N/A');
+                
+                corrections = {};
+                
+                // Check if this is a confidence.json file (has word_data instead of words)
+                if (!reviewData.words && reviewData.word_data && Array.isArray(reviewData.word_data)) {
+                    console.log('Detected .confidence.json file - converting to review format...');
+                    showToast('📊 Converting confidence data to review format...', 2000);
+                    
+                    // Convert confidence.json to review format
+                    reviewData = convertConfidenceToReview(reviewData);
+                    console.log('Conversion complete:', reviewData.words.length, 'words');
+                }
+                
+                // Validate that this is an AssemblyAI review file
+                if (!reviewData.review_engine || reviewData.review_engine !== 'assemblyai_native') {
+                    console.warn('Not an AssemblyAI native review file');
+                    if (!reviewData.review_engine) {
+                        // Might be a converted file, which is ok
+                        console.log('No review_engine specified, assuming converted file');
+                    } else {
+                        showToast('Warning: This appears to be from the standard review system. Some features may not work correctly.');
+                    }
+                }
+                
+                // Check if words exists at all
+                if (!reviewData.words) {
+                    console.error('Missing words property in review data');
+                    console.log('Available properties:', Object.keys(reviewData));
+                    throw new Error('Invalid review file: missing "words" property. Found properties: ' + Object.keys(reviewData).join(', ') + 
+                                  '\n\nTip: Load a .review.json file or .confidence.json file');
+                }
+                
+                // Check if words is an array
+                if (!Array.isArray(reviewData.words)) {
+                    console.error('Words is not an array, type:', typeof reviewData.words);
+                    throw new Error('Invalid review file: "words" is not an array (found ' + typeof reviewData.words + ')');
+                }
+                
+                console.log('Words array validated successfully');
+                
+                // Ensure statistics object exists (for compatibility)
+                if (!reviewData.statistics) {
+                    console.log('Creating statistics object');
+                    reviewData.statistics = {
+                        total_words: reviewData.words.length,
+                        flagged_words: reviewData.words.filter(w => w.flags && w.flags.length > 0).length,
+                        flag_percentage: 0,
+                        priority_counts: { high: 0, medium: 0, low: 0 },
+                        average_confidence: null
+                    };
+                    // Calculate percentage
+                    if (reviewData.statistics.total_words > 0) {
+                        reviewData.statistics.flag_percentage = 
+                            Math.round((reviewData.statistics.flagged_words / reviewData.statistics.total_words) * 100 * 10) / 10;
+                    }
+                }
+                
+                // Normalize word structure for compatibility
+                reviewData.words = reviewData.words.map((word, idx) => {
+                    // Ensure required fields
+                    if (!word.index) word.index = idx;
+                    if (!word.flags) word.flags = [];
+                    if (!word.context_before) word.context_before = '';
+                    if (!word.context_after) word.context_after = '';
+                    
+                    // Normalize flag structure
+                    word.flags = word.flags.map(flag => {
+                        if (typeof flag === 'object' && !flag.priority) {
+                            flag.priority = 'medium'; // Default priority
+                        }
+                        return flag;
+                    });
+                    
+                    return word;
+                });
+                
+                // Load existing corrections if any
+                if (reviewData.corrections) {
+                    reviewData.corrections.forEach(corr => {
+                        corrections[corr.word_index] = corr.corrected_word;
+                    });
+                }
+
+                 // Load existing approved words if any
+                 approvedWords = new Set();
+                 if (reviewData.approved_words && Array.isArray(reviewData.approved_words)) {
+                     reviewData.approved_words.forEach(idx => approvedWords.add(idx));
+                 }
+
+                 // Load existing dictionary terms if any
+                 dictionaryTerms = new Set();
+                 if (reviewData.dictionary_terms && Array.isArray(reviewData.dictionary_terms)) {
+                     reviewData.dictionary_terms.forEach(term => dictionaryTerms.add(term));
+                 }
+                 updateDictionaryCount();
+
+                 console.log('Rendering review...');
+                renderReview();
+                populateFilterTypes();
+                showToast('✓ Review loaded: ' + reviewData.statistics.total_words + ' words, ' + 
+                         reviewData.statistics.flagged_words + ' flagged');
+                console.log('Review loaded successfully');
+            } catch (error) {
+                const errorMsg = 'Error loading review file: ' + error.message;
+                showToast(errorMsg);
+                console.error('=== ERROR LOADING REVIEW FILE ===');
+                console.error('Error message:', error.message);
+                console.error('Error stack:', error.stack);
+                console.error('File name:', file.name);
+                if (reviewData) {
+                    console.error('Partial review data:', {
+                        keys: Object.keys(reviewData),
+                        hasWords: !!reviewData.words,
+                        wordsType: typeof reviewData.words,
+                        wordsLength: reviewData.words ? reviewData.words.length : 'N/A'
+                    });
+                }
+                console.error('=================================');
+                reviewData = null;
+                
+                // Show a more detailed error in the UI
+                document.getElementById('wordList').innerHTML = `
+                    <div class="no-flags">
+                        <h2>❌ Error Loading Review File</h2>
+                        <p style="color: #e74c3c; font-weight: bold;">${error.message}</p>
+                        <p style="margin-top: 20px; color: #7f8c8d;">
+                            Check the browser console (F12) for detailed error information.
+                        </p>
+                        <p style="margin-top: 10px; color: #7f8c8d; font-size: 13px;">
+                            Common issues:<br>
+                            • File is not a valid JSON file<br>
+                            • File is from the old review system<br>
+                            • Review file was not generated correctly
+                        </p>
+                    </div>
+                `;
+            }
+        });
+
+        // Render statistics
+        function renderStats() {
+            if (!reviewData || !reviewData.statistics) return;
+
+            const stats = reviewData.statistics;
+            
+            // Calculate real-time statistics based on current state
+            const totalWords = stats.total_words || 0;
+            
+            // Count remaining flagged words (excluding approved)
+            let remainingFlaggedWords = 0;
+            let highPriorityCount = 0;
+            
+            reviewData.words.forEach((word, idx) => {
+                // Skip approved words
+                if (approvedWords.has(idx)) return;
+                
+                // Count if word has flags
+                if (word.flags && word.flags.length > 0) {
+                    remainingFlaggedWords++;
+                    
+                    // Count high priority flags
+                    const hasHighPriority = word.flags.some(f => f.priority === 'high');
+                    if (hasHighPriority) {
+                        highPriorityCount++;
+                    }
+                }
+            });
+            
+            // Calculate flag percentage based on remaining words
+            const flagPercentage = totalWords > 0 
+                ? Math.round((remainingFlaggedWords / totalWords) * 1000) / 10 
+                : 0;
+            
+            const html = `
+                <div class="stat-card">
+                    <h3>Total Words</h3>
+                    <div class="value">${totalWords.toLocaleString()}</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Flagged Words</h3>
+                    <div class="value">${remainingFlaggedWords.toLocaleString()}</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Flag Percentage</h3>
+                    <div class="value">${flagPercentage}%</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Avg Confidence</h3>
+                    <div class="value">${stats.average_confidence ? (stats.average_confidence * 100).toFixed(1) + '%' : 'N/A'}</div>
+                </div>
+                <div class="stat-card">
+                    <h3>High Priority</h3>
+                    <div class="value" style="color: #e74c3c;">${highPriorityCount}</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Corrections Made</h3>
+                    <div class="value" style="color: #27ae60;">${Object.keys(corrections).length}</div>
+                </div>
+                 <div class="stat-card">
+                     <h3>Approved Words</h3>
+                     <div class="value" style="color: #27ae60;">${approvedWords.size}</div>
+                 </div>
+                 <div class="stat-card">
+                     <h3>Dictionary Queue</h3>
+                     <div class="value" style="color: #3498db;">${dictionaryTerms.size}</div>
+                 </div>
+             `;
+             document.getElementById('statsGrid').innerHTML = html;
+
+            // Update progress (corrections + approvals)
+            const initialFlaggedWords = stats.flagged_words || 0;
+            const reviewed = Object.keys(corrections).length + approvedWords.size;
+            const progress = initialFlaggedWords > 0 ? (reviewed / initialFlaggedWords) * 100 : 0;
+            document.getElementById('progressFill').style.width = progress + '%';
+        }
+
+        // Render word list
+        function renderReview() {
+            if (!reviewData) return;
+
+            renderStats();
+
+            const filterPriority = document.getElementById('filterPriority').value;
+            const filterType = document.getElementById('filterType').value;
+            const showOnlyFlagged = document.getElementById('showOnlyFlagged').checked;
+
+            let words = reviewData.words.filter(word => {
+                // Hide approved words
+                if (approvedWords.has(word.index)) return false;
+                
+                // Filter by flagged
+                if (showOnlyFlagged && word.flags.length === 0) return false;
+
+                // Filter by priority
+                if (filterPriority !== 'all') {
+                    if (!word.flags.some(f => f.priority === filterPriority)) return false;
+                }
+
+                // Filter by type
+                if (filterType !== 'all') {
+                    if (!word.flags.some(f => f.type === filterType)) return false;
+                }
+
+                return true;
+            });
+
+            if (words.length === 0) {
+                const allApproved = approvedWords.size === reviewData.statistics.flagged_words;
+                document.getElementById('wordList').innerHTML = `
+                    <div class="no-flags">
+                        <h2>${allApproved ? '🎉 All Words Reviewed!' : 'No Words Match Filters'}</h2>
+                        <p>${allApproved ? 'You have reviewed all flagged words. Great job!' : 'Try adjusting your filter settings'}</p>
+                    </div>
+                `;
+                return;
+            }
+
+            const html = words.map((word, idx) => renderWord(word)).join('');
+            document.getElementById('wordList').innerHTML = html;
+        }
+
+        // Render individual word
+        function renderWord(word) {
+            const isFlagged = word.flags && word.flags.length > 0;
+            const isApproved = approvedWords.has(word.index);
+            const highestPriority = isFlagged ? 
+                word.flags.reduce((prev, curr) => {
+                    const priorities = {high: 3, medium: 2, low: 1};
+                    return priorities[curr.priority] > priorities[prev.priority] ? curr : prev;
+                }).priority : 'low';
+
+            const confidenceClass = word.confidence === null ? '' : 
+                word.confidence >= 0.80 ? 'confidence-high' : 
+                word.confidence >= 0.60 ? 'confidence-medium' : 'confidence-low';
+
+            const correctedWord = corrections[word.index] || word.word;
+            const isCorrected = corrections[word.index] !== undefined;
+
+            const timestamp = word.start_time !== null ? 
+                `${formatTime(word.start_time)} - ${formatTime(word.end_time)}` : 'N/A';
+
+            return `
+                <div class="word-item ${isApproved ? 'approved' : (isFlagged ? 'flagged priority-' + highestPriority : '')}" 
+                     data-index="${word.index}">
+                    <div class="word-header">
+                        <div class="word-main">
+                            <span class="word-text">${isCorrected ? '<del style="color: #999;">' + word.word + '</del> → ' + correctedWord : word.word}</span>
+                            ${isApproved ? '<span class="approved-badge">✓ Approved</span>' : ''}
+                            ${word.confidence !== null ? 
+                                `<span class="confidence-badge ${confidenceClass}">${(word.confidence * 100).toFixed(1)}%</span>` 
+                                : ''}
+                            ${word.speaker ? `<span class="speaker-badge">Speaker ${word.speaker}</span>` : ''}
+                        </div>
+                        <div class="word-meta">
+                            <span class="timestamp">⏱ ${timestamp}</span>
+                            <span>#${word.index}</span>
+                        </div>
+                    </div>
+
+                    <div class="word-context">
+                        <span class="context-word">${word.context_before}</span>
+                        <span class="context-current">${correctedWord}</span>
+                        <span class="context-word">${word.context_after}</span>
+                    </div>
+
+                    ${isFlagged ? `
+                        <div class="flags">
+                            ${word.flags.map(flag => `
+                                <span class="flag priority-${flag.priority}" title="${flag.reason}">
+                                    ${flag.type.replace(/_/g, ' ').toUpperCase()} - ${flag.reason}
+                                </span>
+                            `).join('')}
+                        </div>
+                    ` : ''}
+
+                    <div class="correction-form">
+                        <h4>${isApproved ? 'Word Approved' : 'Review Actions'}</h4>
+                        <div class="correction-inputs">
+                            ${!isApproved ? `
+                                <input type="text" 
+                                       id="correction-${word.index}" 
+                                       value="${correctedWord}"
+                                       placeholder="Enter corrected word">
+                                 <button onclick="applyCorrection(${word.index})">✓ Correct</button>
+                                 ${isCorrected ? `<button class="secondary" onclick="removeCorrection(${word.index})">✗ Remove</button>` : ''}
+                                 <button onclick="approveWord(${word.index})" style="background: #27ae60;">✓ Approve</button>
+                                 <button onclick="addToDictionary(${word.index})" style="background: #3498db;">📖 Dictionary</button>
+                             ` : `
+                                <button class="secondary" onclick="unapproveWord(${word.index})">✗ Unapprove</button>
+                            `}
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Format time helper
+        function formatTime(seconds) {
+            if (seconds === null) return '00:00';
+            const mins = Math.floor(seconds / 60);
+            const secs = Math.floor(seconds % 60);
+            return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+        }
+
+        // Apply correction
+        function applyCorrection(index) {
+            const input = document.getElementById(`correction-${index}`);
+            const correctedWord = input.value.trim();
+            
+            if (!correctedWord) {
+                showToast('Please enter a corrected word');
+                return;
+            }
+
+            const originalWord = reviewData.words[index].word;
+            const wordData = reviewData.words[index];
+            
+            if (correctedWord === originalWord) {
+                // Same as original, remove correction
+                delete corrections[index];
+            } else {
+                corrections[index] = correctedWord;
+                
+                // Log to API
+                logToAPI({
+                    type: 'correction',
+                    word_index: index,
+                    original_word: originalWord,
+                    corrected_word: correctedWord,
+                    confidence: wordData.confidence,
+                    speaker: wordData.speaker,
+                    context_before: wordData.context_before || '',
+                    context_after: wordData.context_after || '',
+                    flag_types: (wordData.flags || []).map(f => f.type)
+                });
+            }
+
+            renderReview();
+            showToast(`Correction applied: ${originalWord} → ${correctedWord}`);
+            
+            // Check if there are other instances to correct
+            checkForMultipleInstances(index, 'correct', correctedWord);
+        }
+
+        // Remove correction
+        function removeCorrection(index) {
+            delete corrections[index];
+            renderReview();
+            showToast('Correction removed');
+        }
+
+        // Approve word
+        function approveWord(index) {
+            const wordData = reviewData.words[index];
+            
+            approvedWords.add(index);
+            
+            // Log to API
+            logToAPI({
+                type: 'approval',
+                word_index: index,
+                word: wordData.word,
+                confidence: wordData.confidence,
+                speaker: wordData.speaker,
+                context_before: wordData.context_before || '',
+                context_after: wordData.context_after || '',
+                flag_types: (wordData.flags || []).map(f => f.type)
+            });
+            
+            renderReview();
+            showToast('Word approved and hidden from view');
+            
+            // Check if there are other instances to approve
+            checkForMultipleInstances(index, 'approve');
+        }
+
+         // Unapprove word
+         function unapproveWord(index) {
+             approvedWords.delete(index);
+             renderReview();
+             showToast('Word unapproved - returned to review queue');
+         }
+         
+         // Check for multiple instances and offer bulk action
+         function checkForMultipleInstances(index, actionType, correctedWord = null) {
+             const targetWord = reviewData.words[index].word.toLowerCase().trim();
+             const remainingInstances = [];
+             
+             // Find other unapproved instances of the same word
+             reviewData.words.forEach((word, idx) => {
+                 const wordText = word.word.toLowerCase().trim();
+                 if (wordText === targetWord && idx !== index && !approvedWords.has(idx)) {
+                     remainingInstances.push(idx);
+                 }
+             });
+             
+             if (remainingInstances.length > 0) {
+                 const word = reviewData.words[index].word;
+                 const count = remainingInstances.length;
+                 const plural = count !== 1 ? 's' : '';
+                 
+                 if (actionType === 'approve') {
+                     showActionPrompt(
+                         `Found ${count} more instance${plural} of "${word}"`,
+                         `✓✓ Approve All ${count + 1}`,
+                         () => approveAllInstances(index)
+                     );
+                 } else if (actionType === 'correct') {
+                     showActionPrompt(
+                         `Found ${count} more instance${plural} of "${word}"`,
+                         `✓✓ Correct All ${count + 1}`,
+                         () => correctAllInstances(index, correctedWord)
+                     );
+                 }
+             }
+         }
+         
+         // Show action prompt with button
+         function showActionPrompt(message, buttonText, callback) {
+             // Remove any existing prompt
+             const existingPrompt = document.getElementById('action-prompt');
+             if (existingPrompt) {
+                 existingPrompt.remove();
+             }
+             
+             // Create new prompt
+             const prompt = document.createElement('div');
+             prompt.id = 'action-prompt';
+             prompt.style.cssText = `
+                 position: fixed;
+                 bottom: 80px;
+                 left: 50%;
+                 transform: translateX(-50%);
+                 background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                 color: white;
+                 padding: 16px 24px;
+                 border-radius: 8px;
+                 box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+                 z-index: 10000;
+                 display: flex;
+                 align-items: center;
+                 gap: 16px;
+                 animation: slideUp 0.3s ease-out;
+                 max-width: 500px;
+             `;
+             
+             prompt.innerHTML = `
+                 <span style="flex: 1; font-weight: 500;">${message}</span>
+                 <button onclick="document.getElementById('action-prompt').remove();" 
+                         style="background: rgba(255,255,255,0.2); color: white; border: 1px solid rgba(255,255,255,0.3); 
+                                padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 13px;">
+                     Skip
+                 </button>
+                 <button id="bulk-action-btn"
+                         style="background: white; color: #667eea; border: none; 
+                                padding: 8px 16px; border-radius: 4px; cursor: pointer; 
+                                font-weight: 600; font-size: 13px;">
+                     ${buttonText}
+                 </button>
+             `;
+             
+             document.body.appendChild(prompt);
+             
+             // Add click handler to action button
+             document.getElementById('bulk-action-btn').onclick = () => {
+                 callback();
+                 prompt.remove();
+             };
+             
+             // Auto-remove after 10 seconds
+             setTimeout(() => {
+                 if (prompt.parentNode) {
+                     prompt.remove();
+                 }
+             }, 10000);
+         }
+         
+         // Approve all instances of the same word
+         function approveAllInstances(index) {
+             const targetWord = reviewData.words[index].word.toLowerCase().trim();
+             let count = 0;
+             
+             // Find all unapproved words that match and log each one
+             reviewData.words.forEach((word, idx) => {
+                 const wordText = word.word.toLowerCase().trim();
+                 if (wordText === targetWord && !approvedWords.has(idx)) {
+                     approvedWords.add(idx);
+                     
+                     // Log each approval to API
+                     logToAPI({
+                         type: 'approval',
+                         word_index: idx,
+                         word: word.word,
+                         confidence: word.confidence,
+                         speaker: word.speaker,
+                         context_before: word.context_before || '',
+                         context_after: word.context_after || '',
+                         flag_types: (word.flags || []).map(f => f.type)
+                     });
+                     
+                     count++;
+                 }
+             });
+             
+             renderReview();
+             showToast(`✓ Approved all ${count} instance${count !== 1 ? 's' : ''} of "${reviewData.words[index].word}"`);
+         }
+         
+         // Correct all instances of the same word
+         function correctAllInstances(index, correctedWord) {
+             const targetWord = reviewData.words[index].word.toLowerCase().trim();
+             let count = 0;
+             const originalWord = reviewData.words[index].word;
+             
+             // Find all words that match and log each one
+             reviewData.words.forEach((word, idx) => {
+                 const wordText = word.word.toLowerCase().trim();
+                 if (wordText === targetWord) {
+                     if (correctedWord === word.word) {
+                         delete corrections[idx];
+                     } else {
+                         corrections[idx] = correctedWord;
+                         
+                         // Log each correction to API
+                         logToAPI({
+                             type: 'correction',
+                             word_index: idx,
+                             original_word: word.word,
+                             corrected_word: correctedWord,
+                             confidence: word.confidence,
+                             speaker: word.speaker,
+                             context_before: word.context_before || '',
+                             context_after: word.context_after || '',
+                             flag_types: (word.flags || []).map(f => f.type)
+                         });
+                     }
+                     count++;
+                 }
+             });
+             
+             renderReview();
+             showToast(`✓ Corrected all ${count} instance${count !== 1 ? 's' : ''}: ${originalWord} → ${correctedWord}`);
+         }
+
+         // Add word to dictionary queue
+         function addToDictionary(index) {
+             const word = reviewData.words[index];
+             const term = corrections[index] || word.word;
+             const wasCorrection = !!corrections[index];
+             
+             // Clean the term (remove punctuation, trim)
+             const cleanTerm = term.replace(/[.,!?;:'"]/g, '').trim();
+             
+             if (!cleanTerm) {
+                 showToast('Cannot add empty term to dictionary');
+                 return;
+             }
+             
+             // Check if already in dictionary
+             if (dictionaryTerms.has(cleanTerm)) {
+                 showToast(`"${cleanTerm}" already in dictionary queue`);
+                 return;
+             }
+             
+             dictionaryTerms.add(cleanTerm);
+             
+             // Log to API
+             logToAPI({
+                 type: 'dictionary',
+                 term: cleanTerm,
+                 original_word: word.word,
+                 confidence: word.confidence,
+                 was_correction: wasCorrection
+             });
+             
+             updateDictionaryCount();
+             showToast(`"${cleanTerm}" added to dictionary queue`);
+         }
+
+         // Update dictionary count display
+         function updateDictionaryCount() {
+             const countEl = document.getElementById('dictCount');
+             if (countEl) {
+                 countEl.textContent = dictionaryTerms.size;
+             }
+         }
+
+         // Export dictionary terms to file
+         function exportDictionaryTerms() {
+             if (dictionaryTerms.size === 0) {
+                 showToast('No dictionary terms to export');
+                 return;
+             }
+
+             // Sort terms alphabetically
+             const sortedTerms = Array.from(dictionaryTerms).sort();
+             
+             // Create content with header
+             const content = `# Dictionary terms from review session - ${new Date().toLocaleString()}\n` +
+                            `# Add these terms to config/nouns_to_expect.txt to improve future transcriptions\n\n` +
+                            sortedTerms.join('\n') + '\n';
+
+             const blob = new Blob([content], {type: 'text/plain'});
+             const url = URL.createObjectURL(blob);
+             const a = document.createElement('a');
+             a.href = url;
+             a.download = `nouns_queue_${Date.now()}.txt`;
+             a.click();
+             URL.revokeObjectURL(url);
+
+             showToast(`${sortedTerms.length} dictionary terms exported - append to config/nouns_to_expect.txt`);
+         }
+
+        // Populate filter types dropdown
+        function populateFilterTypes() {
+            if (!reviewData) return;
+
+            const types = new Set();
+            reviewData.words.forEach(word => {
+                word.flags.forEach(flag => types.add(flag.type));
+            });
+
+            const select = document.getElementById('filterType');
+            select.innerHTML = '<option value="all">All Types</option>';
+            
+            [...types].sort().forEach(type => {
+                const option = document.createElement('option');
+                option.value = type;
+                option.textContent = type.replace(/_/g, ' ').toUpperCase();
+                select.appendChild(option);
+            });
+        }
+
+        // Export corrections
+        function exportCorrections() {
+            if (!reviewData || Object.keys(corrections).length === 0) {
+                showToast('No corrections to export');
+                return;
+            }
+
+            const correctionsList = Object.entries(corrections).map(([index, correctedWord]) => ({
+                word_index: parseInt(index),
+                original_word: reviewData.words[index].word,
+                corrected_word: correctedWord,
+                timestamp: reviewData.words[index].start_time
+            }));
+
+            const blob = new Blob([JSON.stringify(correctionsList, null, 2)], {type: 'application/json'});
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `corrections_${Date.now()}.json`;
+            a.click();
+            URL.revokeObjectURL(url);
+
+            showToast('Corrections exported successfully');
+        }
+
+        // Export corrected transcript
+        function exportCorrectedTranscript() {
+            if (!reviewData) {
+                showToast('No review data loaded');
+                return;
+            }
+
+            const words = reviewData.words.map((word, idx) => 
+                corrections[idx] || word.word
+            );
+
+            const transcript = words.join(' ');
+
+            const blob = new Blob([transcript], {type: 'text/plain'});
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `corrected_transcript_${Date.now()}.txt`;
+            a.click();
+            URL.revokeObjectURL(url);
+
+            showToast('Corrected transcript exported');
+        }
+
+        // Save review file with corrections
+        function saveReview() {
+            if (!reviewData) {
+                showToast('No review data to save');
+                return;
+            }
+
+            // Update corrections in review data
+            reviewData.corrections = Object.entries(corrections).map(([index, correctedWord]) => ({
+                word_index: parseInt(index),
+                original_word: reviewData.words[index].word,
+                corrected_word: correctedWord,
+                corrected_at: new Date().toISOString()
+            }));
+
+             // Save approved words
+             reviewData.approved_words = Array.from(approvedWords);
+
+             // Save dictionary terms
+             reviewData.dictionary_terms = Array.from(dictionaryTerms);
+
+             // Add audit entry
+             reviewData.audit.push({
+                 action: 'review_saved',
+                 timestamp: new Date().toISOString(),
+                 corrections_count: Object.keys(corrections).length,
+                 approved_count: approvedWords.size,
+                 dictionary_terms_count: dictionaryTerms.size
+             });
+
+            const blob = new Blob([JSON.stringify(reviewData, null, 2)], {type: 'application/json'});
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = reviewData.transcript_file.replace('.txt', '.review.json');
+            a.click();
+            URL.revokeObjectURL(url);
+
+            showToast('Review file saved with corrections');
+        }
+
+         // Show toast notification
+        function showToast(message, duration = 3000) {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.classList.add('show');
+            console.log('[Toast]', message);
+            setTimeout(() => toast.classList.remove('show'), duration);
+        }
+
+        // Add filter event listeners
+        document.getElementById('filterPriority').addEventListener('change', renderReview);
+        document.getElementById('filterType').addEventListener('change', renderReview);
+        document.getElementById('showOnlyFlagged').addEventListener('change', renderReview);
+
+        // Keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+            // Ctrl+S to save
+            if (e.ctrlKey && e.key === 's') {
+                e.preventDefault();
+                saveReview();
+            }
+        });
+    </script>
+</body>
+</html>
+

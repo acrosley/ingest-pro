@@ -1,0 +1,1531 @@
+2025-10-02 10:13:17 - MainThread - INFO - === CallPipeline Starting ===
+2025-10-02 10:13:17 - MainThread - INFO - Configuration loaded from: C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\call_pipeline.ini
+2025-10-02 10:13:17 - MainThread - INFO - [Review] Review generation enabled
+2025-10-02 10:13:17 - MainThread - INFO - [Review] Output directory: .\output\Review
+2025-10-02 10:13:17 - MainThread - INFO - Google AI SDK configured successfully.
+2025-10-02 10:13:17 - MainThread - INFO - Successfully loaded 24 users from '.\config\staff_map.txt'.
+2025-10-02 10:13:17 - MainThread - INFO - Successfully loaded analysis prompt from 'C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\prompts.txt'.
+2025-10-02 10:13:17 - MainThread - INFO - Database updater module found - will auto-update database
+2025-10-02 10:13:17 - MainThread - INFO - JSON archive and normalizer module found - can normalize existing JSON files
+2025-10-02 10:13:17 - MainThread - INFO - Configuration validation passed.
+2025-10-02 10:13:17 - MainThread - INFO - Started 8 worker threads.
+2025-10-02 10:13:17 - MainThread - INFO - Discovering user audio directories to watch inside: .
+2025-10-02 10:13:17 - MainThread - INFO -   + Found and will watch: .\demo\Audio
+2025-10-02 10:13:17 - MainThread - INFO - Watchdog observers started. Press Ctrl+C to exit.
+2025-10-02 10:13:38 - Thread-1 - INFO - New audio detected: .\demo\Audio\test copy.wav (size: 403086 bytes)
+2025-10-02 10:13:50 - MainThread - INFO - Audio complete (probe successful): .\demo\Audio\test copy.wav (final size 403086)
+2025-10-02 10:13:50 - Transcriber-1 - INFO - [STT] Starting transcription for: .\demo\Audio\test copy.wav
+2025-10-02 10:13:55 - Transcriber-1 - INFO - [STT] Transcription saved: demo\Transcripts\test copy.txt
+2025-10-02 10:14:00 - Transcriber-1 - INFO - Review JSON written to output\Review\test copy.review.json
+2025-10-02 10:14:00 - Transcriber-1 - INFO - [Review] Alignment review created: output\Review\test copy.review.json
+2025-10-02 10:14:00 - Transcriber-1 - INFO - [STT] Archived transcript to: output\ALL_TRANSCRIPT_FILES\test copy.txt
+2025-10-02 10:18:17 - MetricsReporter - INFO - Processing Metrics: {
+  "total_files_processed": 1,
+  "success_rate": 1.0,
+  "average_processing_time": 10.42570424079895,
+  "api_usage_by_worker": {
+    "Transcriber-1": 1
+  },
+  "success_rates_by_type": {
+    "transcript": 1.0
+  },
+  "processing_times_by_type": {
+    "transcript": 10.42570424079895
+  }
+}
+2025-10-02 10:21:56 - MainThread - INFO - Shutdown requested.
+2025-10-02 10:21:56 - MainThread - INFO - Waiting for 6 tasks to complete...
+2025-10-02 10:21:56 - MainThread - INFO - === CallPipeline Shutdown Complete ====
+2025-10-02 10:32:41 - MainThread - INFO - === CallPipeline Starting ===
+2025-10-02 10:32:41 - MainThread - INFO - Configuration loaded from: C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\call_pipeline.ini
+2025-10-02 10:32:41 - MainThread - INFO - [Review] Review generation enabled
+2025-10-02 10:32:41 - MainThread - INFO - [Review] Output directory: .\output\Review
+2025-10-02 10:32:42 - MainThread - INFO - Google AI SDK configured successfully.
+2025-10-02 10:32:42 - MainThread - INFO - Successfully loaded 24 users from '.\config\staff_map.txt'.
+2025-10-02 10:32:42 - MainThread - INFO - Successfully loaded analysis prompt from 'C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\prompts.txt'.
+2025-10-02 10:32:42 - MainThread - INFO - Database updater module found - will auto-update database
+2025-10-02 10:32:42 - MainThread - INFO - JSON archive and normalizer module found - can normalize existing JSON files
+2025-10-02 10:32:42 - MainThread - INFO - Configuration validation passed.
+2025-10-02 10:32:42 - MainThread - INFO - Started 8 worker threads.
+2025-10-02 10:32:42 - MainThread - INFO - Discovering user audio directories to watch inside: .
+2025-10-02 10:32:42 - MainThread - INFO -   + Found and will watch: .\demo\Audio
+2025-10-02 10:32:42 - MainThread - INFO - Watchdog observers started. Press Ctrl+C to exit.
+2025-10-02 10:32:59 - Thread-1 - INFO - New audio detected: .\demo\Audio\test copy.wav (size: 403086 bytes)
+2025-10-02 10:33:09 - MainThread - INFO - Audio complete (probe successful): .\demo\Audio\test copy.wav (final size 403086)
+2025-10-02 10:33:09 - Transcriber-1 - INFO - [STT] Starting transcription for: .\demo\Audio\test copy.wav
+2025-10-02 10:33:14 - Transcriber-1 - INFO - [STT] Transcription saved: demo\Transcripts\test copy.txt
+2025-10-02 10:33:18 - Transcriber-1 - INFO - Review JSON written to output\Review\test copy.review.json
+2025-10-02 10:33:18 - Transcriber-1 - INFO - [Review] Alignment review created: output\Review\test copy.review.json
+2025-10-02 10:33:18 - Transcriber-1 - INFO - [STT] Archived transcript to: output\ALL_TRANSCRIPT_FILES\test copy.txt
+2025-10-02 10:37:42 - MetricsReporter - INFO - Processing Metrics: {
+  "total_files_processed": 1,
+  "success_rate": 1.0,
+  "average_processing_time": 9.994670629501343,
+  "api_usage_by_worker": {
+    "Transcriber-1": 1
+  },
+  "success_rates_by_type": {
+    "transcript": 1.0
+  },
+  "processing_times_by_type": {
+    "transcript": 9.994670629501343
+  }
+}
+2025-10-02 10:42:42 - MetricsReporter - INFO - Processing Metrics: {
+  "total_files_processed": 1,
+  "success_rate": 1.0,
+  "average_processing_time": 9.994670629501343,
+  "api_usage_by_worker": {
+    "Transcriber-1": 1
+  },
+  "success_rates_by_type": {
+    "transcript": 1.0
+  },
+  "processing_times_by_type": {
+    "transcript": 9.994670629501343
+  }
+}
+2025-10-02 10:47:42 - MetricsReporter - INFO - Processing Metrics: {
+  "total_files_processed": 1,
+  "success_rate": 1.0,
+  "average_processing_time": 9.994670629501343,
+  "api_usage_by_worker": {
+    "Transcriber-1": 1
+  },
+  "success_rates_by_type": {
+    "transcript": 1.0
+  },
+  "processing_times_by_type": {
+    "transcript": 9.994670629501343
+  }
+}
+2025-10-02 10:52:42 - MetricsReporter - INFO - Processing Metrics: {
+  "total_files_processed": 1,
+  "success_rate": 1.0,
+  "average_processing_time": 9.994670629501343,
+  "api_usage_by_worker": {
+    "Transcriber-1": 1
+  },
+  "success_rates_by_type": {
+    "transcript": 1.0
+  },
+  "processing_times_by_type": {
+    "transcript": 9.994670629501343
+  }
+}
+2025-10-02 10:57:42 - MetricsReporter - INFO - Processing Metrics: {
+  "total_files_processed": 1,
+  "success_rate": 1.0,
+  "average_processing_time": 9.994670629501343,
+  "api_usage_by_worker": {
+    "Transcriber-1": 1
+  },
+  "success_rates_by_type": {
+    "transcript": 1.0
+  },
+  "processing_times_by_type": {
+    "transcript": 9.994670629501343
+  }
+}
+2025-10-02 11:02:42 - MetricsReporter - INFO - Processing Metrics: {
+  "total_files_processed": 1,
+  "success_rate": 1.0,
+  "average_processing_time": 9.994670629501343,
+  "api_usage_by_worker": {
+    "Transcriber-1": 1
+  },
+  "success_rates_by_type": {
+    "transcript": 1.0
+  },
+  "processing_times_by_type": {
+    "transcript": 9.994670629501343
+  }
+}
+2025-10-02 11:07:42 - MetricsReporter - INFO - Processing Metrics: {
+  "total_files_processed": 1,
+  "success_rate": 1.0,
+  "average_processing_time": 9.994670629501343,
+  "api_usage_by_worker": {
+    "Transcriber-1": 1
+  },
+  "success_rates_by_type": {
+    "transcript": 1.0
+  },
+  "processing_times_by_type": {
+    "transcript": 9.994670629501343
+  }
+}
+2025-10-02 11:12:42 - MetricsReporter - INFO - Processing Metrics: {
+  "total_files_processed": 1,
+  "success_rate": 1.0,
+  "average_processing_time": 9.994670629501343,
+  "api_usage_by_worker": {
+    "Transcriber-1": 1
+  },
+  "success_rates_by_type": {
+    "transcript": 1.0
+  },
+  "processing_times_by_type": {
+    "transcript": 9.994670629501343
+  }
+}
+2025-10-02 11:17:42 - MetricsReporter - INFO - Processing Metrics: {
+  "total_files_processed": 1,
+  "success_rate": 1.0,
+  "average_processing_time": 9.994670629501343,
+  "api_usage_by_worker": {
+    "Transcriber-1": 1
+  },
+  "success_rates_by_type": {
+    "transcript": 1.0
+  },
+  "processing_times_by_type": {
+    "transcript": 9.994670629501343
+  }
+}
+2025-10-02 11:19:03 - MainThread - INFO - Shutdown requested.
+2025-10-02 11:19:03 - MainThread - INFO - Waiting for 6 tasks to complete...
+2025-10-02 11:19:03 - MainThread - INFO - === CallPipeline Shutdown Complete ====
+2025-10-02 11:19:16 - MainThread - INFO - === CallPipeline Starting ===
+2025-10-02 11:19:16 - MainThread - INFO - Configuration loaded from: C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\call_pipeline.ini
+2025-10-02 11:19:16 - MainThread - INFO - [STT] Transcription engine: google_cloud_stt
+2025-10-02 11:19:16 - MainThread - INFO - [Review] Review generation enabled
+2025-10-02 11:19:16 - MainThread - INFO - [Review] Output directory: .\output\Review
+2025-10-02 11:19:16 - MainThread - INFO - Google AI SDK configured successfully.
+2025-10-02 11:19:16 - MainThread - INFO - Successfully loaded 24 users from '.\config\staff_map.txt'.
+2025-10-02 11:19:16 - MainThread - INFO - Successfully loaded analysis prompt from 'C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\prompts.txt'.
+2025-10-02 11:19:16 - MainThread - INFO - Database updater module found - will auto-update database
+2025-10-02 11:19:16 - MainThread - INFO - JSON archive and normalizer module found - can normalize existing JSON files
+2025-10-02 11:19:16 - MainThread - INFO - Configuration validation passed.
+2025-10-02 11:19:16 - MainThread - INFO - Started 8 worker threads.
+2025-10-02 11:19:16 - MainThread - INFO - Discovering user audio directories to watch inside: .
+2025-10-02 11:19:16 - MainThread - INFO -   + Found and will watch: .\demo\Audio
+2025-10-02 11:19:16 - MainThread - INFO - Watchdog observers started. Press Ctrl+C to exit.
+2025-10-02 11:19:31 - Thread-1 - INFO - New audio detected: .\demo\Audio\test copy.wav (size: 403086 bytes)
+2025-10-02 11:19:43 - MainThread - INFO - Audio complete (probe successful): .\demo\Audio\test copy.wav (final size 403086)
+2025-10-02 11:19:43 - Transcriber-2 - INFO - [STT] Starting transcription with google_cloud_stt for: .\demo\Audio\test copy.wav
+2025-10-02 11:19:55 - Transcriber-2 - INFO - [STT] Transcription saved: demo\Transcripts\test copy.txt
+2025-10-02 11:19:55 - Transcriber-2 - INFO - [STT] Confidence data saved: demo\Transcripts\test copy.confidence.json
+2025-10-02 11:20:00 - Transcriber-2 - INFO - Review JSON written to output\Review\test copy.review.json
+2025-10-02 11:20:00 - Transcriber-2 - INFO - [Review] Alignment review created: output\Review\test copy.review.json
+2025-10-02 11:20:00 - Transcriber-2 - INFO - [STT] Archived transcript to: output\ALL_TRANSCRIPT_FILES\test copy.txt
+2025-10-02 11:23:45 - MainThread - INFO - Shutdown requested.
+2025-10-02 11:23:45 - MainThread - INFO - Waiting for 6 tasks to complete...
+2025-10-02 11:23:45 - MainThread - INFO - === CallPipeline Shutdown Complete ====
+2025-10-02 11:29:44 - MainThread - INFO - === CallPipeline Starting ===
+2025-10-02 11:29:44 - MainThread - INFO - Configuration loaded from: C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\call_pipeline.ini
+2025-10-02 11:29:44 - MainThread - INFO - [STT] Transcription engine: google_cloud_stt
+2025-10-02 11:29:44 - MainThread - INFO - [Review] Review generation enabled
+2025-10-02 11:29:44 - MainThread - INFO - [Review] Output directory: .\output\Review
+2025-10-02 11:29:44 - MainThread - INFO - Google AI SDK configured successfully.
+2025-10-02 11:29:44 - MainThread - INFO - Successfully loaded 24 users from '.\config\staff_map.txt'.
+2025-10-02 11:29:44 - MainThread - INFO - Successfully loaded analysis prompt from 'C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\prompts.txt'.
+2025-10-02 11:29:44 - MainThread - INFO - Database updater module found - will auto-update database
+2025-10-02 11:29:44 - MainThread - INFO - JSON archive and normalizer module found - can normalize existing JSON files
+2025-10-02 11:29:44 - MainThread - INFO - Configuration validation passed.
+2025-10-02 11:29:44 - MainThread - INFO - Started 8 worker threads.
+2025-10-02 11:29:44 - MainThread - INFO - Discovering user audio directories to watch inside: .
+2025-10-02 11:29:44 - MainThread - INFO -   + Found and will watch: .\demo\Audio
+2025-10-02 11:29:44 - MainThread - INFO - Watchdog observers started. Press Ctrl+C to exit.
+2025-10-02 11:30:23 - Thread-1 - INFO - New audio detected: .\demo\Audio\test copy.wav (size: 403086 bytes)
+2025-10-02 11:30:35 - MainThread - INFO - Audio complete (probe successful): .\demo\Audio\test copy.wav (final size 403086)
+2025-10-02 11:30:35 - Transcriber-1 - INFO - [STT] Starting transcription with google_cloud_stt for: .\demo\Audio\test copy.wav
+2025-10-02 11:30:45 - Thread-1 - INFO - [Analysis] New transcript detected: .\demo\Transcripts\test copy.txt
+2025-10-02 11:30:45 - Transcriber-1 - INFO - [STT] Transcription saved: demo\Transcripts\test copy.txt
+2025-10-02 11:30:45 - Transcriber-1 - INFO - [STT] Confidence data saved: demo\Transcripts\test copy.confidence.json
+2025-10-02 11:30:45 - Transcriber-1 - INFO - Using Google Cloud STT confidence data from demo\Transcripts\test copy.confidence.json
+2025-10-02 11:30:45 - Transcriber-1 - INFO - Using Google Cloud STT confidence (overall: 0.40)
+2025-10-02 11:30:45 - Transcriber-1 - INFO - Review JSON written to output\Review\test copy.review.json
+2025-10-02 11:30:45 - Transcriber-1 - INFO - [Review] Alignment review created: output\Review\test copy.review.json
+2025-10-02 11:30:45 - Transcriber-1 - INFO - [STT] Archived transcript to: output\ALL_TRANSCRIPT_FILES\test copy.txt
+2025-10-02 11:30:50 - Analyzer-1 - INFO - [Analysis] Saved JSON to: output\ALL_JSON_FILES\test copy.json
+2025-10-02 11:30:50 - Analyzer-1 - INFO - [Analysis] Saved Markdown to: demo\Summaries\test copy.md
+2025-10-02 11:34:44 - MetricsReporter - INFO - Processing Metrics: {
+  "total_files_processed": 2,
+  "success_rate": 1.0,
+  "average_processing_time": 6.7170833349227905,
+  "api_usage_by_worker": {
+    "Transcriber-1": 1,
+    "Analyzer-1": 1
+  },
+  "success_rates_by_type": {
+    "transcript": 1.0
+  },
+  "processing_times_by_type": {
+    "transcript": 6.7170833349227905
+  }
+}
+2025-10-02 11:54:04 - MainThread - INFO - === CallPipeline Starting ===
+2025-10-02 11:54:04 - MainThread - INFO - Configuration loaded from: C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\call_pipeline.ini
+2025-10-02 11:54:04 - MainThread - INFO - [STT] Transcription engine: google_cloud_stt
+2025-10-02 11:54:04 - MainThread - INFO - [Review] Review generation enabled
+2025-10-02 11:54:04 - MainThread - INFO - [Review] Output directory: .\output\Review
+2025-10-02 11:54:04 - MainThread - INFO - Google AI SDK configured successfully.
+2025-10-02 11:54:04 - MainThread - INFO - Successfully loaded 24 users from '.\config\staff_map.txt'.
+2025-10-02 11:54:04 - MainThread - INFO - Successfully loaded analysis prompt from 'C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\prompts.txt'.
+2025-10-02 11:54:04 - MainThread - INFO - Database updater module found - will auto-update database
+2025-10-02 11:54:04 - MainThread - INFO - JSON archive and normalizer module found - can normalize existing JSON files
+2025-10-02 11:54:04 - MainThread - INFO - Configuration validation passed.
+2025-10-02 11:54:04 - MainThread - INFO - Loaded 1 processed files from '.\output\Database\processed_files.json'.
+2025-10-02 11:54:04 - MainThread - INFO - Started 8 worker threads.
+2025-10-02 11:54:04 - MainThread - INFO - Discovering user audio directories to watch inside: .
+2025-10-02 11:54:04 - MainThread - INFO -   + Found and will watch: .\demo\Audio
+2025-10-02 11:54:04 - MainThread - INFO - Watchdog observers started. Press Ctrl+C to exit.
+2025-10-02 11:54:11 - Thread-1 - INFO - New audio detected: .\demo\Audio\test copy.wav (size: 403086 bytes)
+2025-10-02 11:54:22 - MainThread - INFO - Audio complete (probe successful): .\demo\Audio\test copy.wav (final size 403086)
+2025-10-02 11:54:22 - Transcriber-1 - INFO - [STT] Starting transcription with google_cloud_stt for: .\demo\Audio\test copy.wav
+2025-10-02 11:54:36 - Thread-1 - INFO - [Analysis] New transcript detected: .\demo\Transcripts\test copy.txt
+2025-10-02 11:54:36 - Transcriber-1 - INFO - [STT] Transcription saved: demo\Transcripts\test copy.txt
+2025-10-02 11:54:36 - Transcriber-1 - INFO - [STT] Confidence data saved: demo\Transcripts\test copy.confidence.json
+2025-10-02 11:54:36 - Transcriber-1 - INFO - Using Google Cloud STT confidence data from demo\Transcripts\test copy.confidence.json
+2025-10-02 11:54:36 - Transcriber-1 - INFO - Using Google Cloud STT confidence (overall: 0.57)
+2025-10-02 11:54:36 - Transcriber-1 - INFO - Review JSON written to output\Review\test copy.review.json
+2025-10-02 11:54:36 - Transcriber-1 - INFO - [Review] Alignment review created: output\Review\test copy.review.json
+2025-10-02 11:54:36 - Transcriber-1 - INFO - [STT] Archived transcript to: output\ALL_TRANSCRIPT_FILES\test copy.txt
+2025-10-02 11:59:04 - MetricsReporter - INFO - Processing Metrics: {
+  "total_files_processed": 2,
+  "success_rate": 1.0,
+  "average_processing_time": 7.011983633041382,
+  "api_usage_by_worker": {
+    "Transcriber-1": 1,
+    "Analyzer-2": 1
+  },
+  "success_rates_by_type": {
+    "transcript": 1.0
+  },
+  "processing_times_by_type": {
+    "transcript": 7.011983633041382
+  }
+}
+2025-10-02 11:59:17 - Thread-1 - INFO - New audio detected: .\demo\Audio\test copy.wav (size: 403086 bytes)
+2025-10-02 11:59:28 - MainThread - INFO - Audio complete (probe successful): .\demo\Audio\test copy.wav (final size 403086)
+2025-10-02 11:59:28 - Transcriber-4 - INFO - [STT] Starting transcription with google_cloud_stt for: .\demo\Audio\test copy.wav
+2025-10-02 11:59:42 - Thread-1 - INFO - [Analysis] New transcript detected: .\demo\Transcripts\test copy.txt
+2025-10-02 11:59:42 - Transcriber-4 - INFO - [STT] Transcription saved: demo\Transcripts\test copy.txt
+2025-10-02 11:59:42 - Transcriber-4 - INFO - [STT] Confidence data saved: demo\Transcripts\test copy.confidence.json
+2025-10-02 11:59:42 - Transcriber-4 - INFO - Using Google Cloud STT confidence data from demo\Transcripts\test copy.confidence.json
+2025-10-02 11:59:42 - Transcriber-4 - INFO - Using Google Cloud STT confidence (overall: 0.57)
+2025-10-02 11:59:42 - Transcriber-4 - INFO - Review JSON written to output\Review\test copy.review.json
+2025-10-02 11:59:42 - Transcriber-4 - INFO - [Review] Alignment review created: output\Review\test copy.review.json
+2025-10-02 11:59:42 - Transcriber-4 - INFO - [STT] Archived transcript to: output\ALL_TRANSCRIPT_FILES\test copy.txt
+2025-10-02 12:00:04 - MainThread - INFO - Shutdown requested.
+2025-10-02 12:00:04 - MainThread - INFO - Waiting for 6 tasks to complete...
+2025-10-02 12:00:04 - MainThread - INFO - === CallPipeline Shutdown Complete ====
+2025-10-02 12:00:11 - MainThread - INFO - === CallPipeline Starting ===
+2025-10-02 12:00:11 - MainThread - INFO - Configuration loaded from: C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\call_pipeline.ini
+2025-10-02 12:00:11 - MainThread - INFO - [STT] Transcription engine: google_cloud_stt
+2025-10-02 12:00:11 - MainThread - INFO - [Review] Review generation enabled
+2025-10-02 12:00:11 - MainThread - INFO - [Review] Output directory: .\output\Review
+2025-10-02 12:00:11 - MainThread - INFO - Google AI SDK configured successfully.
+2025-10-02 12:00:11 - MainThread - INFO - Successfully loaded 24 users from '.\config\staff_map.txt'.
+2025-10-02 12:00:11 - MainThread - INFO - Successfully loaded analysis prompt from 'C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\prompts.txt'.
+2025-10-02 12:00:11 - MainThread - INFO - Database updater module found - will auto-update database
+2025-10-02 12:00:11 - MainThread - INFO - JSON archive and normalizer module found - can normalize existing JSON files
+2025-10-02 12:00:11 - MainThread - INFO - Configuration validation passed.
+2025-10-02 12:00:11 - MainThread - INFO - Loaded 1 processed files from '.\output\Database\processed_files.json'.
+2025-10-02 12:00:11 - MainThread - INFO - Started 8 worker threads.
+2025-10-02 12:00:11 - MainThread - INFO - Discovering user audio directories to watch inside: .
+2025-10-02 12:00:11 - MainThread - INFO -   + Found and will watch: .\demo\Audio
+2025-10-02 12:00:11 - MainThread - INFO - Watchdog observers started. Press Ctrl+C to exit.
+2025-10-02 12:00:17 - Thread-1 - INFO - New audio detected: .\demo\Audio\test copy.wav (size: 403086 bytes)
+2025-10-02 12:00:29 - MainThread - INFO - Audio complete (probe successful): .\demo\Audio\test copy.wav (final size 403086)
+2025-10-02 12:00:29 - Transcriber-1 - INFO - [STT] Starting transcription with google_cloud_stt for: .\demo\Audio\test copy.wav
+2025-10-02 12:00:45 - Thread-1 - INFO - [Analysis] New transcript detected: .\demo\Transcripts\test copy.txt
+2025-10-02 12:00:45 - Transcriber-1 - INFO - [STT] Transcription saved: demo\Transcripts\test copy.txt
+2025-10-02 12:00:45 - Transcriber-1 - INFO - [STT] Confidence data saved: demo\Transcripts\test copy.confidence.json
+2025-10-02 12:00:45 - Transcriber-1 - INFO - Using Google Cloud STT confidence data from demo\Transcripts\test copy.confidence.json
+2025-10-02 12:00:45 - Transcriber-1 - INFO - Using Google Cloud STT confidence (overall: 0.57)
+2025-10-02 12:00:45 - Transcriber-1 - INFO - Review JSON written to output\Review\test copy.review.json
+2025-10-02 12:00:45 - Transcriber-1 - INFO - [Review] Alignment review created: output\Review\test copy.review.json
+2025-10-02 12:00:45 - Transcriber-1 - INFO - [STT] Archived transcript to: output\ALL_TRANSCRIPT_FILES\test copy.txt
+2025-10-02 12:03:15 - MainThread - INFO - Shutdown requested.
+2025-10-02 12:03:15 - MainThread - INFO - Waiting for 6 tasks to complete...
+2025-10-02 12:03:15 - MainThread - INFO - === CallPipeline Shutdown Complete ====
+2025-10-02 12:03:32 - MainThread - INFO - === CallPipeline Starting ===
+2025-10-02 12:03:32 - MainThread - INFO - Configuration loaded from: C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\call_pipeline.ini
+2025-10-02 12:03:32 - MainThread - INFO - [STT] Transcription engine: google_cloud_stt
+2025-10-02 12:03:32 - MainThread - INFO - [Review] Review generation enabled
+2025-10-02 12:03:32 - MainThread - INFO - [Review] Output directory: .\output\Review
+2025-10-02 12:03:32 - MainThread - INFO - Google AI SDK configured successfully.
+2025-10-02 12:03:32 - MainThread - INFO - Successfully loaded 24 users from '.\config\staff_map.txt'.
+2025-10-02 12:03:32 - MainThread - INFO - Successfully loaded analysis prompt from 'C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\prompts.txt'.
+2025-10-02 12:03:32 - MainThread - INFO - Database updater module found - will auto-update database
+2025-10-02 12:03:32 - MainThread - INFO - JSON archive and normalizer module found - can normalize existing JSON files
+2025-10-02 12:03:32 - MainThread - INFO - Configuration validation passed.
+2025-10-02 12:03:32 - MainThread - INFO - Loaded 1 processed files from '.\output\Database\processed_files.json'.
+2025-10-02 12:03:32 - MainThread - INFO - Started 8 worker threads.
+2025-10-02 12:03:32 - MainThread - INFO - Discovering user audio directories to watch inside: .
+2025-10-02 12:03:32 - MainThread - INFO -   + Found and will watch: .\demo\Audio
+2025-10-02 12:03:32 - MainThread - INFO - Watchdog observers started. Press Ctrl+C to exit.
+2025-10-02 12:05:56 - MainThread - INFO - Shutdown requested.
+2025-10-02 12:05:56 - MainThread - INFO - Waiting for 6 tasks to complete...
+2025-10-02 12:05:56 - MainThread - INFO - === CallPipeline Shutdown Complete ====
+2025-10-02 12:08:57 - MainThread - INFO - === CallPipeline Starting ===
+2025-10-02 12:08:57 - MainThread - INFO - Configuration loaded from: C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\call_pipeline.ini
+2025-10-02 12:08:57 - MainThread - INFO - [STT] Transcription engine: google_cloud_stt
+2025-10-02 12:08:57 - MainThread - INFO - [Review] Review generation enabled
+2025-10-02 12:08:57 - MainThread - INFO - [Review] Output directory: .\output\Review
+2025-10-02 12:08:58 - MainThread - INFO - Google AI SDK configured successfully.
+2025-10-02 12:08:58 - MainThread - INFO - Successfully loaded 24 users from '.\config\staff_map.txt'.
+2025-10-02 12:08:58 - MainThread - INFO - Successfully loaded analysis prompt from 'C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\prompts.txt'.
+2025-10-02 12:08:58 - MainThread - INFO - Database updater module found - will auto-update database
+2025-10-02 12:08:58 - MainThread - INFO - JSON archive and normalizer module found - can normalize existing JSON files
+2025-10-02 12:08:58 - MainThread - INFO - Configuration validation passed.
+2025-10-02 12:08:58 - MainThread - INFO - Loaded 1 processed files from '.\output\Database\processed_files.json'.
+2025-10-02 12:08:58 - MainThread - INFO - Started 8 worker threads.
+2025-10-02 12:08:58 - MainThread - INFO - Discovering user audio directories to watch inside: .
+2025-10-02 12:08:58 - MainThread - INFO -   + Found and will watch: .\demo\Audio
+2025-10-02 12:08:58 - MainThread - INFO - Watchdog observers started. Press Ctrl+C to exit.
+2025-10-02 12:10:31 - MainThread - INFO - Shutdown requested.
+2025-10-02 12:10:31 - MainThread - INFO - Waiting for 6 tasks to complete...
+2025-10-02 12:10:31 - MainThread - INFO - === CallPipeline Shutdown Complete ====
+2025-10-02 12:10:44 - MainThread - INFO - === CallPipeline Starting ===
+2025-10-02 12:10:44 - MainThread - INFO - Configuration loaded from: C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\call_pipeline.ini
+2025-10-02 12:10:44 - MainThread - INFO - [STT] Transcription engine: google_cloud_stt
+2025-10-02 12:10:44 - MainThread - INFO - [Review] Review generation enabled
+2025-10-02 12:10:44 - MainThread - INFO - [Review] Output directory: .\output\Review
+2025-10-02 12:10:44 - MainThread - INFO - Google AI SDK configured successfully.
+2025-10-02 12:10:44 - MainThread - INFO - Successfully loaded 24 users from '.\config\staff_map.txt'.
+2025-10-02 12:10:44 - MainThread - INFO - Successfully loaded analysis prompt from 'C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\prompts.txt'.
+2025-10-02 12:10:44 - MainThread - INFO - Database updater module found - will auto-update database
+2025-10-02 12:10:44 - MainThread - INFO - JSON archive and normalizer module found - can normalize existing JSON files
+2025-10-02 12:10:44 - MainThread - INFO - Configuration validation passed.
+2025-10-02 12:10:44 - MainThread - INFO - Loaded 1 processed files from '.\output\Database\processed_files.json'.
+2025-10-02 12:10:44 - MainThread - INFO - Started 8 worker threads.
+2025-10-02 12:10:44 - MainThread - INFO - [Transcription] Queued unprocessed audio: test copy.wav
+2025-10-02 12:10:44 - Transcriber-1 - INFO - [STT] Starting transcription with google_cloud_stt for: .\demo\Audio\test copy.wav
+2025-10-02 12:10:44 - MainThread - INFO - [Transcription] Queued unprocessed audio: test.wav
+2025-10-02 12:10:44 - Transcriber-2 - INFO - [STT] Starting transcription with google_cloud_stt for: .\demo\Audio\test.wav
+2025-10-02 12:10:44 - MainThread - INFO - [Transcription] Queued 2 unprocessed audio files for transcription.
+2025-10-02 12:10:44 - MainThread - INFO - Discovering user audio directories to watch inside: .
+2025-10-02 12:10:44 - MainThread - INFO -   + Found and will watch: .\demo\Audio
+2025-10-02 12:10:44 - MainThread - INFO - Watchdog observers started. Press Ctrl+C to exit.
+2025-10-02 12:10:59 - Thread-1 - INFO - [Analysis] New transcript detected: .\demo\Transcripts\test.txt
+2025-10-02 12:10:59 - Transcriber-2 - INFO - [STT] Transcription saved: demo\Transcripts\test.txt
+2025-10-02 12:10:59 - Transcriber-2 - INFO - [STT] Confidence data saved: demo\Transcripts\test.confidence.json
+2025-10-02 12:10:59 - Transcriber-2 - INFO - Using Google Cloud STT confidence data from demo\Transcripts\test.confidence.json
+2025-10-02 12:10:59 - Transcriber-2 - INFO - Using Google Cloud STT confidence (overall: 0.57)
+2025-10-02 12:10:59 - Transcriber-2 - INFO - Review JSON written to output\Review\test.review.json
+2025-10-02 12:10:59 - Transcriber-2 - INFO - [Review] Alignment review created: output\Review\test.review.json
+2025-10-02 12:10:59 - Transcriber-2 - INFO - [STT] Archived transcript to: output\ALL_TRANSCRIPT_FILES\test.txt
+2025-10-02 12:11:00 - Transcriber-1 - INFO - [STT] Transcription saved: demo\Transcripts\test copy.txt
+2025-10-02 12:11:00 - Transcriber-1 - INFO - [STT] Confidence data saved: demo\Transcripts\test copy.confidence.json
+2025-10-02 12:11:00 - Transcriber-1 - INFO - Using Google Cloud STT confidence data from demo\Transcripts\test copy.confidence.json
+2025-10-02 12:11:00 - Transcriber-1 - INFO - Using Google Cloud STT confidence (overall: 0.57)
+2025-10-02 12:11:00 - Transcriber-1 - INFO - Review JSON written to output\Review\test copy.review.json
+2025-10-02 12:11:00 - Transcriber-1 - INFO - [Review] Alignment review created: output\Review\test copy.review.json
+2025-10-02 12:11:00 - Transcriber-1 - INFO - [STT] Archived transcript to: output\ALL_TRANSCRIPT_FILES\test copy.txt
+2025-10-02 12:11:00 - Thread-1 - INFO - [Analysis] New transcript detected: .\demo\Transcripts\test copy.txt
+2025-10-02 12:11:03 - Analyzer-2 - INFO - [Analysis] Saved JSON to: output\ALL_JSON_FILES\test.json
+2025-10-02 12:11:03 - Analyzer-2 - INFO - [Analysis] Saved Markdown to: demo\Summaries\test.md
+2025-10-02 12:11:33 - MainThread - INFO - Shutdown requested.
+2025-10-02 12:11:33 - MainThread - INFO - Waiting for 6 tasks to complete...
+2025-10-02 12:11:33 - MainThread - INFO - === CallPipeline Shutdown Complete ====
+2025-10-02 12:11:40 - MainThread - INFO - === CallPipeline Starting ===
+2025-10-02 12:11:40 - MainThread - INFO - Configuration loaded from: C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\call_pipeline.ini
+2025-10-02 12:11:40 - MainThread - INFO - [STT] Transcription engine: google_cloud_stt
+2025-10-02 12:11:40 - MainThread - INFO - [Review] Review generation enabled
+2025-10-02 12:11:40 - MainThread - INFO - [Review] Output directory: .\output\Review
+2025-10-02 12:11:40 - MainThread - INFO - Google AI SDK configured successfully.
+2025-10-02 12:11:40 - MainThread - INFO - Successfully loaded 24 users from '.\config\staff_map.txt'.
+2025-10-02 12:11:40 - MainThread - INFO - Successfully loaded analysis prompt from 'C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\prompts.txt'.
+2025-10-02 12:11:41 - MainThread - INFO - Database updater module found - will auto-update database
+2025-10-02 12:11:41 - MainThread - INFO - JSON archive and normalizer module found - can normalize existing JSON files
+2025-10-02 12:11:41 - MainThread - INFO - Configuration validation passed.
+2025-10-02 12:11:41 - MainThread - INFO - Loaded 2 processed files from '.\output\Database\processed_files.json'.
+2025-10-02 12:11:41 - MainThread - INFO - Started 8 worker threads.
+2025-10-02 12:11:41 - MainThread - INFO - [Transcription] Queued 0 unprocessed audio files for transcription.
+2025-10-02 12:11:41 - MainThread - INFO - Discovering user audio directories to watch inside: .
+2025-10-02 12:11:41 - MainThread - INFO -   + Found and will watch: .\demo\Audio
+2025-10-02 12:11:41 - MainThread - INFO - Watchdog observers started. Press Ctrl+C to exit.
+2025-10-02 12:11:48 - MainThread - INFO - Shutdown requested.
+2025-10-02 12:11:48 - MainThread - INFO - Waiting for 6 tasks to complete...
+2025-10-02 12:11:48 - MainThread - INFO - === CallPipeline Shutdown Complete ====
+2025-10-02 12:12:04 - MainThread - INFO - === CallPipeline Starting ===
+2025-10-02 12:12:04 - MainThread - INFO - Configuration loaded from: C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\call_pipeline.ini
+2025-10-02 12:12:04 - MainThread - INFO - [STT] Transcription engine: google_cloud_stt
+2025-10-02 12:12:04 - MainThread - INFO - [Review] Review generation enabled
+2025-10-02 12:12:04 - MainThread - INFO - [Review] Output directory: .\output\Review
+2025-10-02 12:12:04 - MainThread - INFO - Google AI SDK configured successfully.
+2025-10-02 12:12:04 - MainThread - INFO - Successfully loaded 24 users from '.\config\staff_map.txt'.
+2025-10-02 12:12:04 - MainThread - INFO - Successfully loaded analysis prompt from 'C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\prompts.txt'.
+2025-10-02 12:12:04 - MainThread - INFO - Database updater module found - will auto-update database
+2025-10-02 12:12:04 - MainThread - INFO - JSON archive and normalizer module found - can normalize existing JSON files
+2025-10-02 12:12:04 - MainThread - INFO - Configuration validation passed.
+2025-10-02 12:12:04 - MainThread - INFO - Loaded 2 processed files from '.\output\Database\processed_files.json'.
+2025-10-02 12:12:04 - MainThread - INFO - Started 8 worker threads.
+2025-10-02 12:12:04 - MainThread - INFO - Discovering user audio directories to watch inside: .
+2025-10-02 12:12:04 - MainThread - INFO -   + Found and will watch: .\demo\Audio
+2025-10-02 12:12:04 - MainThread - INFO - Watchdog observers started. Press Ctrl+C to exit.
+2025-10-02 12:12:15 - MainThread - INFO - Shutdown requested.
+2025-10-02 12:12:15 - MainThread - INFO - Waiting for 6 tasks to complete...
+2025-10-02 12:12:15 - MainThread - INFO - === CallPipeline Shutdown Complete ====
+2025-10-02 12:12:38 - MainThread - INFO - === CallPipeline Starting ===
+2025-10-02 12:12:38 - MainThread - INFO - Configuration loaded from: C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\call_pipeline.ini
+2025-10-02 12:12:38 - MainThread - INFO - [STT] Transcription engine: google_cloud_stt
+2025-10-02 12:12:38 - MainThread - INFO - [Review] Review generation enabled
+2025-10-02 12:12:38 - MainThread - INFO - [Review] Output directory: .\output\Review
+2025-10-02 12:12:38 - MainThread - INFO - Google AI SDK configured successfully.
+2025-10-02 12:12:38 - MainThread - INFO - Successfully loaded 24 users from '.\config\staff_map.txt'.
+2025-10-02 12:12:38 - MainThread - INFO - Successfully loaded analysis prompt from 'C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\prompts.txt'.
+2025-10-02 12:12:38 - MainThread - INFO - Database updater module found - will auto-update database
+2025-10-02 12:12:38 - MainThread - INFO - JSON archive and normalizer module found - can normalize existing JSON files
+2025-10-02 12:12:38 - MainThread - INFO - Configuration validation passed.
+2025-10-02 12:12:38 - MainThread - INFO - Loaded 2 processed files from '.\output\Database\processed_files.json'.
+2025-10-02 12:12:38 - MainThread - INFO - Started 8 worker threads.
+2025-10-02 12:12:38 - MainThread - INFO - Discovering user audio directories to watch inside: .
+2025-10-02 12:12:38 - MainThread - INFO -   + Found and will watch: .\demo\Audio
+2025-10-02 12:12:38 - MainThread - INFO - Watchdog observers started. Press Ctrl+C to exit.
+2025-10-02 12:12:42 - MainThread - INFO - Shutdown requested.
+2025-10-02 12:12:42 - MainThread - INFO - Waiting for 6 tasks to complete...
+2025-10-02 12:12:42 - MainThread - INFO - === CallPipeline Shutdown Complete ====
+2025-10-02 12:12:57 - MainThread - INFO - === CallPipeline Starting ===
+2025-10-02 12:12:57 - MainThread - INFO - Configuration loaded from: C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\call_pipeline.ini
+2025-10-02 12:12:57 - MainThread - INFO - [STT] Transcription engine: google_cloud_stt
+2025-10-02 12:12:57 - MainThread - INFO - [Review] Review generation enabled
+2025-10-02 12:12:57 - MainThread - INFO - [Review] Output directory: .\output\Review
+2025-10-02 12:12:57 - MainThread - INFO - Google AI SDK configured successfully.
+2025-10-02 12:12:57 - MainThread - INFO - Successfully loaded 24 users from '.\config\staff_map.txt'.
+2025-10-02 12:12:57 - MainThread - INFO - Successfully loaded analysis prompt from 'C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\prompts.txt'.
+2025-10-02 12:12:57 - MainThread - INFO - Database updater module found - will auto-update database
+2025-10-02 12:12:57 - MainThread - INFO - JSON archive and normalizer module found - can normalize existing JSON files
+2025-10-02 12:12:57 - MainThread - INFO - Configuration validation passed.
+2025-10-02 12:12:57 - MainThread - INFO - Loaded 2 processed files from '.\output\Database\processed_files.json'.
+2025-10-02 12:12:57 - MainThread - INFO - Started 8 worker threads.
+2025-10-02 12:12:57 - MainThread - INFO - [Transcription] Queued unprocessed audio: test copy.wav
+2025-10-02 12:12:57 - Transcriber-1 - INFO - [STT] Starting transcription with google_cloud_stt for: .\demo\Audio\test copy.wav
+2025-10-02 12:12:57 - MainThread - INFO - [Transcription] Queued unprocessed audio: test.wav
+2025-10-02 12:12:57 - Transcriber-2 - INFO - [STT] Starting transcription with google_cloud_stt for: .\demo\Audio\test.wav
+2025-10-02 12:12:57 - MainThread - INFO - [Transcription] Queued 2 unprocessed audio files for transcription.
+2025-10-02 12:12:57 - MainThread - INFO - Discovering user audio directories to watch inside: .
+2025-10-02 12:12:57 - MainThread - INFO -   + Found and will watch: .\demo\Audio
+2025-10-02 12:12:57 - MainThread - INFO - Watchdog observers started. Press Ctrl+C to exit.
+2025-10-02 12:13:12 - Thread-1 - INFO - [Analysis] New transcript detected: .\demo\Transcripts\test copy.txt
+2025-10-02 12:13:12 - Transcriber-1 - INFO - [STT] Transcription saved: demo\Transcripts\test copy.txt
+2025-10-02 12:13:12 - Transcriber-1 - INFO - [STT] Confidence data saved: demo\Transcripts\test copy.confidence.json
+2025-10-02 12:13:12 - Transcriber-1 - INFO - Using Google Cloud STT confidence data from demo\Transcripts\test copy.confidence.json
+2025-10-02 12:13:12 - Transcriber-1 - INFO - Using Google Cloud STT confidence (overall: 0.57)
+2025-10-02 12:13:12 - Transcriber-1 - INFO - Review JSON written to output\Review\test copy.review.json
+2025-10-02 12:13:12 - Transcriber-1 - INFO - [Review] Alignment review created: output\Review\test copy.review.json
+2025-10-02 12:13:12 - Transcriber-1 - INFO - [STT] Archived transcript to: output\ALL_TRANSCRIPT_FILES\test copy.txt
+2025-10-02 12:13:12 - Transcriber-2 - INFO - [STT] Transcription saved: demo\Transcripts\test.txt
+2025-10-02 12:13:12 - Transcriber-2 - INFO - [STT] Confidence data saved: demo\Transcripts\test.confidence.json
+2025-10-02 12:13:12 - Transcriber-2 - INFO - Using Google Cloud STT confidence data from demo\Transcripts\test.confidence.json
+2025-10-02 12:13:12 - Transcriber-2 - INFO - Using Google Cloud STT confidence (overall: 0.57)
+2025-10-02 12:13:12 - Transcriber-2 - INFO - Review JSON written to output\Review\test.review.json
+2025-10-02 12:13:12 - Transcriber-2 - INFO - [Review] Alignment review created: output\Review\test.review.json
+2025-10-02 12:13:12 - Transcriber-2 - INFO - [STT] Archived transcript to: output\ALL_TRANSCRIPT_FILES\test.txt
+2025-10-02 12:13:13 - Thread-1 - INFO - [Analysis] New transcript detected: .\demo\Transcripts\test.txt
+2025-10-02 12:14:30 - Thread-1 - INFO - New audio detected: .\demo\Audio\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.wav (size: 1237166 bytes)
+2025-10-02 12:14:42 - MainThread - INFO - Audio complete (probe successful): .\demo\Audio\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.wav (final size 1237166)
+2025-10-02 12:14:42 - Transcriber-3 - INFO - [STT] Starting transcription with google_cloud_stt for: .\demo\Audio\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.wav
+2025-10-02 12:14:43 - Transcriber-3 - ERROR - [STT] Transcription FAILED for .\demo\Audio\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.wav: 400 Sync input too long. For audio longer than 1 min use LongRunningRecognize with a 'uri' parameter.
+Traceback (most recent call last):
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\processor.py", line 620, in process_transcription
+    result: TranscriptionResult = engine.transcribe_file(path)
+                                  ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\tools\transcription_engine.py", line 181, in transcribe_file
+    response = self.client.recognize(config=config, audio=audio)
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\google\cloud\speech_v1\services\speech\client.py", line 849, in recognize
+    response = rpc(
+        request,
+    ...<2 lines>...
+        metadata=metadata,
+    )
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+        target,
+    ...<3 lines>...
+        on_error=on_error,
+    )
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+        exc,
+    ...<6 lines>...
+        timeout,
+    )
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\google\api_core\grpc_helpers.py", line 78, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.InvalidArgument: 400 Sync input too long. For audio longer than 1 min use LongRunningRecognize with a 'uri' parameter.
+2025-10-02 12:14:43 - Transcriber-3 - ERROR - Transcription failed for .\demo\Audio\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.wav: 400 Sync input too long. For audio longer than 1 min use LongRunningRecognize with a 'uri' parameter.
+2025-10-02 12:14:43 - Transcriber-3 - ERROR - Unexpected error processing transcription item .\demo\Audio\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.wav: 400 Sync input too long. For audio longer than 1 min use LongRunningRecognize with a 'uri' parameter.
+Traceback (most recent call last):
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\processor.py", line 697, in transcription_worker
+    process_transcription(path)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\processor.py", line 620, in process_transcription
+    result: TranscriptionResult = engine.transcribe_file(path)
+                                  ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\tools\transcription_engine.py", line 181, in transcribe_file
+    response = self.client.recognize(config=config, audio=audio)
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\google\cloud\speech_v1\services\speech\client.py", line 849, in recognize
+    response = rpc(
+        request,
+    ...<2 lines>...
+        metadata=metadata,
+    )
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+        target,
+    ...<3 lines>...
+        on_error=on_error,
+    )
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+        exc,
+    ...<6 lines>...
+        timeout,
+    )
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\google\api_core\grpc_helpers.py", line 78, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.InvalidArgument: 400 Sync input too long. For audio longer than 1 min use LongRunningRecognize with a 'uri' parameter.
+2025-10-02 12:17:25 - MainThread - INFO - Shutdown requested.
+2025-10-02 12:17:25 - MainThread - INFO - Waiting for 6 tasks to complete...
+2025-10-02 12:17:49 - MainThread - INFO - === CallPipeline Starting ===
+2025-10-02 12:17:49 - MainThread - INFO - Configuration loaded from: C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\call_pipeline.ini
+2025-10-02 12:17:49 - MainThread - INFO - [STT] Transcription engine: google_cloud_stt
+2025-10-02 12:17:49 - MainThread - INFO - [Review] Review generation enabled
+2025-10-02 12:17:49 - MainThread - INFO - [Review] Output directory: .\output\Review
+2025-10-02 12:17:50 - MainThread - INFO - Google AI SDK configured successfully.
+2025-10-02 12:17:50 - MainThread - INFO - Successfully loaded 24 users from '.\config\staff_map.txt'.
+2025-10-02 12:17:50 - MainThread - INFO - Successfully loaded analysis prompt from 'C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\prompts.txt'.
+2025-10-02 12:17:50 - MainThread - INFO - Database updater module found - will auto-update database
+2025-10-02 12:17:50 - MainThread - INFO - JSON archive and normalizer module found - can normalize existing JSON files
+2025-10-02 12:17:50 - MainThread - INFO - Configuration validation passed.
+2025-10-02 12:17:50 - MainThread - INFO - Loaded 2 processed files from '.\output\Database\processed_files.json'.
+2025-10-02 12:17:50 - MainThread - INFO - Started 8 worker threads.
+2025-10-02 12:17:50 - MainThread - INFO - [Transcription] Queued unprocessed audio: Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.wav
+2025-10-02 12:17:50 - Transcriber-1 - INFO - [STT] Starting transcription with google_cloud_stt for: .\demo\Audio\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.wav
+2025-10-02 12:17:50 - MainThread - INFO - [Transcription] Queued 1 unprocessed audio files for transcription.
+2025-10-02 12:17:50 - MainThread - INFO - Discovering user audio directories to watch inside: .
+2025-10-02 12:17:50 - MainThread - INFO -   + Found and will watch: .\demo\Audio
+2025-10-02 12:17:50 - MainThread - INFO - Watchdog observers started. Press Ctrl+C to exit.
+2025-10-02 12:17:50 - Transcriber-1 - ERROR - [STT] Transcription FAILED for .\demo\Audio\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.wav: 400 Inline audio exceeds duration limit. Please use a GCS URI.
+Traceback (most recent call last):
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\google\api_core\grpc_helpers.py", line 76, in error_remapped_callable
+    return callable_(*args, **kwargs)
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\grpc\_interceptor.py", line 277, in __call__
+    response, ignored_call = self._with_call(
+                             ~~~~~~~~~~~~~~~^
+        request,
+        ^^^^^^^^
+    ...<4 lines>...
+        compression=compression,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\grpc\_interceptor.py", line 332, in _with_call
+    return call.result(), call
+           ~~~~~~~~~~~^^
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\grpc\_channel.py", line 440, in result
+    raise self
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\grpc\_interceptor.py", line 315, in continuation
+    response, call = self._thunk(new_method).with_call(
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        request,
+        ^^^^^^^^
+    ...<4 lines>...
+        compression=new_compression,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\grpc\_channel.py", line 1195, in with_call
+    return _end_unary_response_blocking(state, call, True, None)
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\grpc\_channel.py", line 1009, in _end_unary_response_blocking
+    raise _InactiveRpcError(state)  # pytype: disable=not-instantiable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+grpc._channel._InactiveRpcError: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.INVALID_ARGUMENT
+	details = "Inline audio exceeds duration limit. Please use a GCS URI."
+	debug_error_string = "UNKNOWN:Error received from peer ipv4:142.251.186.95:443 {grpc_status:3, grpc_message:"Inline audio exceeds duration limit. Please use a GCS URI."}"
+>
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\processor.py", line 620, in process_transcription
+    result: TranscriptionResult = engine.transcribe_file(path)
+                                  ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\tools\transcription_engine.py", line 195, in transcribe_file
+    operation = self.client.long_running_recognize(config=config, audio=audio)
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\google\cloud\speech_v1\services\speech\client.py", line 984, in long_running_recognize
+    response = rpc(
+        request,
+    ...<2 lines>...
+        metadata=metadata,
+    )
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\google\api_core\grpc_helpers.py", line 78, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.InvalidArgument: 400 Inline audio exceeds duration limit. Please use a GCS URI.
+2025-10-02 12:17:50 - Transcriber-1 - ERROR - Transcription failed for .\demo\Audio\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.wav: 400 Inline audio exceeds duration limit. Please use a GCS URI.
+2025-10-02 12:17:50 - Transcriber-1 - ERROR - Unexpected error processing transcription item .\demo\Audio\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.wav: 400 Inline audio exceeds duration limit. Please use a GCS URI.
+Traceback (most recent call last):
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\google\api_core\grpc_helpers.py", line 76, in error_remapped_callable
+    return callable_(*args, **kwargs)
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\grpc\_interceptor.py", line 277, in __call__
+    response, ignored_call = self._with_call(
+                             ~~~~~~~~~~~~~~~^
+        request,
+        ^^^^^^^^
+    ...<4 lines>...
+        compression=compression,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\grpc\_interceptor.py", line 332, in _with_call
+    return call.result(), call
+           ~~~~~~~~~~~^^
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\grpc\_channel.py", line 440, in result
+    raise self
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\grpc\_interceptor.py", line 315, in continuation
+    response, call = self._thunk(new_method).with_call(
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        request,
+        ^^^^^^^^
+    ...<4 lines>...
+        compression=new_compression,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\grpc\_channel.py", line 1195, in with_call
+    return _end_unary_response_blocking(state, call, True, None)
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\grpc\_channel.py", line 1009, in _end_unary_response_blocking
+    raise _InactiveRpcError(state)  # pytype: disable=not-instantiable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+grpc._channel._InactiveRpcError: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.INVALID_ARGUMENT
+	details = "Inline audio exceeds duration limit. Please use a GCS URI."
+	debug_error_string = "UNKNOWN:Error received from peer ipv4:142.251.186.95:443 {grpc_status:3, grpc_message:"Inline audio exceeds duration limit. Please use a GCS URI."}"
+>
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\processor.py", line 697, in transcription_worker
+    process_transcription(path)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\processor.py", line 620, in process_transcription
+    result: TranscriptionResult = engine.transcribe_file(path)
+                                  ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\tools\transcription_engine.py", line 195, in transcribe_file
+    operation = self.client.long_running_recognize(config=config, audio=audio)
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\google\cloud\speech_v1\services\speech\client.py", line 984, in long_running_recognize
+    response = rpc(
+        request,
+    ...<2 lines>...
+        metadata=metadata,
+    )
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\google\api_core\grpc_helpers.py", line 78, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.InvalidArgument: 400 Inline audio exceeds duration limit. Please use a GCS URI.
+2025-10-02 12:22:50 - MetricsReporter - INFO - Processing Metrics: {
+  "total_files_processed": 1,
+  "success_rate": 0.0,
+  "average_processing_time": 0.7197005748748779,
+  "api_usage_by_worker": {},
+  "success_rates_by_type": {
+    "audio": 0.0
+  },
+  "processing_times_by_type": {
+    "audio": 0.7197005748748779
+  }
+}
+2025-10-02 12:22:58 - MainThread - INFO - Shutdown requested.
+2025-10-02 12:22:58 - MainThread - INFO - Waiting for 6 tasks to complete...
+2025-10-02 12:23:28 - MainThread - WARNING - Transcription queue did not complete within timeout - forcing shutdown
+2025-10-02 12:23:28 - MainThread - INFO - === CallPipeline Shutdown Complete ====
+2025-10-02 13:45:09 - MainThread - INFO - === CallPipeline Starting ===
+2025-10-02 13:45:09 - MainThread - INFO - Configuration loaded from: C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\call_pipeline.ini
+2025-10-02 13:45:09 - MainThread - INFO - [STT] Transcription engine: assemblyai
+2025-10-02 13:45:09 - MainThread - INFO - [Review] Review generation enabled
+2025-10-02 13:45:09 - MainThread - INFO - [Review] Output directory: .\output\Review
+2025-10-02 13:45:09 - MainThread - INFO - Google AI SDK configured successfully.
+2025-10-02 13:45:09 - MainThread - INFO - Successfully loaded 24 users from '.\config\staff_map.txt'.
+2025-10-02 13:45:09 - MainThread - INFO - Successfully loaded analysis prompt from 'C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\prompts.txt'.
+2025-10-02 13:45:09 - MainThread - INFO - Database updater module found - will auto-update database
+2025-10-02 13:45:09 - MainThread - INFO - JSON archive and normalizer module found - can normalize existing JSON files
+2025-10-02 13:45:09 - MainThread - INFO - Configuration validation passed.
+2025-10-02 13:45:09 - MainThread - INFO - Loaded 2 processed files from '.\output\Database\processed_files.json'.
+2025-10-02 13:45:09 - MainThread - INFO - Started 8 worker threads.
+2025-10-02 13:45:09 - MainThread - INFO - [Transcription] Queued unprocessed audio: Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.wav
+2025-10-02 13:45:09 - Transcriber-1 - INFO - [STT] Starting transcription with assemblyai for: .\demo\Audio\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.wav
+2025-10-02 13:45:09 - MainThread - INFO - [Transcription] Queued 1 unprocessed audio files for transcription.
+2025-10-02 13:45:09 - MainThread - INFO - Discovering user audio directories to watch inside: .
+2025-10-02 13:45:09 - MainThread - INFO -   + Found and will watch: .\demo\Audio
+2025-10-02 13:45:09 - MainThread - INFO - Watchdog observers started. Press Ctrl+C to exit.
+2025-10-02 13:45:10 - Transcriber-1 - ERROR - [STT] Transcription FAILED for .\demo\Audio\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.wav: failed to transcribe url https://cdn.assemblyai.com/upload/8d9ad18f-d74c-4c46-9d6b-2f5a9038bcaa: `word_boost` is not supported by the slam-1 speech_model. Use keyterms_prompt to boost accuracy of words or phrases that are likely to appear frequently in your audio file.
+Traceback (most recent call last):
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\processor.py", line 670, in process_transcription
+    result: TranscriptionResult = engine.transcribe_file(path)
+                                  ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\tools\transcription_engine.py", line 743, in transcribe_file
+    transcript = self.transcriber.transcribe(audio_path)
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\assemblyai\transcriber.py", line 1106, in transcribe
+    return self._impl.transcribe(
+           ~~~~~~~~~~~~~~~~~~~~~^
+        data=data,
+        ^^^^^^^^^^
+        config=config,
+        ^^^^^^^^^^^^^^
+        poll=True,
+        ^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\assemblyai\transcriber.py", line 882, in transcribe
+    return self.transcribe_file(
+           ~~~~~~~~~~~~~~~~~~~~^
+        data=data,
+        ^^^^^^^^^^
+        config=config,
+        ^^^^^^^^^^^^^^
+        poll=poll,
+        ^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\assemblyai\transcriber.py", line 860, in transcribe_file
+    return self.transcribe_url(
+           ~~~~~~~~~~~~~~~~~~~^
+        url=audio_url,
+        ^^^^^^^^^^^^^^
+        config=config,
+        ^^^^^^^^^^^^^^
+        poll=poll,
+        ^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\assemblyai\transcriber.py", line 839, in transcribe_url
+    response=api.create_transcript(
+             ~~~~~~~~~~~~~~~~~~~~~^
+        client=self._client.http_client,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        request=transcript_request,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ),
+    ^
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\assemblyai\api.py", line 45, in create_transcript
+    raise types.TranscriptError(
+    ...<2 lines>...
+    )
+assemblyai.types.TranscriptError: failed to transcribe url https://cdn.assemblyai.com/upload/8d9ad18f-d74c-4c46-9d6b-2f5a9038bcaa: `word_boost` is not supported by the slam-1 speech_model. Use keyterms_prompt to boost accuracy of words or phrases that are likely to appear frequently in your audio file.
+2025-10-02 13:45:10 - Transcriber-1 - ERROR - Transcription failed for .\demo\Audio\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.wav: failed to transcribe url https://cdn.assemblyai.com/upload/8d9ad18f-d74c-4c46-9d6b-2f5a9038bcaa: `word_boost` is not supported by the slam-1 speech_model. Use keyterms_prompt to boost accuracy of words or phrases that are likely to appear frequently in your audio file.
+2025-10-02 13:45:10 - Transcriber-1 - ERROR - Unexpected error processing transcription item .\demo\Audio\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.wav: failed to transcribe url https://cdn.assemblyai.com/upload/8d9ad18f-d74c-4c46-9d6b-2f5a9038bcaa: `word_boost` is not supported by the slam-1 speech_model. Use keyterms_prompt to boost accuracy of words or phrases that are likely to appear frequently in your audio file.
+Traceback (most recent call last):
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\processor.py", line 747, in transcription_worker
+    process_transcription(path)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\processor.py", line 670, in process_transcription
+    result: TranscriptionResult = engine.transcribe_file(path)
+                                  ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\tools\transcription_engine.py", line 743, in transcribe_file
+    transcript = self.transcriber.transcribe(audio_path)
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\assemblyai\transcriber.py", line 1106, in transcribe
+    return self._impl.transcribe(
+           ~~~~~~~~~~~~~~~~~~~~~^
+        data=data,
+        ^^^^^^^^^^
+        config=config,
+        ^^^^^^^^^^^^^^
+        poll=True,
+        ^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\assemblyai\transcriber.py", line 882, in transcribe
+    return self.transcribe_file(
+           ~~~~~~~~~~~~~~~~~~~~^
+        data=data,
+        ^^^^^^^^^^
+        config=config,
+        ^^^^^^^^^^^^^^
+        poll=poll,
+        ^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\assemblyai\transcriber.py", line 860, in transcribe_file
+    return self.transcribe_url(
+           ~~~~~~~~~~~~~~~~~~~^
+        url=audio_url,
+        ^^^^^^^^^^^^^^
+        config=config,
+        ^^^^^^^^^^^^^^
+        poll=poll,
+        ^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\assemblyai\transcriber.py", line 839, in transcribe_url
+    response=api.create_transcript(
+             ~~~~~~~~~~~~~~~~~~~~~^
+        client=self._client.http_client,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        request=transcript_request,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ),
+    ^
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\venv\Lib\site-packages\assemblyai\api.py", line 45, in create_transcript
+    raise types.TranscriptError(
+    ...<2 lines>...
+    )
+assemblyai.types.TranscriptError: failed to transcribe url https://cdn.assemblyai.com/upload/8d9ad18f-d74c-4c46-9d6b-2f5a9038bcaa: `word_boost` is not supported by the slam-1 speech_model. Use keyterms_prompt to boost accuracy of words or phrases that are likely to appear frequently in your audio file.
+2025-10-02 13:48:44 - MainThread - INFO - Shutdown requested.
+2025-10-02 13:48:44 - MainThread - INFO - Waiting for 6 tasks to complete...
+2025-10-02 13:49:14 - MainThread - WARNING - Transcription queue did not complete within timeout - forcing shutdown
+2025-10-02 13:49:14 - MainThread - INFO - === CallPipeline Shutdown Complete ====
+2025-10-02 13:49:31 - MainThread - INFO - === CallPipeline Starting ===
+2025-10-02 13:49:31 - MainThread - INFO - Configuration loaded from: C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\call_pipeline.ini
+2025-10-02 13:49:31 - MainThread - INFO - [STT] Transcription engine: assemblyai
+2025-10-02 13:49:31 - MainThread - INFO - [Review] Review generation enabled
+2025-10-02 13:49:31 - MainThread - INFO - [Review] Output directory: .\output\Review
+2025-10-02 13:49:31 - MainThread - INFO - Google AI SDK configured successfully.
+2025-10-02 13:49:31 - MainThread - INFO - Successfully loaded 24 users from '.\config\staff_map.txt'.
+2025-10-02 13:49:31 - MainThread - INFO - Successfully loaded analysis prompt from 'C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\prompts.txt'.
+2025-10-02 13:49:31 - MainThread - INFO - Database updater module found - will auto-update database
+2025-10-02 13:49:31 - MainThread - INFO - JSON archive and normalizer module found - can normalize existing JSON files
+2025-10-02 13:49:31 - MainThread - INFO - Configuration validation passed.
+2025-10-02 13:49:31 - MainThread - INFO - Loaded 2 processed files from '.\output\Database\processed_files.json'.
+2025-10-02 13:49:31 - MainThread - INFO - Started 8 worker threads.
+2025-10-02 13:49:31 - MainThread - INFO - [Transcription] Queued unprocessed audio: Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.wav
+2025-10-02 13:49:31 - Transcriber-1 - INFO - [STT] Starting transcription with assemblyai for: .\demo\Audio\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.wav
+2025-10-02 13:49:31 - MainThread - INFO - [Transcription] Queued 1 unprocessed audio files for transcription.
+2025-10-02 13:49:31 - MainThread - INFO - Discovering user audio directories to watch inside: .
+2025-10-02 13:49:31 - MainThread - INFO -   + Found and will watch: .\demo\Audio
+2025-10-02 13:49:31 - MainThread - INFO - Watchdog observers started. Press Ctrl+C to exit.
+2025-10-02 13:49:46 - Transcriber-1 - ERROR - [STT] Transcription FAILED for .\demo\Audio\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.wav: 'Transcript' object has no attribute 'language_code'
+Traceback (most recent call last):
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\processor.py", line 670, in process_transcription
+    result: TranscriptionResult = engine.transcribe_file(path)
+                                  ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\tools\transcription_engine.py", line 792, in transcribe_file
+    "language_code": transcript.language_code,
+                     ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Transcript' object has no attribute 'language_code'
+2025-10-02 13:49:46 - Transcriber-1 - ERROR - Transcription failed for .\demo\Audio\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.wav: 'Transcript' object has no attribute 'language_code'
+2025-10-02 13:49:46 - Transcriber-1 - ERROR - Unexpected error processing transcription item .\demo\Audio\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.wav: 'Transcript' object has no attribute 'language_code'
+Traceback (most recent call last):
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\processor.py", line 747, in transcription_worker
+    process_transcription(path)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\processor.py", line 670, in process_transcription
+    result: TranscriptionResult = engine.transcribe_file(path)
+                                  ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\tools\transcription_engine.py", line 792, in transcribe_file
+    "language_code": transcript.language_code,
+                     ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Transcript' object has no attribute 'language_code'
+2025-10-02 13:51:44 - MainThread - INFO - Shutdown requested.
+2025-10-02 13:51:44 - MainThread - INFO - Waiting for 6 tasks to complete...
+2025-10-02 13:52:02 - MainThread - INFO - === CallPipeline Starting ===
+2025-10-02 13:52:02 - MainThread - INFO - Configuration loaded from: C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\call_pipeline.ini
+2025-10-02 13:52:02 - MainThread - INFO - [STT] Transcription engine: assemblyai
+2025-10-02 13:52:02 - MainThread - INFO - [Review] Review generation enabled
+2025-10-02 13:52:02 - MainThread - INFO - [Review] Output directory: .\output\Review
+2025-10-02 13:52:02 - MainThread - INFO - Google AI SDK configured successfully.
+2025-10-02 13:52:02 - MainThread - INFO - Successfully loaded 24 users from '.\config\staff_map.txt'.
+2025-10-02 13:52:02 - MainThread - INFO - Successfully loaded analysis prompt from 'C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\prompts.txt'.
+2025-10-02 13:52:02 - MainThread - INFO - Database updater module found - will auto-update database
+2025-10-02 13:52:02 - MainThread - INFO - JSON archive and normalizer module found - can normalize existing JSON files
+2025-10-02 13:52:02 - MainThread - INFO - Configuration validation passed.
+2025-10-02 13:52:02 - MainThread - INFO - Loaded 2 processed files from '.\output\Database\processed_files.json'.
+2025-10-02 13:52:02 - MainThread - INFO - Started 8 worker threads.
+2025-10-02 13:52:02 - MainThread - INFO - [Transcription] Queued unprocessed audio: Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.wav
+2025-10-02 13:52:02 - Transcriber-1 - INFO - [STT] Starting transcription with assemblyai for: .\demo\Audio\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.wav
+2025-10-02 13:52:02 - MainThread - INFO - [Transcription] Queued 1 unprocessed audio files for transcription.
+2025-10-02 13:52:02 - MainThread - INFO - Discovering user audio directories to watch inside: .
+2025-10-02 13:52:02 - Transcriber-1 - INFO - [AssemblyAI] Loaded 21 words for boosting
+2025-10-02 13:52:02 - Transcriber-1 - INFO - [AssemblyAI] Using slam_1 model (English only)
+2025-10-02 13:52:02 - MainThread - INFO -   + Found and will watch: .\demo\Audio
+2025-10-02 13:52:02 - Transcriber-1 - INFO - [AssemblyAI] Using keyterms_prompt with 21 terms for slam_1 model
+2025-10-02 13:52:02 - MainThread - INFO - Watchdog observers started. Press Ctrl+C to exit.
+2025-10-02 13:52:02 - Transcriber-1 - INFO - AssemblyAI transcription engine initialized
+2025-10-02 13:52:02 - Transcriber-1 - INFO - [AssemblyAI] Starting transcription for: .\demo\Audio\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.wav
+2025-10-02 13:52:03 - Transcriber-1 - INFO - HTTP Request: POST https://api.assemblyai.com/v2/upload "HTTP/1.1 200 OK"
+2025-10-02 13:52:03 - Transcriber-1 - INFO - HTTP Request: POST https://api.assemblyai.com/v2/transcript "HTTP/1.1 200 OK"
+2025-10-02 13:52:03 - Transcriber-1 - INFO - HTTP Request: GET https://api.assemblyai.com/v2/transcript/70b784ac-76ec-4322-a3d5-4995ef50359e "HTTP/1.1 200 OK"
+2025-10-02 13:52:07 - Transcriber-1 - INFO - HTTP Request: GET https://api.assemblyai.com/v2/transcript/70b784ac-76ec-4322-a3d5-4995ef50359e "HTTP/1.1 200 OK"
+2025-10-02 13:52:10 - Transcriber-1 - INFO - HTTP Request: GET https://api.assemblyai.com/v2/transcript/70b784ac-76ec-4322-a3d5-4995ef50359e "HTTP/1.1 200 OK"
+2025-10-02 13:52:13 - Transcriber-1 - INFO - HTTP Request: GET https://api.assemblyai.com/v2/transcript/70b784ac-76ec-4322-a3d5-4995ef50359e "HTTP/1.1 200 OK"
+2025-10-02 13:52:16 - Transcriber-1 - INFO - HTTP Request: GET https://api.assemblyai.com/v2/transcript/70b784ac-76ec-4322-a3d5-4995ef50359e "HTTP/1.1 200 OK"
+2025-10-02 13:52:19 - Transcriber-1 - INFO - HTTP Request: GET https://api.assemblyai.com/v2/transcript/70b784ac-76ec-4322-a3d5-4995ef50359e "HTTP/1.1 200 OK"
+2025-10-02 13:52:22 - Transcriber-1 - INFO - HTTP Request: GET https://api.assemblyai.com/v2/transcript/70b784ac-76ec-4322-a3d5-4995ef50359e "HTTP/1.1 200 OK"
+2025-10-02 13:52:23 - Transcriber-1 - ERROR - [AssemblyAI] Transcription failed: 'Transcript' object has no attribute 'language_code'
+Traceback (most recent call last):
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\tools\transcription_engine.py", line 801, in transcribe_file
+    "language_code": transcript.language_code,
+                     ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Transcript' object has no attribute 'language_code'
+2025-10-02 13:52:23 - Transcriber-1 - ERROR - [STT] Transcription FAILED for .\demo\Audio\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.wav: 'Transcript' object has no attribute 'language_code'
+Traceback (most recent call last):
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\processor.py", line 686, in process_transcription
+    result: TranscriptionResult = engine.transcribe_file(path)
+                                  ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\tools\transcription_engine.py", line 801, in transcribe_file
+    "language_code": transcript.language_code,
+                     ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Transcript' object has no attribute 'language_code'
+2025-10-02 13:52:23 - Transcriber-1 - ERROR - Transcription failed for .\demo\Audio\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.wav: 'Transcript' object has no attribute 'language_code'
+2025-10-02 13:52:23 - Transcriber-1 - ERROR - Unexpected error processing transcription item .\demo\Audio\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.wav: 'Transcript' object has no attribute 'language_code'
+Traceback (most recent call last):
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\processor.py", line 763, in transcription_worker
+    process_transcription(path)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\processor.py", line 686, in process_transcription
+    result: TranscriptionResult = engine.transcribe_file(path)
+                                  ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\tools\transcription_engine.py", line 801, in transcribe_file
+    "language_code": transcript.language_code,
+                     ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Transcript' object has no attribute 'language_code'
+2025-10-02 13:54:17 - MainThread - INFO - Shutdown requested.
+2025-10-02 13:54:17 - MainThread - INFO - Waiting for 6 tasks to complete...
+2025-10-02 13:54:26 - MainThread - INFO - === CallPipeline Starting ===
+2025-10-02 13:54:26 - MainThread - INFO - Configuration loaded from: C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\call_pipeline.ini
+2025-10-02 13:54:26 - MainThread - INFO - [STT] Transcription engine: assemblyai
+2025-10-02 13:54:26 - MainThread - INFO - [Review] Review generation enabled
+2025-10-02 13:54:26 - MainThread - INFO - [Review] Output directory: .\output\Review
+2025-10-02 13:54:26 - MainThread - INFO - Google AI SDK configured successfully.
+2025-10-02 13:54:26 - MainThread - INFO - Successfully loaded 24 users from '.\config\staff_map.txt'.
+2025-10-02 13:54:26 - MainThread - INFO - Successfully loaded analysis prompt from 'C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\prompts.txt'.
+2025-10-02 13:54:26 - MainThread - INFO - Database updater module found - will auto-update database
+2025-10-02 13:54:26 - MainThread - INFO - JSON archive and normalizer module found - can normalize existing JSON files
+2025-10-02 13:54:26 - MainThread - INFO - Configuration validation passed.
+2025-10-02 13:54:26 - MainThread - INFO - Loaded 2 processed files from '.\output\Database\processed_files.json'.
+2025-10-02 13:54:26 - MainThread - INFO - Started 8 worker threads.
+2025-10-02 13:54:26 - MainThread - INFO - [Transcription] Queued unprocessed audio: Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.wav
+2025-10-02 13:54:26 - Transcriber-1 - INFO - [STT] Starting transcription with assemblyai for: .\demo\Audio\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.wav
+2025-10-02 13:54:26 - MainThread - INFO - [Transcription] Queued 1 unprocessed audio files for transcription.
+2025-10-02 13:54:26 - MainThread - INFO - Discovering user audio directories to watch inside: .
+2025-10-02 13:54:26 - MainThread - INFO -   + Found and will watch: .\demo\Audio
+2025-10-02 13:54:26 - MainThread - INFO - Watchdog observers started. Press Ctrl+C to exit.
+2025-10-02 13:54:44 - Thread-1 - INFO - [Analysis] New transcript detected: .\demo\Transcripts\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.txt
+2025-10-02 13:54:44 - Transcriber-1 - INFO - [STT] Transcription saved: demo\Transcripts\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.txt
+2025-10-02 13:54:44 - Transcriber-1 - INFO - [STT] Confidence data saved: demo\Transcripts\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.confidence.json
+2025-10-02 13:54:44 - Transcriber-1 - INFO - Using Google Cloud STT confidence data from demo\Transcripts\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.confidence.json
+2025-10-02 13:54:44 - Transcriber-1 - INFO - Using Google Cloud STT confidence (overall: 0.83)
+2025-10-02 13:54:44 - Transcriber-1 - INFO - Review JSON written to output\Review\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.review.json
+2025-10-02 13:54:44 - Transcriber-1 - INFO - [Review] Alignment review created: output\Review\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.review.json
+2025-10-02 13:54:44 - Transcriber-1 - INFO - [STT] Archived transcript to: output\ALL_TRANSCRIPT_FILES\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.txt
+2025-10-02 13:54:49 - Analyzer-1 - INFO - [Analysis] Saved JSON to: output\ALL_JSON_FILES\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.json
+2025-10-02 13:54:49 - Analyzer-1 - INFO - [Analysis] Saved Markdown to: demo\Summaries\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.md
+2025-10-02 13:59:26 - MetricsReporter - INFO - Processing Metrics: {
+  "total_files_processed": 2,
+  "success_rate": 1.0,
+  "average_processing_time": 11.001888394355774,
+  "api_usage_by_worker": {
+    "Transcriber-1": 1,
+    "Analyzer-1": 1
+  },
+  "success_rates_by_type": {
+    "transcript": 1.0
+  },
+  "processing_times_by_type": {
+    "transcript": 11.001888394355774
+  }
+}
+2025-10-02 14:04:26 - MetricsReporter - INFO - Processing Metrics: {
+  "total_files_processed": 2,
+  "success_rate": 1.0,
+  "average_processing_time": 11.001888394355774,
+  "api_usage_by_worker": {
+    "Transcriber-1": 1,
+    "Analyzer-1": 1
+  },
+  "success_rates_by_type": {
+    "transcript": 1.0
+  },
+  "processing_times_by_type": {
+    "transcript": 11.001888394355774
+  }
+}
+2025-10-02 14:09:26 - MetricsReporter - INFO - Processing Metrics: {
+  "total_files_processed": 2,
+  "success_rate": 1.0,
+  "average_processing_time": 11.001888394355774,
+  "api_usage_by_worker": {
+    "Transcriber-1": 1,
+    "Analyzer-1": 1
+  },
+  "success_rates_by_type": {
+    "transcript": 1.0
+  },
+  "processing_times_by_type": {
+    "transcript": 11.001888394355774
+  }
+}
+2025-10-02 14:14:26 - MetricsReporter - INFO - Processing Metrics: {
+  "total_files_processed": 2,
+  "success_rate": 1.0,
+  "average_processing_time": 11.001888394355774,
+  "api_usage_by_worker": {
+    "Transcriber-1": 1,
+    "Analyzer-1": 1
+  },
+  "success_rates_by_type": {
+    "transcript": 1.0
+  },
+  "processing_times_by_type": {
+    "transcript": 11.001888394355774
+  }
+}
+2025-10-02 14:19:26 - MetricsReporter - INFO - Processing Metrics: {
+  "total_files_processed": 2,
+  "success_rate": 1.0,
+  "average_processing_time": 11.001888394355774,
+  "api_usage_by_worker": {
+    "Transcriber-1": 1,
+    "Analyzer-1": 1
+  },
+  "success_rates_by_type": {
+    "transcript": 1.0
+  },
+  "processing_times_by_type": {
+    "transcript": 11.001888394355774
+  }
+}
+2025-10-02 14:20:38 - MainThread - INFO - Shutdown requested.
+2025-10-02 14:20:38 - MainThread - INFO - Waiting for 6 tasks to complete...
+2025-10-02 14:20:38 - MainThread - INFO - === CallPipeline Shutdown Complete ====
+2025-10-02 14:20:47 - MainThread - INFO - === CallPipeline Starting ===
+2025-10-02 14:20:47 - MainThread - INFO - Configuration loaded from: C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\call_pipeline.ini
+2025-10-02 14:20:47 - MainThread - INFO - [STT] Transcription engine: assemblyai
+2025-10-02 14:20:47 - MainThread - INFO - [Review] Review generation enabled
+2025-10-02 14:20:47 - MainThread - INFO - [Review] Output directory: .\output\Review
+2025-10-02 14:20:47 - MainThread - INFO - Google AI SDK configured successfully.
+2025-10-02 14:20:47 - MainThread - INFO - Successfully loaded 24 users from '.\config\staff_map.txt'.
+2025-10-02 14:20:47 - MainThread - INFO - Successfully loaded analysis prompt from 'C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\prompts.txt'.
+2025-10-02 14:20:47 - MainThread - INFO - Database updater module found - will auto-update database
+2025-10-02 14:20:47 - MainThread - INFO - JSON archive and normalizer module found - can normalize existing JSON files
+2025-10-02 14:20:47 - MainThread - INFO - Configuration validation passed.
+2025-10-02 14:20:47 - MainThread - INFO - Loaded 3 processed files from '.\output\Database\processed_files.json'.
+2025-10-02 14:20:47 - MainThread - INFO - Started 8 worker threads.
+2025-10-02 14:20:47 - MainThread - INFO - [Transcription] Queued unprocessed audio: test copy.wav
+2025-10-02 14:20:47 - Transcriber-1 - INFO - [STT] Starting transcription with assemblyai for: .\demo\Audio\test copy.wav
+2025-10-02 14:20:47 - MainThread - INFO - [Transcription] Queued unprocessed audio: test.wav
+2025-10-02 14:20:47 - Transcriber-2 - INFO - [STT] Starting transcription with assemblyai for: .\demo\Audio\test.wav
+2025-10-02 14:20:47 - MainThread - INFO - [Transcription] Queued 2 unprocessed audio files for transcription.
+2025-10-02 14:20:47 - MainThread - INFO - Discovering user audio directories to watch inside: .
+2025-10-02 14:20:47 - MainThread - INFO -   + Found and will watch: .\demo\Audio
+2025-10-02 14:20:47 - MainThread - INFO - Watchdog observers started. Press Ctrl+C to exit.
+2025-10-02 14:20:55 - Thread-1 - INFO - [Analysis] New transcript detected: .\demo\Transcripts\test.txt
+2025-10-02 14:20:55 - Transcriber-2 - INFO - [STT] Transcription saved: demo\Transcripts\test.txt
+2025-10-02 14:20:55 - Transcriber-2 - INFO - [STT] Confidence data saved: demo\Transcripts\test.confidence.json
+2025-10-02 14:20:55 - Transcriber-2 - INFO - AssemblyAI review written to output\Review\test.review.json (71 words, 23 flagged)
+2025-10-02 14:20:55 - Transcriber-2 - INFO - [Review] AssemblyAI review created: output\Review\test.review.json
+2025-10-02 14:20:55 - Transcriber-2 - INFO - [STT] Archived transcript to: output\ALL_TRANSCRIPT_FILES\test.txt
+2025-10-02 14:20:55 - Transcriber-1 - INFO - [STT] Transcription saved: demo\Transcripts\test copy.txt
+2025-10-02 14:20:55 - Transcriber-1 - INFO - [STT] Confidence data saved: demo\Transcripts\test copy.confidence.json
+2025-10-02 14:20:55 - Transcriber-1 - INFO - AssemblyAI review written to output\Review\test copy.review.json (71 words, 23 flagged)
+2025-10-02 14:20:55 - Transcriber-1 - INFO - [Review] AssemblyAI review created: output\Review\test copy.review.json
+2025-10-02 14:20:55 - Transcriber-1 - INFO - [STT] Archived transcript to: output\ALL_TRANSCRIPT_FILES\test copy.txt
+2025-10-02 14:20:56 - Thread-1 - INFO - [Analysis] New transcript detected: .\demo\Transcripts\test copy.txt
+2025-10-02 14:21:27 - MainThread - INFO - Shutdown requested.
+2025-10-02 14:21:27 - MainThread - INFO - Waiting for 6 tasks to complete...
+2025-10-02 14:21:27 - MainThread - INFO - === CallPipeline Shutdown Complete ====
+2025-10-02 14:25:51 - MainThread - INFO - === CallPipeline Starting ===
+2025-10-02 14:25:51 - MainThread - INFO - Configuration loaded from: C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\call_pipeline.ini
+2025-10-02 14:25:51 - MainThread - INFO - [STT] Transcription engine: assemblyai
+2025-10-02 14:25:51 - MainThread - INFO - [Review] Review generation enabled
+2025-10-02 14:25:51 - MainThread - INFO - [Review] Output directory: .\output\Review
+2025-10-02 14:25:51 - MainThread - INFO - Google AI SDK configured successfully.
+2025-10-02 14:25:51 - MainThread - INFO - Successfully loaded 24 users from '.\config\staff_map.txt'.
+2025-10-02 14:25:51 - MainThread - INFO - Successfully loaded analysis prompt from 'C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\prompts.txt'.
+2025-10-02 14:25:51 - MainThread - INFO - Database updater module found - will auto-update database
+2025-10-02 14:25:51 - MainThread - INFO - JSON archive and normalizer module found - can normalize existing JSON files
+2025-10-02 14:25:51 - MainThread - INFO - Configuration validation passed.
+2025-10-02 14:25:51 - MainThread - INFO - Loaded 3 processed files from '.\output\Database\processed_files.json'.
+2025-10-02 14:25:51 - MainThread - INFO - Started 8 worker threads.
+2025-10-02 14:25:51 - MainThread - INFO - [Transcription] Queued 0 unprocessed audio files for transcription.
+2025-10-02 14:25:51 - MainThread - INFO - Discovering user audio directories to watch inside: .
+2025-10-02 14:25:51 - MainThread - INFO -   + Found and will watch: .\demo\Audio
+2025-10-02 14:25:51 - MainThread - INFO - Watchdog observers started. Press Ctrl+C to exit.
+2025-10-02 14:26:05 - Thread-1 - INFO - New audio detected: .\demo\Audio\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.wav (size: 1237166 bytes)
+2025-10-02 14:26:15 - MainThread - INFO - Audio complete (probe successful): .\demo\Audio\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.wav (final size 1237166)
+2025-10-02 14:26:15 - Transcriber-3 - INFO - [STT] Starting transcription with assemblyai for: .\demo\Audio\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.wav
+2025-10-02 14:26:33 - Thread-1 - INFO - [Analysis] New transcript detected: .\demo\Transcripts\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.txt
+2025-10-02 14:26:33 - Transcriber-3 - INFO - [STT] Transcription saved: demo\Transcripts\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.txt
+2025-10-02 14:26:33 - Transcriber-3 - INFO - [STT] Confidence data saved: demo\Transcripts\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.confidence.json
+2025-10-02 14:26:33 - Transcriber-3 - INFO - AssemblyAI review written to output\Review\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.review.json (349 words, 98 flagged)
+2025-10-02 14:26:33 - Transcriber-3 - INFO - [Review] AssemblyAI review created: output\Review\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.review.json
+2025-10-02 14:26:33 - Transcriber-3 - INFO - [STT] Archived transcript to: output\ALL_TRANSCRIPT_FILES\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.txt
+2025-10-02 14:30:51 - MetricsReporter - INFO - Processing Metrics: {
+  "total_files_processed": 2,
+  "success_rate": 1.0,
+  "average_processing_time": 8.90559720993042,
+  "api_usage_by_worker": {
+    "Transcriber-3": 1,
+    "Analyzer-2": 1
+  },
+  "success_rates_by_type": {
+    "transcript": 1.0
+  },
+  "processing_times_by_type": {
+    "transcript": 8.90559720993042
+  }
+}
+2025-10-02 14:35:51 - MetricsReporter - INFO - Processing Metrics: {
+  "total_files_processed": 2,
+  "success_rate": 1.0,
+  "average_processing_time": 8.90559720993042,
+  "api_usage_by_worker": {
+    "Transcriber-3": 1,
+    "Analyzer-2": 1
+  },
+  "success_rates_by_type": {
+    "transcript": 1.0
+  },
+  "processing_times_by_type": {
+    "transcript": 8.90559720993042
+  }
+}
+2025-10-02 14:39:55 - MainThread - INFO - Shutdown requested.
+2025-10-02 14:39:55 - MainThread - INFO - Waiting for 6 tasks to complete...
+2025-10-02 14:39:55 - MainThread - INFO - === CallPipeline Shutdown Complete ====
+2025-10-02 14:56:07 - MainThread - INFO - === CallPipeline Starting ===
+2025-10-02 14:56:07 - MainThread - INFO - Configuration loaded from: C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\call_pipeline.ini
+2025-10-02 14:56:07 - MainThread - INFO - [STT] Transcription engine: assemblyai
+2025-10-02 14:56:07 - MainThread - INFO - [Review] Review generation enabled
+2025-10-02 14:56:07 - MainThread - INFO - [Review] Output directory: .\output\Review
+2025-10-02 14:56:07 - MainThread - INFO - Google AI SDK configured successfully.
+2025-10-02 14:56:07 - MainThread - INFO - Successfully loaded 24 users from '.\config\staff_map.txt'.
+2025-10-02 14:56:07 - MainThread - INFO - Successfully loaded analysis prompt from 'C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\prompts.txt'.
+2025-10-02 14:56:07 - MainThread - INFO - Database updater module found - will auto-update database
+2025-10-02 14:56:07 - MainThread - INFO - JSON archive and normalizer module found - can normalize existing JSON files
+2025-10-02 14:56:07 - MainThread - INFO - Configuration validation passed.
+2025-10-02 14:56:07 - MainThread - INFO - Loaded 3 processed files from '.\output\Database\processed_files.json'.
+2025-10-02 14:56:07 - MainThread - INFO - Started 8 worker threads.
+2025-10-02 14:56:07 - MainThread - INFO - [Transcription] Queued 0 unprocessed audio files for transcription.
+2025-10-02 14:56:07 - MainThread - INFO - Discovering user audio directories to watch inside: .
+2025-10-02 14:56:07 - MainThread - INFO -   + Found and will watch: .\demo\Audio
+2025-10-02 14:56:07 - MainThread - INFO - Watchdog observers started. Press Ctrl+C to exit.
+2025-10-02 14:59:44 - Thread-1 - INFO - New audio detected: .\demo\Audio\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.wav (size: 1237166 bytes)
+2025-10-02 14:59:56 - MainThread - INFO - Audio complete (probe successful): .\demo\Audio\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.wav (final size 1237166)
+2025-10-02 14:59:56 - Transcriber-3 - INFO - [STT] Starting transcription with assemblyai for: .\demo\Audio\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.wav
+2025-10-02 15:00:03 - Transcriber-3 - INFO - [STT] Transcription saved: demo\Transcripts\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.txt
+2025-10-02 15:00:03 - Transcriber-3 - INFO - [STT] Confidence data saved: demo\Transcripts\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.confidence.json
+2025-10-02 15:00:03 - Transcriber-3 - INFO - AssemblyAI review written to output\Review\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.review.json (349 words, 98 flagged)
+2025-10-02 15:00:03 - Transcriber-3 - INFO - [Review] AssemblyAI review created: output\Review\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.review.json
+2025-10-02 15:00:03 - Transcriber-3 - INFO - [STT] Archived transcript to: output\ALL_TRANSCRIPT_FILES\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.txt
+2025-10-02 15:01:07 - MetricsReporter - INFO - Processing Metrics: {
+  "total_files_processed": 1,
+  "success_rate": 1.0,
+  "average_processing_time": 7.927990913391113,
+  "api_usage_by_worker": {
+    "Transcriber-3": 1
+  },
+  "success_rates_by_type": {
+    "transcript": 1.0
+  },
+  "processing_times_by_type": {
+    "transcript": 7.927990913391113
+  }
+}
+2025-10-02 15:06:07 - MetricsReporter - INFO - Processing Metrics: {
+  "total_files_processed": 1,
+  "success_rate": 1.0,
+  "average_processing_time": 7.927990913391113,
+  "api_usage_by_worker": {
+    "Transcriber-3": 1
+  },
+  "success_rates_by_type": {
+    "transcript": 1.0
+  },
+  "processing_times_by_type": {
+    "transcript": 7.927990913391113
+  }
+}
+2025-10-02 15:11:07 - MetricsReporter - INFO - Processing Metrics: {
+  "total_files_processed": 1,
+  "success_rate": 1.0,
+  "average_processing_time": 7.927990913391113,
+  "api_usage_by_worker": {
+    "Transcriber-3": 1
+  },
+  "success_rates_by_type": {
+    "transcript": 1.0
+  },
+  "processing_times_by_type": {
+    "transcript": 7.927990913391113
+  }
+}
+2025-10-02 15:16:07 - MetricsReporter - INFO - Processing Metrics: {
+  "total_files_processed": 1,
+  "success_rate": 1.0,
+  "average_processing_time": 7.927990913391113,
+  "api_usage_by_worker": {
+    "Transcriber-3": 1
+  },
+  "success_rates_by_type": {
+    "transcript": 1.0
+  },
+  "processing_times_by_type": {
+    "transcript": 7.927990913391113
+  }
+}
+2025-10-02 15:21:07 - MetricsReporter - INFO - Processing Metrics: {
+  "total_files_processed": 1,
+  "success_rate": 1.0,
+  "average_processing_time": 7.927990913391113,
+  "api_usage_by_worker": {
+    "Transcriber-3": 1
+  },
+  "success_rates_by_type": {
+    "transcript": 1.0
+  },
+  "processing_times_by_type": {
+    "transcript": 7.927990913391113
+  }
+}
+2025-10-02 15:26:07 - MetricsReporter - INFO - Processing Metrics: {
+  "total_files_processed": 1,
+  "success_rate": 1.0,
+  "average_processing_time": 7.927990913391113,
+  "api_usage_by_worker": {
+    "Transcriber-3": 1
+  },
+  "success_rates_by_type": {
+    "transcript": 1.0
+  },
+  "processing_times_by_type": {
+    "transcript": 7.927990913391113
+  }
+}
+2025-10-02 15:31:07 - MetricsReporter - INFO - Processing Metrics: {
+  "total_files_processed": 1,
+  "success_rate": 1.0,
+  "average_processing_time": 7.927990913391113,
+  "api_usage_by_worker": {
+    "Transcriber-3": 1
+  },
+  "success_rates_by_type": {
+    "transcript": 1.0
+  },
+  "processing_times_by_type": {
+    "transcript": 7.927990913391113
+  }
+}
+2025-10-02 15:36:07 - MetricsReporter - INFO - Processing Metrics: {
+  "total_files_processed": 1,
+  "success_rate": 1.0,
+  "average_processing_time": 7.927990913391113,
+  "api_usage_by_worker": {
+    "Transcriber-3": 1
+  },
+  "success_rates_by_type": {
+    "transcript": 1.0
+  },
+  "processing_times_by_type": {
+    "transcript": 7.927990913391113
+  }
+}
+2025-10-02 15:41:08 - MetricsReporter - INFO - Processing Metrics: {
+  "total_files_processed": 1,
+  "success_rate": 1.0,
+  "average_processing_time": 7.927990913391113,
+  "api_usage_by_worker": {
+    "Transcriber-3": 1
+  },
+  "success_rates_by_type": {
+    "transcript": 1.0
+  },
+  "processing_times_by_type": {
+    "transcript": 7.927990913391113
+  }
+}
+2025-10-02 15:46:08 - MetricsReporter - INFO - Processing Metrics: {
+  "total_files_processed": 1,
+  "success_rate": 1.0,
+  "average_processing_time": 7.927990913391113,
+  "api_usage_by_worker": {
+    "Transcriber-3": 1
+  },
+  "success_rates_by_type": {
+    "transcript": 1.0
+  },
+  "processing_times_by_type": {
+    "transcript": 7.927990913391113
+  }
+}
+2025-10-02 15:51:08 - MetricsReporter - INFO - Processing Metrics: {
+  "total_files_processed": 1,
+  "success_rate": 1.0,
+  "average_processing_time": 7.927990913391113,
+  "api_usage_by_worker": {
+    "Transcriber-3": 1
+  },
+  "success_rates_by_type": {
+    "transcript": 1.0
+  },
+  "processing_times_by_type": {
+    "transcript": 7.927990913391113
+  }
+}
+2025-10-02 15:56:08 - MetricsReporter - INFO - Processing Metrics: {
+  "total_files_processed": 1,
+  "success_rate": 1.0,
+  "average_processing_time": 7.927990913391113,
+  "api_usage_by_worker": {
+    "Transcriber-3": 1
+  },
+  "success_rates_by_type": {
+    "transcript": 1.0
+  },
+  "processing_times_by_type": {
+    "transcript": 7.927990913391113
+  }
+}
+2025-10-02 16:01:08 - MetricsReporter - INFO - Processing Metrics: {
+  "total_files_processed": 1,
+  "success_rate": 1.0,
+  "average_processing_time": 7.927990913391113,
+  "api_usage_by_worker": {
+    "Transcriber-3": 1
+  },
+  "success_rates_by_type": {
+    "transcript": 1.0
+  },
+  "processing_times_by_type": {
+    "transcript": 7.927990913391113
+  }
+}
+2025-10-02 16:05:31 - MainThread - INFO - Shutdown requested.
+2025-10-02 16:05:31 - MainThread - INFO - Waiting for 6 tasks to complete...
+2025-10-02 16:05:31 - MainThread - INFO - === CallPipeline Shutdown Complete ====
+2025-10-02 16:40:49 - MainThread - INFO - === CallPipeline Starting ===
+2025-10-02 16:40:49 - MainThread - INFO - Configuration loaded from: C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\call_pipeline.ini
+2025-10-02 16:40:49 - MainThread - INFO - [STT] Transcription engine: assemblyai
+2025-10-02 16:40:49 - MainThread - INFO - [Review] Review generation enabled
+2025-10-02 16:40:49 - MainThread - INFO - [Review] Output directory: .\output\Review
+2025-10-02 16:40:49 - MainThread - INFO - Google AI SDK configured successfully.
+2025-10-02 16:40:49 - MainThread - INFO - Successfully loaded 24 users from '.\config\staff_map.txt'.
+2025-10-02 16:40:49 - MainThread - INFO - Successfully loaded analysis prompt from 'C:\Users\Andrew.CLF\OneDrive - Crosley Law Firm\Desktop\ingest_pro\config\prompts.txt'.
+2025-10-02 16:40:50 - MainThread - INFO - Database updater module found - will auto-update database
+2025-10-02 16:40:50 - MainThread - INFO - JSON archive and normalizer module found - can normalize existing JSON files
+2025-10-02 16:40:50 - MainThread - INFO - Configuration validation passed.
+2025-10-02 16:40:50 - MainThread - INFO - Loaded 3 processed files from '.\output\Database\processed_files.json'.
+2025-10-02 16:40:50 - MainThread - INFO - Started 8 worker threads.
+2025-10-02 16:40:50 - MainThread - INFO - [Transcription] Queued 0 unprocessed audio files for transcription.
+2025-10-02 16:40:50 - MainThread - INFO - Discovering user audio directories to watch inside: .
+2025-10-02 16:40:50 - MainThread - INFO -   + Found and will watch: .\demo\Audio
+2025-10-02 16:40:50 - MainThread - INFO - Watchdog observers started. Press Ctrl+C to exit.
+2025-10-02 16:41:05 - Thread-1 - INFO - New audio detected: .\demo\Audio\Carlos_2025-09-26_11-15_2m18s_UnknownCaller_Christus Santa Rosa Hospital Westover Hills.wav (size: 1106286 bytes)
+2025-10-02 16:41:17 - MainThread - INFO - Audio complete (probe successful): .\demo\Audio\Carlos_2025-09-26_11-15_2m18s_UnknownCaller_Christus Santa Rosa Hospital Westover Hills.wav (final size 1106286)
+2025-10-02 16:41:17 - Transcriber-1 - INFO - [STT] Starting transcription with assemblyai for: .\demo\Audio\Carlos_2025-09-26_11-15_2m18s_UnknownCaller_Christus Santa Rosa Hospital Westover Hills.wav
+2025-10-02 16:41:50 - Thread-1 - INFO - [Analysis] New transcript detected: .\demo\Transcripts\Carlos_2025-09-26_11-15_2m18s_UnknownCaller_Christus Santa Rosa Hospital Westover Hills.txt
+2025-10-02 16:41:50 - Transcriber-1 - INFO - [STT] Transcription saved: demo\Transcripts\Carlos_2025-09-26_11-15_2m18s_UnknownCaller_Christus Santa Rosa Hospital Westover Hills.txt
+2025-10-02 16:41:50 - Transcriber-1 - INFO - [STT] Confidence data saved: demo\Transcripts\Carlos_2025-09-26_11-15_2m18s_UnknownCaller_Christus Santa Rosa Hospital Westover Hills.confidence.json
+2025-10-02 16:41:50 - Transcriber-1 - INFO - AssemblyAI review written to output\Review\Carlos_2025-09-26_11-15_2m18s_UnknownCaller_Christus Santa Rosa Hospital Westover Hills.review.json (259 words, 85 flagged)
+2025-10-02 16:41:50 - Transcriber-1 - INFO - [Review] AssemblyAI review created: output\Review\Carlos_2025-09-26_11-15_2m18s_UnknownCaller_Christus Santa Rosa Hospital Westover Hills.review.json
+2025-10-02 16:41:50 - Transcriber-1 - INFO - [STT] Archived transcript to: output\ALL_TRANSCRIPT_FILES\Carlos_2025-09-26_11-15_2m18s_UnknownCaller_Christus Santa Rosa Hospital Westover Hills.txt
+2025-10-02 16:41:54 - Analyzer-1 - INFO - [Analysis] Saved JSON to: output\ALL_JSON_FILES\Carlos_2025-09-26_11-15_2m18s_UnknownCaller_Christus Santa Rosa Hospital Westover Hills.json
+2025-10-02 16:41:54 - Analyzer-1 - INFO - [Analysis] Saved Markdown to: demo\Summaries\Carlos_2025-09-26_11-15_2m18s_UnknownCaller_Christus Santa Rosa Hospital Westover Hills.md
+2025-10-02 16:45:50 - MetricsReporter - INFO - Processing Metrics: {
+  "total_files_processed": 2,
+  "success_rate": 1.0,
+  "average_processing_time": 18.04419219493866,
+  "api_usage_by_worker": {
+    "Transcriber-1": 1,
+    "Analyzer-1": 1
+  },
+  "success_rates_by_type": {
+    "transcript": 1.0
+  },
+  "processing_times_by_type": {
+    "transcript": 18.04419219493866
+  }
+}
+2025-10-02 16:50:50 - MetricsReporter - INFO - Processing Metrics: {
+  "total_files_processed": 2,
+  "success_rate": 1.0,
+  "average_processing_time": 18.04419219493866,
+  "api_usage_by_worker": {
+    "Transcriber-1": 1,
+    "Analyzer-1": 1
+  },
+  "success_rates_by_type": {
+    "transcript": 1.0
+  },
+  "processing_times_by_type": {
+    "transcript": 18.04419219493866
+  }
+}
+2025-10-02 16:55:50 - MetricsReporter - INFO - Processing Metrics: {
+  "total_files_processed": 2,
+  "success_rate": 1.0,
+  "average_processing_time": 18.04419219493866,
+  "api_usage_by_worker": {
+    "Transcriber-1": 1,
+    "Analyzer-1": 1
+  },
+  "success_rates_by_type": {
+    "transcript": 1.0
+  },
+  "processing_times_by_type": {
+    "transcript": 18.04419219493866
+  }
+}
+2025-10-02 17:00:50 - MetricsReporter - INFO - Processing Metrics: {
+  "total_files_processed": 2,
+  "success_rate": 1.0,
+  "average_processing_time": 18.04419219493866,
+  "api_usage_by_worker": {
+    "Transcriber-1": 1,
+    "Analyzer-1": 1
+  },
+  "success_rates_by_type": {
+    "transcript": 1.0
+  },
+  "processing_times_by_type": {
+    "transcript": 18.04419219493866
+  }
+}
+2025-10-02 17:05:50 - MetricsReporter - INFO - Processing Metrics: {
+  "total_files_processed": 2,
+  "success_rate": 1.0,
+  "average_processing_time": 18.04419219493866,
+  "api_usage_by_worker": {
+    "Transcriber-1": 1,
+    "Analyzer-1": 1
+  },
+  "success_rates_by_type": {
+    "transcript": 1.0
+  },
+  "processing_times_by_type": {
+    "transcript": 18.04419219493866
+  }
+}
+2025-10-02 17:10:50 - MetricsReporter - INFO - Processing Metrics: {
+  "total_files_processed": 2,
+  "success_rate": 1.0,
+  "average_processing_time": 18.04419219493866,
+  "api_usage_by_worker": {
+    "Transcriber-1": 1,
+    "Analyzer-1": 1
+  },
+  "success_rates_by_type": {
+    "transcript": 1.0
+  },
+  "processing_times_by_type": {
+    "transcript": 18.04419219493866
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "call_details": {
+    "wav_file": "Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.wav",
+    "renamed to": "",
+    "Agent": null,
+    "call_date": null,
+    "call_time": null,
+    "call_duration": "02:35"
+  },
+  "analysis": {
+    "summary": "Dr. Bullock called Crosley Law Firm seeking legal representation for a potential medical malpractice case related to a leg ulcer and subsequent mobility issues. Alex, the agent, informed Dr. Bullock that the firm does not handle medical malpractice cases and provided the phone number for the San Antonio Bar Association's referral service.",
+    "sentiment": {
+      "overall": "Neutral",
+      "drivers": [
+        "The agent maintained a professional and helpful demeanor throughout the call.",
+        "Dr. Bullock's initial frustration regarding her medical condition was tempered by her positive reception of the referral information."
+      ]
+    },
+    "topics": [
+      "Medical Malpractice",
+      "Legal Referral Services"
+    ],
+    "entities": {
+      "persons": [
+        "Dr. Bullock",
+        "Alex"
+      ],
+      "organizations": [
+        "Crosley Law Firm",
+        "Methodist Hospital",
+        "San Antonio Bar Association"
+      ],
+      "locations": [
+        "downtown"
+      ],
+      "dates": [
+        "23rd of May",
+        "23rd of this month"
+      ],
+      "other": [
+        "ulcer",
+        "rods down my leg"
+      ],
+      "case_number": []
+    },
+    "action_items": [
+      "None for Crosley Law Firm"
+    ]
+  },
+  "processing_details": {
+    "transcript_file": "Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.txt",
+    "transcript_path": "C:\\Users\\Andrew.CLF\\OneDrive - Crosley Law Firm\\Desktop\\ingest_pro\\demo\\Transcripts\\Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.txt",
+    "analysis_timestamp_utc": "2025-10-02T18:54:49.313775+00:00",
+    "model_used": "gemini-2.0-flash"
+  },
+  "transcript": [
+    {
+      "timestamp": "",
+      "speaker": "Unknown",
+      "text": "[00:00] Speaker A: Thanks for calling Crosley Law Firm.\n[00:01] Speaker B: This is Alex. How can I help you?\n[00:04] Speaker A: Yes, Alex. I was trying to see if you want to pick up this case. My name is Dr. Bullock. On the 23rd of May, I went to the Methodist Hospital downtown, and I was complaining about just pain that was caused by ulcer and and something else. It wasn't a heart attack. But being there, they noticed that they had a. I had a ulcer on my leg. The wounder wasn't going away. So the claim, that they wouldn't fix it if I would have gotten a procedure where they put rods down my leg and open the veins up. But ever since that, I'm not able to walk or nothing. Right now I'm just laying in bed. Okay.\n[00:56] Speaker B: And are you still in the hospital right now?\n[00:59] Speaker A: No, I came out on the 23rd of this month.\n[01:05] Speaker B: So unfortunately we are personal injury, but we mostly do things that involve like motor vehicle accidents. So we don't really do medical malpractice cases.\n[01:17] Speaker A: Okay.\n[01:18] Speaker B: But do you happen to have the phone number for the San Antonio Bar Association?\n[01:22] Speaker A: No, ma'am, but I can get my daughter to call it.\n[01:25] Speaker B: Yeah, I can go ahead and give you that phone number.\n[01:28] Speaker A: Let me see. Let me get a phone number. And they got different numbers to call.\n[01:40] Speaker B: So what they do is they'll have like a referral service so you can give them a call and ask for it. You give them a little bit about the case that you're wanting to pursue and they may be able to pair you up with a more suitable.\n[01:54] Speaker A: Okay, that sounds great.\n[01:55] Speaker B: Okay.\n[01:56] Speaker A: Yeah, I just want to get up and go move around. I don't want to lay down, you know, all my life and just being handy.\n[02:04] Speaker B: Yeah.\n[02:04] Speaker A: So what's the number is 210.\n[02:08] Speaker B: Yes.\n[02:10] Speaker A: 0-2-2-7. 2-2-7. 88822. Okay, ma'am. 227-88-22.\n[02:21] Speaker B: Correct.\n[02:24] Speaker A: Yeah.\n[02:24] Speaker B: And you can just give them a call and ask for their referral services.\n[02:28] Speaker A: Okay. Thank you, ma'am.\n[02:29] Speaker B: Yes, no problem."
+    }
+  ],
+  "normalization_info": {
+    "normalized_at": "2025-10-02T13:54:49.316154",
+    "original_segments": 1,
+    "normalized_segments": 1,
+    "normalization_method": "raw_text_parsing"
+  }
+}

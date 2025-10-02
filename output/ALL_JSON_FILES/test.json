@@ -1,0 +1,59 @@
+{
+  "call_details": {
+    "wav_file": "test.wav",
+    "renamed to": "",
+    "Agent": null,
+    "call_date": null,
+    "call_time": null,
+    "call_duration": "00:50"
+  },
+  "analysis": {
+    "summary": "A State Farm representative called to speak with the case manager regarding Samir Ouais. The agent, Andrew, transferred the call to the case manager's voicemail because she was on lunch.",
+    "sentiment": {
+      "overall": "Neutral",
+      "drivers": [
+        "The call is a straightforward request to speak with a case manager.",
+        "Both parties are polite and professional."
+      ]
+    },
+    "topics": [
+      "Insurance claim",
+      "Call Transfer"
+    ],
+    "entities": {
+      "persons": [
+        "Andrew",
+        "Samir Ouais"
+      ],
+      "organizations": [
+        "State Farm"
+      ],
+      "locations": [],
+      "dates": [],
+      "other": [],
+      "case_number": []
+    },
+    "action_items": [
+      "The case manager needs to return the call to the State Farm representative regarding Samir Ouais."
+    ]
+  },
+  "processing_details": {
+    "transcript_file": "test.txt",
+    "transcript_path": "C:\\Users\\Andrew.CLF\\OneDrive - Crosley Law Firm\\Desktop\\ingest_pro\\demo\\Transcripts\\test.txt",
+    "analysis_timestamp_utc": "2025-10-02T17:11:03.776427+00:00",
+    "model_used": "gemini-2.0-flash"
+  },
+  "transcript": [
+    {
+      "timestamp": "",
+      "speaker": "Unknown",
+      "text": "[00:00] Caller: Like regular, thank you for calling across and this is Andrew. How may I help you? Hi, Andrew, my name is State Farm. I'm calling in regards to Samir. Last name is o u a i s Get going to once a year or last year. Hello. Hello. Okay, let me transfer you to the case manager, voicemail. She just went on lunch. Okay, thank you. Yes. Ma'am.\n[00:00] Agent: Like regular, thank you for calling across and this is Andrew. How may I help you? Hi, Andrew, my name is State Farm. I'm calling in regards to Samir. Last name is o u a i s Get going to once a year or last year. Hello. Hello. Okay, let me transfer you to the case\n[00:44] Caller: manager,\n[00:45] Agent: voicemail. She just went on lunch. Okay, thank you. Yes. Ma'am."
+    }
+  ],
+  "normalization_info": {
+    "normalized_at": "2025-10-02T12:11:03.777609",
+    "original_segments": 1,
+    "normalized_segments": 1,
+    "normalization_method": "raw_text_parsing"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "call_details": {
+    "wav_file": "Carlos_2025-09-26_11-15_2m18s_UnknownCaller_Christus Santa Rosa Hospital Westover Hills.wav",
+    "renamed to": "",
+    "Agent": null,
+    "call_date": null,
+    "call_time": null,
+    "call_duration": "02:18"
+  },
+  "analysis": {
+    "summary": "The call presents pre-recorded instructions from both Christus Santa Rosa Hospital and Crosley Law Firm regarding medical records requests and related information.",
+    "sentiment": {
+      "overall": "Neutral",
+      "drivers": [
+        "The call consists of automated prompts providing information.",
+        "No emotional tone is present in the recorded messages."
+      ]
+    },
+    "topics": [
+      "Medical Records Request",
+      "Release of Information"
+    ],
+    "entities": {
+      "persons": [],
+      "organizations": [
+        "Christus Santa Rosa Hospital",
+        "Crosley Law Firm",
+        "Crosley Children's",
+        "MRO"
+      ],
+      "locations": [
+        "Westover Hills",
+        "333 North Santa Rosa, San Antonio, Texas 78207"
+      ],
+      "dates": [
+        "Monday through Friday",
+        "8 a.m. to 4:30 p.m.",
+        "8:00 a.m. to 4:00 p.m."
+      ],
+      "other": [
+        "CrosleyHealth.org",
+        "210-703-8218",
+        "610-994-7500"
+      ],
+      "case_number": []
+    },
+    "action_items": []
+  },
+  "processing_details": {
+    "transcript_file": "Carlos_2025-09-26_11-15_2m18s_UnknownCaller_Christus Santa Rosa Hospital Westover Hills.txt",
+    "transcript_path": "C:\\Users\\Andrew.CLF\\OneDrive - Crosley Law Firm\\Desktop\\ingest_pro\\demo\\Transcripts\\Carlos_2025-09-26_11-15_2m18s_UnknownCaller_Christus Santa Rosa Hospital Westover Hills.txt",
+    "analysis_timestamp_utc": "2025-10-02T21:41:54.065271+00:00",
+    "model_used": "gemini-2.0-flash"
+  },
+  "transcript": [
+    {
+      "timestamp": "",
+      "speaker": "Unknown",
+      "text": "[00:01] Speaker A: Thank you for calling the medical records Department at Christas Santa Rosa Hospital, Westover Hills. Our normal business hours are Monday through Friday, eight AM to four thirty PM. Please listen carefully to the following options. If you are requesting a release of information, please press one. If you are a physician and need assistance with an incomplete medical record, please press to. For birth certificate, please press 3. For patient portal, please press.\n[00:39] Speaker B: 4.\n[00:42] Speaker A: Thank you for calling the Medical Records Department at Christus Santa Rosa Hospital, Westover Hills. Our normal business hours are Monday through Friday, 8 a.m. to 4:30 p.m. Please listen carefully to the following options. If you are requesting a release of information, please press 1. If you are a physician and need assistance, if you are a patient or calling from a physician's office, please press 1. If you are calling.\n[01:27] Speaker B: Thank you for calling Crosley Law Firm, Westover Hills, release of information. Our office is closed to the public. If you are a patient needing medical records, you can request them online at CrosleyHealth.org, going to the bottom of the page and clicking on request medical records. If you are needing to request in person, you may go to Crosley Children's located at 333 North Santa Rosa, San Antonio, Texas 78207, Monday through Friday, from 8:00 a.m. to 4:00 p.m. If you are a provider needing records, you may send a fax to 210-703-8218. If you are a third party checking status on a request, please call MRO at 610-994-7500. Thank you."
+    }
+  ],
+  "normalization_info": {
+    "normalized_at": "2025-10-02T16:41:54.067932",
+    "original_segments": 1,
+    "normalized_segments": 1,
+    "normalization_method": "raw_text_parsing"
+  }
+}

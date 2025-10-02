@@ -1,0 +1,5003 @@
+{
+  "generated_at": "2025-10-02T20:00:03.973212+00:00",
+  "review_engine": "assemblyai_native",
+  "confidence_file": "Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.confidence.json",
+  "transcript_file": "Alex_2025-06-23_11-35_2m34s_Alvaro Vasquez_Metro Methodist Hospital.txt",
+  "config": {
+    "enabled": true,
+    "low_confidence_threshold": 0.7,
+    "critical_confidence_threshold": 0.5,
+    "flag_phone_numbers": true,
+    "flag_case_numbers": true,
+    "flag_money_amounts": true,
+    "flag_dates": true,
+    "flag_times": true,
+    "flag_names": true,
+    "flag_spelled_words": true,
+    "flag_numbers": true,
+    "context_words_before": 5,
+    "context_words_after": 5
+  },
+  "overall_confidence": 0.8362436,
+  "statistics": {
+    "total_words": 349,
+    "flagged_words": 98,
+    "flag_percentage": 28.1,
+    "priority_counts": {
+      "high": 41,
+      "medium": 72,
+      "low": 4
+    },
+    "average_confidence": 0.8362436047879656
+  },
+  "flag_summary": {
+    "critical_confidence": 40,
+    "low_confidence": 44,
+    "name": 28,
+    "number": 4,
+    "phone_number_segment": 1
+  },
+  "words": [
+    {
+      "word": "Thanks",
+      "confidence": 0.31752706,
+      "start_time": 0.0,
+      "end_time": 0.32,
+      "speaker": "A",
+      "index": 0,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (31.75%)",
+          "priority": "high",
+          "confidence": 0.31752706
+        }
+      ],
+      "context_before": "",
+      "context_after": "for calling Crosley Law Firm.",
+      "suggested_correction": null
+    },
+    {
+      "word": "for",
+      "confidence": 0.98427933,
+      "start_time": 0.32,
+      "end_time": 0.4,
+      "speaker": "A",
+      "index": 1,
+      "flags": [],
+      "context_before": "Thanks",
+      "context_after": "calling Crosley Law Firm. This",
+      "suggested_correction": null
+    },
+    {
+      "word": "calling",
+      "confidence": 0.96588916,
+      "start_time": 0.4,
+      "end_time": 0.56,
+      "speaker": "A",
+      "index": 2,
+      "flags": [],
+      "context_before": "Thanks for",
+      "context_after": "Crosley Law Firm. This is",
+      "suggested_correction": null
+    },
+    {
+      "word": "Crosley",
+      "confidence": 0.2953015,
+      "start_time": 0.56,
+      "end_time": 0.96,
+      "speaker": "A",
+      "index": 3,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (29.53%)",
+          "priority": "high",
+          "confidence": 0.2953015
+        }
+      ],
+      "context_before": "Thanks for calling",
+      "context_after": "Law Firm. This is Alex.",
+      "suggested_correction": null
+    },
+    {
+      "word": "Law",
+      "confidence": 0.86205435,
+      "start_time": 0.96,
+      "end_time": 1.12,
+      "speaker": "A",
+      "index": 4,
+      "flags": [],
+      "context_before": "Thanks for calling Crosley",
+      "context_after": "Firm. This is Alex. How",
+      "suggested_correction": null
+    },
+    {
+      "word": "Firm.",
+      "confidence": 0.55071074,
+      "start_time": 1.12,
+      "end_time": 1.36,
+      "speaker": "A",
+      "index": 5,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (55.07%)",
+          "priority": "medium",
+          "confidence": 0.55071074
+        }
+      ],
+      "context_before": "Thanks for calling Crosley Law",
+      "context_after": "This is Alex. How can",
+      "suggested_correction": null
+    },
+    {
+      "word": "This",
+      "confidence": 0.6904868,
+      "start_time": 1.44,
+      "end_time": 1.52,
+      "speaker": "B",
+      "index": 6,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (69.05%)",
+          "priority": "medium",
+          "confidence": 0.6904868
+        }
+      ],
+      "context_before": "for calling Crosley Law Firm.",
+      "context_after": "is Alex. How can I",
+      "suggested_correction": null
+    },
+    {
+      "word": "is",
+      "confidence": 0.9906579,
+      "start_time": 1.52,
+      "end_time": 1.6,
+      "speaker": "B",
+      "index": 7,
+      "flags": [],
+      "context_before": "calling Crosley Law Firm. This",
+      "context_after": "Alex. How can I help",
+      "suggested_correction": null
+    },
+    {
+      "word": "Alex.",
+      "confidence": 0.48770714,
+      "start_time": 1.6,
+      "end_time": 1.84,
+      "speaker": "B",
+      "index": 8,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (48.77%)",
+          "priority": "high",
+          "confidence": 0.48770714
+        },
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "Crosley Law Firm. This is",
+      "context_after": "How can I help you?",
+      "suggested_correction": null
+    },
+    {
+      "word": "How",
+      "confidence": 0.98577696,
+      "start_time": 3.36,
+      "end_time": 3.6,
+      "speaker": "B",
+      "index": 9,
+      "flags": [],
+      "context_before": "Law Firm. This is Alex.",
+      "context_after": "can I help you? Yes,",
+      "suggested_correction": null
+    },
+    {
+      "word": "can",
+      "confidence": 0.9978678,
+      "start_time": 4.24,
+      "end_time": 4.32,
+      "speaker": "B",
+      "index": 10,
+      "flags": [],
+      "context_before": "Firm. This is Alex. How",
+      "context_after": "I help you? Yes, Alex.",
+      "suggested_correction": null
+    },
+    {
+      "word": "I",
+      "confidence": 0.998026,
+      "start_time": 4.32,
+      "end_time": 4.4,
+      "speaker": "B",
+      "index": 11,
+      "flags": [],
+      "context_before": "This is Alex. How can",
+      "context_after": "help you? Yes, Alex. I",
+      "suggested_correction": null
+    },
+    {
+      "word": "help",
+      "confidence": 0.9972089,
+      "start_time": 4.4,
+      "end_time": 4.48,
+      "speaker": "B",
+      "index": 12,
+      "flags": [],
+      "context_before": "is Alex. How can I",
+      "context_after": "you? Yes, Alex. I was",
+      "suggested_correction": null
+    },
+    {
+      "word": "you?",
+      "confidence": 0.9767839,
+      "start_time": 4.48,
+      "end_time": 4.56,
+      "speaker": "B",
+      "index": 13,
+      "flags": [],
+      "context_before": "Alex. How can I help",
+      "context_after": "Yes, Alex. I was trying",
+      "suggested_correction": null
+    },
+    {
+      "word": "Yes,",
+      "confidence": 0.7105149,
+      "start_time": 4.72,
+      "end_time": 4.96,
+      "speaker": "A",
+      "index": 14,
+      "flags": [],
+      "context_before": "How can I help you?",
+      "context_after": "Alex. I was trying to",
+      "suggested_correction": null
+    },
+    {
+      "word": "Alex.",
+      "confidence": 0.35907292,
+      "start_time": 5.12,
+      "end_time": 5.6,
+      "speaker": "A",
+      "index": 15,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (35.91%)",
+          "priority": "high",
+          "confidence": 0.35907292
+        },
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "can I help you? Yes,",
+      "context_after": "I was trying to see",
+      "suggested_correction": null
+    },
+    {
+      "word": "I",
+      "confidence": 0.93640006,
+      "start_time": 5.68,
+      "end_time": 5.76,
+      "speaker": "A",
+      "index": 16,
+      "flags": [],
+      "context_before": "I help you? Yes, Alex.",
+      "context_after": "was trying to see if",
+      "suggested_correction": null
+    },
+    {
+      "word": "was",
+      "confidence": 0.9662995,
+      "start_time": 5.76,
+      "end_time": 5.92,
+      "speaker": "A",
+      "index": 17,
+      "flags": [],
+      "context_before": "help you? Yes, Alex. I",
+      "context_after": "trying to see if you",
+      "suggested_correction": null
+    },
+    {
+      "word": "trying",
+      "confidence": 0.98279124,
+      "start_time": 5.92,
+      "end_time": 6.16,
+      "speaker": "A",
+      "index": 18,
+      "flags": [],
+      "context_before": "you? Yes, Alex. I was",
+      "context_after": "to see if you want",
+      "suggested_correction": null
+    },
+    {
+      "word": "to",
+      "confidence": 0.9974547,
+      "start_time": 6.16,
+      "end_time": 6.24,
+      "speaker": "A",
+      "index": 19,
+      "flags": [],
+      "context_before": "Yes, Alex. I was trying",
+      "context_after": "see if you want to",
+      "suggested_correction": null
+    },
+    {
+      "word": "see",
+      "confidence": 0.99804676,
+      "start_time": 6.24,
+      "end_time": 6.32,
+      "speaker": "A",
+      "index": 20,
+      "flags": [],
+      "context_before": "Alex. I was trying to",
+      "context_after": "if you want to pick",
+      "suggested_correction": null
+    },
+    {
+      "word": "if",
+      "confidence": 0.99419653,
+      "start_time": 6.32,
+      "end_time": 6.4,
+      "speaker": "A",
+      "index": 21,
+      "flags": [],
+      "context_before": "I was trying to see",
+      "context_after": "you want to pick up",
+      "suggested_correction": null
+    },
+    {
+      "word": "you",
+      "confidence": 0.98646903,
+      "start_time": 6.4,
+      "end_time": 6.56,
+      "speaker": "A",
+      "index": 22,
+      "flags": [],
+      "context_before": "was trying to see if",
+      "context_after": "want to pick up this",
+      "suggested_correction": null
+    },
+    {
+      "word": "want",
+      "confidence": 0.5986373,
+      "start_time": 6.64,
+      "end_time": 6.8,
+      "speaker": "A",
+      "index": 23,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (59.86%)",
+          "priority": "medium",
+          "confidence": 0.5986373
+        }
+      ],
+      "context_before": "trying to see if you",
+      "context_after": "to pick up this case.",
+      "suggested_correction": null
+    },
+    {
+      "word": "to",
+      "confidence": 0.99770916,
+      "start_time": 6.88,
+      "end_time": 6.96,
+      "speaker": "A",
+      "index": 24,
+      "flags": [],
+      "context_before": "to see if you want",
+      "context_after": "pick up this case. My",
+      "suggested_correction": null
+    },
+    {
+      "word": "pick",
+      "confidence": 0.9931003,
+      "start_time": 7.28,
+      "end_time": 7.52,
+      "speaker": "A",
+      "index": 25,
+      "flags": [],
+      "context_before": "see if you want to",
+      "context_after": "up this case. My name",
+      "suggested_correction": null
+    },
+    {
+      "word": "up",
+      "confidence": 0.9990314,
+      "start_time": 7.52,
+      "end_time": 7.6,
+      "speaker": "A",
+      "index": 26,
+      "flags": [],
+      "context_before": "if you want to pick",
+      "context_after": "this case. My name is",
+      "suggested_correction": null
+    },
+    {
+      "word": "this",
+      "confidence": 0.98826236,
+      "start_time": 7.68,
+      "end_time": 7.76,
+      "speaker": "A",
+      "index": 27,
+      "flags": [],
+      "context_before": "you want to pick up",
+      "context_after": "case. My name is Dr.",
+      "suggested_correction": null
+    },
+    {
+      "word": "case.",
+      "confidence": 0.9676874,
+      "start_time": 7.92,
+      "end_time": 8.0,
+      "speaker": "A",
+      "index": 28,
+      "flags": [],
+      "context_before": "want to pick up this",
+      "context_after": "My name is Dr. Vasquez.",
+      "suggested_correction": null
+    },
+    {
+      "word": "My",
+      "confidence": 0.98572195,
+      "start_time": 9.04,
+      "end_time": 9.2,
+      "speaker": "A",
+      "index": 29,
+      "flags": [
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "to pick up this case.",
+      "context_after": "name is Dr. Vasquez. On",
+      "suggested_correction": null
+    },
+    {
+      "word": "name",
+      "confidence": 0.9979984,
+      "start_time": 9.28,
+      "end_time": 9.36,
+      "speaker": "A",
+      "index": 30,
+      "flags": [],
+      "context_before": "pick up this case. My",
+      "context_after": "is Dr. Vasquez. On the",
+      "suggested_correction": null
+    },
+    {
+      "word": "is",
+      "confidence": 0.91877705,
+      "start_time": 9.44,
+      "end_time": 9.52,
+      "speaker": "A",
+      "index": 31,
+      "flags": [],
+      "context_before": "up this case. My name",
+      "context_after": "Dr. Vasquez. On the 23rd",
+      "suggested_correction": null
+    },
+    {
+      "word": "Dr.",
+      "confidence": 0.20059529,
+      "start_time": 9.6,
+      "end_time": 9.92,
+      "speaker": "A",
+      "index": 32,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (20.06%)",
+          "priority": "high",
+          "confidence": 0.20059529
+        },
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "this case. My name is",
+      "context_after": "Vasquez. On the 23rd of",
+      "suggested_correction": null
+    },
+    {
+      "word": "Vasquez.",
+      "confidence": 0.3644645,
+      "start_time": 10.0,
+      "end_time": 10.48,
+      "speaker": "A",
+      "index": 33,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (36.45%)",
+          "priority": "high",
+          "confidence": 0.3644645
+        },
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "case. My name is Dr.",
+      "context_after": "On the 23rd of May,",
+      "suggested_correction": null
+    },
+    {
+      "word": "On",
+      "confidence": 0.9958281,
+      "start_time": 11.36,
+      "end_time": 11.6,
+      "speaker": "A",
+      "index": 34,
+      "flags": [],
+      "context_before": "My name is Dr. Vasquez.",
+      "context_after": "the 23rd of May, I",
+      "suggested_correction": null
+    },
+    {
+      "word": "the",
+      "confidence": 0.9896431,
+      "start_time": 11.68,
+      "end_time": 11.76,
+      "speaker": "A",
+      "index": 35,
+      "flags": [],
+      "context_before": "name is Dr. Vasquez. On",
+      "context_after": "23rd of May, I went",
+      "suggested_correction": null
+    },
+    {
+      "word": "23rd",
+      "confidence": 0.98601025,
+      "start_time": 12.08,
+      "end_time": 12.48,
+      "speaker": "A",
+      "index": 36,
+      "flags": [],
+      "context_before": "is Dr. Vasquez. On the",
+      "context_after": "of May, I went to",
+      "suggested_correction": null
+    },
+    {
+      "word": "of",
+      "confidence": 0.994925,
+      "start_time": 12.64,
+      "end_time": 12.72,
+      "speaker": "A",
+      "index": 37,
+      "flags": [],
+      "context_before": "Dr. Vasquez. On the 23rd",
+      "context_after": "May, I went to the",
+      "suggested_correction": null
+    },
+    {
+      "word": "May,",
+      "confidence": 0.77047276,
+      "start_time": 12.72,
+      "end_time": 12.96,
+      "speaker": "A",
+      "index": 38,
+      "flags": [
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "Vasquez. On the 23rd of",
+      "context_after": "I went to the Methodist",
+      "suggested_correction": null
+    },
+    {
+      "word": "I",
+      "confidence": 0.99936193,
+      "start_time": 13.12,
+      "end_time": 13.2,
+      "speaker": "A",
+      "index": 39,
+      "flags": [],
+      "context_before": "On the 23rd of May,",
+      "context_after": "went to the Methodist Hospital",
+      "suggested_correction": null
+    },
+    {
+      "word": "went",
+      "confidence": 0.99865746,
+      "start_time": 13.28,
+      "end_time": 13.36,
+      "speaker": "A",
+      "index": 40,
+      "flags": [],
+      "context_before": "the 23rd of May, I",
+      "context_after": "to the Methodist Hospital downtown,",
+      "suggested_correction": null
+    },
+    {
+      "word": "to",
+      "confidence": 0.98806787,
+      "start_time": 13.44,
+      "end_time": 13.52,
+      "speaker": "A",
+      "index": 41,
+      "flags": [],
+      "context_before": "23rd of May, I went",
+      "context_after": "the Methodist Hospital downtown, and",
+      "suggested_correction": null
+    },
+    {
+      "word": "the",
+      "confidence": 0.9789419,
+      "start_time": 13.6,
+      "end_time": 13.68,
+      "speaker": "A",
+      "index": 42,
+      "flags": [],
+      "context_before": "of May, I went to",
+      "context_after": "Methodist Hospital downtown, and I",
+      "suggested_correction": null
+    },
+    {
+      "word": "Methodist",
+      "confidence": 0.38141054,
+      "start_time": 14.96,
+      "end_time": 15.52,
+      "speaker": "A",
+      "index": 43,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (38.14%)",
+          "priority": "high",
+          "confidence": 0.38141054
+        },
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "May, I went to the",
+      "context_after": "Hospital downtown, and I was",
+      "suggested_correction": null
+    },
+    {
+      "word": "Hospital",
+      "confidence": 0.87355137,
+      "start_time": 15.52,
+      "end_time": 16.0,
+      "speaker": "A",
+      "index": 44,
+      "flags": [
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "I went to the Methodist",
+      "context_after": "downtown, and I was complaining",
+      "suggested_correction": null
+    },
+    {
+      "word": "downtown,",
+      "confidence": 0.52312225,
+      "start_time": 16.08,
+      "end_time": 16.64,
+      "speaker": "A",
+      "index": 45,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (52.31%)",
+          "priority": "medium",
+          "confidence": 0.52312225
+        }
+      ],
+      "context_before": "went to the Methodist Hospital",
+      "context_after": "and I was complaining about",
+      "suggested_correction": null
+    },
+    {
+      "word": "and",
+      "confidence": 0.99847525,
+      "start_time": 17.76,
+      "end_time": 17.84,
+      "speaker": "A",
+      "index": 46,
+      "flags": [],
+      "context_before": "to the Methodist Hospital downtown,",
+      "context_after": "I was complaining about just",
+      "suggested_correction": null
+    },
+    {
+      "word": "I",
+      "confidence": 0.99700505,
+      "start_time": 18.08,
+      "end_time": 18.16,
+      "speaker": "A",
+      "index": 47,
+      "flags": [],
+      "context_before": "the Methodist Hospital downtown, and",
+      "context_after": "was complaining about just pain",
+      "suggested_correction": null
+    },
+    {
+      "word": "was",
+      "confidence": 0.9981177,
+      "start_time": 18.24,
+      "end_time": 18.32,
+      "speaker": "A",
+      "index": 48,
+      "flags": [],
+      "context_before": "Methodist Hospital downtown, and I",
+      "context_after": "complaining about just pain that",
+      "suggested_correction": null
+    },
+    {
+      "word": "complaining",
+      "confidence": 0.9969042,
+      "start_time": 18.48,
+      "end_time": 19.04,
+      "speaker": "A",
+      "index": 49,
+      "flags": [],
+      "context_before": "Hospital downtown, and I was",
+      "context_after": "about just pain that was",
+      "suggested_correction": null
+    },
+    {
+      "word": "about",
+      "confidence": 0.9971949,
+      "start_time": 19.2,
+      "end_time": 19.28,
+      "speaker": "A",
+      "index": 50,
+      "flags": [],
+      "context_before": "downtown, and I was complaining",
+      "context_after": "just pain that was caused",
+      "suggested_correction": null
+    },
+    {
+      "word": "just",
+      "confidence": 0.4952543,
+      "start_time": 19.52,
+      "end_time": 19.6,
+      "speaker": "A",
+      "index": 51,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (49.53%)",
+          "priority": "high",
+          "confidence": 0.4952543
+        }
+      ],
+      "context_before": "and I was complaining about",
+      "context_after": "pain that was caused by",
+      "suggested_correction": null
+    },
+    {
+      "word": "pain",
+      "confidence": 0.96449065,
+      "start_time": 20.4,
+      "end_time": 20.72,
+      "speaker": "A",
+      "index": 52,
+      "flags": [],
+      "context_before": "I was complaining about just",
+      "context_after": "that was caused by ulcer",
+      "suggested_correction": null
+    },
+    {
+      "word": "that",
+      "confidence": 0.9005618,
+      "start_time": 20.88,
+      "end_time": 20.96,
+      "speaker": "A",
+      "index": 53,
+      "flags": [],
+      "context_before": "was complaining about just pain",
+      "context_after": "was caused by ulcer and",
+      "suggested_correction": null
+    },
+    {
+      "word": "was",
+      "confidence": 0.84124404,
+      "start_time": 21.04,
+      "end_time": 21.12,
+      "speaker": "A",
+      "index": 54,
+      "flags": [],
+      "context_before": "complaining about just pain that",
+      "context_after": "caused by ulcer and and",
+      "suggested_correction": null
+    },
+    {
+      "word": "caused",
+      "confidence": 0.5588887,
+      "start_time": 21.2,
+      "end_time": 21.52,
+      "speaker": "A",
+      "index": 55,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (55.89%)",
+          "priority": "medium",
+          "confidence": 0.5588887
+        }
+      ],
+      "context_before": "about just pain that was",
+      "context_after": "by ulcer and and something",
+      "suggested_correction": null
+    },
+    {
+      "word": "by",
+      "confidence": 0.49167404,
+      "start_time": 21.52,
+      "end_time": 21.6,
+      "speaker": "A",
+      "index": 56,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (49.17%)",
+          "priority": "high",
+          "confidence": 0.49167404
+        }
+      ],
+      "context_before": "just pain that was caused",
+      "context_after": "ulcer and and something else.",
+      "suggested_correction": null
+    },
+    {
+      "word": "ulcer",
+      "confidence": 0.33683857,
+      "start_time": 21.84,
+      "end_time": 22.24,
+      "speaker": "A",
+      "index": 57,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (33.68%)",
+          "priority": "high",
+          "confidence": 0.33683857
+        }
+      ],
+      "context_before": "pain that was caused by",
+      "context_after": "and and something else. It",
+      "suggested_correction": null
+    },
+    {
+      "word": "and",
+      "confidence": 0.71190953,
+      "start_time": 23.36,
+      "end_time": 23.44,
+      "speaker": "A",
+      "index": 58,
+      "flags": [],
+      "context_before": "that was caused by ulcer",
+      "context_after": "and something else. It wasn't",
+      "suggested_correction": null
+    },
+    {
+      "word": "and",
+      "confidence": 0.55600166,
+      "start_time": 25.7,
+      "end_time": 25.78,
+      "speaker": "A",
+      "index": 59,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (55.60%)",
+          "priority": "medium",
+          "confidence": 0.55600166
+        }
+      ],
+      "context_before": "was caused by ulcer and",
+      "context_after": "something else. It wasn't a",
+      "suggested_correction": null
+    },
+    {
+      "word": "something",
+      "confidence": 0.98591936,
+      "start_time": 25.86,
+      "end_time": 25.94,
+      "speaker": "A",
+      "index": 60,
+      "flags": [],
+      "context_before": "caused by ulcer and and",
+      "context_after": "else. It wasn't a heart",
+      "suggested_correction": null
+    },
+    {
+      "word": "else.",
+      "confidence": 0.7259552,
+      "start_time": 26.26,
+      "end_time": 26.34,
+      "speaker": "A",
+      "index": 61,
+      "flags": [],
+      "context_before": "by ulcer and and something",
+      "context_after": "It wasn't a heart attack.",
+      "suggested_correction": null
+    },
+    {
+      "word": "It",
+      "confidence": 0.8795966,
+      "start_time": 27.22,
+      "end_time": 27.3,
+      "speaker": "A",
+      "index": 62,
+      "flags": [
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "ulcer and and something else.",
+      "context_after": "wasn't a heart attack. But",
+      "suggested_correction": null
+    },
+    {
+      "word": "wasn't",
+      "confidence": 0.9441619,
+      "start_time": 27.3,
+      "end_time": 27.62,
+      "speaker": "A",
+      "index": 63,
+      "flags": [],
+      "context_before": "and and something else. It",
+      "context_after": "a heart attack. But being",
+      "suggested_correction": null
+    },
+    {
+      "word": "a",
+      "confidence": 0.7640896,
+      "start_time": 27.62,
+      "end_time": 27.7,
+      "speaker": "A",
+      "index": 64,
+      "flags": [],
+      "context_before": "and something else. It wasn't",
+      "context_after": "heart attack. But being there,",
+      "suggested_correction": null
+    },
+    {
+      "word": "heart",
+      "confidence": 0.99226636,
+      "start_time": 27.78,
+      "end_time": 27.86,
+      "speaker": "A",
+      "index": 65,
+      "flags": [],
+      "context_before": "something else. It wasn't a",
+      "context_after": "attack. But being there, they",
+      "suggested_correction": null
+    },
+    {
+      "word": "attack.",
+      "confidence": 0.54157877,
+      "start_time": 28.02,
+      "end_time": 28.1,
+      "speaker": "A",
+      "index": 66,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (54.16%)",
+          "priority": "medium",
+          "confidence": 0.54157877
+        }
+      ],
+      "context_before": "else. It wasn't a heart",
+      "context_after": "But being there, they noticed",
+      "suggested_correction": null
+    },
+    {
+      "word": "But",
+      "confidence": 0.9629606,
+      "start_time": 29.22,
+      "end_time": 29.3,
+      "speaker": "A",
+      "index": 67,
+      "flags": [],
+      "context_before": "It wasn't a heart attack.",
+      "context_after": "being there, they noticed that",
+      "suggested_correction": null
+    },
+    {
+      "word": "being",
+      "confidence": 0.97572553,
+      "start_time": 29.78,
+      "end_time": 29.86,
+      "speaker": "A",
+      "index": 68,
+      "flags": [],
+      "context_before": "wasn't a heart attack. But",
+      "context_after": "there, they noticed that they",
+      "suggested_correction": null
+    },
+    {
+      "word": "there,",
+      "confidence": 0.8903643,
+      "start_time": 30.26,
+      "end_time": 30.34,
+      "speaker": "A",
+      "index": 69,
+      "flags": [],
+      "context_before": "a heart attack. But being",
+      "context_after": "they noticed that they had",
+      "suggested_correction": null
+    },
+    {
+      "word": "they",
+      "confidence": 0.99387074,
+      "start_time": 30.66,
+      "end_time": 30.74,
+      "speaker": "A",
+      "index": 70,
+      "flags": [],
+      "context_before": "heart attack. But being there,",
+      "context_after": "noticed that they had a.",
+      "suggested_correction": null
+    },
+    {
+      "word": "noticed",
+      "confidence": 0.8472739,
+      "start_time": 30.98,
+      "end_time": 31.3,
+      "speaker": "A",
+      "index": 71,
+      "flags": [],
+      "context_before": "attack. But being there, they",
+      "context_after": "that they had a. I",
+      "suggested_correction": null
+    },
+    {
+      "word": "that",
+      "confidence": 0.64283615,
+      "start_time": 31.38,
+      "end_time": 31.46,
+      "speaker": "A",
+      "index": 72,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (64.28%)",
+          "priority": "medium",
+          "confidence": 0.64283615
+        }
+      ],
+      "context_before": "But being there, they noticed",
+      "context_after": "they had a. I had",
+      "suggested_correction": null
+    },
+    {
+      "word": "they",
+      "confidence": 0.8585066,
+      "start_time": 31.54,
+      "end_time": 31.62,
+      "speaker": "A",
+      "index": 73,
+      "flags": [],
+      "context_before": "being there, they noticed that",
+      "context_after": "had a. I had a",
+      "suggested_correction": null
+    },
+    {
+      "word": "had",
+      "confidence": 0.9875581,
+      "start_time": 31.78,
+      "end_time": 31.86,
+      "speaker": "A",
+      "index": 74,
+      "flags": [],
+      "context_before": "there, they noticed that they",
+      "context_after": "a. I had a ulcer",
+      "suggested_correction": null
+    },
+    {
+      "word": "a.",
+      "confidence": 0.70832133,
+      "start_time": 32.02,
+      "end_time": 32.1,
+      "speaker": "A",
+      "index": 75,
+      "flags": [],
+      "context_before": "they noticed that they had",
+      "context_after": "I had a ulcer on",
+      "suggested_correction": null
+    },
+    {
+      "word": "I",
+      "confidence": 0.9826461,
+      "start_time": 33.54,
+      "end_time": 33.62,
+      "speaker": "A",
+      "index": 76,
+      "flags": [],
+      "context_before": "noticed that they had a.",
+      "context_after": "had a ulcer on my",
+      "suggested_correction": null
+    },
+    {
+      "word": "had",
+      "confidence": 0.99139434,
+      "start_time": 33.78,
+      "end_time": 33.86,
+      "speaker": "A",
+      "index": 77,
+      "flags": [],
+      "context_before": "that they had a. I",
+      "context_after": "a ulcer on my leg.",
+      "suggested_correction": null
+    },
+    {
+      "word": "a",
+      "confidence": 0.49892032,
+      "start_time": 33.94,
+      "end_time": 34.02,
+      "speaker": "A",
+      "index": 78,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (49.89%)",
+          "priority": "high",
+          "confidence": 0.49892032
+        }
+      ],
+      "context_before": "they had a. I had",
+      "context_after": "ulcer on my leg. The",
+      "suggested_correction": null
+    },
+    {
+      "word": "ulcer",
+      "confidence": 0.44509047,
+      "start_time": 34.5,
+      "end_time": 34.9,
+      "speaker": "A",
+      "index": 79,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (44.51%)",
+          "priority": "high",
+          "confidence": 0.44509047
+        }
+      ],
+      "context_before": "had a. I had a",
+      "context_after": "on my leg. The wounder",
+      "suggested_correction": null
+    },
+    {
+      "word": "on",
+      "confidence": 0.97057027,
+      "start_time": 34.98,
+      "end_time": 35.06,
+      "speaker": "A",
+      "index": 80,
+      "flags": [],
+      "context_before": "a. I had a ulcer",
+      "context_after": "my leg. The wounder wasn't",
+      "suggested_correction": null
+    },
+    {
+      "word": "my",
+      "confidence": 0.99762064,
+      "start_time": 35.06,
+      "end_time": 35.14,
+      "speaker": "A",
+      "index": 81,
+      "flags": [],
+      "context_before": "I had a ulcer on",
+      "context_after": "leg. The wounder wasn't going",
+      "suggested_correction": null
+    },
+    {
+      "word": "leg.",
+      "confidence": 0.79814386,
+      "start_time": 35.22,
+      "end_time": 35.38,
+      "speaker": "A",
+      "index": 82,
+      "flags": [],
+      "context_before": "had a ulcer on my",
+      "context_after": "The wounder wasn't going away.",
+      "suggested_correction": null
+    },
+    {
+      "word": "The",
+      "confidence": 0.91102314,
+      "start_time": 35.54,
+      "end_time": 35.62,
+      "speaker": "A",
+      "index": 83,
+      "flags": [],
+      "context_before": "a ulcer on my leg.",
+      "context_after": "wounder wasn't going away. So",
+      "suggested_correction": null
+    },
+    {
+      "word": "wounder",
+      "confidence": 0.28208482,
+      "start_time": 35.62,
+      "end_time": 36.02,
+      "speaker": "A",
+      "index": 84,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (28.21%)",
+          "priority": "high",
+          "confidence": 0.28208482
+        }
+      ],
+      "context_before": "ulcer on my leg. The",
+      "context_after": "wasn't going away. So the",
+      "suggested_correction": null
+    },
+    {
+      "word": "wasn't",
+      "confidence": 0.9537798,
+      "start_time": 36.1,
+      "end_time": 36.42,
+      "speaker": "A",
+      "index": 85,
+      "flags": [],
+      "context_before": "on my leg. The wounder",
+      "context_after": "going away. So the claim,",
+      "suggested_correction": null
+    },
+    {
+      "word": "going",
+      "confidence": 0.9890354,
+      "start_time": 36.42,
+      "end_time": 36.58,
+      "speaker": "A",
+      "index": 86,
+      "flags": [],
+      "context_before": "my leg. The wounder wasn't",
+      "context_after": "away. So the claim, that",
+      "suggested_correction": null
+    },
+    {
+      "word": "away.",
+      "confidence": 0.6778925,
+      "start_time": 36.74,
+      "end_time": 36.82,
+      "speaker": "A",
+      "index": 87,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (67.79%)",
+          "priority": "medium",
+          "confidence": 0.6778925
+        }
+      ],
+      "context_before": "leg. The wounder wasn't going",
+      "context_after": "So the claim, that they",
+      "suggested_correction": null
+    },
+    {
+      "word": "So",
+      "confidence": 0.8283574,
+      "start_time": 37.14,
+      "end_time": 37.22,
+      "speaker": "A",
+      "index": 88,
+      "flags": [
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "The wounder wasn't going away.",
+      "context_after": "the claim, that they wouldn't",
+      "suggested_correction": null
+    },
+    {
+      "word": "the",
+      "confidence": 0.47807944,
+      "start_time": 37.46,
+      "end_time": 37.54,
+      "speaker": "A",
+      "index": 89,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (47.81%)",
+          "priority": "high",
+          "confidence": 0.47807944
+        }
+      ],
+      "context_before": "wounder wasn't going away. So",
+      "context_after": "claim, that they wouldn't fix",
+      "suggested_correction": null
+    },
+    {
+      "word": "claim,",
+      "confidence": 0.21105807,
+      "start_time": 37.62,
+      "end_time": 37.86,
+      "speaker": "A",
+      "index": 90,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (21.11%)",
+          "priority": "high",
+          "confidence": 0.21105807
+        }
+      ],
+      "context_before": "wasn't going away. So the",
+      "context_after": "that they wouldn't fix it",
+      "suggested_correction": null
+    },
+    {
+      "word": "that",
+      "confidence": 0.36949077,
+      "start_time": 39.86,
+      "end_time": 39.94,
+      "speaker": "A",
+      "index": 91,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (36.95%)",
+          "priority": "high",
+          "confidence": 0.36949077
+        }
+      ],
+      "context_before": "going away. So the claim,",
+      "context_after": "they wouldn't fix it if",
+      "suggested_correction": null
+    },
+    {
+      "word": "they",
+      "confidence": 0.97861767,
+      "start_time": 40.18,
+      "end_time": 40.26,
+      "speaker": "A",
+      "index": 92,
+      "flags": [],
+      "context_before": "away. So the claim, that",
+      "context_after": "wouldn't fix it if I",
+      "suggested_correction": null
+    },
+    {
+      "word": "wouldn't",
+      "confidence": 0.9697273,
+      "start_time": 40.34,
+      "end_time": 40.74,
+      "speaker": "A",
+      "index": 93,
+      "flags": [],
+      "context_before": "So the claim, that they",
+      "context_after": "fix it if I would",
+      "suggested_correction": null
+    },
+    {
+      "word": "fix",
+      "confidence": 0.990288,
+      "start_time": 40.74,
+      "end_time": 41.06,
+      "speaker": "A",
+      "index": 94,
+      "flags": [],
+      "context_before": "the claim, that they wouldn't",
+      "context_after": "it if I would have",
+      "suggested_correction": null
+    },
+    {
+      "word": "it",
+      "confidence": 0.9977197,
+      "start_time": 41.14,
+      "end_time": 41.22,
+      "speaker": "A",
+      "index": 95,
+      "flags": [],
+      "context_before": "claim, that they wouldn't fix",
+      "context_after": "if I would have gotten",
+      "suggested_correction": null
+    },
+    {
+      "word": "if",
+      "confidence": 0.6463509,
+      "start_time": 42.18,
+      "end_time": 42.26,
+      "speaker": "A",
+      "index": 96,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (64.64%)",
+          "priority": "medium",
+          "confidence": 0.6463509
+        }
+      ],
+      "context_before": "that they wouldn't fix it",
+      "context_after": "I would have gotten a",
+      "suggested_correction": null
+    },
+    {
+      "word": "I",
+      "confidence": 0.9968268,
+      "start_time": 42.42,
+      "end_time": 42.5,
+      "speaker": "A",
+      "index": 97,
+      "flags": [],
+      "context_before": "they wouldn't fix it if",
+      "context_after": "would have gotten a procedure",
+      "suggested_correction": null
+    },
+    {
+      "word": "would",
+      "confidence": 0.4660597,
+      "start_time": 42.5,
+      "end_time": 42.58,
+      "speaker": "A",
+      "index": 98,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (46.61%)",
+          "priority": "high",
+          "confidence": 0.4660597
+        }
+      ],
+      "context_before": "wouldn't fix it if I",
+      "context_after": "have gotten a procedure where",
+      "suggested_correction": null
+    },
+    {
+      "word": "have",
+      "confidence": 0.44025674,
+      "start_time": 42.74,
+      "end_time": 42.82,
+      "speaker": "A",
+      "index": 99,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (44.03%)",
+          "priority": "high",
+          "confidence": 0.44025674
+        }
+      ],
+      "context_before": "fix it if I would",
+      "context_after": "gotten a procedure where they",
+      "suggested_correction": null
+    },
+    {
+      "word": "gotten",
+      "confidence": 0.7015306,
+      "start_time": 42.9,
+      "end_time": 43.06,
+      "speaker": "A",
+      "index": 100,
+      "flags": [],
+      "context_before": "it if I would have",
+      "context_after": "a procedure where they put",
+      "suggested_correction": null
+    },
+    {
+      "word": "a",
+      "confidence": 0.9953499,
+      "start_time": 43.06,
+      "end_time": 43.14,
+      "speaker": "A",
+      "index": 101,
+      "flags": [],
+      "context_before": "if I would have gotten",
+      "context_after": "procedure where they put rods",
+      "suggested_correction": null
+    },
+    {
+      "word": "procedure",
+      "confidence": 0.992093,
+      "start_time": 43.22,
+      "end_time": 43.78,
+      "speaker": "A",
+      "index": 102,
+      "flags": [],
+      "context_before": "I would have gotten a",
+      "context_after": "where they put rods down",
+      "suggested_correction": null
+    },
+    {
+      "word": "where",
+      "confidence": 0.9651738,
+      "start_time": 43.94,
+      "end_time": 44.02,
+      "speaker": "A",
+      "index": 103,
+      "flags": [],
+      "context_before": "would have gotten a procedure",
+      "context_after": "they put rods down my",
+      "suggested_correction": null
+    },
+    {
+      "word": "they",
+      "confidence": 0.9976445,
+      "start_time": 44.18,
+      "end_time": 44.26,
+      "speaker": "A",
+      "index": 104,
+      "flags": [],
+      "context_before": "have gotten a procedure where",
+      "context_after": "put rods down my leg",
+      "suggested_correction": null
+    },
+    {
+      "word": "put",
+      "confidence": 0.9807715,
+      "start_time": 44.42,
+      "end_time": 44.5,
+      "speaker": "A",
+      "index": 105,
+      "flags": [],
+      "context_before": "gotten a procedure where they",
+      "context_after": "rods down my leg and",
+      "suggested_correction": null
+    },
+    {
+      "word": "rods",
+      "confidence": 0.34964755,
+      "start_time": 44.58,
+      "end_time": 45.06,
+      "speaker": "A",
+      "index": 106,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (34.96%)",
+          "priority": "high",
+          "confidence": 0.34964755
+        }
+      ],
+      "context_before": "a procedure where they put",
+      "context_after": "down my leg and open",
+      "suggested_correction": null
+    },
+    {
+      "word": "down",
+      "confidence": 0.99293846,
+      "start_time": 45.14,
+      "end_time": 45.22,
+      "speaker": "A",
+      "index": 107,
+      "flags": [],
+      "context_before": "procedure where they put rods",
+      "context_after": "my leg and open the",
+      "suggested_correction": null
+    },
+    {
+      "word": "my",
+      "confidence": 0.99585223,
+      "start_time": 45.3,
+      "end_time": 45.38,
+      "speaker": "A",
+      "index": 108,
+      "flags": [],
+      "context_before": "where they put rods down",
+      "context_after": "leg and open the veins",
+      "suggested_correction": null
+    },
+    {
+      "word": "leg",
+      "confidence": 0.5318894,
+      "start_time": 45.46,
+      "end_time": 45.7,
+      "speaker": "A",
+      "index": 109,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (53.19%)",
+          "priority": "medium",
+          "confidence": 0.5318894
+        }
+      ],
+      "context_before": "they put rods down my",
+      "context_after": "and open the veins up.",
+      "suggested_correction": null
+    },
+    {
+      "word": "and",
+      "confidence": 0.98974204,
+      "start_time": 46.1,
+      "end_time": 46.18,
+      "speaker": "A",
+      "index": 110,
+      "flags": [],
+      "context_before": "put rods down my leg",
+      "context_after": "open the veins up. But",
+      "suggested_correction": null
+    },
+    {
+      "word": "open",
+      "confidence": 0.6713859,
+      "start_time": 46.26,
+      "end_time": 46.34,
+      "speaker": "A",
+      "index": 111,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (67.14%)",
+          "priority": "medium",
+          "confidence": 0.6713859
+        }
+      ],
+      "context_before": "rods down my leg and",
+      "context_after": "the veins up. But ever",
+      "suggested_correction": null
+    },
+    {
+      "word": "the",
+      "confidence": 0.98130256,
+      "start_time": 46.58,
+      "end_time": 46.66,
+      "speaker": "A",
+      "index": 112,
+      "flags": [],
+      "context_before": "down my leg and open",
+      "context_after": "veins up. But ever since",
+      "suggested_correction": null
+    },
+    {
+      "word": "veins",
+      "confidence": 0.9880973,
+      "start_time": 46.74,
+      "end_time": 47.06,
+      "speaker": "A",
+      "index": 113,
+      "flags": [],
+      "context_before": "my leg and open the",
+      "context_after": "up. But ever since that,",
+      "suggested_correction": null
+    },
+    {
+      "word": "up.",
+      "confidence": 0.91512233,
+      "start_time": 47.22,
+      "end_time": 47.3,
+      "speaker": "A",
+      "index": 114,
+      "flags": [],
+      "context_before": "leg and open the veins",
+      "context_after": "But ever since that, I'm",
+      "suggested_correction": null
+    },
+    {
+      "word": "But",
+      "confidence": 0.9970114,
+      "start_time": 48.02,
+      "end_time": 48.1,
+      "speaker": "A",
+      "index": 115,
+      "flags": [],
+      "context_before": "and open the veins up.",
+      "context_after": "ever since that, I'm not",
+      "suggested_correction": null
+    },
+    {
+      "word": "ever",
+      "confidence": 0.93730897,
+      "start_time": 48.34,
+      "end_time": 48.42,
+      "speaker": "A",
+      "index": 116,
+      "flags": [],
+      "context_before": "open the veins up. But",
+      "context_after": "since that, I'm not able",
+      "suggested_correction": null
+    },
+    {
+      "word": "since",
+      "confidence": 0.9935284,
+      "start_time": 48.66,
+      "end_time": 48.74,
+      "speaker": "A",
+      "index": 117,
+      "flags": [],
+      "context_before": "the veins up. But ever",
+      "context_after": "that, I'm not able to",
+      "suggested_correction": null
+    },
+    {
+      "word": "that,",
+      "confidence": 0.5917192,
+      "start_time": 48.98,
+      "end_time": 49.06,
+      "speaker": "A",
+      "index": 118,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (59.17%)",
+          "priority": "medium",
+          "confidence": 0.5917192
+        }
+      ],
+      "context_before": "veins up. But ever since",
+      "context_after": "I'm not able to walk",
+      "suggested_correction": null
+    },
+    {
+      "word": "I'm",
+      "confidence": 0.9161237,
+      "start_time": 49.46,
+      "end_time": 49.7,
+      "speaker": "A",
+      "index": 119,
+      "flags": [
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "up. But ever since that,",
+      "context_after": "not able to walk or",
+      "suggested_correction": null
+    },
+    {
+      "word": "not",
+      "confidence": 0.97503227,
+      "start_time": 49.78,
+      "end_time": 49.86,
+      "speaker": "A",
+      "index": 120,
+      "flags": [],
+      "context_before": "But ever since that, I'm",
+      "context_after": "able to walk or nothing.",
+      "suggested_correction": null
+    },
+    {
+      "word": "able",
+      "confidence": 0.99703836,
+      "start_time": 49.94,
+      "end_time": 50.18,
+      "speaker": "A",
+      "index": 121,
+      "flags": [],
+      "context_before": "ever since that, I'm not",
+      "context_after": "to walk or nothing. Right",
+      "suggested_correction": null
+    },
+    {
+      "word": "to",
+      "confidence": 0.99881905,
+      "start_time": 50.34,
+      "end_time": 50.42,
+      "speaker": "A",
+      "index": 122,
+      "flags": [],
+      "context_before": "since that, I'm not able",
+      "context_after": "walk or nothing. Right now",
+      "suggested_correction": null
+    },
+    {
+      "word": "walk",
+      "confidence": 0.99602205,
+      "start_time": 50.66,
+      "end_time": 50.74,
+      "speaker": "A",
+      "index": 123,
+      "flags": [],
+      "context_before": "that, I'm not able to",
+      "context_after": "or nothing. Right now I'm",
+      "suggested_correction": null
+    },
+    {
+      "word": "or",
+      "confidence": 0.9964909,
+      "start_time": 51.06,
+      "end_time": 51.14,
+      "speaker": "A",
+      "index": 124,
+      "flags": [],
+      "context_before": "I'm not able to walk",
+      "context_after": "nothing. Right now I'm just",
+      "suggested_correction": null
+    },
+    {
+      "word": "nothing.",
+      "confidence": 0.9714453,
+      "start_time": 51.22,
+      "end_time": 51.3,
+      "speaker": "A",
+      "index": 125,
+      "flags": [],
+      "context_before": "not able to walk or",
+      "context_after": "Right now I'm just laying",
+      "suggested_correction": null
+    },
+    {
+      "word": "Right",
+      "confidence": 0.69060206,
+      "start_time": 52.06,
+      "end_time": 52.14,
+      "speaker": "A",
+      "index": 126,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (69.06%)",
+          "priority": "medium",
+          "confidence": 0.69060206
+        },
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "able to walk or nothing.",
+      "context_after": "now I'm just laying in",
+      "suggested_correction": null
+    },
+    {
+      "word": "now",
+      "confidence": 0.98801893,
+      "start_time": 52.38,
+      "end_time": 52.46,
+      "speaker": "A",
+      "index": 127,
+      "flags": [],
+      "context_before": "to walk or nothing. Right",
+      "context_after": "I'm just laying in bed.",
+      "suggested_correction": null
+    },
+    {
+      "word": "I'm",
+      "confidence": 0.56823796,
+      "start_time": 52.54,
+      "end_time": 52.78,
+      "speaker": "A",
+      "index": 128,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (56.82%)",
+          "priority": "medium",
+          "confidence": 0.56823796
+        },
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "walk or nothing. Right now",
+      "context_after": "just laying in bed. Okay.",
+      "suggested_correction": null
+    },
+    {
+      "word": "just",
+      "confidence": 0.92254597,
+      "start_time": 52.78,
+      "end_time": 52.86,
+      "speaker": "A",
+      "index": 129,
+      "flags": [],
+      "context_before": "or nothing. Right now I'm",
+      "context_after": "laying in bed. Okay. And",
+      "suggested_correction": null
+    },
+    {
+      "word": "laying",
+      "confidence": 0.93493146,
+      "start_time": 53.02,
+      "end_time": 53.26,
+      "speaker": "A",
+      "index": 130,
+      "flags": [],
+      "context_before": "nothing. Right now I'm just",
+      "context_after": "in bed. Okay. And are",
+      "suggested_correction": null
+    },
+    {
+      "word": "in",
+      "confidence": 0.99382246,
+      "start_time": 53.34,
+      "end_time": 53.42,
+      "speaker": "A",
+      "index": 131,
+      "flags": [],
+      "context_before": "Right now I'm just laying",
+      "context_after": "bed. Okay. And are you",
+      "suggested_correction": null
+    },
+    {
+      "word": "bed.",
+      "confidence": 0.69943154,
+      "start_time": 53.5,
+      "end_time": 53.74,
+      "speaker": "A",
+      "index": 132,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (69.94%)",
+          "priority": "medium",
+          "confidence": 0.69943154
+        }
+      ],
+      "context_before": "now I'm just laying in",
+      "context_after": "Okay. And are you still",
+      "suggested_correction": null
+    },
+    {
+      "word": "Okay.",
+      "confidence": 0.37215504,
+      "start_time": 55.9,
+      "end_time": 56.3,
+      "speaker": "A",
+      "index": 133,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (37.22%)",
+          "priority": "high",
+          "confidence": 0.37215504
+        }
+      ],
+      "context_before": "I'm just laying in bed.",
+      "context_after": "And are you still in",
+      "suggested_correction": null
+    },
+    {
+      "word": "And",
+      "confidence": 0.71915054,
+      "start_time": 56.62,
+      "end_time": 56.7,
+      "speaker": "B",
+      "index": 134,
+      "flags": [],
+      "context_before": "just laying in bed. Okay.",
+      "context_after": "are you still in the",
+      "suggested_correction": null
+    },
+    {
+      "word": "are",
+      "confidence": 0.97525793,
+      "start_time": 57.02,
+      "end_time": 57.1,
+      "speaker": "B",
+      "index": 135,
+      "flags": [],
+      "context_before": "laying in bed. Okay. And",
+      "context_after": "you still in the hospital",
+      "suggested_correction": null
+    },
+    {
+      "word": "you",
+      "confidence": 0.99460757,
+      "start_time": 57.18,
+      "end_time": 57.26,
+      "speaker": "B",
+      "index": 136,
+      "flags": [],
+      "context_before": "in bed. Okay. And are",
+      "context_after": "still in the hospital right",
+      "suggested_correction": null
+    },
+    {
+      "word": "still",
+      "confidence": 0.9920964,
+      "start_time": 57.34,
+      "end_time": 57.42,
+      "speaker": "B",
+      "index": 137,
+      "flags": [],
+      "context_before": "bed. Okay. And are you",
+      "context_after": "in the hospital right now?",
+      "suggested_correction": null
+    },
+    {
+      "word": "in",
+      "confidence": 0.9868355,
+      "start_time": 57.5,
+      "end_time": 57.58,
+      "speaker": "B",
+      "index": 138,
+      "flags": [],
+      "context_before": "Okay. And are you still",
+      "context_after": "the hospital right now? No,",
+      "suggested_correction": null
+    },
+    {
+      "word": "the",
+      "confidence": 0.9869783,
+      "start_time": 57.66,
+      "end_time": 57.74,
+      "speaker": "B",
+      "index": 139,
+      "flags": [],
+      "context_before": "And are you still in",
+      "context_after": "hospital right now? No, I",
+      "suggested_correction": null
+    },
+    {
+      "word": "hospital",
+      "confidence": 0.99047005,
+      "start_time": 57.74,
+      "end_time": 58.22,
+      "speaker": "B",
+      "index": 140,
+      "flags": [],
+      "context_before": "are you still in the",
+      "context_after": "right now? No, I came",
+      "suggested_correction": null
+    },
+    {
+      "word": "right",
+      "confidence": 0.97347903,
+      "start_time": 58.3,
+      "end_time": 58.46,
+      "speaker": "B",
+      "index": 141,
+      "flags": [],
+      "context_before": "you still in the hospital",
+      "context_after": "now? No, I came out",
+      "suggested_correction": null
+    },
+    {
+      "word": "now?",
+      "confidence": 0.98360294,
+      "start_time": 58.54,
+      "end_time": 58.62,
+      "speaker": "B",
+      "index": 142,
+      "flags": [],
+      "context_before": "still in the hospital right",
+      "context_after": "No, I came out on",
+      "suggested_correction": null
+    },
+    {
+      "word": "No,",
+      "confidence": 0.82361025,
+      "start_time": 59.5,
+      "end_time": 59.58,
+      "speaker": "A",
+      "index": 143,
+      "flags": [],
+      "context_before": "in the hospital right now?",
+      "context_after": "I came out on the",
+      "suggested_correction": null
+    },
+    {
+      "word": "I",
+      "confidence": 0.9976179,
+      "start_time": 59.82,
+      "end_time": 59.9,
+      "speaker": "A",
+      "index": 144,
+      "flags": [],
+      "context_before": "the hospital right now? No,",
+      "context_after": "came out on the 23rd",
+      "suggested_correction": null
+    },
+    {
+      "word": "came",
+      "confidence": 0.9916305,
+      "start_time": 59.98,
+      "end_time": 60.06,
+      "speaker": "A",
+      "index": 145,
+      "flags": [],
+      "context_before": "hospital right now? No, I",
+      "context_after": "out on the 23rd of",
+      "suggested_correction": null
+    },
+    {
+      "word": "out",
+      "confidence": 0.92320704,
+      "start_time": 60.3,
+      "end_time": 60.38,
+      "speaker": "A",
+      "index": 146,
+      "flags": [],
+      "context_before": "right now? No, I came",
+      "context_after": "on the 23rd of this",
+      "suggested_correction": null
+    },
+    {
+      "word": "on",
+      "confidence": 0.96863973,
+      "start_time": 60.54,
+      "end_time": 60.62,
+      "speaker": "A",
+      "index": 147,
+      "flags": [],
+      "context_before": "now? No, I came out",
+      "context_after": "the 23rd of this month.",
+      "suggested_correction": null
+    },
+    {
+      "word": "the",
+      "confidence": 0.99338573,
+      "start_time": 60.7,
+      "end_time": 60.78,
+      "speaker": "A",
+      "index": 148,
+      "flags": [],
+      "context_before": "No, I came out on",
+      "context_after": "23rd of this month. So",
+      "suggested_correction": null
+    },
+    {
+      "word": "23rd",
+      "confidence": 0.9808691,
+      "start_time": 61.26,
+      "end_time": 61.82,
+      "speaker": "A",
+      "index": 149,
+      "flags": [],
+      "context_before": "I came out on the",
+      "context_after": "of this month. So unfortunately",
+      "suggested_correction": null
+    },
+    {
+      "word": "of",
+      "confidence": 0.523957,
+      "start_time": 63.66,
+      "end_time": 63.74,
+      "speaker": "A",
+      "index": 150,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (52.40%)",
+          "priority": "medium",
+          "confidence": 0.523957
+        }
+      ],
+      "context_before": "came out on the 23rd",
+      "context_after": "this month. So unfortunately we",
+      "suggested_correction": null
+    },
+    {
+      "word": "this",
+      "confidence": 0.96723014,
+      "start_time": 63.82,
+      "end_time": 63.9,
+      "speaker": "A",
+      "index": 151,
+      "flags": [],
+      "context_before": "out on the 23rd of",
+      "context_after": "month. So unfortunately we are",
+      "suggested_correction": null
+    },
+    {
+      "word": "month.",
+      "confidence": 0.94766736,
+      "start_time": 64.06,
+      "end_time": 64.14,
+      "speaker": "A",
+      "index": 152,
+      "flags": [],
+      "context_before": "on the 23rd of this",
+      "context_after": "So unfortunately we are personal",
+      "suggested_correction": null
+    },
+    {
+      "word": "So",
+      "confidence": 0.6649136,
+      "start_time": 65.42,
+      "end_time": 65.5,
+      "speaker": "B",
+      "index": 153,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (66.49%)",
+          "priority": "medium",
+          "confidence": 0.6649136
+        },
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "the 23rd of this month.",
+      "context_after": "unfortunately we are personal injury,",
+      "suggested_correction": null
+    },
+    {
+      "word": "unfortunately",
+      "confidence": 0.55974764,
+      "start_time": 66.22,
+      "end_time": 67.02,
+      "speaker": "B",
+      "index": 154,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (55.97%)",
+          "priority": "medium",
+          "confidence": 0.55974764
+        }
+      ],
+      "context_before": "23rd of this month. So",
+      "context_after": "we are personal injury, but",
+      "suggested_correction": null
+    },
+    {
+      "word": "we",
+      "confidence": 0.6943603,
+      "start_time": 67.34,
+      "end_time": 67.42,
+      "speaker": "B",
+      "index": 155,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (69.44%)",
+          "priority": "medium",
+          "confidence": 0.6943603
+        }
+      ],
+      "context_before": "of this month. So unfortunately",
+      "context_after": "are personal injury, but we",
+      "suggested_correction": null
+    },
+    {
+      "word": "are",
+      "confidence": 0.99719584,
+      "start_time": 67.58,
+      "end_time": 67.66,
+      "speaker": "B",
+      "index": 156,
+      "flags": [],
+      "context_before": "this month. So unfortunately we",
+      "context_after": "personal injury, but we mostly",
+      "suggested_correction": null
+    },
+    {
+      "word": "personal",
+      "confidence": 0.690145,
+      "start_time": 68.3,
+      "end_time": 68.7,
+      "speaker": "B",
+      "index": 157,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (69.01%)",
+          "priority": "medium",
+          "confidence": 0.690145
+        }
+      ],
+      "context_before": "month. So unfortunately we are",
+      "context_after": "injury, but we mostly do",
+      "suggested_correction": null
+    },
+    {
+      "word": "injury,",
+      "confidence": 0.5566257,
+      "start_time": 68.78,
+      "end_time": 69.18,
+      "speaker": "B",
+      "index": 158,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (55.66%)",
+          "priority": "medium",
+          "confidence": 0.5566257
+        }
+      ],
+      "context_before": "So unfortunately we are personal",
+      "context_after": "but we mostly do things",
+      "suggested_correction": null
+    },
+    {
+      "word": "but",
+      "confidence": 0.99583936,
+      "start_time": 69.34,
+      "end_time": 69.42,
+      "speaker": "B",
+      "index": 159,
+      "flags": [],
+      "context_before": "unfortunately we are personal injury,",
+      "context_after": "we mostly do things that",
+      "suggested_correction": null
+    },
+    {
+      "word": "we",
+      "confidence": 0.99843556,
+      "start_time": 69.5,
+      "end_time": 69.58,
+      "speaker": "B",
+      "index": 160,
+      "flags": [],
+      "context_before": "we are personal injury, but",
+      "context_after": "mostly do things that involve",
+      "suggested_correction": null
+    },
+    {
+      "word": "mostly",
+      "confidence": 0.99683917,
+      "start_time": 69.66,
+      "end_time": 69.98,
+      "speaker": "B",
+      "index": 161,
+      "flags": [],
+      "context_before": "are personal injury, but we",
+      "context_after": "do things that involve like",
+      "suggested_correction": null
+    },
+    {
+      "word": "do",
+      "confidence": 0.9976059,
+      "start_time": 70.06,
+      "end_time": 70.14,
+      "speaker": "B",
+      "index": 162,
+      "flags": [],
+      "context_before": "personal injury, but we mostly",
+      "context_after": "things that involve like motor",
+      "suggested_correction": null
+    },
+    {
+      "word": "things",
+      "confidence": 0.9948489,
+      "start_time": 70.22,
+      "end_time": 70.3,
+      "speaker": "B",
+      "index": 163,
+      "flags": [],
+      "context_before": "injury, but we mostly do",
+      "context_after": "that involve like motor vehicle",
+      "suggested_correction": null
+    },
+    {
+      "word": "that",
+      "confidence": 0.9868786,
+      "start_time": 70.46,
+      "end_time": 70.54,
+      "speaker": "B",
+      "index": 164,
+      "flags": [],
+      "context_before": "but we mostly do things",
+      "context_after": "involve like motor vehicle accidents.",
+      "suggested_correction": null
+    },
+    {
+      "word": "involve",
+      "confidence": 0.92181855,
+      "start_time": 70.7,
+      "end_time": 70.78,
+      "speaker": "B",
+      "index": 165,
+      "flags": [],
+      "context_before": "we mostly do things that",
+      "context_after": "like motor vehicle accidents. So",
+      "suggested_correction": null
+    },
+    {
+      "word": "like",
+      "confidence": 0.55156916,
+      "start_time": 71.18,
+      "end_time": 71.26,
+      "speaker": "B",
+      "index": 166,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (55.16%)",
+          "priority": "medium",
+          "confidence": 0.55156916
+        }
+      ],
+      "context_before": "mostly do things that involve",
+      "context_after": "motor vehicle accidents. So we",
+      "suggested_correction": null
+    },
+    {
+      "word": "motor",
+      "confidence": 0.9420952,
+      "start_time": 71.58,
+      "end_time": 71.98,
+      "speaker": "B",
+      "index": 167,
+      "flags": [],
+      "context_before": "do things that involve like",
+      "context_after": "vehicle accidents. So we don't",
+      "suggested_correction": null
+    },
+    {
+      "word": "vehicle",
+      "confidence": 0.9780963,
+      "start_time": 71.98,
+      "end_time": 72.46,
+      "speaker": "B",
+      "index": 168,
+      "flags": [],
+      "context_before": "things that involve like motor",
+      "context_after": "accidents. So we don't really",
+      "suggested_correction": null
+    },
+    {
+      "word": "accidents.",
+      "confidence": 0.65142524,
+      "start_time": 72.46,
+      "end_time": 73.02,
+      "speaker": "B",
+      "index": 169,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (65.14%)",
+          "priority": "medium",
+          "confidence": 0.65142524
+        }
+      ],
+      "context_before": "that involve like motor vehicle",
+      "context_after": "So we don't really do",
+      "suggested_correction": null
+    },
+    {
+      "word": "So",
+      "confidence": 0.6197758,
+      "start_time": 73.18,
+      "end_time": 73.26,
+      "speaker": "B",
+      "index": 170,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (61.98%)",
+          "priority": "medium",
+          "confidence": 0.6197758
+        },
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "involve like motor vehicle accidents.",
+      "context_after": "we don't really do medical",
+      "suggested_correction": null
+    },
+    {
+      "word": "we",
+      "confidence": 0.76170075,
+      "start_time": 74.3,
+      "end_time": 74.38,
+      "speaker": "B",
+      "index": 171,
+      "flags": [],
+      "context_before": "like motor vehicle accidents. So",
+      "context_after": "don't really do medical malpractice",
+      "suggested_correction": null
+    },
+    {
+      "word": "don't",
+      "confidence": 0.72823334,
+      "start_time": 74.46,
+      "end_time": 74.7,
+      "speaker": "B",
+      "index": 172,
+      "flags": [],
+      "context_before": "motor vehicle accidents. So we",
+      "context_after": "really do medical malpractice cases.",
+      "suggested_correction": null
+    },
+    {
+      "word": "really",
+      "confidence": 0.9924866,
+      "start_time": 74.7,
+      "end_time": 74.86,
+      "speaker": "B",
+      "index": 173,
+      "flags": [],
+      "context_before": "vehicle accidents. So we don't",
+      "context_after": "do medical malpractice cases. Okay.",
+      "suggested_correction": null
+    },
+    {
+      "word": "do",
+      "confidence": 0.9976833,
+      "start_time": 74.94,
+      "end_time": 75.02,
+      "speaker": "B",
+      "index": 174,
+      "flags": [],
+      "context_before": "accidents. So we don't really",
+      "context_after": "medical malpractice cases. Okay. But",
+      "suggested_correction": null
+    },
+    {
+      "word": "medical",
+      "confidence": 0.98443526,
+      "start_time": 75.66,
+      "end_time": 76.06,
+      "speaker": "B",
+      "index": 175,
+      "flags": [],
+      "context_before": "So we don't really do",
+      "context_after": "malpractice cases. Okay. But do",
+      "suggested_correction": null
+    },
+    {
+      "word": "malpractice",
+      "confidence": 0.9772697,
+      "start_time": 76.14,
+      "end_time": 76.94,
+      "speaker": "B",
+      "index": 176,
+      "flags": [],
+      "context_before": "we don't really do medical",
+      "context_after": "cases. Okay. But do you",
+      "suggested_correction": null
+    },
+    {
+      "word": "cases.",
+      "confidence": 0.9010302,
+      "start_time": 77.02,
+      "end_time": 77.26,
+      "speaker": "B",
+      "index": 177,
+      "flags": [],
+      "context_before": "don't really do medical malpractice",
+      "context_after": "Okay. But do you happen",
+      "suggested_correction": null
+    },
+    {
+      "word": "Okay.",
+      "confidence": 0.6710201,
+      "start_time": 77.42,
+      "end_time": 77.9,
+      "speaker": "A",
+      "index": 178,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (67.10%)",
+          "priority": "medium",
+          "confidence": 0.6710201
+        }
+      ],
+      "context_before": "really do medical malpractice cases.",
+      "context_after": "But do you happen to",
+      "suggested_correction": null
+    },
+    {
+      "word": "But",
+      "confidence": 0.40412825,
+      "start_time": 78.34,
+      "end_time": 78.42,
+      "speaker": "B",
+      "index": 179,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (40.41%)",
+          "priority": "high",
+          "confidence": 0.40412825
+        }
+      ],
+      "context_before": "do medical malpractice cases. Okay.",
+      "context_after": "do you happen to have",
+      "suggested_correction": null
+    },
+    {
+      "word": "do",
+      "confidence": 0.9250738,
+      "start_time": 78.58,
+      "end_time": 78.66,
+      "speaker": "B",
+      "index": 180,
+      "flags": [],
+      "context_before": "medical malpractice cases. Okay. But",
+      "context_after": "you happen to have the",
+      "suggested_correction": null
+    },
+    {
+      "word": "you",
+      "confidence": 0.99549377,
+      "start_time": 78.74,
+      "end_time": 78.82,
+      "speaker": "B",
+      "index": 181,
+      "flags": [],
+      "context_before": "malpractice cases. Okay. But do",
+      "context_after": "happen to have the phone",
+      "suggested_correction": null
+    },
+    {
+      "word": "happen",
+      "confidence": 0.640734,
+      "start_time": 78.82,
+      "end_time": 78.9,
+      "speaker": "B",
+      "index": 182,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (64.07%)",
+          "priority": "medium",
+          "confidence": 0.640734
+        }
+      ],
+      "context_before": "cases. Okay. But do you",
+      "context_after": "to have the phone number",
+      "suggested_correction": null
+    },
+    {
+      "word": "to",
+      "confidence": 0.992436,
+      "start_time": 78.98,
+      "end_time": 79.14,
+      "speaker": "B",
+      "index": 183,
+      "flags": [],
+      "context_before": "Okay. But do you happen",
+      "context_after": "have the phone number for",
+      "suggested_correction": null
+    },
+    {
+      "word": "have",
+      "confidence": 0.9967366,
+      "start_time": 79.14,
+      "end_time": 79.22,
+      "speaker": "B",
+      "index": 184,
+      "flags": [],
+      "context_before": "But do you happen to",
+      "context_after": "the phone number for the",
+      "suggested_correction": null
+    },
+    {
+      "word": "the",
+      "confidence": 0.9783296,
+      "start_time": 79.3,
+      "end_time": 79.38,
+      "speaker": "B",
+      "index": 185,
+      "flags": [],
+      "context_before": "do you happen to have",
+      "context_after": "phone number for the San",
+      "suggested_correction": null
+    },
+    {
+      "word": "phone",
+      "confidence": 0.9907686,
+      "start_time": 79.38,
+      "end_time": 79.62,
+      "speaker": "B",
+      "index": 186,
+      "flags": [],
+      "context_before": "you happen to have the",
+      "context_after": "number for the San Antonio",
+      "suggested_correction": null
+    },
+    {
+      "word": "number",
+      "confidence": 0.99382436,
+      "start_time": 79.7,
+      "end_time": 79.78,
+      "speaker": "B",
+      "index": 187,
+      "flags": [],
+      "context_before": "happen to have the phone",
+      "context_after": "for the San Antonio Bar",
+      "suggested_correction": null
+    },
+    {
+      "word": "for",
+      "confidence": 0.98728263,
+      "start_time": 79.86,
+      "end_time": 79.94,
+      "speaker": "B",
+      "index": 188,
+      "flags": [],
+      "context_before": "to have the phone number",
+      "context_after": "the San Antonio Bar Association?",
+      "suggested_correction": null
+    },
+    {
+      "word": "the",
+      "confidence": 0.98909926,
+      "start_time": 79.94,
+      "end_time": 80.1,
+      "speaker": "B",
+      "index": 189,
+      "flags": [],
+      "context_before": "have the phone number for",
+      "context_after": "San Antonio Bar Association? No,",
+      "suggested_correction": null
+    },
+    {
+      "word": "San",
+      "confidence": 0.9629624,
+      "start_time": 80.1,
+      "end_time": 80.26,
+      "speaker": "B",
+      "index": 190,
+      "flags": [
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "the phone number for the",
+      "context_after": "Antonio Bar Association? No, ma'am,",
+      "suggested_correction": null
+    },
+    {
+      "word": "Antonio",
+      "confidence": 0.99148,
+      "start_time": 80.26,
+      "end_time": 80.74,
+      "speaker": "B",
+      "index": 191,
+      "flags": [
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "phone number for the San",
+      "context_after": "Bar Association? No, ma'am, but",
+      "suggested_correction": null
+    },
+    {
+      "word": "Bar",
+      "confidence": 0.8923096,
+      "start_time": 80.74,
+      "end_time": 80.98,
+      "speaker": "B",
+      "index": 192,
+      "flags": [
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "number for the San Antonio",
+      "context_after": "Association? No, ma'am, but I",
+      "suggested_correction": null
+    },
+    {
+      "word": "Association?",
+      "confidence": 0.93740356,
+      "start_time": 81.06,
+      "end_time": 81.78,
+      "speaker": "B",
+      "index": 193,
+      "flags": [
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "for the San Antonio Bar",
+      "context_after": "No, ma'am, but I can",
+      "suggested_correction": null
+    },
+    {
+      "word": "No,",
+      "confidence": 0.84415686,
+      "start_time": 82.98,
+      "end_time": 83.06,
+      "speaker": "A",
+      "index": 194,
+      "flags": [],
+      "context_before": "the San Antonio Bar Association?",
+      "context_after": "ma'am, but I can get",
+      "suggested_correction": null
+    },
+    {
+      "word": "ma'am,",
+      "confidence": 0.50279295,
+      "start_time": 83.3,
+      "end_time": 83.7,
+      "speaker": "A",
+      "index": 195,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.28%)",
+          "priority": "medium",
+          "confidence": 0.50279295
+        }
+      ],
+      "context_before": "San Antonio Bar Association? No,",
+      "context_after": "but I can get my",
+      "suggested_correction": null
+    },
+    {
+      "word": "but",
+      "confidence": 0.98573107,
+      "start_time": 83.78,
+      "end_time": 83.86,
+      "speaker": "A",
+      "index": 196,
+      "flags": [],
+      "context_before": "Antonio Bar Association? No, ma'am,",
+      "context_after": "I can get my daughter",
+      "suggested_correction": null
+    },
+    {
+      "word": "I",
+      "confidence": 0.99146855,
+      "start_time": 83.94,
+      "end_time": 84.02,
+      "speaker": "A",
+      "index": 197,
+      "flags": [],
+      "context_before": "Bar Association? No, ma'am, but",
+      "context_after": "can get my daughter to",
+      "suggested_correction": null
+    },
+    {
+      "word": "can",
+      "confidence": 0.7746485,
+      "start_time": 84.1,
+      "end_time": 84.18,
+      "speaker": "A",
+      "index": 198,
+      "flags": [],
+      "context_before": "Association? No, ma'am, but I",
+      "context_after": "get my daughter to call",
+      "suggested_correction": null
+    },
+    {
+      "word": "get",
+      "confidence": 0.5522893,
+      "start_time": 84.18,
+      "end_time": 84.26,
+      "speaker": "A",
+      "index": 199,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (55.23%)",
+          "priority": "medium",
+          "confidence": 0.5522893
+        }
+      ],
+      "context_before": "No, ma'am, but I can",
+      "context_after": "my daughter to call it.",
+      "suggested_correction": null
+    },
+    {
+      "word": "my",
+      "confidence": 0.9958001,
+      "start_time": 84.5,
+      "end_time": 84.58,
+      "speaker": "A",
+      "index": 200,
+      "flags": [],
+      "context_before": "ma'am, but I can get",
+      "context_after": "daughter to call it. Yeah,",
+      "suggested_correction": null
+    },
+    {
+      "word": "daughter",
+      "confidence": 0.997766,
+      "start_time": 84.58,
+      "end_time": 84.66,
+      "speaker": "A",
+      "index": 201,
+      "flags": [],
+      "context_before": "but I can get my",
+      "context_after": "to call it. Yeah, I",
+      "suggested_correction": null
+    },
+    {
+      "word": "to",
+      "confidence": 0.7748413,
+      "start_time": 84.82,
+      "end_time": 84.9,
+      "speaker": "A",
+      "index": 202,
+      "flags": [],
+      "context_before": "I can get my daughter",
+      "context_after": "call it. Yeah, I can",
+      "suggested_correction": null
+    },
+    {
+      "word": "call",
+      "confidence": 0.9768664,
+      "start_time": 84.98,
+      "end_time": 85.06,
+      "speaker": "A",
+      "index": 203,
+      "flags": [],
+      "context_before": "can get my daughter to",
+      "context_after": "it. Yeah, I can go",
+      "suggested_correction": null
+    },
+    {
+      "word": "it.",
+      "confidence": 0.78648627,
+      "start_time": 85.22,
+      "end_time": 85.3,
+      "speaker": "A",
+      "index": 204,
+      "flags": [],
+      "context_before": "get my daughter to call",
+      "context_after": "Yeah, I can go ahead",
+      "suggested_correction": null
+    },
+    {
+      "word": "Yeah,",
+      "confidence": 0.7933029,
+      "start_time": 85.46,
+      "end_time": 85.54,
+      "speaker": "B",
+      "index": 205,
+      "flags": [
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "my daughter to call it.",
+      "context_after": "I can go ahead and",
+      "suggested_correction": null
+    },
+    {
+      "word": "I",
+      "confidence": 0.95761013,
+      "start_time": 85.78,
+      "end_time": 85.86,
+      "speaker": "B",
+      "index": 206,
+      "flags": [],
+      "context_before": "daughter to call it. Yeah,",
+      "context_after": "can go ahead and give",
+      "suggested_correction": null
+    },
+    {
+      "word": "can",
+      "confidence": 0.96857285,
+      "start_time": 85.86,
+      "end_time": 85.94,
+      "speaker": "B",
+      "index": 207,
+      "flags": [],
+      "context_before": "to call it. Yeah, I",
+      "context_after": "go ahead and give you",
+      "suggested_correction": null
+    },
+    {
+      "word": "go",
+      "confidence": 0.60919464,
+      "start_time": 85.94,
+      "end_time": 86.02,
+      "speaker": "B",
+      "index": 208,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (60.92%)",
+          "priority": "medium",
+          "confidence": 0.60919464
+        }
+      ],
+      "context_before": "call it. Yeah, I can",
+      "context_after": "ahead and give you that",
+      "suggested_correction": null
+    },
+    {
+      "word": "ahead",
+      "confidence": 0.97292376,
+      "start_time": 86.02,
+      "end_time": 86.26,
+      "speaker": "B",
+      "index": 209,
+      "flags": [],
+      "context_before": "it. Yeah, I can go",
+      "context_after": "and give you that phone",
+      "suggested_correction": null
+    },
+    {
+      "word": "and",
+      "confidence": 0.98919314,
+      "start_time": 86.26,
+      "end_time": 86.34,
+      "speaker": "B",
+      "index": 210,
+      "flags": [],
+      "context_before": "Yeah, I can go ahead",
+      "context_after": "give you that phone number.",
+      "suggested_correction": null
+    },
+    {
+      "word": "give",
+      "confidence": 0.9970733,
+      "start_time": 86.34,
+      "end_time": 86.42,
+      "speaker": "B",
+      "index": 211,
+      "flags": [],
+      "context_before": "I can go ahead and",
+      "context_after": "you that phone number. Let",
+      "suggested_correction": null
+    },
+    {
+      "word": "you",
+      "confidence": 0.9974252,
+      "start_time": 86.5,
+      "end_time": 86.58,
+      "speaker": "B",
+      "index": 212,
+      "flags": [],
+      "context_before": "can go ahead and give",
+      "context_after": "that phone number. Let me",
+      "suggested_correction": null
+    },
+    {
+      "word": "that",
+      "confidence": 0.98667175,
+      "start_time": 86.66,
+      "end_time": 86.74,
+      "speaker": "B",
+      "index": 213,
+      "flags": [],
+      "context_before": "go ahead and give you",
+      "context_after": "phone number. Let me see.",
+      "suggested_correction": null
+    },
+    {
+      "word": "phone",
+      "confidence": 0.98901623,
+      "start_time": 86.74,
+      "end_time": 86.98,
+      "speaker": "B",
+      "index": 214,
+      "flags": [],
+      "context_before": "ahead and give you that",
+      "context_after": "number. Let me see. Let",
+      "suggested_correction": null
+    },
+    {
+      "word": "number.",
+      "confidence": 0.9906183,
+      "start_time": 87.06,
+      "end_time": 87.14,
+      "speaker": "B",
+      "index": 215,
+      "flags": [],
+      "context_before": "and give you that phone",
+      "context_after": "Let me see. Let me",
+      "suggested_correction": null
+    },
+    {
+      "word": "Let",
+      "confidence": 0.87960464,
+      "start_time": 88.26,
+      "end_time": 88.5,
+      "speaker": "A",
+      "index": 216,
+      "flags": [
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "give you that phone number.",
+      "context_after": "me see. Let me get",
+      "suggested_correction": null
+    },
+    {
+      "word": "me",
+      "confidence": 0.9940849,
+      "start_time": 88.58,
+      "end_time": 88.66,
+      "speaker": "A",
+      "index": 217,
+      "flags": [],
+      "context_before": "you that phone number. Let",
+      "context_after": "see. Let me get a",
+      "suggested_correction": null
+    },
+    {
+      "word": "see.",
+      "confidence": 0.7327347,
+      "start_time": 88.82,
+      "end_time": 88.9,
+      "speaker": "A",
+      "index": 218,
+      "flags": [],
+      "context_before": "that phone number. Let me",
+      "context_after": "Let me get a phone",
+      "suggested_correction": null
+    },
+    {
+      "word": "Let",
+      "confidence": 0.79914814,
+      "start_time": 89.86,
+      "end_time": 90.02,
+      "speaker": "A",
+      "index": 219,
+      "flags": [
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "phone number. Let me see.",
+      "context_after": "me get a phone number.",
+      "suggested_correction": null
+    },
+    {
+      "word": "me",
+      "confidence": 0.99695086,
+      "start_time": 90.18,
+      "end_time": 90.26,
+      "speaker": "A",
+      "index": 220,
+      "flags": [],
+      "context_before": "number. Let me see. Let",
+      "context_after": "get a phone number. And",
+      "suggested_correction": null
+    },
+    {
+      "word": "get",
+      "confidence": 0.93248177,
+      "start_time": 90.42,
+      "end_time": 90.5,
+      "speaker": "A",
+      "index": 221,
+      "flags": [],
+      "context_before": "Let me see. Let me",
+      "context_after": "a phone number. And they",
+      "suggested_correction": null
+    },
+    {
+      "word": "a",
+      "confidence": 0.21638869,
+      "start_time": 90.58,
+      "end_time": 90.66,
+      "speaker": "A",
+      "index": 222,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (21.64%)",
+          "priority": "high",
+          "confidence": 0.21638869
+        }
+      ],
+      "context_before": "me see. Let me get",
+      "context_after": "phone number. And they got",
+      "suggested_correction": null
+    },
+    {
+      "word": "phone",
+      "confidence": 0.34899825,
+      "start_time": 91.7,
+      "end_time": 91.94,
+      "speaker": "A",
+      "index": 223,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (34.90%)",
+          "priority": "high",
+          "confidence": 0.34899825
+        }
+      ],
+      "context_before": "see. Let me get a",
+      "context_after": "number. And they got different",
+      "suggested_correction": null
+    },
+    {
+      "word": "number.",
+      "confidence": 0.39262047,
+      "start_time": 92.26,
+      "end_time": 92.34,
+      "speaker": "A",
+      "index": 224,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (39.26%)",
+          "priority": "high",
+          "confidence": 0.39262047
+        }
+      ],
+      "context_before": "Let me get a phone",
+      "context_after": "And they got different numbers",
+      "suggested_correction": null
+    },
+    {
+      "word": "And",
+      "confidence": 0.5314298,
+      "start_time": 94.9,
+      "end_time": 94.98,
+      "speaker": "A",
+      "index": 225,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (53.14%)",
+          "priority": "medium",
+          "confidence": 0.5314298
+        }
+      ],
+      "context_before": "me get a phone number.",
+      "context_after": "they got different numbers to",
+      "suggested_correction": null
+    },
+    {
+      "word": "they",
+      "confidence": 0.9796427,
+      "start_time": 95.94,
+      "end_time": 96.02,
+      "speaker": "A",
+      "index": 226,
+      "flags": [],
+      "context_before": "get a phone number. And",
+      "context_after": "got different numbers to call.",
+      "suggested_correction": null
+    },
+    {
+      "word": "got",
+      "confidence": 0.5281363,
+      "start_time": 96.18,
+      "end_time": 96.26,
+      "speaker": "A",
+      "index": 227,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (52.81%)",
+          "priority": "medium",
+          "confidence": 0.5281363
+        }
+      ],
+      "context_before": "a phone number. And they",
+      "context_after": "different numbers to call. So",
+      "suggested_correction": null
+    },
+    {
+      "word": "different",
+      "confidence": 0.9697805,
+      "start_time": 98.82,
+      "end_time": 98.9,
+      "speaker": "A",
+      "index": 228,
+      "flags": [],
+      "context_before": "phone number. And they got",
+      "context_after": "numbers to call. So what",
+      "suggested_correction": null
+    },
+    {
+      "word": "numbers",
+      "confidence": 0.8363125,
+      "start_time": 99.22,
+      "end_time": 99.54,
+      "speaker": "A",
+      "index": 229,
+      "flags": [],
+      "context_before": "number. And they got different",
+      "context_after": "to call. So what they",
+      "suggested_correction": null
+    },
+    {
+      "word": "to",
+      "confidence": 0.9733218,
+      "start_time": 99.62,
+      "end_time": 99.7,
+      "speaker": "A",
+      "index": 230,
+      "flags": [],
+      "context_before": "And they got different numbers",
+      "context_after": "call. So what they do",
+      "suggested_correction": null
+    },
+    {
+      "word": "call.",
+      "confidence": 0.84362197,
+      "start_time": 99.78,
+      "end_time": 99.86,
+      "speaker": "A",
+      "index": 231,
+      "flags": [],
+      "context_before": "they got different numbers to",
+      "context_after": "So what they do is",
+      "suggested_correction": null
+    },
+    {
+      "word": "So",
+      "confidence": 0.90439266,
+      "start_time": 100.98,
+      "end_time": 101.06,
+      "speaker": "B",
+      "index": 232,
+      "flags": [
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "got different numbers to call.",
+      "context_after": "what they do is they'll",
+      "suggested_correction": null
+    },
+    {
+      "word": "what",
+      "confidence": 0.79035205,
+      "start_time": 101.46,
+      "end_time": 101.54,
+      "speaker": "B",
+      "index": 233,
+      "flags": [],
+      "context_before": "different numbers to call. So",
+      "context_after": "they do is they'll have",
+      "suggested_correction": null
+    },
+    {
+      "word": "they",
+      "confidence": 0.99654984,
+      "start_time": 101.7,
+      "end_time": 101.78,
+      "speaker": "B",
+      "index": 234,
+      "flags": [],
+      "context_before": "numbers to call. So what",
+      "context_after": "do is they'll have like",
+      "suggested_correction": null
+    },
+    {
+      "word": "do",
+      "confidence": 0.9968746,
+      "start_time": 101.94,
+      "end_time": 102.02,
+      "speaker": "B",
+      "index": 235,
+      "flags": [],
+      "context_before": "to call. So what they",
+      "context_after": "is they'll have like a",
+      "suggested_correction": null
+    },
+    {
+      "word": "is",
+      "confidence": 0.9687987,
+      "start_time": 102.1,
+      "end_time": 102.18,
+      "speaker": "B",
+      "index": 236,
+      "flags": [],
+      "context_before": "call. So what they do",
+      "context_after": "they'll have like a referral",
+      "suggested_correction": null
+    },
+    {
+      "word": "they'll",
+      "confidence": 0.8429776,
+      "start_time": 102.34,
+      "end_time": 102.58,
+      "speaker": "B",
+      "index": 237,
+      "flags": [],
+      "context_before": "So what they do is",
+      "context_after": "have like a referral service",
+      "suggested_correction": null
+    },
+    {
+      "word": "have",
+      "confidence": 0.9931451,
+      "start_time": 102.66,
+      "end_time": 102.74,
+      "speaker": "B",
+      "index": 238,
+      "flags": [],
+      "context_before": "what they do is they'll",
+      "context_after": "like a referral service so",
+      "suggested_correction": null
+    },
+    {
+      "word": "like",
+      "confidence": 0.503079,
+      "start_time": 102.82,
+      "end_time": 102.98,
+      "speaker": "B",
+      "index": 239,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.31%)",
+          "priority": "medium",
+          "confidence": 0.503079
+        }
+      ],
+      "context_before": "they do is they'll have",
+      "context_after": "a referral service so you",
+      "suggested_correction": null
+    },
+    {
+      "word": "a",
+      "confidence": 0.9916504,
+      "start_time": 103.06,
+      "end_time": 103.14,
+      "speaker": "B",
+      "index": 240,
+      "flags": [],
+      "context_before": "do is they'll have like",
+      "context_after": "referral service so you can",
+      "suggested_correction": null
+    },
+    {
+      "word": "referral",
+      "confidence": 0.98403835,
+      "start_time": 103.14,
+      "end_time": 103.62,
+      "speaker": "B",
+      "index": 241,
+      "flags": [],
+      "context_before": "is they'll have like a",
+      "context_after": "service so you can give",
+      "suggested_correction": null
+    },
+    {
+      "word": "service",
+      "confidence": 0.9968964,
+      "start_time": 103.62,
+      "end_time": 103.7,
+      "speaker": "B",
+      "index": 242,
+      "flags": [],
+      "context_before": "they'll have like a referral",
+      "context_after": "so you can give them",
+      "suggested_correction": null
+    },
+    {
+      "word": "so",
+      "confidence": 0.5297629,
+      "start_time": 104.02,
+      "end_time": 104.1,
+      "speaker": "B",
+      "index": 243,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (52.98%)",
+          "priority": "medium",
+          "confidence": 0.5297629
+        }
+      ],
+      "context_before": "have like a referral service",
+      "context_after": "you can give them a",
+      "suggested_correction": null
+    },
+    {
+      "word": "you",
+      "confidence": 0.99156874,
+      "start_time": 104.18,
+      "end_time": 104.26,
+      "speaker": "B",
+      "index": 244,
+      "flags": [],
+      "context_before": "like a referral service so",
+      "context_after": "can give them a call",
+      "suggested_correction": null
+    },
+    {
+      "word": "can",
+      "confidence": 0.9976624,
+      "start_time": 104.26,
+      "end_time": 104.34,
+      "speaker": "B",
+      "index": 245,
+      "flags": [],
+      "context_before": "a referral service so you",
+      "context_after": "give them a call and",
+      "suggested_correction": null
+    },
+    {
+      "word": "give",
+      "confidence": 0.9606326,
+      "start_time": 104.42,
+      "end_time": 104.5,
+      "speaker": "B",
+      "index": 246,
+      "flags": [],
+      "context_before": "referral service so you can",
+      "context_after": "them a call and ask",
+      "suggested_correction": null
+    },
+    {
+      "word": "them",
+      "confidence": 0.9678504,
+      "start_time": 104.5,
+      "end_time": 104.58,
+      "speaker": "B",
+      "index": 247,
+      "flags": [],
+      "context_before": "service so you can give",
+      "context_after": "a call and ask for",
+      "suggested_correction": null
+    },
+    {
+      "word": "a",
+      "confidence": 0.9899768,
+      "start_time": 104.66,
+      "end_time": 104.74,
+      "speaker": "B",
+      "index": 248,
+      "flags": [],
+      "context_before": "so you can give them",
+      "context_after": "call and ask for it.",
+      "suggested_correction": null
+    },
+    {
+      "word": "call",
+      "confidence": 0.9054829,
+      "start_time": 104.82,
+      "end_time": 104.9,
+      "speaker": "B",
+      "index": 249,
+      "flags": [],
+      "context_before": "you can give them a",
+      "context_after": "and ask for it. You",
+      "suggested_correction": null
+    },
+    {
+      "word": "and",
+      "confidence": 0.9926059,
+      "start_time": 105.06,
+      "end_time": 105.14,
+      "speaker": "B",
+      "index": 250,
+      "flags": [],
+      "context_before": "can give them a call",
+      "context_after": "ask for it. You give",
+      "suggested_correction": null
+    },
+    {
+      "word": "ask",
+      "confidence": 0.99564314,
+      "start_time": 105.22,
+      "end_time": 105.46,
+      "speaker": "B",
+      "index": 251,
+      "flags": [],
+      "context_before": "give them a call and",
+      "context_after": "for it. You give them",
+      "suggested_correction": null
+    },
+    {
+      "word": "for",
+      "confidence": 0.9968811,
+      "start_time": 105.46,
+      "end_time": 105.54,
+      "speaker": "B",
+      "index": 252,
+      "flags": [],
+      "context_before": "them a call and ask",
+      "context_after": "it. You give them a",
+      "suggested_correction": null
+    },
+    {
+      "word": "it.",
+      "confidence": 0.86074424,
+      "start_time": 105.62,
+      "end_time": 105.7,
+      "speaker": "B",
+      "index": 253,
+      "flags": [],
+      "context_before": "a call and ask for",
+      "context_after": "You give them a little",
+      "suggested_correction": null
+    },
+    {
+      "word": "You",
+      "confidence": 0.51695603,
+      "start_time": 107.71,
+      "end_time": 107.79,
+      "speaker": "B",
+      "index": 254,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (51.70%)",
+          "priority": "medium",
+          "confidence": 0.51695603
+        }
+      ],
+      "context_before": "call and ask for it.",
+      "context_after": "give them a little bit",
+      "suggested_correction": null
+    },
+    {
+      "word": "give",
+      "confidence": 0.97935414,
+      "start_time": 107.95,
+      "end_time": 108.03,
+      "speaker": "B",
+      "index": 255,
+      "flags": [],
+      "context_before": "and ask for it. You",
+      "context_after": "them a little bit about",
+      "suggested_correction": null
+    },
+    {
+      "word": "them",
+      "confidence": 0.99695194,
+      "start_time": 108.19,
+      "end_time": 108.27,
+      "speaker": "B",
+      "index": 256,
+      "flags": [],
+      "context_before": "ask for it. You give",
+      "context_after": "a little bit about the",
+      "suggested_correction": null
+    },
+    {
+      "word": "a",
+      "confidence": 0.9980368,
+      "start_time": 108.35,
+      "end_time": 108.43,
+      "speaker": "B",
+      "index": 257,
+      "flags": [],
+      "context_before": "for it. You give them",
+      "context_after": "little bit about the case",
+      "suggested_correction": null
+    },
+    {
+      "word": "little",
+      "confidence": 0.9989641,
+      "start_time": 108.43,
+      "end_time": 108.51,
+      "speaker": "B",
+      "index": 258,
+      "flags": [],
+      "context_before": "it. You give them a",
+      "context_after": "bit about the case that",
+      "suggested_correction": null
+    },
+    {
+      "word": "bit",
+      "confidence": 0.99861,
+      "start_time": 108.51,
+      "end_time": 108.75,
+      "speaker": "B",
+      "index": 259,
+      "flags": [],
+      "context_before": "You give them a little",
+      "context_after": "about the case that you're",
+      "suggested_correction": null
+    },
+    {
+      "word": "about",
+      "confidence": 0.92173654,
+      "start_time": 108.75,
+      "end_time": 108.83,
+      "speaker": "B",
+      "index": 260,
+      "flags": [],
+      "context_before": "give them a little bit",
+      "context_after": "the case that you're wanting",
+      "suggested_correction": null
+    },
+    {
+      "word": "the",
+      "confidence": 0.9945491,
+      "start_time": 108.99,
+      "end_time": 109.07,
+      "speaker": "B",
+      "index": 261,
+      "flags": [],
+      "context_before": "them a little bit about",
+      "context_after": "case that you're wanting to",
+      "suggested_correction": null
+    },
+    {
+      "word": "case",
+      "confidence": 0.99391806,
+      "start_time": 109.15,
+      "end_time": 109.23,
+      "speaker": "B",
+      "index": 262,
+      "flags": [],
+      "context_before": "a little bit about the",
+      "context_after": "that you're wanting to pursue",
+      "suggested_correction": null
+    },
+    {
+      "word": "that",
+      "confidence": 0.9873368,
+      "start_time": 109.31,
+      "end_time": 109.47,
+      "speaker": "B",
+      "index": 263,
+      "flags": [],
+      "context_before": "little bit about the case",
+      "context_after": "you're wanting to pursue and",
+      "suggested_correction": null
+    },
+    {
+      "word": "you're",
+      "confidence": 0.98979694,
+      "start_time": 109.47,
+      "end_time": 109.71,
+      "speaker": "B",
+      "index": 264,
+      "flags": [],
+      "context_before": "bit about the case that",
+      "context_after": "wanting to pursue and they",
+      "suggested_correction": null
+    },
+    {
+      "word": "wanting",
+      "confidence": 0.98698366,
+      "start_time": 109.71,
+      "end_time": 109.95,
+      "speaker": "B",
+      "index": 265,
+      "flags": [],
+      "context_before": "about the case that you're",
+      "context_after": "to pursue and they may",
+      "suggested_correction": null
+    },
+    {
+      "word": "to",
+      "confidence": 0.99796826,
+      "start_time": 109.95,
+      "end_time": 110.03,
+      "speaker": "B",
+      "index": 266,
+      "flags": [],
+      "context_before": "the case that you're wanting",
+      "context_after": "pursue and they may be",
+      "suggested_correction": null
+    },
+    {
+      "word": "pursue",
+      "confidence": 0.99755305,
+      "start_time": 110.03,
+      "end_time": 110.51,
+      "speaker": "B",
+      "index": 267,
+      "flags": [],
+      "context_before": "case that you're wanting to",
+      "context_after": "and they may be able",
+      "suggested_correction": null
+    },
+    {
+      "word": "and",
+      "confidence": 0.5938542,
+      "start_time": 110.51,
+      "end_time": 110.59,
+      "speaker": "B",
+      "index": 268,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (59.39%)",
+          "priority": "medium",
+          "confidence": 0.5938542
+        }
+      ],
+      "context_before": "that you're wanting to pursue",
+      "context_after": "they may be able to",
+      "suggested_correction": null
+    },
+    {
+      "word": "they",
+      "confidence": 0.996027,
+      "start_time": 110.67,
+      "end_time": 110.75,
+      "speaker": "B",
+      "index": 269,
+      "flags": [],
+      "context_before": "you're wanting to pursue and",
+      "context_after": "may be able to pair",
+      "suggested_correction": null
+    },
+    {
+      "word": "may",
+      "confidence": 0.99662316,
+      "start_time": 110.75,
+      "end_time": 110.83,
+      "speaker": "B",
+      "index": 270,
+      "flags": [],
+      "context_before": "wanting to pursue and they",
+      "context_after": "be able to pair you",
+      "suggested_correction": null
+    },
+    {
+      "word": "be",
+      "confidence": 0.9982412,
+      "start_time": 110.91,
+      "end_time": 111.07,
+      "speaker": "B",
+      "index": 271,
+      "flags": [],
+      "context_before": "to pursue and they may",
+      "context_after": "able to pair you up",
+      "suggested_correction": null
+    },
+    {
+      "word": "able",
+      "confidence": 0.9978283,
+      "start_time": 111.07,
+      "end_time": 111.23,
+      "speaker": "B",
+      "index": 272,
+      "flags": [],
+      "context_before": "pursue and they may be",
+      "context_after": "to pair you up with",
+      "suggested_correction": null
+    },
+    {
+      "word": "to",
+      "confidence": 0.99825877,
+      "start_time": 111.23,
+      "end_time": 111.31,
+      "speaker": "B",
+      "index": 273,
+      "flags": [],
+      "context_before": "and they may be able",
+      "context_after": "pair you up with a",
+      "suggested_correction": null
+    },
+    {
+      "word": "pair",
+      "confidence": 0.997775,
+      "start_time": 111.31,
+      "end_time": 111.55,
+      "speaker": "B",
+      "index": 274,
+      "flags": [],
+      "context_before": "they may be able to",
+      "context_after": "you up with a more",
+      "suggested_correction": null
+    },
+    {
+      "word": "you",
+      "confidence": 0.99707747,
+      "start_time": 111.63,
+      "end_time": 111.71,
+      "speaker": "B",
+      "index": 275,
+      "flags": [],
+      "context_before": "may be able to pair",
+      "context_after": "up with a more suitable.",
+      "suggested_correction": null
+    },
+    {
+      "word": "up",
+      "confidence": 0.99112296,
+      "start_time": 111.79,
+      "end_time": 111.87,
+      "speaker": "B",
+      "index": 276,
+      "flags": [],
+      "context_before": "be able to pair you",
+      "context_after": "with a more suitable. Okay,",
+      "suggested_correction": null
+    },
+    {
+      "word": "with",
+      "confidence": 0.9937557,
+      "start_time": 111.95,
+      "end_time": 112.03,
+      "speaker": "B",
+      "index": 277,
+      "flags": [],
+      "context_before": "able to pair you up",
+      "context_after": "a more suitable. Okay, that",
+      "suggested_correction": null
+    },
+    {
+      "word": "a",
+      "confidence": 0.9889471,
+      "start_time": 112.11,
+      "end_time": 112.19,
+      "speaker": "B",
+      "index": 278,
+      "flags": [],
+      "context_before": "to pair you up with",
+      "context_after": "more suitable. Okay, that sounds",
+      "suggested_correction": null
+    },
+    {
+      "word": "more",
+      "confidence": 0.9952004,
+      "start_time": 112.27,
+      "end_time": 112.35,
+      "speaker": "B",
+      "index": 279,
+      "flags": [],
+      "context_before": "pair you up with a",
+      "context_after": "suitable. Okay, that sounds great.",
+      "suggested_correction": null
+    },
+    {
+      "word": "suitable.",
+      "confidence": 0.5033097,
+      "start_time": 112.43,
+      "end_time": 112.83,
+      "speaker": "B",
+      "index": 280,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.33%)",
+          "priority": "medium",
+          "confidence": 0.5033097
+        }
+      ],
+      "context_before": "you up with a more",
+      "context_after": "Okay, that sounds great. Okay.",
+      "suggested_correction": null
+    },
+    {
+      "word": "Okay,",
+      "confidence": 0.65334785,
+      "start_time": 114.19,
+      "end_time": 114.67,
+      "speaker": "A",
+      "index": 281,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (65.33%)",
+          "priority": "medium",
+          "confidence": 0.65334785
+        }
+      ],
+      "context_before": "up with a more suitable.",
+      "context_after": "that sounds great. Okay. Yeah,",
+      "suggested_correction": null
+    },
+    {
+      "word": "that",
+      "confidence": 0.8095896,
+      "start_time": 114.83,
+      "end_time": 114.91,
+      "speaker": "A",
+      "index": 282,
+      "flags": [],
+      "context_before": "with a more suitable. Okay,",
+      "context_after": "sounds great. Okay. Yeah, I",
+      "suggested_correction": null
+    },
+    {
+      "word": "sounds",
+      "confidence": 0.9496628,
+      "start_time": 114.99,
+      "end_time": 115.31,
+      "speaker": "A",
+      "index": 283,
+      "flags": [],
+      "context_before": "a more suitable. Okay, that",
+      "context_after": "great. Okay. Yeah, I just",
+      "suggested_correction": null
+    },
+    {
+      "word": "great.",
+      "confidence": 0.95289284,
+      "start_time": 115.31,
+      "end_time": 115.39,
+      "speaker": "A",
+      "index": 284,
+      "flags": [],
+      "context_before": "more suitable. Okay, that sounds",
+      "context_after": "Okay. Yeah, I just want",
+      "suggested_correction": null
+    },
+    {
+      "word": "Okay.",
+      "confidence": 0.50062114,
+      "start_time": 115.71,
+      "end_time": 116.11,
+      "speaker": "B",
+      "index": 285,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (50.06%)",
+          "priority": "medium",
+          "confidence": 0.50062114
+        }
+      ],
+      "context_before": "suitable. Okay, that sounds great.",
+      "context_after": "Yeah, I just want to",
+      "suggested_correction": null
+    },
+    {
+      "word": "Yeah,",
+      "confidence": 0.4245853,
+      "start_time": 116.51,
+      "end_time": 116.59,
+      "speaker": "A",
+      "index": 286,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (42.46%)",
+          "priority": "high",
+          "confidence": 0.4245853
+        },
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "Okay, that sounds great. Okay.",
+      "context_after": "I just want to get",
+      "suggested_correction": null
+    },
+    {
+      "word": "I",
+      "confidence": 0.8493899,
+      "start_time": 117.55,
+      "end_time": 117.71,
+      "speaker": "A",
+      "index": 287,
+      "flags": [],
+      "context_before": "that sounds great. Okay. Yeah,",
+      "context_after": "just want to get up",
+      "suggested_correction": null
+    },
+    {
+      "word": "just",
+      "confidence": 0.7253092,
+      "start_time": 117.71,
+      "end_time": 117.87,
+      "speaker": "A",
+      "index": 288,
+      "flags": [],
+      "context_before": "sounds great. Okay. Yeah, I",
+      "context_after": "want to get up and",
+      "suggested_correction": null
+    },
+    {
+      "word": "want",
+      "confidence": 0.8707859,
+      "start_time": 118.03,
+      "end_time": 118.19,
+      "speaker": "A",
+      "index": 289,
+      "flags": [],
+      "context_before": "great. Okay. Yeah, I just",
+      "context_after": "to get up and go",
+      "suggested_correction": null
+    },
+    {
+      "word": "to",
+      "confidence": 0.9978003,
+      "start_time": 118.35,
+      "end_time": 118.43,
+      "speaker": "A",
+      "index": 290,
+      "flags": [],
+      "context_before": "Okay. Yeah, I just want",
+      "context_after": "get up and go move",
+      "suggested_correction": null
+    },
+    {
+      "word": "get",
+      "confidence": 0.9842105,
+      "start_time": 118.51,
+      "end_time": 118.59,
+      "speaker": "A",
+      "index": 291,
+      "flags": [],
+      "context_before": "Yeah, I just want to",
+      "context_after": "up and go move around.",
+      "suggested_correction": null
+    },
+    {
+      "word": "up",
+      "confidence": 0.9899593,
+      "start_time": 118.67,
+      "end_time": 118.75,
+      "speaker": "A",
+      "index": 292,
+      "flags": [],
+      "context_before": "I just want to get",
+      "context_after": "and go move around. I",
+      "suggested_correction": null
+    },
+    {
+      "word": "and",
+      "confidence": 0.97496605,
+      "start_time": 118.75,
+      "end_time": 118.83,
+      "speaker": "A",
+      "index": 293,
+      "flags": [],
+      "context_before": "just want to get up",
+      "context_after": "go move around. I don't",
+      "suggested_correction": null
+    },
+    {
+      "word": "go",
+      "confidence": 0.91206527,
+      "start_time": 119.15,
+      "end_time": 119.23,
+      "speaker": "A",
+      "index": 294,
+      "flags": [],
+      "context_before": "want to get up and",
+      "context_after": "move around. I don't want",
+      "suggested_correction": null
+    },
+    {
+      "word": "move",
+      "confidence": 0.38874397,
+      "start_time": 119.47,
+      "end_time": 119.55,
+      "speaker": "A",
+      "index": 295,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (38.87%)",
+          "priority": "high",
+          "confidence": 0.38874397
+        }
+      ],
+      "context_before": "to get up and go",
+      "context_after": "around. I don't want to",
+      "suggested_correction": null
+    },
+    {
+      "word": "around.",
+      "confidence": 0.9494603,
+      "start_time": 119.79,
+      "end_time": 119.95,
+      "speaker": "A",
+      "index": 296,
+      "flags": [],
+      "context_before": "get up and go move",
+      "context_after": "I don't want to lay",
+      "suggested_correction": null
+    },
+    {
+      "word": "I",
+      "confidence": 0.9961892,
+      "start_time": 120.03,
+      "end_time": 120.11,
+      "speaker": "A",
+      "index": 297,
+      "flags": [],
+      "context_before": "up and go move around.",
+      "context_after": "don't want to lay down,",
+      "suggested_correction": null
+    },
+    {
+      "word": "don't",
+      "confidence": 0.99545777,
+      "start_time": 120.11,
+      "end_time": 120.43,
+      "speaker": "A",
+      "index": 298,
+      "flags": [],
+      "context_before": "and go move around. I",
+      "context_after": "want to lay down, you",
+      "suggested_correction": null
+    },
+    {
+      "word": "want",
+      "confidence": 0.9817161,
+      "start_time": 120.43,
+      "end_time": 120.51,
+      "speaker": "A",
+      "index": 299,
+      "flags": [],
+      "context_before": "go move around. I don't",
+      "context_after": "to lay down, you know,",
+      "suggested_correction": null
+    },
+    {
+      "word": "to",
+      "confidence": 0.99801135,
+      "start_time": 120.67,
+      "end_time": 120.75,
+      "speaker": "A",
+      "index": 300,
+      "flags": [],
+      "context_before": "move around. I don't want",
+      "context_after": "lay down, you know, all",
+      "suggested_correction": null
+    },
+    {
+      "word": "lay",
+      "confidence": 0.9937304,
+      "start_time": 120.83,
+      "end_time": 120.99,
+      "speaker": "A",
+      "index": 301,
+      "flags": [],
+      "context_before": "around. I don't want to",
+      "context_after": "down, you know, all my",
+      "suggested_correction": null
+    },
+    {
+      "word": "down,",
+      "confidence": 0.8562582,
+      "start_time": 121.07,
+      "end_time": 121.15,
+      "speaker": "A",
+      "index": 302,
+      "flags": [],
+      "context_before": "I don't want to lay",
+      "context_after": "you know, all my life",
+      "suggested_correction": null
+    },
+    {
+      "word": "you",
+      "confidence": 0.98295665,
+      "start_time": 121.63,
+      "end_time": 121.71,
+      "speaker": "A",
+      "index": 303,
+      "flags": [],
+      "context_before": "don't want to lay down,",
+      "context_after": "know, all my life and",
+      "suggested_correction": null
+    },
+    {
+      "word": "know,",
+      "confidence": 0.9689819,
+      "start_time": 121.79,
+      "end_time": 121.87,
+      "speaker": "A",
+      "index": 304,
+      "flags": [],
+      "context_before": "want to lay down, you",
+      "context_after": "all my life and just",
+      "suggested_correction": null
+    },
+    {
+      "word": "all",
+      "confidence": 0.9694508,
+      "start_time": 122.03,
+      "end_time": 122.11,
+      "speaker": "A",
+      "index": 305,
+      "flags": [],
+      "context_before": "to lay down, you know,",
+      "context_after": "my life and just being",
+      "suggested_correction": null
+    },
+    {
+      "word": "my",
+      "confidence": 0.9978319,
+      "start_time": 122.27,
+      "end_time": 122.35,
+      "speaker": "A",
+      "index": 306,
+      "flags": [],
+      "context_before": "lay down, you know, all",
+      "context_after": "life and just being handy.",
+      "suggested_correction": null
+    },
+    {
+      "word": "life",
+      "confidence": 0.99822,
+      "start_time": 122.35,
+      "end_time": 122.43,
+      "speaker": "A",
+      "index": 307,
+      "flags": [],
+      "context_before": "down, you know, all my",
+      "context_after": "and just being handy. Yeah.",
+      "suggested_correction": null
+    },
+    {
+      "word": "and",
+      "confidence": 0.883142,
+      "start_time": 122.67,
+      "end_time": 122.75,
+      "speaker": "A",
+      "index": 308,
+      "flags": [],
+      "context_before": "you know, all my life",
+      "context_after": "just being handy. Yeah. So",
+      "suggested_correction": null
+    },
+    {
+      "word": "just",
+      "confidence": 0.99392784,
+      "start_time": 122.91,
+      "end_time": 122.99,
+      "speaker": "A",
+      "index": 309,
+      "flags": [],
+      "context_before": "know, all my life and",
+      "context_after": "being handy. Yeah. So what's",
+      "suggested_correction": null
+    },
+    {
+      "word": "being",
+      "confidence": 0.85802674,
+      "start_time": 123.15,
+      "end_time": 123.23,
+      "speaker": "A",
+      "index": 310,
+      "flags": [],
+      "context_before": "all my life and just",
+      "context_after": "handy. Yeah. So what's the",
+      "suggested_correction": null
+    },
+    {
+      "word": "handy.",
+      "confidence": 0.052624572,
+      "start_time": 124.11,
+      "end_time": 124.35,
+      "speaker": "A",
+      "index": 311,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (5.26%)",
+          "priority": "high",
+          "confidence": 0.052624572
+        }
+      ],
+      "context_before": "my life and just being",
+      "context_after": "Yeah. So what's the number",
+      "suggested_correction": null
+    },
+    {
+      "word": "Yeah.",
+      "confidence": 0.098938435,
+      "start_time": 124.59,
+      "end_time": 124.67,
+      "speaker": "B",
+      "index": 312,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (9.89%)",
+          "priority": "high",
+          "confidence": 0.098938435
+        },
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "life and just being handy.",
+      "context_after": "So what's the number is",
+      "suggested_correction": null
+    },
+    {
+      "word": "So",
+      "confidence": 0.41855198,
+      "start_time": 124.99,
+      "end_time": 125.07,
+      "speaker": "A",
+      "index": 313,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (41.86%)",
+          "priority": "high",
+          "confidence": 0.41855198
+        },
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "and just being handy. Yeah.",
+      "context_after": "what's the number is 210.",
+      "suggested_correction": null
+    },
+    {
+      "word": "what's",
+      "confidence": 0.37233004,
+      "start_time": 125.31,
+      "end_time": 125.55,
+      "speaker": "A",
+      "index": 314,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (37.23%)",
+          "priority": "high",
+          "confidence": 0.37233004
+        }
+      ],
+      "context_before": "just being handy. Yeah. So",
+      "context_after": "the number is 210. Yes.",
+      "suggested_correction": null
+    },
+    {
+      "word": "the",
+      "confidence": 0.79727864,
+      "start_time": 125.55,
+      "end_time": 125.63,
+      "speaker": "A",
+      "index": 315,
+      "flags": [],
+      "context_before": "being handy. Yeah. So what's",
+      "context_after": "number is 210. Yes. 0-2-2-7.",
+      "suggested_correction": null
+    },
+    {
+      "word": "number",
+      "confidence": 0.8967976,
+      "start_time": 125.63,
+      "end_time": 125.71,
+      "speaker": "A",
+      "index": 316,
+      "flags": [],
+      "context_before": "handy. Yeah. So what's the",
+      "context_after": "is 210. Yes. 0-2-2-7. 2-2-7.",
+      "suggested_correction": null
+    },
+    {
+      "word": "is",
+      "confidence": 0.4442427,
+      "start_time": 126.03,
+      "end_time": 126.11,
+      "speaker": "A",
+      "index": 317,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (44.42%)",
+          "priority": "high",
+          "confidence": 0.4442427
+        }
+      ],
+      "context_before": "Yeah. So what's the number",
+      "context_after": "210. Yes. 0-2-2-7. 2-2-7. 88822.",
+      "suggested_correction": null
+    },
+    {
+      "word": "210.",
+      "confidence": 0.33181277,
+      "start_time": 126.91,
+      "end_time": 127.31,
+      "speaker": "A",
+      "index": 318,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (33.18%)",
+          "priority": "high",
+          "confidence": 0.33181277
+        },
+        {
+          "type": "number",
+          "reason": "Number detected - verify accuracy",
+          "priority": "low"
+        }
+      ],
+      "context_before": "So what's the number is",
+      "context_after": "Yes. 0-2-2-7. 2-2-7. 88822. Okay,",
+      "suggested_correction": null
+    },
+    {
+      "word": "Yes.",
+      "confidence": 0.63430554,
+      "start_time": 128.03,
+      "end_time": 128.27,
+      "speaker": "B",
+      "index": 319,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (63.43%)",
+          "priority": "medium",
+          "confidence": 0.63430554
+        }
+      ],
+      "context_before": "what's the number is 210.",
+      "context_after": "0-2-2-7. 2-2-7. 88822. Okay, ma'am.",
+      "suggested_correction": null
+    },
+    {
+      "word": "0-2-2-7.",
+      "confidence": 0.009896048,
+      "start_time": 130.27,
+      "end_time": 130.51,
+      "speaker": "A",
+      "index": 320,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (0.99%)",
+          "priority": "high",
+          "confidence": 0.009896048
+        },
+        {
+          "type": "phone_number_segment",
+          "reason": "Part of spelled-out phone number - verify sequence",
+          "priority": "high",
+          "sequence_range": [
+            320,
+            323
+          ]
+        }
+      ],
+      "context_before": "the number is 210. Yes.",
+      "context_after": "2-2-7. 88822. Okay, ma'am. 227-88-22.",
+      "suggested_correction": null
+    },
+    {
+      "word": "2-2-7.",
+      "confidence": 0.16627695,
+      "start_time": 132.67,
+      "end_time": 132.91,
+      "speaker": "A",
+      "index": 321,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (16.63%)",
+          "priority": "high",
+          "confidence": 0.16627695
+        },
+        {
+          "type": "number",
+          "reason": "Number detected - verify accuracy",
+          "priority": "low"
+        }
+      ],
+      "context_before": "number is 210. Yes. 0-2-2-7.",
+      "context_after": "88822. Okay, ma'am. 227-88-22. Correct.",
+      "suggested_correction": null
+    },
+    {
+      "word": "88822.",
+      "confidence": 0.114951916,
+      "start_time": 137.26,
+      "end_time": 137.5,
+      "speaker": "A",
+      "index": 322,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (11.50%)",
+          "priority": "high",
+          "confidence": 0.114951916
+        },
+        {
+          "type": "number",
+          "reason": "Number detected - verify accuracy",
+          "priority": "low"
+        }
+      ],
+      "context_before": "is 210. Yes. 0-2-2-7. 2-2-7.",
+      "context_after": "Okay, ma'am. 227-88-22. Correct. Yeah.",
+      "suggested_correction": null
+    },
+    {
+      "word": "Okay,",
+      "confidence": 0.35880777,
+      "start_time": 137.74,
+      "end_time": 138.14,
+      "speaker": "A",
+      "index": 323,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (35.88%)",
+          "priority": "high",
+          "confidence": 0.35880777
+        }
+      ],
+      "context_before": "210. Yes. 0-2-2-7. 2-2-7. 88822.",
+      "context_after": "ma'am. 227-88-22. Correct. Yeah. And",
+      "suggested_correction": null
+    },
+    {
+      "word": "ma'am.",
+      "confidence": 0.7058344,
+      "start_time": 138.22,
+      "end_time": 138.54,
+      "speaker": "A",
+      "index": 324,
+      "flags": [],
+      "context_before": "Yes. 0-2-2-7. 2-2-7. 88822. Okay,",
+      "context_after": "227-88-22. Correct. Yeah. And you",
+      "suggested_correction": null
+    },
+    {
+      "word": "227-88-22.",
+      "confidence": 0.44839606,
+      "start_time": 139.82,
+      "end_time": 140.06,
+      "speaker": "A",
+      "index": 325,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (44.84%)",
+          "priority": "high",
+          "confidence": 0.44839606
+        },
+        {
+          "type": "number",
+          "reason": "Number detected - verify accuracy",
+          "priority": "low"
+        }
+      ],
+      "context_before": "0-2-2-7. 2-2-7. 88822. Okay, ma'am.",
+      "context_after": "Correct. Yeah. And you can",
+      "suggested_correction": null
+    },
+    {
+      "word": "Correct.",
+      "confidence": 0.4311301,
+      "start_time": 141.98,
+      "end_time": 142.46,
+      "speaker": "B",
+      "index": 326,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (43.11%)",
+          "priority": "high",
+          "confidence": 0.4311301
+        },
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "2-2-7. 88822. Okay, ma'am. 227-88-22.",
+      "context_after": "Yeah. And you can just",
+      "suggested_correction": null
+    },
+    {
+      "word": "Yeah.",
+      "confidence": 0.5361438,
+      "start_time": 144.62,
+      "end_time": 144.7,
+      "speaker": "A",
+      "index": 327,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (53.61%)",
+          "priority": "medium",
+          "confidence": 0.5361438
+        },
+        {
+          "type": "name",
+          "reason": "Possible name/proper noun - verify spelling",
+          "priority": "medium"
+        }
+      ],
+      "context_before": "88822. Okay, ma'am. 227-88-22. Correct.",
+      "context_after": "And you can just give",
+      "suggested_correction": null
+    },
+    {
+      "word": "And",
+      "confidence": 0.9162837,
+      "start_time": 144.94,
+      "end_time": 145.02,
+      "speaker": "B",
+      "index": 328,
+      "flags": [],
+      "context_before": "Okay, ma'am. 227-88-22. Correct. Yeah.",
+      "context_after": "you can just give them",
+      "suggested_correction": null
+    },
+    {
+      "word": "you",
+      "confidence": 0.65452445,
+      "start_time": 145.18,
+      "end_time": 145.26,
+      "speaker": "B",
+      "index": 329,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (65.45%)",
+          "priority": "medium",
+          "confidence": 0.65452445
+        }
+      ],
+      "context_before": "ma'am. 227-88-22. Correct. Yeah. And",
+      "context_after": "can just give them a",
+      "suggested_correction": null
+    },
+    {
+      "word": "can",
+      "confidence": 0.9960108,
+      "start_time": 145.26,
+      "end_time": 145.34,
+      "speaker": "B",
+      "index": 330,
+      "flags": [],
+      "context_before": "227-88-22. Correct. Yeah. And you",
+      "context_after": "just give them a call",
+      "suggested_correction": null
+    },
+    {
+      "word": "just",
+      "confidence": 0.9938698,
+      "start_time": 145.42,
+      "end_time": 145.5,
+      "speaker": "B",
+      "index": 331,
+      "flags": [],
+      "context_before": "Correct. Yeah. And you can",
+      "context_after": "give them a call and",
+      "suggested_correction": null
+    },
+    {
+      "word": "give",
+      "confidence": 0.9972263,
+      "start_time": 145.58,
+      "end_time": 145.66,
+      "speaker": "B",
+      "index": 332,
+      "flags": [],
+      "context_before": "Yeah. And you can just",
+      "context_after": "them a call and ask",
+      "suggested_correction": null
+    },
+    {
+      "word": "them",
+      "confidence": 0.95067394,
+      "start_time": 145.66,
+      "end_time": 145.74,
+      "speaker": "B",
+      "index": 333,
+      "flags": [],
+      "context_before": "And you can just give",
+      "context_after": "a call and ask for",
+      "suggested_correction": null
+    },
+    {
+      "word": "a",
+      "confidence": 0.9988059,
+      "start_time": 145.9,
+      "end_time": 145.98,
+      "speaker": "B",
+      "index": 334,
+      "flags": [],
+      "context_before": "you can just give them",
+      "context_after": "call and ask for their",
+      "suggested_correction": null
+    },
+    {
+      "word": "call",
+      "confidence": 0.9955831,
+      "start_time": 146.06,
+      "end_time": 146.14,
+      "speaker": "B",
+      "index": 335,
+      "flags": [],
+      "context_before": "can just give them a",
+      "context_after": "and ask for their referral",
+      "suggested_correction": null
+    },
+    {
+      "word": "and",
+      "confidence": 0.9929133,
+      "start_time": 146.3,
+      "end_time": 146.38,
+      "speaker": "B",
+      "index": 336,
+      "flags": [],
+      "context_before": "just give them a call",
+      "context_after": "ask for their referral services.",
+      "suggested_correction": null
+    },
+    {
+      "word": "ask",
+      "confidence": 0.9976332,
+      "start_time": 146.38,
+      "end_time": 146.54,
+      "speaker": "B",
+      "index": 337,
+      "flags": [],
+      "context_before": "give them a call and",
+      "context_after": "for their referral services. Okay.",
+      "suggested_correction": null
+    },
+    {
+      "word": "for",
+      "confidence": 0.9964044,
+      "start_time": 146.54,
+      "end_time": 146.62,
+      "speaker": "B",
+      "index": 338,
+      "flags": [],
+      "context_before": "them a call and ask",
+      "context_after": "their referral services. Okay. Thank",
+      "suggested_correction": null
+    },
+    {
+      "word": "their",
+      "confidence": 0.845175,
+      "start_time": 146.7,
+      "end_time": 146.78,
+      "speaker": "B",
+      "index": 339,
+      "flags": [],
+      "context_before": "a call and ask for",
+      "context_after": "referral services. Okay. Thank you,",
+      "suggested_correction": null
+    },
+    {
+      "word": "referral",
+      "confidence": 0.95986295,
+      "start_time": 146.78,
+      "end_time": 147.34,
+      "speaker": "B",
+      "index": 340,
+      "flags": [],
+      "context_before": "call and ask for their",
+      "context_after": "services. Okay. Thank you, ma'am.",
+      "suggested_correction": null
+    },
+    {
+      "word": "services.",
+      "confidence": 0.58673024,
+      "start_time": 147.5,
+      "end_time": 147.74,
+      "speaker": "B",
+      "index": 341,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (58.67%)",
+          "priority": "medium",
+          "confidence": 0.58673024
+        }
+      ],
+      "context_before": "and ask for their referral",
+      "context_after": "Okay. Thank you, ma'am. Yes,",
+      "suggested_correction": null
+    },
+    {
+      "word": "Okay.",
+      "confidence": 0.47129676,
+      "start_time": 148.22,
+      "end_time": 148.7,
+      "speaker": "A",
+      "index": 342,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (47.13%)",
+          "priority": "high",
+          "confidence": 0.47129676
+        }
+      ],
+      "context_before": "ask for their referral services.",
+      "context_after": "Thank you, ma'am. Yes, no",
+      "suggested_correction": null
+    },
+    {
+      "word": "Thank",
+      "confidence": 0.580275,
+      "start_time": 149.1,
+      "end_time": 149.34,
+      "speaker": "A",
+      "index": 343,
+      "flags": [
+        {
+          "type": "low_confidence",
+          "reason": "Low confidence (58.03%)",
+          "priority": "medium",
+          "confidence": 0.580275
+        }
+      ],
+      "context_before": "for their referral services. Okay.",
+      "context_after": "you, ma'am. Yes, no problem.",
+      "suggested_correction": null
+    },
+    {
+      "word": "you,",
+      "confidence": 0.9388416,
+      "start_time": 149.34,
+      "end_time": 149.42,
+      "speaker": "A",
+      "index": 344,
+      "flags": [],
+      "context_before": "their referral services. Okay. Thank",
+      "context_after": "ma'am. Yes, no problem.",
+      "suggested_correction": null
+    },
+    {
+      "word": "ma'am.",
+      "confidence": 0.975119,
+      "start_time": 149.5,
+      "end_time": 149.74,
+      "speaker": "A",
+      "index": 345,
+      "flags": [],
+      "context_before": "referral services. Okay. Thank you,",
+      "context_after": "Yes, no problem.",
+      "suggested_correction": null
+    },
+    {
+      "word": "Yes,",
+      "confidence": 0.18684418,
+      "start_time": 149.9,
+      "end_time": 150.06,
+      "speaker": "B",
+      "index": 346,
+      "flags": [
+        {
+          "type": "critical_confidence",
+          "reason": "Critical: Very low confidence (18.68%)",
+          "priority": "high",
+          "confidence": 0.18684418
+        }
+      ],
+      "context_before": "services. Okay. Thank you, ma'am.",
+      "context_after": "no problem.",
+      "suggested_correction": null
+    },
+    {
+      "word": "no",
+      "confidence": 0.94482577,
+      "start_time": 150.14,
+      "end_time": 150.22,
+      "speaker": "B",
+      "index": 347,
+      "flags": [],
+      "context_before": "Okay. Thank you, ma'am. Yes,",
+      "context_after": "problem.",
+      "suggested_correction": null
+    },
+    {
+      "word": "problem.",
+      "confidence": 0.9511616,
+      "start_time": 150.3,
+      "end_time": 150.38,
+      "speaker": "B",
+      "index": 348,
+      "flags": [],
+      "context_before": "Thank you, ma'am. Yes, no",
+      "context_after": "",
+      "suggested_correction": null
+    }
+  ],
+  "corrections": [],
+  "audit": []
+}
