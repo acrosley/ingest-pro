@@ -1,0 +1,27 @@
+Role	Last	First	Full Name	Email	Phone
+Accounting	Stanton	Esther	Esther Stanton	Esther@crosleylaw.com	(210) 354-4600
+Attorney	Jenkins	Brennen	Brennen Jenkins	Brennen@crosleylaw.com	(210) 714-0880
+Attorney	Lopez	Gabriela	Gabriela Lopez	gabriela@crosleylaw.com	(210) 538-8543
+Attorney	O'Brien	Vanessa	Vanessa O'Brien	vanessa@crosleylaw.com	(210) 904-3846
+Attorney	Schultz	Madison	Madison Schultz	madison@crosleylaw.com	(210) 660-2108
+Attorney	Mechler	Shawn	Shawn Mechler	shawn@crosleylaw.com	(210) 610-8873
+Attorney	Crosley	Tom	Tom Crosley	tom@crosleylaw.com	(210) 714-0874
+Case Manager	Greene	Jeff	Jeff Greene	jeff@crosleylaw.com	(210) 670-6104
+Case Manager	Martinez	Liz	Liz Martinez	Liz@crosleylaw.com	(210) 714-0872
+Case Manager	Oliva	Carlos	Carlos Oliva	carlos@crosleylaw.com	(210) 538-8541
+Case Manager	Pike	Priscilla	Priscilla Pike	priscilla@crosleylaw.com	(210) 714-0877
+COO	Strauss	Denise	Denise Strauss	Denise@crosleylaw.com	(210) 714-0868
+Front Desk	Harmon	Elsa	Elsa Harmon	elsa@crosleylaw.com	(210) 714-0869
+Intake	Crosley	Andrew	Andrew Crosley	andrew@crosleylaw.com	(210) 538-8542
+Intake	Morton	Anthony	Anthony Morton	anthony@crosleylaw.com	(210) 610-8837
+Intake	Casanova	Ashley	Ashley Casanova	ashley@crosleylaw.com	(210) 343-5371
+Intake	Alvarez	Alex	Alex Alvarez	alex@crosleylaw.com	(210) 465-1105
+Legal Assisstant	Juarez	Laura	Laura Juarez	Laura@crosleylaw.com	(210) 538-8540
+Legal Assisstant	Munoz	Maria	Maria Munoz	maria@crosleylaw.com	(210) 538-8539
+Legal Assisstant	Martinez	Vivian	Vivian Martinez	vivian@crosleylaw.com	(210) 714-0875
+Med Records	Garcia	Rosy	Rosy Garcia	rosy@crosleylaw.com	(210) 714-0866
+Med Records	Vega	Yurixi	Yurixi Vega	yurixi@crosleylaw.com	MS Teams
+Paralegal	Richter	Erinn	Erinn Richter	erinn@crosleylaw.com	(210) 714-0871
+Paralegal	Bunting	Kristina	Kristina Bunting	kristina@crosleylaw.com	(210) 714-0870
+Paralegal	Ross	Mark	Mark Ross	Mark@crosleylaw.com	(210) 714-0867
+Paralegal	Hanna	Julie	Julie Hanna	julie@crosleylaw.com	(210) 714-0877

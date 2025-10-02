@@ -1,0 +1,68 @@
+{
+  "call_details": {
+    "wav_file": "x542_2025-06-19.17-16.009.wav",
+    "renamed to": null,
+    "Agent": "Andrew",
+    "call_date": "2025-06-19",
+    "call_time": "5:16 PM",
+    "call_duration": null
+  },
+  "analysis": {
+    "summary": "The agent asked the caller to come to their office, which the caller acknowledged.",
+    "sentiment": {
+      "overall": "Neutral",
+      "drivers": [
+        "\"Can you come to my office, please?\" - A simple, direct request.",
+        "The brevity of the call provides no discernible emotional tone."
+      ]
+    },
+    "topics": [
+      "Office visit request",
+      "Meeting arrangement"
+    ],
+    "entities": {
+      "persons": [],
+      "organizations": [],
+      "locations": [
+        "my office"
+      ],
+      "dates": [],
+      "other": [],
+      "case_number": []
+    },
+    "action_items": []
+  },
+  "processing_details": {
+    "transcript_file": "x542_2025-06-19.17-16.009.txt",
+    "transcript_path": "\\\\crosley-nas\\Data\\Firm_Worksheets\\Staff_Call_Recordings\\Andrew\\Transcripts\\x542_2025-06-19.17-16.009.txt",
+    "analysis_timestamp_utc": "2025-08-12T17:52:57.872991+00:00",
+    "model_used": "gemini-2.5-flash"
+  },
+  "transcript": [
+    {
+      "timestamp": "00:00:02",
+      "speaker": "Agent",
+      "text": "Hey."
+    },
+    {
+      "timestamp": "00:00:03",
+      "speaker": "Caller",
+      "text": "Hi."
+    },
+    {
+      "timestamp": "00:00:03",
+      "speaker": "Agent",
+      "text": "Can you come to my office, please?"
+    },
+    {
+      "timestamp": "00:00:05",
+      "speaker": "Caller",
+      "text": "Uh huh?"
+    },
+    {
+      "timestamp": "00:00:05",
+      "speaker": "Agent",
+      "text": "Yes."
+    }
+  ]
+}

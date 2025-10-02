@@ -1,0 +1,42 @@
+Analyze the following call transcript. Your response MUST be a single, valid JSON object and nothing else. Do not include any introductory text, closing remarks, or markdown formatting like ```json.
+
+The JSON object must conform to the following structure:
+
+{{
+  "call_details": {{
+    "wav_file": "x###_YYYY-MM-DD.mm-ss.sss.wav",
+    "renamed to": "",
+    "Agent": "x###",
+    "call_date": "YYYY-MM-DD",
+    "call_time": "12 hr AM or PM",
+    "call_duration": "mm-ss"
+  }},
+  "summary": "A concise summary of the entire call's purpose and outcome.",
+  "sentiment": {{
+    "overall": "A single word describing the dominant sentiment (e.g., 'Positive', 'Neutral', 'Negative', 'Anxious').",
+    "drivers": [
+      "A brief quote or observation that justifies the overall sentiment.",
+      "Another key quote or observation."
+    ]
+  }},
+  "topics": [
+    "The primary topic discussed in the call.",
+    "A secondary topic or theme."
+  ],
+  "entities": {{
+    "persons": ["Name of a person mentioned"],
+    "organizations": ["Name of a company or organization"],
+    "locations": ["A physical address or location"],
+    "dates": ["A specific date or time like '5:00 p.m.' or 'next Tuesday'"],
+    "other": ["All other important details like Claim numbers and phone numbers"],
+    "case_number": ["any six-digit case number goes here"]
+  }},
+  "action_items": [
+    "All specific, actionable tasks for the agent or firm resulting from the call, if any."
+  ]
+}}
+
+Here is the transcript to analyze:
+---
+{transcript_content}
+---

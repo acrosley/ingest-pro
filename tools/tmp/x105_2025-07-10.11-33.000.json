@@ -1,0 +1,105 @@
+{
+  "call_details": {
+    "wav_file": "x105_2025-07-10.11-33.000.wav",
+    "renamed to": null,
+    "Agent": "Alex Alvarez",
+    "call_date": "2025-07-10",
+    "call_time": "11:33 AM",
+    "call_duration": "01:06",
+    "caller": "Tom Crosley Texas Law Board"
+  },
+  "analysis": {
+    "summary": "The caller, Tony Houston, contacted the Crosley Law Firm requesting Tom Crosley's bar license number, stating an intention to file a complaint with the Texas Law Board due to feeling ignored by the firm. The agent, Alex, was unable to provide the number but advised it could be found online and informed the caller that someone would reach out via email within the hour. The caller expressed strong skepticism regarding the email and reiterated their intent to proceed with a complaint.",
+    "sentiment": {
+      "overall": "Negative",
+      "drivers": [
+        "\"Y'all keep ignoring me. I've got, I got call records, you know. I keep leaving messages and you people keep ignoring me.\"",
+        "\"I want Tom Crosley's bar license number, because I'm about to complain with the Texas Law Board.\"",
+        "\"That's what people keep saying, just like I supposedly got an email last night.\"",
+        "\"I'm recording this and I'm notating all of this with the complaint.\""
+      ]
+    },
+    "topics": [
+      "Request for attorney's bar license number for complaint filing",
+      "Unresolved communication issues and lack of response from the law firm"
+    ],
+    "entities": {
+      "persons": [
+        "Alex",
+        "Tony Houston",
+        "Tom Crosley"
+      ],
+      "organizations": [
+        "Crosley Law Firm",
+        "Texas Law Board"
+      ],
+      "locations": [],
+      "dates": [
+        "next hour",
+        "last night"
+      ],
+      "other": [
+        "bar license number",
+        "recorded call",
+        "complaint"
+      ],
+      "case_number": []
+    },
+    "action_items": [
+      "Someone from the firm to reach out to Tony Houston via email within the next hour."
+    ]
+  },
+  "processing_details": {
+    "transcript_file": "Alex_2025-07-10_11-33_1m6s_Tom Crosley_Texas Law Board.txt",
+    "transcript_path": "\\\\crosley-nas\\Data\\Firm_Worksheets\\Staff_Call_Recordings\\Alex\\Transcripts\\Alex_2025-07-10_11-33_1m6s_Tom Crosley_Texas Law Board.txt",
+    "analysis_timestamp_utc": "2025-08-12T17:06:19.512991+00:00",
+    "model_used": "gemini-2.5-flash"
+  },
+  "transcript": [
+    {
+      "timestamp": "00:00:01",
+      "speaker": "Agent",
+      "text": "Thank you for calling the Crosley Law Firm. This is Alex. How can I help you?"
+    },
+    {
+      "timestamp": "00:00:04",
+      "speaker": "Caller",
+      "text": "Hey, Alex. I need Tom Crosley's bar license number."
+    },
+    {
+      "timestamp": "00:00:09",
+      "speaker": "Agent",
+      "text": "I- I'm sorry. Can I ask who's calling?"
+    },
+    {
+      "timestamp": "00:00:11",
+      "speaker": "Caller",
+      "text": "Yeah, this is Tony Houston. Y'all keep ignoring me. I've got, I got call records, you know. I keep leaving messages and you people keep ignoring me. So this is a recorded call, official request. I want Tom Crosley's bar license number, because I'm about to complain with the Texas Law Board."
+    },
+    {
+      "timestamp": "00:29",
+      "speaker": "Agent",
+      "text": "All righty. Give me just one second. I'm going to put you on a brief hold."
+    },
+    {
+      "timestamp": "00:35",
+      "speaker": "Agent",
+      "text": "Hello?"
+    },
+    {
+      "timestamp": "00:37",
+      "speaker": "Caller",
+      "text": "Hello?"
+    },
+    {
+      "timestamp": "00:38",
+      "speaker": "Agent",
+      "text": "Yes. Um, unfortunately, I was unable to find the bar card number, um, but I was advised that you would be able to find it online. Additionally, I did want to notify you that someone will be reaching out to you via email within the next hour."
+    },
+    {
+      "timestamp": "00:51",
+      "speaker": "Caller",
+      "text": "That's what people keep saying, just like I supposedly got an email last night. Like I said, I'm recording this and I'm notating all of this with the complaint. Have a good day. That's what I'm putting in the complaint."
+    }
+  ]
+}
