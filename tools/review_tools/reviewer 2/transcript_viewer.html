@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcript Viewer with Audio Sync</title>
+    <link rel="stylesheet" href="transcript_viewer.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Transcript Viewer with Audio Sync</h1>
+            <div class="controls">
+                <button id="loadFiles" class="btn-primary">Load Files</button>
+                <div class="file-inputs" id="fileInputs" style="display: none;">
+                    <input type="file" id="confidenceFile" accept=".json" />
+                    <input type="file" id="audioFile" accept="audio/*" />
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="audio-panel">
+                <div class="audio-player">
+                    <audio id="audioPlayer" controls></audio>
+                    <div class="audio-info">
+                        <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+                        <span id="confidenceScore">Confidence: --</span>
+                    </div>
+                </div>
+                <div class="audio-visualizer" id="audioVisualizer">
+                    <canvas id="waveformCanvas" width="800" height="100"></canvas>
+                </div>
+            </div>
+
+            <div class="transcript-panel">
+                <div class="toolbar">
+                    <div class="confidence-filter">
+                        <label>Highlight confidence below:</label>
+                        <input type="range" id="confidenceThreshold" min="0" max="1" step="0.1" value="0.7" />
+                        <span id="thresholdValue">70%</span>
+                    </div>
+                    <div class="view-controls">
+                        <button id="toggleGreenHighlight" class="btn-secondary">Toggle Green Highlight</button>
+                    </div>
+                    <div class="speaker-controls">
+                        <label>Speaker Names:</label>
+                        <button id="editSpeakerNames" class="btn-secondary">Edit Speakers</button>
+                    </div>
+                    <div class="actions">
+                        <button id="exportTranscript" class="btn-secondary">Export</button>
+                        <button id="saveChanges" class="btn-primary">Save Changes</button>
+                    </div>
+                </div>
+
+                <div class="transcript-container">
+                    <div id="transcriptContent" class="transcript-content">
+                        <div class="placeholder">
+                            <p>Load confidence and audio files to begin viewing</p>
+                            <p>Supported formats: .json (confidence data), .wav/.mp3 (audio)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="status-bar">
+            <div class="stats">
+                <span id="totalWords">Words: 0</span>
+                <span id="lowConfidenceWords">Low Confidence: 0</span>
+                <span id="currentWord">Current: --</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="transcript_viewer.js"></script>
+</body>
+</html>
