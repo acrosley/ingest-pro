@@ -22,6 +22,8 @@ launch_review.bat
 python tools/review_tools/launch_review_ui.py
 ```
 
+This now opens **AssemblyAI Review Studio**, a combined review and audio intelligence experience.
+
 ### 3. Review & Export
 1. Click "📁 Load Review File"
 2. Select a `.review.json` file
@@ -64,7 +66,9 @@ python tools/review_tools/launch_review_ui.py
 
 - `review_generator.py` - Core review logic with pattern recognition
 - `corrections_db.py` - Database for tracking corrections
-- `review_ui.html` - Web interface for reviewing
+- `assemblyai_review_studio.html` - Premium review + audio intelligence workspace
+- `assemblyai_review_studio.css` / `assemblyai_review_studio.js` - Styling and logic for the new studio
+- `review_ui.html` - Legacy web interface for reviewing
 - `launch_review_ui.py` - Python server to launch UI
 - `launch_review.bat` - Windows shortcut to launch UI
 

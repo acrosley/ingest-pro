@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AssemblyAI Review Studio</title>
+    <link rel="stylesheet" href="assemblyai_review_studio.css">
+</head>
+<body>
+    <div class="app-shell">
+        <header class="app-header">
+            <div class="brand">
+                <h1>AssemblyAI Review Studio</h1>
+                <span>Law Firm Intake QA</span>
+            </div>
+            <p class="mission">High-touch quality review that fuses AssemblyAI confidence scoring with venture-ready storytelling. Surface high-value details, calibrate confidence, and sync instantly with intake audio.</p>
+            <div class="header-actions">
+                <label class="file-input" id="reviewFileLabel">
+                    <span>📄 Load Review</span>
+                    <input type="file" id="reviewFile" accept=".json">
+                </label>
+                <label class="file-input" id="audioFileLabel">
+                    <span>🎧 Load Audio</span>
+                    <input type="file" id="audioFile" accept="audio/*">
+                </label>
+                <button class="primary-btn" id="demoBtn">Launch Demo Call</button>
+            </div>
+        </header>
+
+        <main class="main-layout">
+            <section class="panel stats-panel" aria-label="Review metrics">
+                <h2>Review Metrics</h2>
+                <div class="stat-grid" id="statsGrid"></div>
+
+                <div class="config-block" id="confidenceBlock">
+                    <h3>Confidence Engine</h3>
+                    <div class="slider-group">
+                        <label for="confidenceThreshold">Highlight &lt; Confidence</label>
+                        <input type="range" id="confidenceThreshold" min="0" max="1" step="0.05" value="0.7">
+                        <div class="slider-value" id="thresholdValue">70%</div>
+                    </div>
+                </div>
+
+                <div class="config-block" id="patternBlock">
+                    <h3>Pattern Detection</h3>
+                    <div class="config-row"><span>Phone Numbers</span><div class="toggle active" data-flag="phone"></div></div>
+                    <div class="config-row"><span>Case Numbers</span><div class="toggle active" data-flag="case"></div></div>
+                    <div class="config-row"><span>Money Amounts</span><div class="toggle active" data-flag="money"></div></div>
+                    <div class="config-row"><span>Dates</span><div class="toggle active" data-flag="date"></div></div>
+                    <div class="config-row"><span>Times</span><div class="toggle active" data-flag="time"></div></div>
+                    <div class="config-row"><span>Names</span><div class="toggle active" data-flag="names"></div></div>
+                    <div class="config-row"><span>Spelled Words</span><div class="toggle active" data-flag="spelled"></div></div>
+                    <div class="config-row"><span>Numbers</span><div class="toggle active" data-flag="numbers"></div></div>
+                </div>
+
+                <div class="sidebar-actions">
+                    <button class="ghost-btn" id="exportCorrectionsBtn">💾 Export Corrections</button>
+                    <button class="ghost-btn" id="exportTranscriptBtn">📄 Export Corrected Transcript</button>
+                    <button class="ghost-btn" id="saveReviewBtn">💿 Save Review Snapshot</button>
+                </div>
+            </section>
+
+            <section class="audio-suite" aria-label="Audio intelligence">
+                <div class="audio-card">
+                    <div class="audio-header">
+                        <h2>Audio Sync Intelligence</h2>
+                        <div class="audio-timestamps"><span id="currentTime">0:00</span><span>•</span><span id="duration">0:00</span><span id="confidenceScore">Confidence: --</span></div>
+                    </div>
+                    <div class="audio-player-wrapper">
+                        <audio id="audioPlayer" controls preload="none"></audio>
+                        <button class="ghost-btn" id="editSpeakersBtn">🎙️ Edit Speakers</button>
+                    </div>
+                    <canvas id="waveformCanvas" class="waveform-canvas" aria-label="Waveform visualization"></canvas>
+                </div>
+
+                <section class="transcript-suite" aria-label="Transcript intelligence">
+                    <div class="transcript-toolbar">
+                        <div class="filter">
+                            <label for="filterPriority">Priority</label>
+                            <select id="filterPriority">
+                                <option value="all">All</option>
+                                <option value="high">High</option>
+                                <option value="medium">Medium</option>
+                                <option value="low">Low</option>
+                            </select>
+                        </div>
+                        <div class="filter">
+                            <label for="filterType">Flag Type</label>
+                            <select id="filterType">
+                                <option value="all">All Types</option>
+                            </select>
+                        </div>
+                        <label><input type="checkbox" id="showOnlyFlagged" checked> Show Only Flagged</label>
+                        <label><input type="checkbox" id="enableGreenHighlight" checked> Enable Success Highlight</label>
+                        <input type="search" id="searchInput" placeholder="Search transcript…" class="filter">
+                    </div>
+                    <div class="transcript-content" id="wordList">
+                        <div class="empty-state">
+                            <h3>Load a review or launch the demo call to begin.</h3>
+                            <p>Flagged content, context, and audio sync will populate instantly.</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <aside class="panel" aria-label="Dictionary queue">
+                <h2>Dictionary Queue</h2>
+                <p class="mission">Capture names and key terms for continuous model improvement. Export directly into your playbook.</p>
+                <div class="dictionary-list" id="dictionaryList"></div>
+                <button class="ghost-btn" id="exportDictionaryBtn">📖 Export Dictionary (<span id="dictCount">0</span>)</button>
+            </aside>
+        </main>
+    </div>
+
+    <div class="toast" id="toast"></div>
+
+    <script type="module" src="assemblyai_review_studio.js"></script>
+</body>
+</html>
