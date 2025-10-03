@@ -40,7 +40,7 @@ def launch_review_ui(port=8000):
     server_address = ('', port)
     httpd = HTTPServer(server_address, ReviewUIHandler)
     
-    url = f'http://localhost:{port}/review_ui.html'
+    url = f'http://localhost:{port}/assemblyai_review_studio.html'
     
     print("=" * 60)
     print("CALL TRANSCRIPT REVIEW UI")
@@ -48,10 +48,10 @@ def launch_review_ui(port=8000):
     print(f"\n✓ Server started at {url}")
     print(f"✓ Opening review interface in your default browser...")
     print(f"\n📝 Instructions:")
-    print(f"  1. Click 'Load Review File' in the browser")
-    print(f"  2. Select a .review.json file")
-    print(f"  3. Review and correct flagged words")
-    print(f"  4. Export corrected transcript when done")
+    print(f"  1. Click 'Load Review' in the browser")
+    print(f"  2. Select a .review.json or .confidence.json file")
+    print(f"  3. Review flagged words with audio sync")
+    print(f"  4. Export corrections or corrected transcript when done")
     print(f"\n⚠️  Press Ctrl+C to stop the server")
     print("=" * 60)
     
