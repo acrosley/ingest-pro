@@ -64,13 +64,22 @@ This now opens **AssemblyAI Review Studio**, a combined review and audio intelli
 
 ## 🔧 Files in This Directory
 
-- `review_generator.py` - Core review logic with pattern recognition
-- `corrections_db.py` - Database for tracking corrections
+### 🎨 **Active Review System**
 - `assemblyai_review_studio.html` - Premium review + audio intelligence workspace
-- `assemblyai_review_studio.css` / `assemblyai_review_studio.js` - Styling and logic for the new studio
-- `review_ui.html` - Legacy web interface for reviewing
+- `assemblyai_review_studio.css` - Studio styling
+- `assemblyai_review_studio.js` - Studio interactive logic
 - `launch_review_ui.py` - Python server to launch UI
 - `launch_review.bat` - Windows shortcut to launch UI
+- `launch_with_logging.bat` - Launch with corrections tracking API
+
+### ⚙️ **Core Generators**
+- `assemblyai_review_generator.py` - Review generator for AssemblyAI transcripts
+- `review_generator.py` - Review generator for Google Cloud STT/Gemini transcripts
+- `corrections_db.py` - Database for tracking corrections
+
+### 📁 **Organized Subfolders**
+- `viewer/` - Standalone transcript viewer (view-only mode)
+- `archived/` - Deprecated/old versions (for reference)
 
 ## 📚 Full Documentation
 
