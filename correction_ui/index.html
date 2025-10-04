@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcript Correction Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-left">
+            <h1>📝 Transcript Correction</h1>
+            <span id="fileInfo" class="file-info"></span>
+        </div>
+        <div class="header-right">
+            <button id="exportBtn" class="btn btn-primary">💾 Export Corrected Transcript</button>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Sidebar Controls -->
+        <aside class="sidebar">
+            <section class="control-section">
+                <h3>📂 Load Files</h3>
+                <label class="file-label">
+                    Confidence JSON
+                    <input type="file" id="confidenceFile" accept=".json">
+                </label>
+                <label class="file-label">
+                    Audio File
+                    <input type="file" id="audioFile" accept=".wav,.mp3,.m4a">
+                </label>
+                <button id="loadBtn" class="btn btn-secondary">Load Files</button>
+            </section>
+
+            <section class="control-section">
+                <h3>🔍 Search</h3>
+                <input type="text" id="searchInput" placeholder="Search words..." class="search-input">
+                <div id="searchResults" class="search-results"></div>
+            </section>
+
+            <section class="control-section">
+                <h3>⚙️ Filters</h3>
+                <label>
+                    Confidence Threshold: <span id="thresholdValue">70%</span>
+                    <input type="range" id="confidenceSlider" min="0" max="100" value="70" class="slider">
+                </label>
+                
+                <label class="checkbox-label">
+                    <input type="checkbox" id="showLowConfidence" checked>
+                    Show Low Confidence
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" id="showNames" checked>
+                    Show Names
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" id="showNumbers" checked>
+                    Show Numbers
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" id="showPhones" checked>
+                    Show Phone Numbers
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" id="showDates" checked>
+                    Show Dates
+                </label>
+            </section>
+
+            <section class="control-section">
+                <h3>👥 Speakers</h3>
+                <div id="speakerList" class="speaker-list"></div>
+                <div class="speaker-controls">
+                    <button id="addSpeakerBtn" class="btn btn-secondary btn-small">➕ Add Speaker</button>
+                </div>
+            </section>
+
+            <section class="control-section stats">
+                <h3>📊 Statistics</h3>
+                <div class="stat-item">
+                    <span>Total Words:</span>
+                    <strong id="totalWords">0</strong>
+                </div>
+                <div class="stat-item">
+                    <span>Flagged Words:</span>
+                    <strong id="flaggedWords">0</strong>
+                </div>
+                <div class="stat-item">
+                    <span>Corrections Made:</span>
+                    <strong id="correctionCount">0</strong>
+                </div>
+                <div class="stat-item">
+                    <span>Avg Confidence:</span>
+                    <strong id="avgConfidence">0%</strong>
+                </div>
+            </section>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Audio Player & Waveform -->
+            <div class="audio-section">
+                <div class="audio-controls">
+                    <button id="playPauseBtn" class="control-btn">▶️</button>
+                    <span id="currentTime">0:00</span>
+                    <span>/</span>
+                    <span id="duration">0:00</span>
+                    <span class="confidence-indicator" id="liveConfidence">Confidence: --</span>
+                </div>
+                <canvas id="waveform" class="waveform"></canvas>
+                <audio id="audioPlayer" style="display: none;"></audio>
+            </div>
+
+            <!-- Editor Pane -->
+            <div class="editor-container">
+                <div class="editor-toolbar">
+                    <button id="selectAllFlagged" class="toolbar-btn">Select All Flagged</button>
+                    <button id="clearSelection" class="toolbar-btn">Clear Selection</button>
+                    <span class="separator">|</span>
+                    <span id="selectedInfo">No selection</span>
+                </div>
+                <div id="editor" class="editor" contenteditable="false">
+                    <div class="placeholder">Load a confidence JSON file and audio to begin...</div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Edit Word Modal -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <h3>Edit Word</h3>
+            <div class="modal-body">
+                <p><strong>Original:</strong> <span id="originalWord"></span></p>
+                <p><strong>Confidence:</strong> <span id="wordConfidence"></span></p>
+                <p><strong>Context:</strong> <span id="wordContext" class="context"></span></p>
+                <label>
+                    Correction:
+                    <input type="text" id="correctionInput" class="correction-input">
+                </label>
+                <div class="modal-actions">
+                    <button id="playWordBtn" class="btn btn-secondary">🔊 Play Audio</button>
+                    <button id="addToDictionary" class="btn btn-secondary">📖 Add to Dictionary</button>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="cancelEdit" class="btn btn-secondary">Cancel</button>
+                <button id="applyToAll" class="btn btn-primary">Apply to All</button>
+                <button id="applyEdit" class="btn btn-primary">Apply</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Speaker Edit Modal -->
+    <div id="speakerModal" class="modal">
+        <div class="modal-content">
+            <h3>Edit Speaker Name</h3>
+            <div class="modal-body">
+                <p><strong>Speaker Tag:</strong> <span id="speakerTag"></span></p>
+                <label>
+                    New Name:
+                    <input type="text" id="speakerNameInput" class="correction-input">
+                </label>
+            </div>
+            <div class="modal-footer">
+                <button id="cancelSpeaker" class="btn btn-secondary">Cancel</button>
+                <button id="applySpeaker" class="btn btn-primary">Apply to All</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="correction.js"></script>
+</body>
+</html>
+
